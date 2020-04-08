@@ -1,0 +1,332 @@
+﻿{
+  "etiquetas": [
+    {
+      "id": 1,
+      "etiqueta": "Aborto"
+    },
+    {
+      "id": 2,
+      "etiqueta": "Acueducto y alcantarillado"
+    },
+    {
+      "id": 3,
+      "etiqueta": "Afinidad política"
+    },
+    {
+      "id": 4,
+      "etiqueta": "Afrocolombianos"
+    },
+    {
+      "id": 5,
+      "etiqueta": "Agropecuario y agrícola"
+    },
+    {
+      "id": 6,
+      "etiqueta": "Clientelismo"
+    },
+    {
+      "id": 7,
+      "etiqueta": "Comunicaciones, medios y tecnologías de la información"
+    },
+    {
+      "id": 8,
+      "etiqueta": "Conciliación"
+    },
+    {
+      "id": 9,
+      "etiqueta": "Confianza"
+    },
+    {
+      "id": 10,
+      "etiqueta": "Conflicto armado"
+    },
+    {
+      "id": 11,
+      "etiqueta": "Congreso"
+    },
+    {
+      "id": 12,
+      "etiqueta": "Corrupción"
+    },
+    {
+      "id": 13,
+      "etiqueta": "Cultura"
+    },
+    {
+      "id": 14,
+      "etiqueta": "Datos personales"
+    },
+    {
+      "id": 15,
+      "etiqueta": "Delicuencia"
+    },
+    {
+      "id": 16,
+      "etiqueta": "Democracia"
+    },
+    {
+      "id": 17,
+      "etiqueta": "Deporte"
+    },
+    {
+      "id": 18,
+      "etiqueta": "Derechos"
+    },
+    {
+      "id": 19,
+      "etiqueta": "Desarrollo"
+    },
+    {
+      "id": 20,
+      "etiqueta": "Desmovilización"
+    },
+    {
+      "id": 21,
+      "etiqueta": "Discriminación"
+    },
+    {
+      "id": 22,
+      "etiqueta": "Drogas"
+    },
+    {
+      "id": 23,
+      "etiqueta": "Economía"
+    },
+    {
+      "id": 24,
+      "etiqueta": "Educación"
+    },
+    {
+      "id": 25,
+      "etiqueta": "Elecciones"
+    },
+    {
+      "id": 26,
+      "etiqueta": "Energía eléctrica"
+    },
+    {
+      "id": 27,
+      "etiqueta": "Ética"
+    },
+    {
+      "id": 28,
+      "etiqueta": "Familia"
+    },
+    {
+      "id": 29,
+      "etiqueta": "Fuerza pública"
+    },
+    {
+      "id": 30,
+      "etiqueta": "Género"
+    },
+    {
+      "id": 31,
+      "etiqueta": "Geografía"
+    },
+    {
+      "id": 32,
+      "etiqueta": "Grupo armado"
+    },
+    {
+      "id": 33,
+      "etiqueta": "Guerra"
+    },
+    {
+      "id": 34,
+      "etiqueta": "Impuestos"
+    },
+    {
+      "id": 35,
+      "etiqueta": "Indígenas"
+    },
+    {
+      "id": 36,
+      "etiqueta": "Influencia"
+    },
+    {
+      "id": 37,
+      "etiqueta": "Ingresos"
+    },
+    {
+      "id": 38,
+      "etiqueta": "Judicial"
+    },
+    {
+      "id": 39,
+      "etiqueta": "Laboral"
+    },
+    {
+      "id": 40,
+      "etiqueta": "Líderes sociales"
+    },
+    {
+      "id": 41,
+      "etiqueta": "Medio ambiente"
+    },
+    {
+      "id": 42,
+      "etiqueta": "Minería"
+    },
+    {
+      "id": 43,
+      "etiqueta": "Minoría sexual"
+    },
+    {
+      "id": 44,
+      "etiqueta": "Mujer"
+    },
+    {
+      "id": 45,
+      "etiqueta": "N/A"
+    },
+    {
+      "id": 46,
+      "etiqueta": "Notariado y registro"
+    },
+    {
+      "id": 47,
+      "etiqueta": "Ordenamiento Territorial y regiones"
+    },
+    {
+      "id": 48,
+      "etiqueta": "Organismos de Control y Ministerio público"
+    },
+    {
+      "id": 49,
+      "etiqueta": "Participación ciudadana"
+    },
+    {
+      "id": 50,
+      "etiqueta": "Participación electoral"
+    },
+    {
+      "id": 51,
+      "etiqueta": "Partidos políticos"
+    },
+    {
+      "id": 52,
+      "etiqueta": "Patria"
+    },
+    {
+      "id": 53,
+      "etiqueta": "Paz"
+    },
+    {
+      "id": 54,
+      "etiqueta": "Pensión"
+    },
+    {
+      "id": 55,
+      "etiqueta": "Pobreza"
+    },
+    {
+      "id": 56,
+      "etiqueta": "Política"
+    },
+    {
+      "id": 57,
+      "etiqueta": "Principal problema"
+    },
+    {
+      "id": 58,
+      "etiqueta": "Proceso de paz"
+    },
+    {
+      "id": 59,
+      "etiqueta": "Propiedad privada"
+    },
+    {
+      "id": 60,
+      "etiqueta": "Protesta"
+    },
+    {
+      "id": 61,
+      "etiqueta": "Racismo"
+    },
+    {
+      "id": 62,
+      "etiqueta": "Rama Ejecutiva"
+    },
+    {
+      "id": 63,
+      "etiqueta": "Rama Judicial"
+    },
+    {
+      "id": 64,
+      "etiqueta": "Rama Legislativa"
+    },
+    {
+      "id": 65,
+      "etiqueta": "Relaciones internacionales"
+    },
+    {
+      "id": 66,
+      "etiqueta": "Religión"
+    },
+    {
+      "id": 67,
+      "etiqueta": "Representación ciudadana"
+    },
+    {
+      "id": 68,
+      "etiqueta": "Salud"
+    },
+    {
+      "id": 69,
+      "etiqueta": "Salud mental"
+    },
+    {
+      "id": 70,
+      "etiqueta": "Seguridad"
+    },
+    {
+      "id": 71,
+      "etiqueta": "Seguridad social"
+    },
+    {
+      "id": 72,
+      "etiqueta": "Servicios públicos"
+    },
+    {
+      "id": 73,
+      "etiqueta": "Sindicatos"
+    },
+    {
+      "id": 74,
+      "etiqueta": "Soborno"
+    },
+    {
+      "id": 75,
+      "etiqueta": "Socioeconomía"
+    },
+    {
+      "id": 76,
+      "etiqueta": "Subsidio"
+    },
+    {
+      "id": 77,
+      "etiqueta": "Terrorismo"
+    },
+    {
+      "id": 78,
+      "etiqueta": "Tránsito y transporte"
+    },
+    {
+      "id": 79,
+      "etiqueta": "Víctimas"
+    },
+    {
+      "id": 80,
+      "etiqueta": "Violencia"
+    },
+    {
+      "id": 81,
+      "etiqueta": "Vivienda"
+    },
+    {
+      "id": 82,
+      "etiqueta": "Votación"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Imports -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/style.css" rel="stylesheet" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+  </head>
+  <body>
+    <script src="./node_modules/slim-select/dist/slimselect.min.js"></script>
+
+    <!-- Crea el Multi-select de las etiquetas -->
+    <p>
+      <div>
+        <form class="example" action="action_page.php">
+          <select id="etiquetas" multiple class="font">
+            <script>
+              setTimeout(() => {
+                let cadena = "";
+                let object;
+  
+                fetch("./data/Etiquetas.json")
+                  .then((resp) => resp.json())
+                  .then((data) => {
+                    cadena += "[";
+                    for (let i = 0; i < data.etiquetas.length; i++) {
+                      cadena +=
+                        '{"text": ' + '"' + data.etiquetas[i].etiqueta + '"}';
+                      if (i < data.etiquetas.length - 1) {
+                        cadena += ",";
+                      }
+                    }
+                    cadena += "]";
+                    object = JSON.parse(cadena);
+  
+                    var select = new SlimSelect({
+                      select: "#etiquetas",
+                      placeholder: "Categorías",
+                      searchPlaceholder: "Buscar categoría",
+                      showSearch: true, // shows search field,
+                      searchingText: "Buscando...",
+                      searchText: "No se encotnró la categoría",
+                      closeOnSelect: false,
+                      data: object,
+                    });
+                  });
+              }, 300);
+            </script>
+          </select>
+          <div class="btn" onclick="search()">Buscar</div>
+
+          <!-- Aquí llegan los datos de las etiquetas seleccionadas -->
+
+          <script>
+            function search(){
+              let obj = Array.from(etiquetas.selectedOptions).map(option => option.value)   
+              let node = document.getElementById("demo")   
+              console.log(obj)
+            }
+          </script>
+        </form>
+      </div>
+    </p>
+  </body>
+</html>
