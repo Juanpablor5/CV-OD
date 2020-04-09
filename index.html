@@ -58,12 +58,21 @@
           <script>
             function search(){
               let obj = Array.from(etiquetas.selectedOptions).map(option => option.value)   
-              let node = document.getElementById("demo")   
-              console.log(obj)
+              let node = document.getElementById("demo")
+              for (let i = 0; i < obj.length; i++) {
+                let html = document.getElementById("datos")
+                html.innerHTML += `
+                  <div>${obj[i]}</div>
+                `;
+                
+              }
             }
           </script>
         </form>
       </div>
+    </p>
+    <p id="datos">
+
     </p>
     <script src="./node_modules/slim-select/dist/slimselect.min.js"></script>
   </body>
