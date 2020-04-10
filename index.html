@@ -29,7 +29,7 @@
                     cadena += "[";
                     for (let i = 0; i < data.etiquetas.length; i++) {
                       cadena +=
-                        '{"text": ' + '"' + data.etiquetas[i].etiqueta + '"}';
+                        '{"text": ' + '"' + data.etiquetas[i].nombre + '"}';
                       if (i < data.etiquetas.length - 1) {
                         cadena += ",";
                       }
@@ -62,7 +62,7 @@
               for (let i = 0; i < obj.length; i++) {                
                 html.innerHTML += `
                   <div>${obj[i]}</div>
-                `;                
+                `;
               }
             }
           </script>
