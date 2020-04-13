@@ -1,0 +1,220 @@
+{
+  "partidos": [
+    {
+      "id": 1,
+      "nombre": "PIN - Partido de Integración Nacional"
+    },
+    {
+      "id": 2,
+      "nombre": "Liberal Colombiano"
+    },
+    {
+      "id": 3,
+      "nombre": "Conservador Colombiano"
+    },
+    {
+      "id": 4,
+      "nombre": "Convergencia Ciudadana"
+    },
+    {
+      "id": 5,
+      "nombre": "Partido de la U - Partido Social de Unidad Nacional"
+    },
+    {
+      "id": 6,
+      "nombre": "MOIR - Movimiento Obrero Independiente Revolucionario"
+    },
+    {
+      "id": 7,
+      "nombre": "Alianza Verde"
+    },
+    {
+      "id": 8,
+      "nombre": "AICO - Autoridades Indígenas de Colombia"
+    },
+    {
+      "id": 9,
+      "nombre": "Opción Ciudadana"
+    },
+    {
+      "id": 10,
+      "nombre": "MIRA"
+    },
+    {
+      "id": 11,
+      "nombre": "Partido Verde "
+    },
+    {
+      "id": 12,
+      "nombre": "PDA - Polo Democrático Alternativo"
+    },
+    {
+      "id": 13,
+      "nombre": "Colombia Humana"
+    },
+    {
+      "id": 14,
+      "nombre": "ASI - Alianza Social Independiente"
+    },
+    {
+      "id": 15,
+      "nombre": "Cambio Radical"
+    },
+    {
+      "id": 16,
+      "nombre": "Movimiento Político Cien por Ciento por Colombia"
+    },
+    {
+      "id": 17,
+      "nombre": "Consejo Comunitario Renacer Negro"
+    },
+    {
+      "id": 18,
+      "nombre": "Colombia Siempre"
+    },
+    {
+      "id": 19,
+      "nombre": "MIR - Movimiento de Integración Regional"
+    },
+    {
+      "id": 20,
+      "nombre": "MUIPC - Movimiento Unidad Indígena y Popular por Colombia"
+    },
+    {
+      "id": 21,
+      "nombre": "ALAS"
+    },
+    {
+      "id": 22,
+      "nombre": "MIPOL - Movimiento Integración Popular"
+    },
+    {
+      "id": 23,
+      "nombre": "Centro Democrático"
+    },
+    {
+      "id": 24,
+      "nombre": "Movimiento Nacional"
+    },
+    {
+      "id": 25,
+      "nombre": "Coalición"
+    },
+    {
+      "id": 26,
+      "nombre": "Alternativa Democrática"
+    },
+    {
+      "id": 27,
+      "nombre": "Polo Democrático Independiente"
+    },
+    {
+      "id": 28,
+      "nombre": "Movimiento Apertura Liberal"
+    },
+    {
+      "id": 29,
+      "nombre": "Somos Colombia"
+    },
+    {
+      "id": 30,
+      "nombre": "Alas Equipo Colombia"
+    },
+    {
+      "id": 31,
+      "nombre": "MAIS - Movimiento Alternativo Indígena y Social"
+    },
+    {
+      "id": 32,
+      "nombre": "Compromiso Cívico Cristiano - C4"
+    },
+    {
+      "id": 33,
+      "nombre": "Vanguardia Moral y Social Vamos Colombia"
+    },
+    {
+      "id": 34,
+      "nombre": "Movimiento Independiente Frente de Esperanza"
+    },
+    {
+      "id": 35,
+      "nombre": "Conservador Colombiano-Movimiento de Salvación"
+    },
+    {
+      "id": 36,
+      "nombre": "MIO - Movimiento de Inclusión y Oportunidades"
+    },
+    {
+      "id": 37,
+      "nombre": "Colombia Democrática"
+    },
+    {
+      "id": 38,
+      "nombre": "Salvación Nacional"
+    },
+    {
+      "id": 39,
+      "nombre": "Movimiento de Participación Popular"
+    },
+    {
+      "id": 40,
+      "nombre": "Colombia Viva"
+    },
+    {
+      "id": 41,
+      "nombre": "Movimiento Nacional Conservador"
+    },
+    {
+      "id": 42,
+      "nombre": "Equipo Colombia"
+    },
+    {
+      "id": 43,
+      "nombre": "Moral - Movimiento Renovador de Acción Social"
+    },
+    {
+      "id": 44,
+      "nombre": "Movimiento Progresismo Democrático"
+    },
+    {
+      "id": 45,
+      "nombre": "Acción Social"
+    },
+    {
+      "id": 46,
+      "nombre": "Afrounincca"
+    },
+    {
+      "id": 47,
+      "nombre": "Movimiento Convergencia Popular Cívica"
+    },
+    {
+      "id": 48,
+      "nombre": "Por el País que Soñamos"
+    },
+    {
+      "id": 49,
+      "nombre": "Voluntad Popular"
+    },
+    {
+      "id": 50,
+      "nombre": "Afrovides"
+    },
+    {
+      "id": 51,
+      "nombre": "Unidad Liberal"
+    },
+    {
+      "id": 52,
+      "nombre": "Funeco - Fundación Ébano de Colombia"
+    },
+    {
+      "id": 53,
+      "nombre": "Por un Huila Mejor"
+    },
+    {
+      "id": 54,
+      "nombre": "Todos Somos Colombia (Antes Fundación Ébano de Colombia Funeco)"
+    }
+  ]
+}

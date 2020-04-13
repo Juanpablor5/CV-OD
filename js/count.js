@@ -30,7 +30,7 @@ fetch("proyectos.json")
 }
 );
 
-fetch("temas.json")
+fetch("./data/temas.json")
     .then(function (resp){
         return resp.json();
     })

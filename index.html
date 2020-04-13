@@ -49,35 +49,6 @@
   
   <div class="row" style="align-self: center; padding-left: 40px; padding-right: 40px;">
     <div class="col-md-12" >
-      <!-- <script>
-
-        fetch("./data/proyectostotal.json")
-            .then(function (resp){
-                return resp.json();
-            })
-                .then(function (data){
-                  var temp = "";
-                  var sel = document.getElementById('id-to-my-select-box');
-                  var opt = document.createElement('option');
-                  console.log(data)
-                    if(data.length > 0){
-
-                        data.forEach((u) => { 
-                          console.log(u.id)
-                          var opt = document.createElement('option');
-                          opt.appendChild( document.createTextNode(u.id) );
-                          console.log(sel)
-                          sel.appendChild(opt); 
-                        })
-                    }
-        }
-        );
-      </script>
-      <select class="selectpicker" data-width="100%" multiple data-actions-box="true"  data-live-search="true" id="id-to-my-select-box">
-        <option data-subtext="Heinz">Mustard</option>
-        <option>Ketchup</option>
-        <option>Relish</option>
-      </select> -->
         <select id="etiquetas" multiple class="font">
           <script>
             setTimeout(() => {
