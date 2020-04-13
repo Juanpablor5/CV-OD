@@ -1,0 +1,412 @@
+[
+ {
+   "id": "Aborto",
+   "groupid": 1,
+   "size": 71
+ },
+ {
+   "id": "Acueducto y alcantarillado",
+   "groupid": 1,
+   "size": 65
+ },
+ {
+   "id": "Afinidad política",
+   "groupid": 1,
+   "size": 0
+ },
+ {
+   "id": "Afrocolombianos",
+   "groupid": 1,
+   "size": 44
+ },
+ {
+   "id": "Agropecuario y agrícola",
+   "groupid": 1,
+   "size": 48
+ },
+ {
+   "id": "Clientelismo",
+   "groupid": 1,
+   "size": 0
+ },
+ {
+   "id": "Comunicaciones Medios y tecnologías de la información",
+   "groupid": 1,
+   "size": 40
+ },
+ {
+   "id": "Conciliación",
+   "groupid": 1,
+   "size": 0
+ },
+ {
+   "id": "Confianza",
+   "groupid": 1,
+   "size": 0
+ },
+ {
+   "id": "Conflicto armado",
+   "groupid": 1,
+   "size": 123
+ },
+ {
+   "id": "Congreso",
+   "groupid": 1,
+   "size": 87
+ },
+ {
+   "id": "Corrupción",
+   "groupid": 1,
+   "size": 119
+ },
+ {
+   "id": "Cultura",
+   "groupid": 1,
+   "size": 55
+ },
+ {
+   "id": "Datos personales",
+   "groupid": 2,
+   "size": 0
+ },
+ {
+   "id": "Delicuencia",
+   "groupid": 2,
+   "size": 31
+ },
+ {
+   "id": "Democracia",
+   "groupid": 2,
+   "size": 71
+ },
+ {
+   "id": "Deporte",
+   "groupid": 2,
+   "size": 0
+ },
+ {
+   "id": "Derechos",
+   "groupid": 2,
+   "size": 96
+ },
+ {
+   "id": "Desarrollo",
+   "groupid": 2,
+   "size": 162
+ },
+ {
+   "id": "Desmovilización",
+   "groupid": 2,
+   "size": 83
+ },
+ {
+   "id": "Discriminación",
+   "groupid": 2,
+   "size": 71
+ },
+ {
+   "id": "Drogas",
+   "groupid": 2,
+   "size": 61
+ },
+ {
+   "id": "Economía",
+   "groupid": 2,
+   "size": 85
+ },
+ {
+   "id": "Educación",
+   "groupid": 2,
+   "size": 45
+ },
+ {
+   "id": "Elecciones",
+   "groupid": 2,
+   "size": 15
+ },
+ {
+   "id": "Energía eléctrica",
+   "groupid": 2,
+   "size": 62
+ },
+ {
+   "id": "Ética",
+   "groupid": 2,
+   "size": 0
+ },
+ {
+   "id": "Familia",
+   "groupid": 3,
+   "size": 19
+ },
+ {
+   "id": "Fuerza pública",
+   "groupid": 3,
+   "size": 48
+ },
+ {
+   "id": "Género",
+   "groupid": 3,
+   "size": 12
+ },
+ {
+   "id": "Geografía",
+   "groupid": 3,
+   "size": 18
+ },
+ {
+   "id": "Grupo armado",
+   "groupid": 3,
+   "size": 31
+ },
+ {
+   "id": "Guerra",
+   "groupid": 3,
+   "size": 32
+ },
+ {
+   "id": "Impuestos",
+   "groupid": 3,
+   "size": 75
+ },
+ {
+   "id": "Indígenas",
+   "groupid": 3,
+   "size": 27
+ },
+ {
+   "id": "Influencia",
+   "groupid": 3,
+   "size": 0
+ },
+ {
+   "id": "Ingresos",
+   "groupid": 3,
+   "size": 49
+ },
+ {
+   "id": "Judicial",
+   "groupid": 4,
+   "size": 7
+ },
+ {
+   "id": "Laboral",
+   "groupid": 4,
+   "size": 66
+ },
+ {
+   "id": "Líderes sociales",
+   "groupid": 4,
+   "size": 46
+ },
+ {
+   "id": "Medio ambiente",
+   "groupid": 4,
+   "size": 21
+ },
+ {
+   "id": "Minería",
+   "groupid": 4,
+   "size": 29
+ },
+ {
+   "id": "Minoría sexual",
+   "groupid": 4,
+   "size": 17
+ },
+ {
+   "id": "Mujer",
+   "groupid": 5,
+   "size": 0
+ },
+ {
+   "id": "N/A",
+   "groupid": 5,
+   "size": 24
+ },
+ {
+   "id": "Notariado y registro",
+   "groupid": 5,
+   "size": 16
+ },
+ {
+   "id": "Ordenamiento Territorial y regiones",
+   "groupid": 5,
+   "size": 5
+ },
+ {
+   "id": "Organismos de Control y Ministerio público",
+   "groupid": 5,
+   "size": 60
+ },
+ {
+   "id": "Participación ciudadana",
+   "groupid": 5,
+   "size": 38
+ },
+ {
+   "id": "Participación electoral",
+   "groupid": 5,
+   "size": 16
+ },
+ {
+   "id": "Partidos políticos",
+   "groupid": 5,
+   "size": 16
+ },
+ {
+   "id": "Patria",
+   "groupid": 5,
+   "size": 0
+ },
+ {
+   "id": "Paz",
+   "groupid": 1,
+   "size": 35
+ },
+ {
+   "id": "Pensión",
+   "groupid": 1,
+   "size": 0
+ },
+ {
+   "id": "Pobreza",
+   "groupid": 1,
+   "size": 44
+ },
+ {
+   "id": "Política",
+   "groupid": 1,
+   "size": 0
+ },
+ {
+   "id": "Principal problema",
+   "groupid": 1,
+   "size": 0
+ },
+ {
+   "id": "Proceso de paz",
+   "groupid": 1,
+   "size": 8
+ },
+ {
+   "id": "Propiedad privada",
+   "groupid": 2,
+   "size": 5
+ },
+ {
+   "id": "Protesta",
+   "groupid": 2,
+   "size": 0
+ },
+ {
+   "id": "Racismo",
+   "groupid": 2,
+   "size": 22
+ },
+ {
+   "id": "Rama Ejecutiva",
+   "groupid": 3,
+   "size": 9
+ },
+ {
+   "id": "Rama Judicial",
+   "groupid": 2,
+   "size": 7
+ },
+ {
+   "id": "Rama Legislativa",
+   "groupid": 3,
+   "size": 14
+ },
+ {
+   "id": "Relaciones internacionales",
+   "groupid": 3,
+   "size": 26
+ },
+ {
+   "id": "Religión",
+   "groupid": 3,
+   "size": 35
+ },
+ {
+   "id": "Representación ciudadana",
+   "groupid": 3,
+   "size": 10
+ },
+ {
+   "id": "Salud",
+   "groupid": 3,
+   "size": 26
+ },
+ {
+   "id": "Salud mental",
+   "groupid": 3,
+   "size": 0
+ },
+ {
+   "id": "Seguridad",
+   "groupid": 3,
+   "size": 20
+ },
+ {
+   "id": "Seguridad social",
+   "groupid": 3,
+   "size": 26
+ },
+ {
+   "id": "Servicios públicos",
+   "groupid": 3,
+   "size": 7
+ },
+ {
+   "id": "Sindicatos",
+   "groupid": 3,
+   "size": 6
+ },
+ {
+   "id": "Soborno",
+   "groupid": 3,
+   "size": 4
+ },
+ {
+   "id": "Socioeconomía",
+   "groupid": 3,
+   "size": 29
+ },
+ {
+   "id": "Subsidio",
+   "groupid": 3,
+   "size": 26
+ },
+ {
+   "id": "Terrorismo",
+   "groupid": 4,
+   "size": 8
+ },
+ {
+   "id": "Tránsito y transporte",
+   "groupid": 4,
+   "size": 13
+ },
+ {
+   "id": "Víctimas",
+   "groupid": 4,
+   "size": 11
+ },
+ {
+   "id": "Violencia",
+   "groupid": 5,
+   "size": 8
+ },
+ {
+   "id": "Vivienda",
+   "groupid": 5,
+   "size": 5
+ },
+ {
+   "id": "Votación",
+   "groupid": 5,
+   "size": 7
+ }
+]
