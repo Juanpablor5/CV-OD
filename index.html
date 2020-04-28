@@ -17,15 +17,15 @@
 </head>
 <body>
 
-  <div class="jumbotron text-center" style="background-image: url('./assets/gobierno.jpg'); min-height: 230px; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-size: 1400px 600px;"> 
+  <div class="jumbotron text-center" style="background-image: url('./assets/gobierno.jpg'); min-height: 170px; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; background-size: 1400px 600px;"> 
   </div>
 
-<div id="band" class="container" style="max-height: 100px;">
-  <h1>Representación Ciudadana</h1>
-  <p><em>Congreso vs Ciudadania</em></p>
-  <p>Que tanto la actividad del congreso refleja el interés de los ciudadanos Colombianos, esta herramienta busca dar respuestas a posibles análisis sobre la representación ciudadana en varias dimensiones sociales con Visual Analytics. </p>
-  <br>
-</div>
+  <div id="band" class="container" style="max-height: 100px;">
+    <h1>Representación Ciudadana</h1>
+    <p><em>Congreso vs Ciudadania</em></p>
+    <p>Que tanto la actividad del congreso refleja el interés de los ciudadanos Colombianos, esta herramienta busca dar respuestas a posibles análisis sobre la representación ciudadana en varias dimensiones sociales con Visual Analytics. </p>
+    <br>
+  </div>
 
   <div class="container"> 
     <div class="row" style="padding-top: -10px;">
@@ -109,14 +109,45 @@
         <div  class="col-lg-6" style="align-self: center; text-align: right;">
           <div id="band" class="container">
             <h3>Comportamiento de los congresistas</h3>
-            <p><em>Congreso de la República</em></p>
             <p>los congresistas pueden votar frente a un proyecto de ley, con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes. Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
             <br>
           </div>
-          <select class="selectpicker" data-width="100%" multiple>
-            <option>Mustard</option>
-            <option>Ketchup</option>
-            <option>Relish</option>
+          <select class="selectpicker" data-width="100%" multiple data-actions-box="true"  data-live-search="true" data-selected-text-format="count > 2">
+            <optgroup label="Centro Democrático">
+              <option>Álvaro Uribe Vélez</option>
+              <option>Paola Andrea Holguín Moreno</option>
+              <option>Amanda Rocío González Rodríguez</option>
+              <option>Ernesto Macías Tovar </option>
+              <option>María Fernanda Cabal Molina</option>
+              <option>Ciro Alejandro Ramírez Cortés</option>
+              <option>Santiago Valencia González</option>
+              <option>Paloma Susana Valencia Laserna</option>
+              <option>Carlos Felipe Mejía Mejía</option>
+            </optgroup>
+            <optgroup label="Partido Cambio Radical">
+              <option>Arturo Char Chaljub</option>
+              <option>Luis Eduardo Díaz Granados Torres</option>
+              <option>Rodrigo Lara Restrepo</option>
+              <option>Carlos Fernando Motoa</option>
+              <option>Daira de Jesús Galvis Méndez</option>
+              <option>Germán Varón</option>
+            </optgroup>
+            <optgroup label="Partido Conservador Colombiano">
+              <option>David Alejandro Barguil Assis</option>
+              <option>Efraín José Cepeda Sarabia</option>
+              <option>Nora María García Burgos</option>
+              <option>Laureano Augusto Acuña Díaz</option>
+              <option>Nadya Georgette Blel Scaff</option>
+              <option>Carlos Eduardo Enríquez Maya</option>
+            </optgroup>
+            <optgroup label="Partido Liberal Colombiano">
+              <option>Lidio Arturo García Turbay</option>
+              <option>Mauricio Gómez Amín</option>
+              <option>Horacio José Serpa</option>
+              <option>Miguel Ángel Pinto Hernández</option>
+              <option>Fabio Raúl Amín Saleme</option>
+              <option>Julián Bedoya Pulgarín</option>
+            </optgroup>
           </select>
         </div>
         
@@ -129,51 +160,60 @@
   </div>
   <script src="js/flower.js"></script>
 
-  <div class="container">
-    <div class="row">    
-        <div class="col-lg-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 style="padding-left: 60px; padding-right: 90px; font-weight:100; text-align: center;">Votos por proyectos de ley de partidos políticos</h3> 
-            </div>
-            <div class="panel-body">
-              <div id='dashboard'>
-              </div>
-            </div>
-          </div>
+  <div class="container" style="max-height: 300px;">
+    <div class="row"> 
+      <div class="col-sm-6" style="align-self: center; text-align: right;">
+        <h3>Comportamiento de las bancadas de Partidos Políticos</h3>
+        <p>Las bancadas tiene un comportamiento generalmente en común, y por ello es posible ver patrones en la partipación de los congresistas.</p>
+        <br>
+    </div>   
+        <div class="col-sm-6" style="padding-left: 60px;">
+          <div id='dashboard'>
         </div>
         <script src="js/piechart.js"></script>  
         <script>
         var freqData=[
         {State:'CD',freq:{Si:100, No:12, Abstencion:29}}
-        ,{State:'PC',freq:{Si:101, No:12, Abstencion:74}}
-        ,{State:'CT',freq:{Si:132, No:49, Abstencion:41}}
-        ,{State:'DE',freq:{Si:132, No:52, Abstencion:62}}
-        ,{State:'FL',freq:{Si:181, No:4, Abstencion:48}}
-        ,{State:'GA',freq:{Si:119, No:67, Abstencion:63}}
-        ,{State:'IA',freq:{Si:119, No:47, Abstencion:12}}
-        ,{State:'IL',freq:{Si:198, No:52, Abstencion:92}}
-        ,{State:'IN',freq:{Si:197, No:49, Abstencion:34}}
-        ,{State:'KS',freq:{Si:162, No:79, Abstencion:41}}
+        ,{State:'CR',freq:{Si:101, No:12, Abstencion:74}}
+        ,{State:'C',freq:{Si:132, No:49, Abstencion:41}}
+        ,{State:'L',freq:{Si:132, No:52, Abstencion:62}}
+        ,{State:'U',freq:{Si:181, No:4, Abstencion:48}}
+        ,{State:'AV',freq:{Si:119, No:67, Abstencion:63}}
+        ,{State:'POLO',freq:{Si:119, No:47, Abstencion:12}}
+        ,{State:'FARC',freq:{Si:70, No:52, Abstencion:30}}
+        ,{State:'DE',freq:{Si:34, No:20, Abstencion:15}}
+        ,{State:'MIRA',freq:{Si:23, No:30, Abstencion:41}}
+        ,{State:'CJL',freq:{Si:45, No:12, Abstencion:14}}
+        ,{State:'MAIS',freq:{Si:23, No:10, Abstencion:12}}
+        ,{State:'AICO',freq:{Si:10, No:5, Abstencion:17}}
         ];
         
         dashboard('#dashboard',freqData);
         </script>
+        
     </div>
   </div>
+  
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 style="padding-left: 60px; padding-right: 90px; font-weight:100; text-align: center;">Temas importantes para el Ciudadano</h3> 
-          </div>
-          <div class="panel-body">
-            <div id="chart"></div>
-          </div>
-        </div>
+      <div class="col-sm-6">
+        
+          <div id="chart"></div> 
+
         <script src="js/dotchart.js"></script>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top: 50px;">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="band" class="container">
+          <h3>¿Que piensan los ciudadanos?</h3>
+          <p>Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
+          <br>
+        </div>
       </div>
     </div>
   </div>

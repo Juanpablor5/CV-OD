@@ -1,6 +1,6 @@
 function dashboard(id, fData){
-    var barColor = 'steelblue';
-    function segColor(c){ return {Si:"#807dba", No:"#e08214",Abstencion:"#41ab5d"}[c]; }
+    var barColor = '#1361C1';
+    function segColor(c){ return {Si:"#FFDF00", No:"#1E5984",Abstencion:"#E13B2A"}[c]; }
     
     // compute total for each state.
     fData.forEach(function(d){d.total=d.freq.Si+d.freq.No+d.freq.Abstencion;});

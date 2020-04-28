@@ -32,8 +32,8 @@ function bubbleChart() {
   
     // set up colour scale
     const fillColour = d3.scaleOrdinal()
-        .domain(["1", "2", "3", "4", "5"])
-        .range(["#0074D9", "#7FDBFF", "#39CCCC", "#3D9970", "#AAAAAA"]);
+    .domain(["1", "2", "3", "4", "5"])
+    .range(["#FFDF00", "#1E5984", "#E13B2A", "#1361C1", "#E46C33"]);
   
     // data manipulation function takes raw data from csv and converts it into an array of node objects
     // each node will store data and visualisation values to draw a bubble
