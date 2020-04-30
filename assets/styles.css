@@ -69,6 +69,16 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.container{
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.jumbotron{
+  margin-left: 40px;
+}
+
 .x.axis path {  display: none; }
 .legend{
     margin-bottom:76px;
@@ -106,6 +116,41 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   width: 50%;
   font-family: "Montserrat", sans-serif;
 }
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+  height: 700px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  
+  padding: 0px 10px;
+}
+@media screen and (max-height: 1000px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 .ss-main .ss-single-selected {
   display: flex;
   cursor: pointer;

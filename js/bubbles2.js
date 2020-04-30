@@ -1,9 +1,9 @@
 function bubbleChart() {
-    const width = 600;
-    const height = 520;
+    const width = 240;
+    const height = 200;
   
     // location to centre the bubbles
-    const centre = { x: width/2 - 50, y: height/2 - 50 };
+    const centre = { x: width/2 - 50, y: height/2 - 60 };
   
     // strength to apply to the position forces
     const forceStrength = 0.03;
@@ -46,8 +46,8 @@ function bubbleChart() {
   
       // size bubbles based on area
       const radiusScale = d3.scaleLinear()
-        .domain([0, maxSize+30])
-        .range([0, 80])
+        .domain([0, maxSize])
+        .range([5, 18])
   
       // use map() to convert raw data into node data
       const myNodes = rawData.map(d => ({
@@ -112,19 +112,7 @@ function bubbleChart() {
         .style('text-anchor', 'middle')
         .style('font-size', 10)
         //.text(d => d.id)
-
-        svg.append("circle").attr("cx",90).attr("cy",460).attr("r", 8).style("fill", "#FFDF00")
-        svg.append("circle").attr("cx",240).attr("cy",460).attr("r", 8).style("fill", "#1E5984")
-        svg.append("circle").attr("cx",390).attr("cy",460).attr("r", 8).style("fill", "#E13B2A")
-
-        svg.append("circle").attr("cx",160).attr("cy",490).attr("r", 8).style("fill", "#1361C1")
-        svg.append("circle").attr("cx",310).attr("cy",490).attr("r", 8).style("fill", "#E46C33")
-
-        svg.append("text").attr("x", 110).attr("y", 460).text("Gobierno").style("font-size", "15px").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 260).attr("y", 460).text("Iniciativa Popular").style("font-size", "15px").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 410).attr("y", 460).text("Legislativa").style("font-size", "15px").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 180).attr("y", 490).text("Mixta").style("font-size", "15px").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 330).attr("y", 490).text("Otras Entidades").style("font-size", "15px").attr("alignment-baseline","middle")
+  
       // set simulation's nodes to our newly created nodes array
       // simulation starts running automatically once nodes are set
       simulation.nodes(nodes)
@@ -150,13 +138,17 @@ function bubbleChart() {
   }
   
   // new bubble chart instance
-  let myBubbleChart = bubbleChart();
+  let myBubbleChart2 = bubbleChart();
+  let myBubbleChart3 = bubbleChart();
+  let myBubbleChart4 = bubbleChart();
   
   // function called once promise is resolved and data is loaded from csv
   // calls bubble chart function to display inside #vis div
   function display(data) {
-    myBubbleChart('#vis', data);
+    myBubbleChart2('#vis2', data)
+    myBubbleChart3('#vis3', data)
+    myBubbleChart4('#vis4', data)
   }
   
   // load data
-  d3.csv('data/proyectostotal.csv').then(display);
+  d3.csv('data/proyectostotal1ro.csv').then(display);

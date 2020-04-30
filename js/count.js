@@ -6,7 +6,7 @@ for (var i = 0; i < 84; i++) {
     conteo.push(0)
 }
 
-fetch("proyectos.json")
+fetch("data/proyectos.json")
     .then(function (resp){
         return resp.json();
     })
