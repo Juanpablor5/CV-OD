@@ -1,6 +1,6 @@
 function bubbleChart() {
     const width = 240;
-    const height = 200;
+    const height = 150;
   
     // location to centre the bubbles
     const centre = { x: width/2 - 50, y: height/2 - 60 };
@@ -151,4 +151,4 @@ function bubbleChart() {
   }
   
   // load data
-  d3.csv('data/proyectostotal1ro.csv').then(display);
+  d3.csv('./data/proyectostotal.csv').then(display);

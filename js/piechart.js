@@ -48,7 +48,8 @@ function dashboard(id, fData){
         bars.append("text").text(function(d){ return d3.format(",")(d[1])})
             .attr("x", function(d) { return x(d[0])+x.rangeBand()/2; })
             .attr("y", function(d) { return y(d[1])-5; })
-            .attr("text-anchor", "Nodle");
+            .attr("text-anchor", "Nodle")
+            .attr("font-family", "Questrial");
         
         function mouseover(d){  // utility function to be called on mouseover.
             // filter for selected state.

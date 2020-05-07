@@ -1,9 +1,9 @@
 function bubbleChart() {
-    const width = 600;
-    const height = 520;
+    const width = 620;
+    const height = 720;
   
     // location to centre the bubbles
-    const centre = { x: width/2 - 50, y: height/2 - 50 };
+    const centre = { x: width/2 , y: height/2 - 50 };
   
     // strength to apply to the position forces
     const forceStrength = 0.03;
@@ -113,18 +113,20 @@ function bubbleChart() {
         .style('font-size', 10)
         //.text(d => d.id)
 
-        svg.append("circle").attr("cx",90).attr("cy",460).attr("r", 8).style("fill", "#FFDF00")
-        svg.append("circle").attr("cx",240).attr("cy",460).attr("r", 8).style("fill", "#1E5984")
-        svg.append("circle").attr("cx",390).attr("cy",460).attr("r", 8).style("fill", "#E13B2A")
+        svg.append("circle").attr("cx",140).attr("cy",600).attr("r", 8).style("fill", "#FFDF00")
+        svg.append("circle").attr("cx",290).attr("cy",600).attr("r", 8).style("fill", "#1E5984")
+        svg.append("circle").attr("cx",440).attr("cy",600).attr("r", 8).style("fill", "#E13B2A")
 
-        svg.append("circle").attr("cx",160).attr("cy",490).attr("r", 8).style("fill", "#1361C1")
-        svg.append("circle").attr("cx",310).attr("cy",490).attr("r", 8).style("fill", "#E46C33")
+        svg.append("circle").attr("cx",210).attr("cy",630).attr("r", 8).style("fill", "#1361C1")
+        svg.append("circle").attr("cx",360).attr("cy",630).attr("r", 8).style("fill", "#E46C33")
 
-        svg.append("text").attr("x", 110).attr("y", 460).text("Gobierno").style("font-size", "15px").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 260).attr("y", 460).text("Iniciativa Popular").style("font-size", "15px").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 410).attr("y", 460).text("Legislativa").style("font-size", "15px").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 180).attr("y", 490).text("Mixta").style("font-size", "15px").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 330).attr("y", 490).text("Otras Entidades").style("font-size", "15px").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 160).attr("y", 600).text("Gobierno").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 310).attr("y", 600).text("Iniciativa Popular").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 460).attr("y", 600).text("Legislativa").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 230).attr("y", 630).text("Mixta").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 380).attr("y", 630).text("Otras Entidades").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+
+        svg.append("text").attr("x", 160).attr("y", 600).text("Gobierno").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
       // set simulation's nodes to our newly created nodes array
       // simulation starts running automatically once nodes are set
       simulation.nodes(nodes)
@@ -159,4 +161,4 @@ function bubbleChart() {
   }
   
   // load data
-  d3.csv('data/proyectostotal.csv').then(display);
+  d3.csv('./data/proyectostotal.csv').then(display);

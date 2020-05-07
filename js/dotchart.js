@@ -41,9 +41,9 @@ dataset =
     var color = d3.scale.category20();
 
     // Set the dimensions of the canvas / graph
-    var	margin = {top: 20, right: 50, bottom: 50, left: 150},
-        width = 800 - margin.left - margin.right,
-        height = 400 - margin.top - margin.bottom;
+    var	margin = {top: 20, right: 50, bottom: 50, left: 0},
+        width = 700 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
 
     // Set the ranges
     var	xScale = d3.scale.linear().range([50, width]);

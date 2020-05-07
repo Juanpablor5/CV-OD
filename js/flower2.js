@@ -1,10 +1,10 @@
-var data = [{"Tema":"Educación","abs":20},
-                    {"Tema":"Salud","abs":10},
-                    {"Tema":"Corrupción","abs":12},
-                    {"Tema":"Transporte","abs":14},
-                    {"Tema":"Militar","abs":13},          
-                    {"Tema":"Economia","abs":10},
-                    {"Tema":"Politica Extranjera","abs":4}];
+var data = [{"Tema":"Educación","abs":2},
+                    {"Tema":"Salud","abs":12},
+                    {"Tema":"Corrupción","abs":10},
+                    {"Tema":"Transporte","abs":13},
+                    {"Tema":"Militar","abs":3},          
+                    {"Tema":"Economia","abs":11},
+                    {"Tema":"Politica Extranjera","abs":5}];
         //<!----------------------------------------------------------------->
         var margin = {top:10,left:10,right:10,bottom:10};
         width = 200;
@@ -21,7 +21,7 @@ var data = [{"Tema":"Educación","abs":20},
 
         var a=width/2 - 10;
         var b=height/2 - 70;
-        var svg = d3.select("#svgContent").append("svg")
+        var svg = d3.select("#svgContent2").append("svg")
                   .attr("viewBox", "0 0 " + width + " " + height/2)
             .attr("preserveAspectRatio", "xMidYMid meet")
                   .append("g")
@@ -43,7 +43,7 @@ var data = [{"Tema":"Educación","abs":20},
                   var mouseVal = d3.mouse(this);
                   div.style("display","none");
                   div
-                  .html("Tema: "+d.data.Tema+"</br>"+"No. de absteciones:"+d.data.abs)
+                  .html("Tema: "+d.data.Tema+"</br>"+"No. votos a favor:"+d.data.abs)
                     .style("left", (d3.event.pageX+12) + "px")
                     .style("top", (d3.event.pageY-10) + "px")
                     .style("opacity", 1)
