@@ -17,7 +17,7 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
 <article id="slide-0" class="slide slide--text slide--locked"  style=" background-image:url(assets/congreso.png); opacity: 1;" >
   
   <div class="slide__inner" style="border: 2px dashed white; "></div>
@@ -25,8 +25,6 @@
   </div>
   
  </article>
-
-
 
 <article id="slide-1" class="slide slide--text slide--locked">
   <div class="slide__inner">
@@ -59,9 +57,7 @@
   
 </article>
 
-<script src="https://d3js.org/d3.v5.min.js"></script>
-
-<article id="slide-4" class="slide slide--text">
+<article id="slide-4" class="slide slide--text">  
   <div style=" border: 2px dashed black; height: 100%;">
 
       <div class="row justify-content-center" style="padding-top: 40px;">
@@ -101,10 +97,8 @@
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
 
-
 <article id="slide-5" class="slide slide--text">
   <div class="slide__inner">
-
     <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Elije algunos Temas!</h1>
     <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas que te interesen.</p>
     
@@ -136,7 +130,7 @@
                       searchPlaceholder: "Buscar categoría",
                       showSearch: true, // shows search field,
                       searchingText: "Buscando...",
-                      searchText: "No se encotnró la categoría",
+                      searchText: "No se encontró la categoría",
                       closeOnSelect: false,
                       data: object,
                     });
@@ -145,20 +139,6 @@
             </script>
           </select>
           <div class="btn btn-primary" onclick="search()">Buscar</div>
-  
-          <!-- Aquí llegan los datos de las etiquetas seleccionadas -->
-  
-          <script>
-            function search(){
-              let obj = Array.from(etiquetas.selectedOptions).map(option => option.value)   
-              let html = document.getElementById("datos")
-              for (let i = 0; i < obj.length; i++) {                
-                html.innerHTML += `
-                  <div>${obj[i]}</div>
-                `;
-              }
-            }
-          </script>
         <script src="js/slimselect.js"></script>
         
       </div>
@@ -166,20 +146,34 @@
   </div>
 </article>
 
-
-
-
-
+<script src="https://d3js.org/d3.v5.min.js"></script>
 
 <article id="slide-6" class="slide">
+    <script src="https://d3js.org/d3.v3.min.js"> </script>
+    <div id = "svgContent" ></div>
+    <script src="js/flower.js"></script>
+    <script>
+      function search(){
+        location.reload()
+        let obj = Array.from(etiquetas.selectedOptions).map(option => option.value)
+        let cadena="["
+        for (let i = 0; i < obj.length; i++) {
+          cadena += '{"Tema": ' + '"' + obj[i] + '", "abs": '+(i+i*14)+'}';
+          if (i < obj.length - 1) {
+            cadena += ",";
+          }
+        }
+        cadena += "]";
+        let data_si_flwr=JSON.parse(cadena)
+        flower_si(data_si_flwr)     
+      }
+      
+    </script>
+    <script src="https://d3js.org/d3.v3.min.js"> </script>
+    
 
-        <script src="https://d3js.org/d3.v3.min.js"></script>
-        <div id = "svgContent" ></div>
-        <script src="js/flower.js"></script>
-        
-
-        <div id = "svgContent2"  style="margin-top: -70px;"></div>
-        <script src="js/flower2.js"></script>
+    <div id = "svgContent2"  style="margin-top: -70px;"></div>
+    <script src="js/flower2.js"></script>
 
 </article>
 
