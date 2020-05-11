@@ -122,22 +122,15 @@
             <script>
               setTimeout(() => {
                 let cadena = "";
-                let object;
-
-                fetch("data/Etiquetas.json")
+                let object=[];
+                fetch("data/json/Etiquetas.json")
                   .then((resp) => resp.json())
                   .then((data) => {
-                    cadena += "[";
                     for (let i = 0; i < data.etiquetas.length; i++) {
-                      cadena +=
-                        '{"text": ' + '"' + data.etiquetas[i].nombre + '"}';
-                      if (i < data.etiquetas.length - 1) {
-                        cadena += ",";
-                      }
+                      // Para hacer una lista dentro de otra
+                      // object.push({label: data.etiquetas[i].id, options: [{text: data.etiquetas[i].nombre}]})
+                      object.push({text: data.etiquetas[i].nombre})
                     }
-                    cadena += "]";
-                    object = JSON.parse(cadena);
-
                     var select = new SlimSelect({
                       select: "#etiquetas",
                       placeholder: "Categorías",
@@ -154,21 +147,7 @@
           </select>
           <script src="js/flower.js"></script>
           <button id="btn_select" class="btn btn-primary">Buscar</button>          
-          <script>
-            $("#btn_select").click(function () {
-              document.getElementById("flr_si").innerHTML = '<div id = "svgContent" ></div>';
-              let obj = Array.from(etiquetas.selectedOptions).map(option => option.value)
-              let cadena = "["
-              for (let i = 0; i < obj.length; i++) {
-                cadena += '{"Tema": ' + '"' + obj[i] + '", "abs": ' + (i + (i + 1) * 14) + '}';
-                if (i < obj.length - 1) {
-                  cadena += ",";
-                }
-              }
-              cadena += "]";
-              data_si_flwr=JSON.parse(cadena)
-              flower_si(data_si_flwr)  
-          })</script>
+          <script src="js/data_flwr.js"></script>
           <script src="js/slimselect.js"></script>
         </div>
       </div>
@@ -179,20 +158,11 @@
 
   <article id="slide-6" class="slide">
     <div id="flr_si"></div>
-
+    <div id="flr_no"></div>
+    <div id="flr_abstuvo"></div>
+    <div id="flr_asistio"></div>
+    
     <script src="https://d3js.org/d3.v3.min.js"></script>
-    <div id="svgContent2" style="margin-top: -70px;"></div>
-    <script src="js/flower2.js"></script>
-    <script>
-    var test = [
-      { Tema: "Educación", abs: 20 },
-      { Tema: "Salud", abs: 10 },
-      { Tema: "Corrupción", abs: 12 },
-      { Tema: "Transporte", abs: 14 },
-    ];
-    flwr_2(test)
-    </script>
-
   </article>
 
   </article>

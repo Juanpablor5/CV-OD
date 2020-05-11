@@ -152,4 +152,4 @@ function display(data) {
 }
 
 // load data
-d3.csv('./data/proyectostotal.csv').then(display);
+d3.csv('./data/csv/proyectostotal.csv').then(display);

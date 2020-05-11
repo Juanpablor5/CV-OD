@@ -39,7 +39,7 @@
     tooltip.append('div')                                           // NEW
       .attr('class', 'percent');                                    // NEW
 
-    d3.csv('data/weekdays.csv', function(error, dataset) {
+    d3.csv('data/csv/weekdays.csv', function(error, dataset) {
       dataset.forEach(function(d) {
         d.count = +d.count;
       });
