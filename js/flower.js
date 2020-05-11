@@ -11,36 +11,30 @@ function flower_si(data) {
   height = 250;
   radius = Math.min(width, height) / 2;
   var color = d3.scale.category20();
-  var arc = d3
-    .arc()
+  var arc = d3.arc()
     .outerRadius(radius - 100)
     .innerRadius(radius - 70)
     .cornerRadius(20);
-  var arcOver = d3
-    .arc()
+  var arcOver = d3.arc()
     .outerRadius(radius + 50)
     .innerRadius(0);
 
   var a = width / 2 - 10;
   var b = height / 2 - 70;
-  var svg = d3
-    .select("#svgContent")
-    .append("svg")
+  var svg = d3.select("#svgContent").append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
     .append("g")
     .attr("transform", "translate(" + a + "," + b + ")");
 
-  div = d3.select("body").append("div").attr("class", "tooltip");
-  var pie = d3.layout
-    .pie()
+  div = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip");
+  var pie = d3.layout.pie()
     .sort(null)
-    .value(function (d) {
-      return d.abs;
-    })
-    .padAngle(0.02);
-  var g = svg
-    .selectAll(".arc")
+    .value(function (d) { return d.abs; })
+    .padAngle(.02);
+  var g = svg.selectAll(".arc")
     .data(pie(data))
     .enter()
     .append("g")
@@ -49,29 +43,20 @@ function flower_si(data) {
       var mouseVal = d3.mouse(this);
       div.style("display", "none");
       div
-        .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. de absteciones:" + d.data.abs
-        )
-        .style("left", d3.event.pageX + 12 + "px")
-        .style("top", d3.event.pageY - 10 + "px")
+        .html("Tema: " + d.data.Tema + "</br>" + "No. votos a favor:" + d.data.abs)
+        .style("left", (d3.event.pageX + 12) + "px")
+        .style("top", (d3.event.pageY - 10) + "px")
         .style("opacity", 1)
         .style("display", "block");
     })
-    .on("mouseout", function () {
-      div.html(" ").style("display", "none");
-    });
+    .on("mouseout", function () { div.html(" ").style("display", "none"); });
 
   g.append("path")
     .attr("d", arc)
-    .style("fill", function (d) {
-      return color(d.data.Tema);
-    })
-    .attr("d", arc);
+    .style("fill", function (d) { return color(d.data.Tema); })
+    .attr("d", arc);;
 
-  svg
-    .selectAll("text")
-    .data(pie(data))
-    .enter()
+  svg.selectAll("text").data(pie(data)).enter()
     .append("text")
     .attr("class", "label1")
     .attr("transform", function (d) {
@@ -88,5 +73,4 @@ function flower_si(data) {
     .text(function (d) {
       return d.value;
     });
-    $('#svgContent').load(document.URL +  ' #svgContent'); 
 }
