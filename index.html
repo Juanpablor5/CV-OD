@@ -152,10 +152,11 @@
               }, 300);
             </script>
           </select>
+          <script src="js/flower.js"></script>
           <button id="btn_select" class="btn btn-primary">Buscar</button>          
           <script>
             $("#btn_select").click(function () {
-
+              document.getElementById("flr_si").innerHTML = '<div id = "svgContent" ></div>';
               let obj = Array.from(etiquetas.selectedOptions).map(option => option.value)
               let cadena = "["
               for (let i = 0; i < obj.length; i++) {
@@ -165,10 +166,8 @@
                 }
               }
               cadena += "]";
-              data_si_flwr = JSON.parse(cadena)
-              var res = eval(flower_si(data_si_flwr))
-              console.log(res)
-              document.getElementById("flr_si").innerHTML = res;
+              data_si_flwr=JSON.parse(cadena)
+              flower_si(data_si_flwr)  
           })</script>
           <script src="js/slimselect.js"></script>
         </div>
@@ -179,26 +178,7 @@
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
   <article id="slide-6" class="slide">
-    <div id="flr_si">
-      <div id = "svgContent" ></div>
-      <!-- <div id = "svgContent" ></div>
-    <script src="js/flower.js"></script>    
-    <script>
-      function search(){
-        let obj = Array.from(etiquetas.selectedOptions).map(option => option.value)
-        let cadena="["
-        for (let i = 0; i < obj.length; i++) {
-          cadena += '{"Tema": ' + '"' + obj[i] + '", "abs": '+(i+(i+1)*14)+'}';
-          if (i < obj.length - 1) {
-            cadena += ",";
-          }
-        }
-        cadena += "]";
-        data_si_flwr=JSON.parse(cadena)
-        flower_si(data_si_flwr)            
-      }
-    </script> -->
-    </div>
+    <div id="flr_si"></div>
 
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <div id="svgContent2" style="margin-top: -70px;"></div>
