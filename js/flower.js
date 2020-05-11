@@ -88,4 +88,5 @@ function flower_si(data) {
     .text(function (d) {
       return d.value;
     });
+    $('#svgContent').load(document.URL +  ' #svgContent'); 
 }
