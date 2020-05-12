@@ -120,36 +120,7 @@ function bubbleChart() {
       .on('tick', ticked)
       .restart();
   }
-
-  // callback function called after every tick of the force simulation
-  // here we do the actual repositioning of the circles based on current x and y value of their bound node data
-  // x and y values are modified by the force simulation
-  function ticked() {
-    bubbles
-      .attr('cx', d => d.x)
-      .attr('cy', d => d.y)
-
-    labels
-      .attr('x', d => d.x)
-      .attr('y', d => d.y)
-  }
-
-  // return chart function from closure
-  return chart;
+  
+  // load data
+  d3.csv('./data/csv/CV/iniciativasc1.csv').then(display);
 }
-
-// new bubble chart instance
-let myBubbleChart2 = bubbleChart();
-let myBubbleChart3 = bubbleChart();
-let myBubbleChart4 = bubbleChart();
-
-// function called once promise is resolved and data is loaded from csv
-// calls bubble chart function to display inside #vis div
-function display(data) {
-  myBubbleChart2('#vis2', data)
-  myBubbleChart3('#vis3', data)
-  myBubbleChart4('#vis4', data)
-}
-
-// load data
-d3.csv('./data/csv/proyectostotal.csv').then(display);

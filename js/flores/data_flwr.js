@@ -12,7 +12,7 @@ $("#btn_select").click(function () {
   );
   let temp_eti_id = [];
   let temp_proy_id = [];
-  fetch("data/json/Proyectos.json")
+  fetch("data/json/CV/Proyectos.json")
     .then((resp) => resp.json())
     .then((data) => {
       data.proyecto.forEach((proyecto) => {
@@ -47,7 +47,7 @@ $("#btn_select").click(function () {
       let cont_abs = 0;
       let cont_asis = 0;
 
-      fetch("data/json/Proyectos.json")
+      fetch("data/json/CV/Proyectos.json")
         .then((resp) => resp.json())
         .then((data_proy) => {
 
@@ -55,7 +55,7 @@ $("#btn_select").click(function () {
             let k = c;
             if (c + 200 == 700) c = 469;
 
-            fetch(`data/json/Votos_${k + 101}-${c + 200}.json.json`)
+            fetch(`data/json/CV/Votos_congresistas/Votos_${k + 101}-${c + 200}.json.json`)
               .then((resp) => resp.json())
               .then((data_vot) => {
                 data_vot.congresista.forEach(proyecto => {

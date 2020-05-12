@@ -21,71 +21,91 @@
 </head>
 
 <body>
+<!-- partial:index.partial.html -->
+<article id="slide-0" class="slide slide--text slide--locked"  style=" background-image:url(assets/img/congreso.png); opacity: 1;" >
+  
+  <div class="slide__inner" style="border: 2px dashed white; "></div>
+    
+  </div>
+  
+ </article>
 
-  <article id="slide-0" class="slide slide--text slide--locked"
-    style=" background-image:url(assets/congreso.png); opacity: 1;">
+<script src="js/bubbles/count.js"></script>
+<script src="js/bubbles/count2.js"></script>
+<script src="js/bubbles/countCiuda.js"></script>
 
-    <div class="slide__inner" style="border: 2px dashed white; "></div>
+<article id="slide-1" class="slide slide--text slide--locked">
+  <div class="slide__inner">
+    <h1 style= "font-family: 'Questrial', serif;">Representación Ciudadana</h1>
+    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;"><em>Congreso vs Ciudadania</em></h3>
+    <p style="font-size: 18px; padding-top: 20px;">Que tanto la actividad del congreso refleja el interés de los ciudadanos Colombianos, esta herramienta busca dar respuestas a posibles análisis sobre la representación ciudadana en varias dimensiones sociales con Visual Analytics. </p>
+    <p class="demo-arrow">&darr;</p>
+    <p class="demo-instructions">Scroll down</p>
+    
+  </div>
+  <div style="margin-top: -75px; float: left; margin-right: 10px; margin-left: 30px;">
+    <img src="assets/img/Logo_Uniandesfacing.png" height="55px" width="140px">
+    <img src="assets/img/logo-cv.png" height="40px" width="200px" style="margin-left: 13px;">
+    <img src="assets/img/logo_-observatorio_-_derecha1.png" height="50px" width="180px" style="margin-left: 13px;">
+  </div>
+</article>
 
-    </div>
+<article id="slide-2" class="slide slide--scrolling slide--text" >
+  <div class="slide__inner" style="text-align: right;" >
+    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Proyectos de Ley</h3>
+    <p><em>Congreso de la República</em></p>
+    <p style="font-size: 18px; padding-top: 20px;">En Colombia, desde Agosto del 2006, durante 3 peridodos, en el Congreso de la República, se han expedido 271 proyectos de ley que buscan cambiar y estructurar la sociedad.</p>
+    <h3 class="count">1000</h3>
+    <script>
+      $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+    </script>
+  </div>
+</article>
 
-  </article>
 
-  <article id="slide-1" class="slide slide--text slide--locked">
-    <div class="slide__inner">
-      <h1 style="font-family: 'Questrial', serif;">Representación Ciudadana</h1>
-      <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;"><em>Congreso vs Ciudadania</em>
-      </h3>
-      <p style="font-size: 18px; padding-top: 20px;">Que tanto la actividad del congreso refleja el interés de los
-        ciudadanos Colombianos, esta herramienta busca dar respuestas a posibles análisis sobre la representación
-        ciudadana en varias dimensiones sociales con Visual Analytics. </p>
-      <p class="demo-arrow">&darr;</p>
-      <p class="demo-instructions">Scroll down</p>
 
-    </div>
-    <div style="margin-top: -75px; float: left; margin-right: 10px; margin-left: 30px;">
-      <img src="assets/Logo_Uniandesfacing.png" height="55px" width="140px">
-      <img src="assets/logo-cv.png" height="40px" width="200px" style="margin-left: 13px;">
-      <img src="assets/logo_-observatorio_-_derecha1.png" height="50px" width="180px" style="margin-left: 13px;">
-    </div>
-  </article>
+<article id="slide-3" class="slide" >
+  <div id = 'vis' style="width: fit-content;"></div>
+        <script src="js/bubbles/bubbles.js"></script>
+  
+</article>
 
-  <article id="slide-2" class="slide slide--scrolling slide--text">
-    <div class="slide__inner" style="text-align: right;">
-      <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Proyectos de Ley</h3>
-      <p><em>Congreso de la República</em></p>
-      <p style="font-size: 18px; padding-top: 20px;">En Colombia, desde Agosto del 2006, durante 3 peridodos, en el
-        Congreso de la República, se han expedido 271 proyectos de ley que buscan cambiar y estructurar la sociedad.</p>
+<article id="slide-4" class="slide" >
+  <div id = 'vis5' style="width: fit-content;"></div>
+        <script src="js/bubbles/bubblesPre.js"></script> 
+  
+</article>
 
-    </div>
-  </article>
 
-  <article id="slide-3" class="slide">
-    <div id='vis' style="width: fit-content;"></div>
-    <script src="js/bubbles.js"></script>
 
-  </article>
-
-  <article id="slide-4" class="slide slide--text">
-    <div style=" border: 2px dashed black; height: 100%;">
+<article id="slide-5" class="slide slide--text">
+  <div style=" border: 2px dashed black; height: 100%;">
 
       <div class="row justify-content-center" style="padding-top: 40px;">
-
-        <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;"> 2006-2010
-        </p>
-        <div id='vis2' style="width: fit-content;"></div>
-        <script src="js/bubbles2.js"></script>
-
+        
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;"> 2006-2010</p>
+          <div id = 'vis2' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesc1.js"></script>
+        
       </div>
 
 
       <div class="row justify-content-center" style="padding-top: 10px;">
 
         <div class="col-md-6">
-          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">
-            2010-2014</p>
-          <div id='vis3' style="width: fit-content;"></div>
-          <script src="js/bubbles2.js"></script>
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;"> 2010-2014</p>
+          <div id = 'vis3' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesc2.js"></script>
         </div>
         <div class="col-md-6" style="padding-right: 60px;">
           <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif; font-size: 20px;">Proyectos
@@ -99,10 +119,18 @@
       </div>
 
       <div class="row justify-content-center" style="padding-top: 10px; font-family: 'Questrial', serif;">
+        
+          <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
+          <div id = 'vis4' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesc3.js"></script>
+        
+      </div>
+  </div> 
+</article>
 
-        <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
-        <div id='vis4' style="width: fit-content;"></div>
-        <script src="js/bubbles2.js"></script>
+<!-- Fin bubbles-->
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
 
       </div>
     </div>
@@ -110,53 +138,52 @@
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
-  <article id="slide-5" class="slide slide--text">
-    <div class="slide__inner">
-      <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Elije algunos Temas!</h1>
-      <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas que
-        te interesen.</p>
+<article id="slide-6" class="slide slide--text">
+  <div class="slide__inner">
+    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Elije algunos Temas!</h1>
+    <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas que
+      te interesen.</p>
 
-      <div class="row" style="align-self: center; font-size: 12 px;">
-        <div class="col-md-12">
-          <select id="etiquetas" multiple class="font">
-            <script>
-              setTimeout(() => {
-                let cadena = "";
-                let object=[];
-                fetch("data/json/Etiquetas.json")
-                  .then((resp) => resp.json())
-                  .then((data) => {
-                    for (let i = 0; i < data.etiquetas.length; i++) {
-                      // Para hacer una lista dentro de otra
-                      // object.push({label: data.etiquetas[i].id, options: [{text: data.etiquetas[i].nombre}]})
-                      object.push({text: data.etiquetas[i].nombre})
-                    }
-                    var select = new SlimSelect({
-                      select: "#etiquetas",
-                      placeholder: "Categorías",
-                      searchPlaceholder: "Buscar categoría",
-                      showSearch: true, // shows search field,
-                      searchingText: "Buscando...",
-                      searchText: "No se encontró la categoría",
-                      closeOnSelect: false,
-                      data: object,
-                    });
-                  });
-              }, 300);
-            </script>
-          </select>
-          <script src="js/flores/flower.js"></script>
-          <button id="btn_select" class="btn btn-primary">Buscar</button>          
-          <script src="js/flores/data_flwr.js"></script>
-          <script src="js/flores/slimselect.js"></script>
-        </div>
+    <div class="row" style="align-self: center; font-size: 12 px;">
+      <div class="col-md-12">
+        <select id="etiquetas" multiple class="font">
+          <script src="js/scripts/select.js">
+            // setTimeout(() => {
+            //   let cadena = "";
+            //   let object=[];
+            //   fetch("data/json/CV/Etiquetas.json")
+            //     .then((resp) => resp.json())
+            //     .then((data) => {
+            //       for (let i = 0; i < data.etiquetas.length; i++) {
+            //         // Para hacer una lista dentro de otra
+            //         // object.push({label: data.etiquetas[i].id, options: [{text: data.etiquetas[i].nombre}]})
+            //         object.push({text: data.etiquetas[i].nombre})
+            //       }
+            //       var select = new SlimSelect({
+            //         select: "#etiquetas",
+            //         placeholder: "Categorías",
+            //         searchPlaceholder: "Buscar categoría",
+            //         showSearch: true, // shows search field,
+            //         searchingText: "Buscando...",
+            //         searchText: "No se encontró la categoría",
+            //         closeOnSelect: false,
+            //         data: object,
+            //       });
+            //     });
+            // }, 300);
+          </script>
+        </select>
+        <script src="js/flores/flower.js"></script>
+        <button id="btn_select" class="btn btn-primary">Buscar</button>          
+        <script src="js/flores/data_flwr.js"></script>
+        <script src="js/flores/slimselect.js"></script>
       </div>
     </div>
-  </article>
+  </div>
+</article>
 
-  <script src="https://d3js.org/d3.v5.min.js"></script>
 
-  <article id="slide-6" class="slide">
+<article id="slide-7" class="slide">
     <div class="row">
       <div class="col-lg-6" id="flr_si"></div>
       <div class="col-lg-6" id="flr_no"></div>
@@ -166,71 +193,68 @@
       <div class="col-lg-6" id="flr_asis"></div>
     </div>
     <script src="https://d3js.org/d3.v3.min.js"></script>
-  </article>
 
-  <article id="slide-7" class="slide slide--text">
-    <div class="slide__inner">
-      <h2 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de los congresistas</h2>
-      <p class="demo-instructions" style="padding-top: 20px;">los congresistas pueden votar frente a un proyecto de ley,
-        con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes.
-        Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
-      <div class="col-lg-12" style="align-self: center; text-align: right;">
+</article>
 
-        <select class="selectpicker" data-width="100%" multiple data-actions-box="true" data-live-search="true"
-          data-selected-text-format="count > 2">
-          <optgroup label="Centro Democrático">
-            <option>Álvaro Uribe Vélez</option>
-            <option>Paola Andrea Holguín Moreno</option>
-            <option>Amanda Rocío González Rodríguez</option>
-            <option>Ernesto Macías Tovar </option>
-            <option>María Fernanda Cabal Molina</option>
-            <option>Ciro Alejandro Ramírez Cortés</option>
-            <option>Santiago Valencia González</option>
-            <option>Paloma Susana Valencia Laserna</option>
-            <option>Carlos Felipe Mejía Mejía</option>
-          </optgroup>
-          <optgroup label="Partido Cambio Radical">
-            <option>Arturo Char Chaljub</option>
-            <option>Luis Eduardo Díaz Granados Torres</option>
-            <option>Rodrigo Lara Restrepo</option>
-            <option>Carlos Fernando Motoa</option>
-            <option>Daira de Jesús Galvis Méndez</option>
-            <option>Germán Varón</option>
-          </optgroup>
-          <optgroup label="Partido Conservador Colombiano">
-            <option>David Alejandro Barguil Assis</option>
-            <option>Efraín José Cepeda Sarabia</option>
-            <option>Nora María García Burgos</option>
-            <option>Laureano Augusto Acuña Díaz</option>
-            <option>Nadya Georgette Blel Scaff</option>
-            <option>Carlos Eduardo Enríquez Maya</option>
-          </optgroup>
-          <optgroup label="Partido Liberal Colombiano">
-            <option>Lidio Arturo García Turbay</option>
-            <option>Mauricio Gómez Amín</option>
-            <option>Horacio José Serpa</option>
-            <option>Miguel Ángel Pinto Hernández</option>
-            <option>Fabio Raúl Amín Saleme</option>
-            <option>Julián Bedoya Pulgarín</option>
-          </optgroup>
-        </select>
-      </div>
+
+<article id="slide-8" class="slide slide--text">
+  <div class="slide__inner">
+    <h2 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de los congresistas</h2>
+    <p class="demo-instructions" style="padding-top: 20px;" >los congresistas pueden votar frente a un proyecto de ley, con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes. Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
+    <div  class="col-lg-12" style="align-self: center; text-align: right;">
+
+      <select class="selectpicker" data-width="100%" multiple data-actions-box="true"  data-live-search="true" data-selected-text-format="count > 2">
+        <optgroup label="Centro Democrático">
+          <option>Álvaro Uribe Vélez</option>
+          <option>Paola Andrea Holguín Moreno</option>
+          <option>Amanda Rocío González Rodríguez</option>
+          <option>Ernesto Macías Tovar </option>
+          <option>María Fernanda Cabal Molina</option>
+          <option>Ciro Alejandro Ramírez Cortés</option>
+          <option>Santiago Valencia González</option>
+          <option>Paloma Susana Valencia Laserna</option>
+          <option>Carlos Felipe Mejía Mejía</option>
+        </optgroup>
+        <optgroup label="Partido Cambio Radical">
+          <option>Arturo Char Chaljub</option>
+          <option>Luis Eduardo Díaz Granados Torres</option>
+          <option>Rodrigo Lara Restrepo</option>
+          <option>Carlos Fernando Motoa</option>
+          <option>Daira de Jesús Galvis Méndez</option>
+          <option>Germán Varón</option>
+        </optgroup>
+        <optgroup label="Partido Conservador Colombiano">
+          <option>David Alejandro Barguil Assis</option>
+          <option>Efraín José Cepeda Sarabia</option>
+          <option>Nora María García Burgos</option>
+          <option>Laureano Augusto Acuña Díaz</option>
+          <option>Nadya Georgette Blel Scaff</option>
+          <option>Carlos Eduardo Enríquez Maya</option>
+        </optgroup>
+        <optgroup label="Partido Liberal Colombiano">
+          <option>Lidio Arturo García Turbay</option>
+          <option>Mauricio Gómez Amín</option>
+          <option>Horacio José Serpa</option>
+          <option>Miguel Ángel Pinto Hernández</option>
+          <option>Fabio Raúl Amín Saleme</option>
+          <option>Julián Bedoya Pulgarín</option>
+        </optgroup>
+      </select>
     </div>
-  </article>
+  </div>
+</article>
 
-  <article id="slide-8" class="slide slide--text">
-    <div class="slide__inner" style="text-align: right;">
-      <h3 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de las bancadas de Partidos
-        Políticos</h3>
-      <p class="demo-instructions">Las bancadas tiene un comportamiento generalmente en común, y por ello es posible ver
-        patrones en la partipación de los congresistas.</p>
-    </div>
-  </article>
+<article id="slide-9" class="slide slide--text">
+  <div class="slide__inner" style="text-align: right;">
+  <h3 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de las bancadas de Partidos Políticos</h3>
+  <p class="demo-instructions">Las bancadas tiene un comportamiento generalmente en común, y por ello es posible ver patrones en la partipación de los congresistas.</p>
+ </div>
+</article>
 
-  <article id="slide-9" class="slide ">
+<article id="slide-10" class="slide ">
     <div class="col-sm-12" style="padding-left: 60px; padding-top: 80px;">
       <div id='dashboard'></div>
-      <script src="js/piechart.js"></script>
+      <script src="js/piechart/piechart.js"></script>
       <script>
       var freqData=[
       {State:'CD',freq:{Si:100, No:12, Abstencion:29}}
@@ -261,35 +285,62 @@
       <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?
       </h3>
     </div>
-  </article>
+    <script src="js/piechart/piechart.js"></script>  
+    <script>
+    var freqData=[
+    {State:'CD',freq:{Si:100, No:12, Abstencion:29}}
+    ,{State:'CR',freq:{Si:101, No:12, Abstencion:74}}
+    ,{State:'C',freq:{Si:132, No:49, Abstencion:41}}
+    ,{State:'L',freq:{Si:132, No:52, Abstencion:62}}
+    ,{State:'U',freq:{Si:181, No:4, Abstencion:48}}
+    ,{State:'AV',freq:{Si:119, No:67, Abstencion:63}}
+    ,{State:'POLO',freq:{Si:119, No:47, Abstencion:12}}
+    ,{State:'FARC',freq:{Si:70, No:52, Abstencion:30}}
+    ,{State:'DE',freq:{Si:34, No:20, Abstencion:15}}
+    ,{State:'MIRA',freq:{Si:23, No:30, Abstencion:41}}
+    ,{State:'CJL',freq:{Si:45, No:12, Abstencion:14}}
+    ,{State:'MAIS',freq:{Si:23, No:10, Abstencion:12}}
+    ,{State:'AICO',freq:{Si:10, No:5, Abstencion:17}}
+    ];
+    
+    dashboard('#dashboard',freqData);
+    </script>
+</article>
 
-  <article id="slide-11" class="slide slide--text">
-    <div id="chart"></div>
-    <script src="js/pie.js"></script>
-  </article>
+<article id="slide-11" class="slide slide--text">
+  <div class="slide__inner" style="text-align: right;">
+  <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
+  <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
+  <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?</h3>  
+  </div>
+</article>
 
-  <!-- <article id="slide-11" class="slide slide--text">
+<article id="slide-12" class="slide slide--text">
+  <div id="chart"></div>
+  <script src="js/piechart/pie.js"></script>
+</article>
+
+<!-- <article id="slide-11" class="slide slide--text">
   <div id="chart"></div> 
   <script src="dotchart.js"></script>
 </article> -->
 
-  <article id="slide-12" class="slide slide--text">
-    <div class="slide__inner" style="text-align: right;">
-      <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
-      <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
-    </div>
-  </article>
+<article id="slide-13" class="slide slide--text">
+  <div class="slide__inner" style="text-align: right;">
+    <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
+    <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
+  </div>
+</article>
 
-  <article id="slide-13" class="slide slide--text">
-    <div class="slide__inner">
-      <img src="assets/Logo_Uniandesfacing.png" height="142px" width="340px">
-    </div>
+<article id="slide-14" class="slide slide--text">
+  <div class="slide__inner">
+    <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
+  </div>
+  
+</article>
 
-  </article>
-
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="js/script.js"></script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/scripts/script.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
 </body>
