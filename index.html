@@ -26,7 +26,9 @@
   
  </article>
 
-
+<script src="js/count.js"></script>
+<script src="js/count2.js"></script>
+<script src="js/countCiuda.js"></script>
 
 <article id="slide-1" class="slide slide--text slide--locked">
   <div class="slide__inner">
@@ -49,9 +51,24 @@
     <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Proyectos de Ley</h3>
     <p><em>Congreso de la República</em></p>
     <p style="font-size: 18px; padding-top: 20px;">En Colombia, desde Agosto del 2006, durante 3 peridodos, en el Congreso de la República, se han expedido 271 proyectos de ley que buscan cambiar y estructurar la sociedad.</p>
-    
+    <h3 class="count">1000</h3>
+    <script>
+      $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+    </script>
   </div>
 </article>
+
+
 
 <article id="slide-3" class="slide" >
   <div id = 'vis' style="width: fit-content;"></div>
@@ -59,16 +76,22 @@
   
 </article>
 
-<script src="https://d3js.org/d3.v5.min.js"></script>
+<article id="slide-4" class="slide" >
+  <div id = 'vis5' style="width: fit-content;"></div>
+        <script src="js/bubblesPre.js"></script> 
+  
+</article>
 
-<article id="slide-4" class="slide slide--text">
+
+
+<article id="slide-5" class="slide slide--text">
   <div style=" border: 2px dashed black; height: 100%;">
 
       <div class="row justify-content-center" style="padding-top: 40px;">
         
           <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;"> 2006-2010</p>
           <div id = 'vis2' style="width: fit-content;"></div>
-          <script src="js/bubbles2.js"></script>
+          <script src="js/bubblesc1.js"></script>
         
       </div>
       
@@ -78,7 +101,7 @@
         <div class="col-md-6">
           <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;"> 2010-2014</p>
           <div id = 'vis3' style="width: fit-content;"></div>
-          <script src="js/bubbles2.js"></script>
+          <script src="js/bubblesc2.js"></script>
         </div>
         <div class="col-md-6" style="padding-right: 60px;">
           <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif; font-size: 20px;">Proyectos de ley por periodos.</h3>
@@ -93,16 +116,18 @@
         
           <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
           <div id = 'vis4' style="width: fit-content;"></div>
-          <script src="js/bubbles2.js"></script>
+          <script src="js/bubblesc3.js"></script>
         
       </div>
   </div> 
 </article>
 
+<!-- Fin bubbles-->
+
 <script src="https://d3js.org/d3.v5.min.js"></script>
 
 
-<article id="slide-5" class="slide slide--text">
+<article id="slide-6" class="slide slide--text">
   <div class="slide__inner">
 
     <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Elije algunos Temas!</h1>
@@ -167,11 +192,7 @@
 </article>
 
 
-
-
-
-
-<article id="slide-6" class="slide">
+<article id="slide-7" class="slide">
 
         <script src="https://d3js.org/d3.v3.min.js"></script>
         <div id = "svgContent" ></div>
@@ -184,7 +205,7 @@
 </article>
 
 
-<article id="slide-7" class="slide slide--text">
+<article id="slide-8" class="slide slide--text">
   <div class="slide__inner">
     <h2 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de los congresistas</h2>
     <p class="demo-instructions" style="padding-top: 20px;" >los congresistas pueden votar frente a un proyecto de ley, con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes. Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
@@ -231,14 +252,14 @@
   </div>
 </article>
 
-<article id="slide-8" class="slide slide--text">
+<article id="slide-9" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
   <h3 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de las bancadas de Partidos Políticos</h3>
   <p class="demo-instructions">Las bancadas tiene un comportamiento generalmente en común, y por ello es posible ver patrones en la partipación de los congresistas.</p>
  </div>
 </article>
 
-<article id="slide-9" class="slide ">
+<article id="slide-10" class="slide ">
     <div class="col-sm-12" style="padding-left: 60px; padding-top: 80px;">
       <div id='dashboard'>
     </div>
@@ -264,7 +285,7 @@
     </script>
 </article>
 
-<article id="slide-10" class="slide slide--text">
+<article id="slide-11" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
   <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
   <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
@@ -272,7 +293,7 @@
   </div>
 </article>
 
-<article id="slide-11" class="slide slide--text">
+<article id="slide-12" class="slide slide--text">
   <div id="chart"></div>
   <script src="js/pie.js"></script>
 </article>
@@ -282,14 +303,14 @@
   <script src="dotchart.js"></script>
 </article> -->
 
-<article id="slide-12" class="slide slide--text">
+<article id="slide-13" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
     <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
     <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
   </div>
 </article>
 
-<article id="slide-13" class="slide slide--text">
+<article id="slide-14" class="slide slide--text">
   <div class="slide__inner">
     <img src="assets/Logo_Uniandesfacing.png" height="142px" width="340px">
   </div>

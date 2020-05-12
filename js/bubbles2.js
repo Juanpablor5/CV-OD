@@ -151,4 +151,4 @@ function bubbleChart() {
   }
   
   // load data
-  d3.csv('./data/proyectostotal.csv').then(display);
+  d3.csv('./data/iniciativasc1.csv').then(display);

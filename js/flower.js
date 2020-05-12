@@ -7,8 +7,8 @@ var data = [{"Tema":"Educación","abs":20},
                     {"Tema":"Politica Extranjera","abs":4}];
         //<!----------------------------------------------------------------->
         var margin = {top:10,left:10,right:10,bottom:10};
-        width = 200;
-        height = 250;
+        width = 170;
+        height = 220;
         radius = Math.min(width,height)/2;
         var color = d3.scale.category20();
         var arc = d3.svg.arc()  
@@ -16,7 +16,7 @@ var data = [{"Tema":"Educación","abs":20},
                 .innerRadius(radius - 70)
             .cornerRadius(20);
         var arcOver = d3.svg.arc()  
-        .outerRadius(radius +50)
+        .outerRadius(radius + 30)
         .innerRadius(0);
 
         var a=width/2 - 10;
@@ -60,10 +60,10 @@ var data = [{"Tema":"Educación","abs":20},
                         .append("text")
                         .attr("class","label1")
                         .attr("transform", function(d) {
-                        var dist=radius-60;
+                        var dist=radius-65;
                       var winkel=(d.startAngle+d.endAngle)/2;
-                      var x=dist*Math.sin(winkel)-4;
-                      var y=-dist*Math.cos(winkel)-4;
+                      var x=dist*Math.sin(winkel);
+                      var y=-dist*Math.cos(winkel);
                       
                       return "translate(" + x + "," + y + ")";
                         })

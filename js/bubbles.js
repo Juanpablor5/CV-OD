@@ -46,8 +46,8 @@ function bubbleChart() {
   
       // size bubbles based on area
       const radiusScale = d3.scaleLinear()
-        .domain([0, maxSize+30])
-        .range([0, 80])
+        .domain([0, maxSize+10])
+        .range([5, 45])
   
       // use map() to convert raw data into node data
       const myNodes = rawData.map(d => ({
@@ -161,4 +161,4 @@ function bubbleChart() {
   }
   
   // load data
-  d3.csv('./data/proyectostotal.csv').then(display);
+  d3.csv('./data/iniciativas.csv').then(display);
