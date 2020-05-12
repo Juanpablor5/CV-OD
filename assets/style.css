@@ -198,8 +198,7 @@ font-family: 'Questrial'; }
   font-family: "Montserrat", sans-serif;
 }
 
-/* Slim select Style
-*/
+/* Inicia - Slim select Style */
 
 .ss-main {
   position: relative;
@@ -562,3 +561,5 @@ font-family: 'Questrial'; }
   box-sizing: content-box;
   font-family: 'Montserrat', serif, #ffffff;
 }
+
+/* Termina - Slim select Style */
