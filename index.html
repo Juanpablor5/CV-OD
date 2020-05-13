@@ -143,35 +143,10 @@
     <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Elije algunos Temas!</h1>
     <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas que
       te interesen.</p>
-
     <div class="row" style="align-self: center; font-size: 12 px;">
       <div class="col-md-12">
         <select id="etiquetas" multiple class="font">
-          <script src="js/scripts/select.js">
-            // setTimeout(() => {
-            //   let cadena = "";
-            //   let object=[];
-            //   fetch("data/json/CV/Etiquetas.json")
-            //     .then((resp) => resp.json())
-            //     .then((data) => {
-            //       for (let i = 0; i < data.etiquetas.length; i++) {
-            //         // Para hacer una lista dentro de otra
-            //         // object.push({label: data.etiquetas[i].id, options: [{text: data.etiquetas[i].nombre}]})
-            //         object.push({text: data.etiquetas[i].nombre})
-            //       }
-            //       var select = new SlimSelect({
-            //         select: "#etiquetas",
-            //         placeholder: "Categorías",
-            //         searchPlaceholder: "Buscar categoría",
-            //         showSearch: true, // shows search field,
-            //         searchingText: "Buscando...",
-            //         searchText: "No se encontró la categoría",
-            //         closeOnSelect: false,
-            //         data: object,
-            //       });
-            //     });
-            // }, 300);
-          </script>
+          <script src="js/scripts/select.js"></script>
         </select>
         <script src="js/flores/flower.js"></script>
         <button id="btn_select" class="btn btn-primary">Buscar</button>          
@@ -184,15 +159,15 @@
 
 
 <article id="slide-7" class="slide">
-    <div class="row">
-      <div class="col-lg-6" id="flr_si"></div>
-      <div class="col-lg-6" id="flr_no"></div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6" id="flr_abs"></div>
-      <div class="col-lg-6" id="flr_asis"></div>
-    </div>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+  <div class="row">
+    <div class="col-lg-6" id="flr_si"></div>
+    <div class="col-lg-6" id="flr_no"></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6" id="flr_abs"></div>
+    <div class="col-lg-6" id="flr_asis"></div>
+  </div>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
 
 </article>
 
