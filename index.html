@@ -23,11 +23,11 @@
 <body>
 <!-- partial:index.partial.html -->
 <article id="slide-0" class="slide slide--text slide--locked"  style=" background-image:url(assets/img/congreso.png); opacity: 1;" >
-  
+
   <div class="slide__inner" style="border: 2px dashed white; "></div>
-    
-  </div>
-  
+
+
+
  </article>
 
 <script src="js/bubbles/count.js"></script>
@@ -38,10 +38,10 @@
   <div class="slide__inner">
     <h1 style= "font-family: 'Questrial', serif;">Representación Ciudadana</h1>
     <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;"><em>Congreso vs Ciudadania</em></h3>
-    <p style="font-size: 18px; padding-top: 20px;">Que tanto la actividad del congreso refleja el interés de los ciudadanos Colombianos, esta herramienta busca dar respuestas a posibles análisis sobre la representación ciudadana en varias dimensiones sociales con Visual Analytics. </p>
+    <p style="font-size: 18px; padding-top: 20px;">Qué tanto la actividad del congreso refleja el interés de los ciudadanos Colombianos, esta herramienta busca dar respuestas a posibles análisis sobre la representación ciudadana en varias dimensiones sociales con Visual Analytics. </p>
     <p class="demo-arrow">&darr;</p>
     <p class="demo-instructions">Scroll down</p>
-    
+
   </div>
   <div style="margin-top: -75px; float: left; margin-right: 10px; margin-left: 30px;">
     <img src="assets/img/Logo_Uniandesfacing.png" height="55px" width="140px">
@@ -54,7 +54,7 @@
   <div class="slide__inner" style="text-align: right;" >
     <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Proyectos de Ley</h3>
     <p><em>Congreso de la República</em></p>
-    <p style="font-size: 18px; padding-top: 20px;">En Colombia, desde Agosto del 2006, durante 3 peridodos, en el Congreso de la República, se han expedido 271 proyectos de ley que buscan cambiar y estructurar la sociedad.</p>
+    <p style="font-size: 18px; padding-top: 20px;">En Colombia, desde Agosto del 2006, durante 3 periodos, en el Congreso de la República, se han expedido 271 proyectos de ley que buscan cambiar y estructurar la sociedad.</p>
     <h3 class="count">1000</h3>
     <script>
       $('.count').each(function () {
@@ -77,13 +77,13 @@
 <article id="slide-3" class="slide" >
   <div id = 'vis' style="width: fit-content;"></div>
         <script src="js/bubbles/bubbles.js"></script>
-  
+
 </article>
 
 <article id="slide-4" class="slide" >
   <div id = 'vis5' style="width: fit-content;"></div>
-        <script src="js/bubbles/bubblesPre.js"></script> 
-  
+        <script src="js/bubbles/bubblesODCtgs.js"></script>
+
 </article>
 
 
@@ -92,11 +92,11 @@
   <div style=" border: 2px dashed black; height: 100%;">
 
       <div class="row justify-content-center" style="padding-top: 40px;">
-        
+
           <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;"> 2006-2010</p>
           <div id = 'vis2' style="width: fit-content;"></div>
           <script src="js/bubbles/bubblesc1.js"></script>
-        
+
       </div>
 
 
@@ -119,13 +119,13 @@
       </div>
 
       <div class="row justify-content-center" style="padding-top: 10px; font-family: 'Questrial', serif;">
-        
+
           <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
           <div id = 'vis4' style="width: fit-content;"></div>
           <script src="js/bubbles/bubblesc3.js"></script>
-        
+
       </div>
-  </div> 
+  </div>
 </article>
 
 <!-- Fin bubbles-->
@@ -149,7 +149,7 @@
           <script src="js/scripts/select.js"></script>
         </select>
         <script src="js/flores/flower.js"></script>
-        <button id="btn_select" class="btn btn-primary">Buscar</button>          
+        <button id="btn_select" class="btn btn-primary">Buscar</button>
         <script src="js/flores/data_flwr.js"></script>
         <script src="js/flores/slimselect.js"></script>
       </div>
@@ -246,12 +246,12 @@
       ,{State:'MAIS',freq:{Si:23, No:10, Abstencion:12}}
       ,{State:'AICO',freq:{Si:10, No:5, Abstencion:17}}
       ];
-      
+
       dashboard('#dashboard',freqData);
       </script>
   </article>
 
-  <article id="slide-10" class="slide slide--text">
+  <article id="slide-11" class="slide slide--text">
     <div class="slide__inner" style="text-align: right;">
       <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
       <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el
@@ -260,7 +260,7 @@
       <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?
       </h3>
     </div>
-    <script src="js/piechart/piechart.js"></script>  
+    <script src="js/piechart/piechart.js"></script>
     <script>
     var freqData=[
     {State:'CD',freq:{Si:100, No:12, Abstencion:29}}
@@ -277,41 +277,41 @@
     ,{State:'MAIS',freq:{Si:23, No:10, Abstencion:12}}
     ,{State:'AICO',freq:{Si:10, No:5, Abstencion:17}}
     ];
-    
+
     dashboard('#dashboard',freqData);
     </script>
 </article>
 
-<article id="slide-11" class="slide slide--text">
+<article id="slide-12" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
   <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
   <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
-  <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?</h3>  
+  <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?</h3>
   </div>
 </article>
 
-<article id="slide-12" class="slide slide--text">
+<article id="slide-13" class="slide slide--text">
   <div id="chart"></div>
   <script src="js/piechart/pie.js"></script>
 </article>
 
 <!-- <article id="slide-11" class="slide slide--text">
-  <div id="chart"></div> 
+  <div id="chart"></div>
   <script src="dotchart.js"></script>
 </article> -->
 
-<article id="slide-13" class="slide slide--text">
+<article id="slide-14" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
     <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
     <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
   </div>
 </article>
 
-<article id="slide-14" class="slide slide--text">
+<article id="slide-15" class="slide slide--text">
   <div class="slide__inner">
     <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
   </div>
-  
+
 </article>
 
 <!-- partial -->

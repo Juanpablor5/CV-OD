@@ -1,9 +1,9 @@
 function bubbleChart() {
-    const width = 240;
-    const height = 150;
+    const width = 620;
+    const height = 720;
 
     // location to centre the bubbles
-    const centre = { x: width/2 - 50, y: height/2 - 60 };
+    const centre = { x: width/2 , y: height/2 - 50 };
 
     // strength to apply to the position forces
     const forceStrength = 0.03;
@@ -46,8 +46,8 @@ function bubbleChart() {
 
       // size bubbles based on area
       const radiusScale = d3.scaleLinear()
-        .domain([0, maxSize])
-        .range([5, 13])
+        .domain([0, maxSize+10])
+        .range([3, 25])
 
       // use map() to convert raw data into node data
       const myNodes = rawData.map(d => ({
@@ -138,13 +138,13 @@ function bubbleChart() {
   }
 
   // new bubble chart instance
-  let myBubbleChart3 = bubbleChart();
+  let myBubbleChart5 = bubbleChart();
 
   // function called once promise is resolved and data is loaded from csv
   // calls bubble chart function to display inside #vis div
   function display(data) {
-    myBubbleChart3('#vis3', data)
+    myBubbleChart5('#vis5', data);
   }
 
   // load data
-  d3.csv('./data/csv/CV/iniciativasc2.csv').then(display);
+  d3.csv('./data/csv/OD/conteoCategorías.csv').then(display);
