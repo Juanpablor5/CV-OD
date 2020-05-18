@@ -103,7 +103,48 @@
 
       <div class="row justify-content-center" style="padding-top: 40px;">
 
-          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;"> 2006-2010</p>
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">2006-2010</p>
+          <div id = 'myVis1' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesOD1.js"></script>
+
+      </div>
+
+
+      <div class="row justify-content-center" style="padding-top: 10px;">
+
+        <div class="col-md-6">
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">2010-2014</p>
+          <div id = 'myVis2' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesOD2.js"></script>
+        </div>
+        <div class="col-md-6" style="padding-right: 60px;">
+          <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif; font-size: 20px;">Temáticas
+            de preguntas por periodos.</h3>
+          <p style="font-size: 15px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas
+            que te interesen.</p>
+        </div>
+
+
+
+      </div>
+
+      <div class="row justify-content-center" style="padding-top: 10px; font-family: 'Questrial', serif;">
+
+          <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
+          <div id = 'myVis3' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesOD3.js"></script>
+
+      </div>
+  </div>
+</article>
+
+
+<article id="slide-7" class="slide slide--text">
+  <div style=" border: 2px dashed black; height: 100%;">
+
+      <div class="row justify-content-center" style="padding-top: 40px;">
+
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">2006-2010</p>
           <div id = 'vis2' style="width: fit-content;"></div>
           <script src="js/bubbles/bubblesc1.js"></script>
 
@@ -113,7 +154,7 @@
       <div class="row justify-content-center" style="padding-top: 10px;">
 
         <div class="col-md-6">
-          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;"> 2010-2014</p>
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">2010-2014</p>
           <div id = 'vis3' style="width: fit-content;"></div>
           <script src="js/bubbles/bubblesc2.js"></script>
         </div>
@@ -148,9 +189,25 @@
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
-<article id="slide-7" class="slide slide--text">
+<article id="slide-8" class="slide slide--text">
   <div class="slide__inner">
-    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Elije algunos Temas!</h1>
+    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Elije algunos años...</h1>
+    <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según los años.</p>
+    <div class="row" style="align-self: center; font-size: 12 px;">
+      <div class="col-md-12">
+        <select id="años" multiple class="font">
+          <script src="js/scripts/selectYear.js"></script>
+        </select>
+        <button id="btn_select1" class="btn btn-primary">Buscar</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<article id="slide-9" class="slide slide--text">
+  <div class="slide__inner">
+    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">... y temas!</h1>
     <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas que
       te interesen.</p>
     <div class="row" style="align-self: center; font-size: 12 px;">
@@ -168,7 +225,7 @@
 </article>
 
 
-<article id="slide-8" class="slide">
+<article id="slide-10" class="slide">
   <div class="row">
     <div class="col-lg-6" id="flr_si"></div>
     <div class="col-lg-6" id="flr_no"></div>
@@ -182,7 +239,7 @@
 </article>
 
 
-<article id="slide-9" class="slide slide--text">
+<article id="slide-11" class="slide slide--text">
   <div class="slide__inner">
     <h2 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de los congresistas</h2>
     <p class="demo-instructions" style="padding-top: 20px;" >los congresistas pueden votar frente a un proyecto de ley, con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes. Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
@@ -229,14 +286,14 @@
   </div>
 </article>
 
-<article id="slide-10" class="slide slide--text">
+<article id="slide-12" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
   <h3 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de las bancadas de Partidos Políticos</h3>
   <p class="demo-instructions">Las bancadas tiene un comportamiento generalmente en común, y por ello es posible ver patrones en la partipación de los congresistas.</p>
  </div>
 </article>
 
-<article id="slide-11" class="slide ">
+<article id="slide-13" class="slide ">
     <div class="col-sm-12" style="padding-left: 60px; padding-top: 80px;">
       <div id='dashboard'></div>
       <script src="js/piechart/piechart.js"></script>
@@ -261,7 +318,7 @@
       </script>
   </article>
 
-  <article id="slide-12" class="slide slide--text">
+  <article id="slide-14" class="slide slide--text">
     <div class="slide__inner" style="text-align: right;">
       <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
       <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el
@@ -292,7 +349,7 @@
     </script>
 </article>
 
-<article id="slide-13" class="slide slide--text">
+<article id="slide-15" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
   <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
   <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
@@ -300,7 +357,7 @@
   </div>
 </article>
 
-<article id="slide-14" class="slide slide--text">
+<article id="slide-16" class="slide slide--text">
   <div id="chart"></div>
   <script src="js/piechart/pie.js"></script>
 </article>
@@ -310,14 +367,14 @@
   <script src="dotchart.js"></script>
 </article> -->
 
-<article id="slide-15" class="slide slide--text">
+<article id="slide-17" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
     <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
     <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
   </div>
 </article>
 
-<article id="slide-16" class="slide slide--text">
+<article id="slide-18" class="slide slide--text">
   <div class="slide__inner">
     <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
   </div>
