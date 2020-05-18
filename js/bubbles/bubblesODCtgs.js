@@ -143,8 +143,8 @@ function bubbleChart() {
   // function called once promise is resolved and data is loaded from csv
   // calls bubble chart function to display inside #vis div
   function display(data) {
-    myBubbleChart5('#vis5', data);
+    myBubbleChart5('#MyVis1', data);
   }
 
   // load data
-  d3.csv('./data/csv/OD/conteoCategorías.csv').then(display);
+  d3.csv('./data/csv/OD/conteoCategorias.csv').then(display);

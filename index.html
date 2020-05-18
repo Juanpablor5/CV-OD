@@ -92,7 +92,7 @@
 </article>
 
 <article id="slide-5" class="slide" >
-  <div id = 'vis5' style="width: fit-content;"></div>
+  <div id = 'MyVis1' style="width: fit-content;"></div>
         <script src="js/bubbles/bubblesODCtgs.js"></script>
 </article>
 
@@ -183,29 +183,47 @@
 
 <script src="https://d3js.org/d3.v5.min.js"></script>
 
+<article id="slide-8" class="slide slide--scrolling slide--text" >
+  <div class="slide__inner" style="text-align: right;" >
+    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Línea de tiempo</h3>
+    <p><em>Filtra por años</em></p>
+    <p style="font-size: 18px; padding-top: 20px;">
+    Podrás ver como es la representación ciudadana según los años.
+    </p>
+  </div>
+</article>
+
+  <article id="slide-9" class="slide slide--text">
+    <div class="slide__inner">
+      <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Elije algunos años!</h1>
+      <div class="row" style="align-self: center; font-size: 12 px;">
+        <div class="col-md-12">
+          <select id="años" multiple class="font">
+            <script src="js/scripts/selectYear.js"></script>
+          </select>
+          <button id="btn_select1" class="btn btn-primary">Seleccionar</button>
+        </div>
       </div>
     </div>
   </article>
 
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-
-<article id="slide-8" class="slide slide--text">
+<article id="slide-10" class="slide slide--text">
   <div class="slide__inner">
-    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Elije algunos años...</h1>
-    <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según los años.</p>
+    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Escoge algunas preguntas...</h1>
+    <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según preguntas que te interesen.</p>
     <div class="row" style="align-self: center; font-size: 12 px;">
       <div class="col-md-12">
-        <select id="años" multiple class="font">
-          <script src="js/scripts/selectYear.js"></script>
+        <select id="preguntas" multiple class="font">
+          <script src="js/scripts/selectQuestions.js"></script>
         </select>
-        <button id="btn_select1" class="btn btn-primary">Buscar</button>
+        <button id="btn_select2" class="btn btn-primary">Buscar</button>
       </div>
     </div>
   </div>
 </article>
 
 
-<article id="slide-9" class="slide slide--text">
+<article id="slide-11" class="slide slide--text">
   <div class="slide__inner">
     <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">... y temas!</h1>
     <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas que
@@ -225,7 +243,7 @@
 </article>
 
 
-<article id="slide-10" class="slide">
+<article id="slide-12" class="slide">
   <div class="row">
     <div class="col-lg-6" id="flr_si"></div>
     <div class="col-lg-6" id="flr_no"></div>
@@ -239,7 +257,7 @@
 </article>
 
 
-<article id="slide-11" class="slide slide--text">
+<article id="slide-13" class="slide slide--text">
   <div class="slide__inner">
     <h2 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de los congresistas</h2>
     <p class="demo-instructions" style="padding-top: 20px;" >los congresistas pueden votar frente a un proyecto de ley, con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes. Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
@@ -286,14 +304,14 @@
   </div>
 </article>
 
-<article id="slide-12" class="slide slide--text">
+<article id="slide-14" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
   <h3 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de las bancadas de Partidos Políticos</h3>
   <p class="demo-instructions">Las bancadas tiene un comportamiento generalmente en común, y por ello es posible ver patrones en la partipación de los congresistas.</p>
  </div>
 </article>
 
-<article id="slide-13" class="slide ">
+  <article id="slide-15" class="slide ">
     <div class="col-sm-12" style="padding-left: 60px; padding-top: 80px;">
       <div id='dashboard'></div>
       <script src="js/piechart/piechart.js"></script>
@@ -318,63 +336,32 @@
       </script>
   </article>
 
-  <article id="slide-14" class="slide slide--text">
+  <article id="slide-16" class="slide slide--text">
     <div class="slide__inner" style="text-align: right;">
-      <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
-      <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el
-        país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes
-      </p>
-      <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?
-      </h3>
+    <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
+    <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
+    <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?</h3>
     </div>
-    <script src="js/piechart/piechart.js"></script>
-    <script>
-    var freqData=[
-    {State:'CD',freq:{Si:100, No:12, Abstencion:29}}
-    ,{State:'CR',freq:{Si:101, No:12, Abstencion:74}}
-    ,{State:'C',freq:{Si:132, No:49, Abstencion:41}}
-    ,{State:'L',freq:{Si:132, No:52, Abstencion:62}}
-    ,{State:'U',freq:{Si:181, No:4, Abstencion:48}}
-    ,{State:'AV',freq:{Si:119, No:67, Abstencion:63}}
-    ,{State:'POLO',freq:{Si:119, No:47, Abstencion:12}}
-    ,{State:'FARC',freq:{Si:70, No:52, Abstencion:30}}
-    ,{State:'DE',freq:{Si:34, No:20, Abstencion:15}}
-    ,{State:'MIRA',freq:{Si:23, No:30, Abstencion:41}}
-    ,{State:'CJL',freq:{Si:45, No:12, Abstencion:14}}
-    ,{State:'MAIS',freq:{Si:23, No:10, Abstencion:12}}
-    ,{State:'AICO',freq:{Si:10, No:5, Abstencion:17}}
-    ];
+  </article>
 
-    dashboard('#dashboard',freqData);
-    </script>
-</article>
-
-<article id="slide-15" class="slide slide--text">
-  <div class="slide__inner" style="text-align: right;">
-  <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
-  <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
-  <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?</h3>
-  </div>
-</article>
-
-<article id="slide-16" class="slide slide--text">
-  <div id="chart"></div>
-  <script src="js/piechart/pie.js"></script>
-</article>
+  <article id="slide-17" class="slide slide--text">
+    <div id="chart"></div>
+    <script src="js/piechart/pie.js"></script>
+  </article>
 
 <!-- <article id="slide-11" class="slide slide--text">
   <div id="chart"></div>
   <script src="dotchart.js"></script>
 </article> -->
 
-<article id="slide-17" class="slide slide--text">
+<article id="slide-18" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
     <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
     <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
   </div>
 </article>
 
-<article id="slide-18" class="slide slide--text">
+<article id="slide-19" class="slide slide--text">
   <div class="slide__inner">
     <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
   </div>
