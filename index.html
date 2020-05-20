@@ -22,6 +22,9 @@
 
 <body>
 <!-- partial:index.partial.html -->
+
+<!-- Imagen congreso inicio -->
+
 <article id="slide-0" class="slide slide--text slide--locked"  style=" background-image:url(assets/img/congreso.png); opacity: 1;" >
 
   <div class="slide__inner" style="border: 2px dashed white; "></div>
@@ -33,6 +36,8 @@
 <script src="js/bubbles/count.js"></script>
 <script src="js/bubbles/count2.js"></script>
 <script src="js/bubbles/countCiuda.js"></script>
+
+<!-- Introduccion -->
 
 <article id="slide-1" class="slide slide--text slide--locked">
   <div class="slide__inner">
@@ -50,53 +55,38 @@
   </div>
 </article>
 
+<!-- Datos OD -->
+
 <article id="slide-2" class="slide slide--scrolling slide--text" >
   <div class="slide__inner" style="text-align: right;" >
-    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Proyectos de Ley</h3>
-    <p><em>Congreso de la República</em></p>
-    <p style="font-size: 18px; padding-top: 20px;">En Colombia, desde Agosto del 2006, durante 3 periodos, en el Congreso de la República, se han expedido 271 proyectos de ley que buscan cambiar y estructurar la sociedad.</p>
-    <h3 class="count">1000</h3>
-    <script>
-      $('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-});
-    </script>
-  </div>
+    <h3 class="count">2318609</h3>
+    </div>
 </article>
 
+<!-- Datos CV -->
 
+<article id="slide-3" class="slide slide--scrolling slide--text" >
+  <div class="slide__inner" style="text-align: right;" >
+    <h3 class="count">404000</h3>
+    </div>
+</article> 
 
-<article id="slide-3" class="slide" >
+<!--bubbles OD -->
+
+<article id="slide-4" class="slide" >
+  <div id = 'MyVis1' style="width: fit-content;"></div>
+        <script src="js/bubbles/bubblesODCtgs.js"></script>
+</article>
+
+<!-- bubbles CV-->
+
+<article id="slide-5" class="slide" >
   <div id = 'vis' style="width: fit-content;"></div>
         <script src="js/bubbles/bubbles.js"></script>
 
 </article>
 
-
-<article id="slide-4" class="slide slide--scrolling slide--text" >
-  <div class="slide__inner" style="text-align: right;" >
-    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Temas</h3>
-    <p><em>Observatorio de la Democracia</em></p>
-    <p style="font-size: 18px; padding-top: 20px;">
-    Desde el Obervatorio de la Democracia se ha realizado un estudio de opinión pública llamado el Barómetro de las Américas. Desde este se ha recolectado información sobre las percepciones de los colombianos frente a diversos temas estructurales y coyunturales.
-    </p>
-  </div>
-</article>
-
-<article id="slide-5" class="slide" >
-  <div id = 'MyVis1' style="width: fit-content;"></div>
-        <script src="js/bubbles/bubblesODCtgs.js"></script>
-</article>
-
-
+<!--bubbles preguntas OD -->
 
 <article id="slide-6" class="slide slide--text">
   <div style=" border: 2px dashed black; height: 100%;">
@@ -138,6 +128,7 @@
   </div>
 </article>
 
+<!--bubbles preguntas OD -->
 
 <article id="slide-7" class="slide slide--text">
   <div style=" border: 2px dashed black; height: 100%;">
@@ -179,9 +170,9 @@
   </div>
 </article>
 
-<!-- Fin bubbles-->
-
 <script src="https://d3js.org/d3.v5.min.js"></script>
+
+<!--filtro por años -->
 
 <article id="slide-8" class="slide slide--scrolling slide--text" >
   <div class="slide__inner" style="text-align: right;" >
@@ -190,12 +181,7 @@
     <p style="font-size: 18px; padding-top: 20px;">
     Podrás ver como es la representación ciudadana según los años.
     </p>
-  </div>
-</article>
-
-  <article id="slide-9" class="slide slide--text">
-    <div class="slide__inner">
-      <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Elije algunos años!</h1>
+    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Elije algunos años!</h1>
       <div class="row" style="align-self: center; font-size: 12 px;">
         <div class="col-md-12">
           <select id="años" multiple class="font">
@@ -205,27 +191,12 @@
           <button id="btn_select1" class="btn btn-primary">Seleccionar</button>
         </div>
       </div>
-    </div>
-  </article>
-
-<article id="slide-10" class="slide slide--text">
-  <div class="slide__inner">
-    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Escoge algunas preguntas...</h1>
-    <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según preguntas que te interesen.</p>
-    <div class="row" style="align-self: center; font-size: 12 px;">
-      <div class="col-md-12">
-        <select id="preguntas" multiple class="font">
-          <script src="js/scripts/selectQuestions.js"></script>
-          <script src="js/scripts/slimselect.js"></script>
-        </select>
-        <button id="btn_select2" class="btn btn-primary">Buscar</button>
-      </div>
-    </div>
   </div>
 </article>
 
+<!--filtro por temas cv -->
 
-<article id="slide-11" class="slide slide--text">
+<article id="slide-9" class="slide slide--text">
   <div class="slide__inner">
     <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">... y temas!</h1>
     <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas que
@@ -244,8 +215,27 @@
   </div>
 </article>
 
+<!--filtro por preguntas OD -->
 
-<article id="slide-12" class="slide">
+<article id="slide-10" class="slide slide--text">
+  <div class="slide__inner">
+    <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Escoge algunas preguntas...</h1>
+    <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según preguntas que te interesen.</p>
+    <div class="row" style="align-self: center; font-size: 12 px;">
+      <div class="col-md-12">
+        <select id="preguntas" multiple class="font">
+          <script src="js/scripts/selectQuestions.js"></script>
+          <script src="js/scripts/slimselect.js"></script>
+        </select>
+        <button id="btn_select2" class="btn btn-primary">Buscar</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!--flores cv -->
+
+<article id="slide-11" class="slide">
   <div class="row">
     <div class="col-lg-6" id="flr_si"></div>
     <div class="col-lg-6" id="flr_no"></div>
@@ -258,8 +248,87 @@
 
 </article>
 
+<!--Resultados OD -->
 
-<article id="slide-13" class="slide slide--text">
+<article id="slide-12" class="slide slide--scrolling slide--text" >
+  <div class="slide__inner" style="text-align: right;" >
+    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Temas</h3>
+    <p><em>Observatorio de la Democracia</em></p>
+    <p style="font-size: 18px; padding-top: 20px;">
+    Desde el Obervatorio de la Democracia se ha realizado un estudio de opinión pública llamado el Barómetro de las Américas. Desde este se ha recolectado información sobre las percepciones de los colombianos frente a diversos temas estructurales y coyunturales.
+    </p>
+  </div>
+</article>
+
+<!--Resultados CV -->
+
+<article id="slide-13" class="slide slide--scrolling slide--text" >
+  <div class="slide__inner" style="text-align: right;" >
+    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Temas</h3>
+    <p><em>Observatorio de la Democracia</em></p>
+    <p style="font-size: 18px; padding-top: 20px;">
+    Desde el Obervatorio de la Democracia se ha realizado un estudio de opinión pública llamado el Barómetro de las Américas. Desde este se ha recolectado información sobre las percepciones de los colombianos frente a diversos temas estructurales y coyunturales.
+    </p>
+  </div>
+</article>
+
+<!--info CV -->
+
+<article id="slide-14" class="slide slide--scrolling slide--text" >
+  <div class="slide__inner" style="text-align: right;" >
+    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Proyectos de Ley</h3>
+    <p><em>Congreso de la República</em></p>
+    <p style="font-size: 18px; padding-top: 20px;">En Colombia, desde Agosto del 2006, durante 3 periodos, en el Congreso de la República, se han expedido 271 proyectos de ley que buscan cambiar y estructurar la sociedad.</p>
+    <h3 class="count">1000</h3>
+    <script>
+      $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+    </script>
+  </div>
+</article>
+
+<!--info OD -->
+
+<article id="slide-15" class="slide slide--scrolling slide--text" >
+  <div class="slide__inner" style="text-align: right;" >
+    <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Temas</h3>
+    <p><em>Observatorio de la Democracia</em></p>
+    <p style="font-size: 18px; padding-top: 20px;">
+    Desde el Obervatorio de la Democracia se ha realizado un estudio de opinión pública llamado el Barómetro de las Américas. Desde este se ha recolectado información sobre las percepciones de los colombianos frente a diversos temas estructurales y coyunturales.
+    </p>
+  </div>
+</article>
+
+<!--close 1 -->
+
+<article id="slide-14" class="slide slide--text">
+  <div class="slide__inner" style="text-align: right;">
+    <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
+    <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
+  </div>
+</article>
+
+<!--close 2 -->
+
+<article id="slide-16" class="slide slide--text">
+  <div class="slide__inner">
+    <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
+  </div>
+
+</article>
+
+
+
+<article id="slide-17" class="slide slide--text">
   <div class="slide__inner">
     <h2 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de los congresistas</h2>
     <p class="demo-instructions" style="padding-top: 20px;" >los congresistas pueden votar frente a un proyecto de ley, con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes. Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
@@ -306,14 +375,14 @@
   </div>
 </article>
 
-<article id="slide-14" class="slide slide--text">
+<article id="slide-18" class="slide slide--text">
   <div class="slide__inner" style="text-align: right;">
   <h3 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de las bancadas de Partidos Políticos</h3>
   <p class="demo-instructions">Las bancadas tiene un comportamiento generalmente en común, y por ello es posible ver patrones en la partipación de los congresistas.</p>
  </div>
 </article>
 
-  <article id="slide-15" class="slide ">
+  <article id="slide-19" class="slide ">
     <div class="col-sm-12" style="padding-left: 60px; padding-top: 80px;">
       <div id='dashboard'></div>
       <script src="js/piechart/piechart.js"></script>
@@ -338,7 +407,7 @@
       </script>
   </article>
 
-  <article id="slide-16" class="slide slide--text">
+  <article id="slide-20" class="slide slide--text">
     <div class="slide__inner" style="text-align: right;">
     <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
     <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
@@ -346,7 +415,7 @@
     </div>
   </article>
 
-  <article id="slide-17" class="slide slide--text">
+  <article id="slide-21" class="slide slide--text">
     <div id="chart"></div>
     <script src="js/piechart/pie.js"></script>
   </article>
@@ -356,19 +425,6 @@
   <script src="dotchart.js"></script>
 </article> -->
 
-<article id="slide-18" class="slide slide--text">
-  <div class="slide__inner" style="text-align: right;">
-    <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
-    <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
-  </div>
-</article>
-
-<article id="slide-19" class="slide slide--text">
-  <div class="slide__inner">
-    <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
-  </div>
-
-</article>
 
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/scripts/script.js"></script>
