@@ -190,14 +190,6 @@ font-family: 'Questrial'; }
   stroke-width: 2px;
   stroke: white;
 }
-        .ss-main {
-  position: relative;
-  display: inline-block;
-  user-select: none;
-  color: #666;
-  width: 50%;
-  font-family: "Montserrat", sans-serif;
-}
 
 /* Inicia - Slim select Style */
 
@@ -207,7 +199,7 @@ font-family: 'Questrial'; }
   user-select: none;
   color: #666;
   width: 78%;
-  font-family: 'Questrial', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
 .ss-main .ss-single-selected {
@@ -495,11 +487,14 @@ font-family: 'Questrial'; }
 }
 .ss-content .ss-list .ss-optgroup .ss-optgroup-label {
   padding: 6px 10px;
-  font-weight: 700;
+  font-weight: 600;
+  color: #666;
 }
+
 .ss-content .ss-list .ss-optgroup .ss-option {
   padding: 6px 6px 6px 25px;
-  font-size: 11px;
+  font-size: 18px;
+  color: #666;
 }
 .ss-content .ss-list .ss-optgroup-label-selectable {
   cursor: pointer;

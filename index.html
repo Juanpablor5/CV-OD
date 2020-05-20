@@ -382,46 +382,11 @@
   <div class="slide__inner">
     <h2 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de los congresistas</h2>
     <p class="demo-instructions" style="padding-top: 20px;" >los congresistas pueden votar frente a un proyecto de ley, con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes. Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
-    <div  class="col-lg-12" style="align-self: center; text-align: right;">
-
-      <select class="selectpicker" data-width="100%" multiple data-actions-box="true"  data-live-search="true" data-selected-text-format="count > 2">
-        <optgroup label="Centro Democrático">
-          <option>Álvaro Uribe Vélez</option>
-          <option>Paola Andrea Holguín Moreno</option>
-          <option>Amanda Rocío González Rodríguez</option>
-          <option>Ernesto Macías Tovar </option>
-          <option>María Fernanda Cabal Molina</option>
-          <option>Ciro Alejandro Ramírez Cortés</option>
-          <option>Santiago Valencia González</option>
-          <option>Paloma Susana Valencia Laserna</option>
-          <option>Carlos Felipe Mejía Mejía</option>
-        </optgroup>
-        <optgroup label="Partido Cambio Radical">
-          <option>Arturo Char Chaljub</option>
-          <option>Luis Eduardo Díaz Granados Torres</option>
-          <option>Rodrigo Lara Restrepo</option>
-          <option>Carlos Fernando Motoa</option>
-          <option>Daira de Jesús Galvis Méndez</option>
-          <option>Germán Varón</option>
-        </optgroup>
-        <optgroup label="Partido Conservador Colombiano">
-          <option>David Alejandro Barguil Assis</option>
-          <option>Efraín José Cepeda Sarabia</option>
-          <option>Nora María García Burgos</option>
-          <option>Laureano Augusto Acuña Díaz</option>
-          <option>Nadya Georgette Blel Scaff</option>
-          <option>Carlos Eduardo Enríquez Maya</option>
-        </optgroup>
-        <optgroup label="Partido Liberal Colombiano">
-          <option>Lidio Arturo García Turbay</option>
-          <option>Mauricio Gómez Amín</option>
-          <option>Horacio José Serpa</option>
-          <option>Miguel Ángel Pinto Hernández</option>
-          <option>Fabio Raúl Amín Saleme</option>
-          <option>Julián Bedoya Pulgarín</option>
-        </optgroup>
-      </select>
-    </div>
+    <select id="congresistas" multiple class="font">
+      <script src="js/scripts/select_congresistas.js"></script>
+    </select>
+    <button id="btn_select" class="btn btn-primary">Buscar</button>
+    <script src="js/scripts/slimselect.js"></script>
   </div>
 </article>
 

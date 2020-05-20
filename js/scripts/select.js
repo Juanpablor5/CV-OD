@@ -1,5 +1,4 @@
 setTimeout(() => {
-  let cadena = "";
   let object = [];
   fetch("data/json/CV/Etiquetas.json")
     .then((resp) => resp.json())

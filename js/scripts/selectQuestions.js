@@ -1,6 +1,5 @@
 setTimeout(() => {
   let preguntas = ["Mini"]
-  let cadena = "";
   let object = [];
   for (let i = 0; i < preguntas.length; i++) {
     object.push({ text: preguntas[i] });
