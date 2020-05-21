@@ -158,7 +158,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                                   cont_no += proyecto.voto.no;
                                   cont_abs += proyecto.voto.se_abstuvo;
                                   cont_asis += proyecto.voto.no_asistio;
-
+    
                                   proy_selec.votos[0] += cont_si;
                                   proy_selec.votos[1] += cont_no;
                                   proy_selec.votos[2] += cont_abs;
@@ -199,7 +199,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                       }
                     });
                     flor_si.push({ Tema: eti_selec.nombre, abs: cont_si_tot });
-                    flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });
+                    flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });                    
                     flor_abs.push({ Tema: eti_selec.nombre, abs: cont_abs_tot });
                     flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
                   });
