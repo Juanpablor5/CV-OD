@@ -326,7 +326,7 @@ window.onclick = function(event) {
           <script src="js/scripts/select.js"></script>
         </select>
         <script src="js/flores/flower.js"></script>
-        <button id="btn_etiquetas" class="btn btn-primary">Buscar</button>
+        <button id="btn_etiquetas" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Buscar</button>
       </div>
     </div>
   </div>
@@ -351,7 +351,7 @@ window.onclick = function(event) {
           <script src="js/scripts/selectQuestions.js"></script>
           <script src="js/scripts/slimselect.js"></script>
         </select>
-        <button id="btn_preguntas" class="btn btn-primary">Buscar</button>
+        <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;">Buscar</button>
       </div>
     </div>
 
@@ -384,7 +384,7 @@ window.onclick = function(event) {
       <script src="js/scripts/select_congresistas.js"></script>
     </select>
     <script src="js/flores/flower.js"></script>
-    <button id="btn_congresistas" class="btn btn-primary">Buscar</button>
+    <button id="btn_congresistas" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;" >Buscar</button>
     <script src="js/flores/data_flwr.js"></script>
     <script src="js/scripts/slimselect.js"></script>
     <p style="font-size: 40px; padding-top: 40px; font-family: 'Questrial', serif; font-weight: bold;">
@@ -422,15 +422,15 @@ window.onclick = function(event) {
 <article id="slide-13" class="slide slide--text">
   <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
     <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>10</b></mark> Como votáron los congresistas
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>10</b></mark> Como votáron los congresistas
       </p>
     <div class="row" style="text-align: center; justify-content: center;">
       <div class="container col-lg-6">
 
-        <p style="font-size: 15px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+        <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
           Número de votos a favor
           </p>
-        <div id="flr_si">
+        <div id="flr_si" style="margin-top: -10px;">
           <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
           <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
             Escoge al menos un tema.
@@ -440,10 +440,10 @@ window.onclick = function(event) {
       </div>
       
       <div class="container col-lg-6">
-        <p style="font-size: 15px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+        <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
           Número de votos en contra
           </p>
-        <div id="flr_no">
+        <div id="flr_no" style="margin-top: -10px;">
           <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
           <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
             Escoge al menos un tema.
@@ -453,10 +453,10 @@ window.onclick = function(event) {
     </div>
     <div class="row" style="text-align: center; justify-content: center;"> 
       <div class="container col-lg-6">
-        <p style="font-size: 15px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+        <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
           Número de Abstenciones
           </p>
-        <div id="flr_abs">
+        <div id="flr_abs" style="margin-top: -10px;">
           <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
           <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
             Escoge al menos un tema.
@@ -464,10 +464,10 @@ window.onclick = function(event) {
         </div>
       </div>
       <div class="container col-lg-6">
-        <p style="font-size: 15px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+        <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
           Número de Inasistencias
           </p>
-        <div id="flr_asis">
+        <div id="flr_asis" style="margin-top: -10px;">
           <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
           <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
             Escoge al menos un tema.
@@ -476,7 +476,7 @@ window.onclick = function(event) {
       </div>
       
     </div>
-    <p style="font-size: 18px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: lighter;">
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
       Este es el compotamiento legislativo de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> en proyectosd de ley relacionados con los temas seleccionados.
       </p>
     <script src="https://d3js.org/d3.v3.min.js"></script>
