@@ -1,6 +1,6 @@
 function bubbleChart() {
-    const width = 240;
-    const height = 150;
+    const width = 260;
+    const height = 190;
 
     // location to centre the bubbles
     const centre = { x: width/2 - 50, y: height/2 - 60 };
