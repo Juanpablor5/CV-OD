@@ -419,17 +419,68 @@ window.onclick = function(event) {
 
 <!--flores cv -->
 
-<article id="slide-13" class="slide">
-  <div class="row">
-    <div class="col-lg-6" id="flr_si"></div>
-    <div class="col-lg-6" id="flr_no"></div>
-  </div>
-  <div class="row">
-    <div class="col-lg-6" id="flr_abs"></div>
-    <div class="col-lg-6" id="flr_asis"></div>
-  </div>
-  <script src="https://d3js.org/d3.v3.min.js"></script>
+<article id="slide-13" class="slide slide--text">
+  <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+    <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>10</b></mark> Como votáron los congresistas
+      </p>
+    <div class="row" style="text-align: center; justify-content: center;">
+      <div class="container col-lg-6">
 
+        <p style="font-size: 15px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+          Número de votos a favor
+          </p>
+        <div id="flr_si">
+          <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+          <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            Escoge al menos un tema.
+            </p>
+        </div>
+
+      </div>
+      
+      <div class="container col-lg-6">
+        <p style="font-size: 15px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+          Número de votos en contra
+          </p>
+        <div id="flr_no">
+          <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+          <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            Escoge al menos un tema.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align: center; justify-content: center;"> 
+      <div class="container col-lg-6">
+        <p style="font-size: 15px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+          Número de Abstenciones
+          </p>
+        <div id="flr_abs">
+          <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+          <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            Escoge al menos un tema.
+            </p>
+        </div>
+      </div>
+      <div class="container col-lg-6">
+        <p style="font-size: 15px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+          Número de Inasistencias
+          </p>
+        <div id="flr_asis">
+          <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+          <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            Escoge al menos un tema.
+            </p>
+        </div>
+      </div>
+      
+    </div>
+    <p style="font-size: 18px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: lighter;">
+      Este es el compotamiento legislativo de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> en proyectosd de ley relacionados con los temas seleccionados.
+      </p>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+  </div>
 </article>
 
 
