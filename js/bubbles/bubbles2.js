@@ -33,7 +33,7 @@ function bubbleChart() {
   // set up colour scale
   const fillColour = d3.scaleOrdinal()
     .domain(["1", "2", "3", "4", "5"])
-    .range(["#FFDF00", "#1E5984", "#E13B2A", "#1361C1", "#E46C33"]);
+    .range(["#E13B2A", "#009900", "#4C0099", "#FFDF00", "#1361C1"]);
 
   // data manipulation function takes raw data from csv and converts it into an array of node objects
   // each node will store data and visualisation values to draw a bubble
@@ -85,7 +85,7 @@ function bubbleChart() {
       .style("box-shadow", "-3px 3px 15px #888888")
       .style("background-color", "white")
 
-    //tooltip.text("my tooltip text");  
+    //tooltip.text("my tooltip text");
 
     // bind nodes data to circle elements
     const elements = svg.selectAll('.bubble')
@@ -120,7 +120,7 @@ function bubbleChart() {
       .on('tick', ticked)
       .restart();
   }
-  
+
   // load data
   d3.csv('./data/csv/CV/iniciativasc1.csv').then(display);
 }

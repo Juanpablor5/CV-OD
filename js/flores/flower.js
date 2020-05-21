@@ -50,7 +50,7 @@ function flower_si(data) {
       div.style("display", "none");
       div
         .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. votos a favor:" + d.data.abs
+          "Tema: " + d.data.Tema + "</br>" + "No. votos a favor: " + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         )
         .style("left", d3.event.pageX + 12 + "px")
         .style("top", d3.event.pageY - 10 + "px")
@@ -135,7 +135,7 @@ function flower_no(data) {
       div.style("display", "none");
       div
         .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. votos a favor:" + d.data.abs
+          "Tema: " + d.data.Tema + "</br>" + "No. votos en contra: " + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         )
         .style("left", d3.event.pageX + 12 + "px")
         .style("top", d3.event.pageY - 10 + "px")
@@ -194,7 +194,7 @@ function flower_abs(data) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_asis")
+    .select("#svgContent_abs")
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -220,7 +220,7 @@ function flower_abs(data) {
       div.style("display", "none");
       div
         .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. votos a favor:" + d.data.abs
+          "Tema: " + d.data.Tema + "</br>" + "No. de abstenciones: " + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         )
         .style("left", d3.event.pageX + 12 + "px")
         .style("top", d3.event.pageY - 10 + "px")
@@ -279,7 +279,7 @@ function flower_asis(data) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_abs")
+    .select("#svgContent_asis")
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -305,7 +305,7 @@ function flower_asis(data) {
       div.style("display", "none");
       div
         .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. votos a favor:" + d.data.abs
+          "Tema: " + d.data.Tema + "</br>" + "No. de inasistencias: " + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         )
         .style("left", d3.event.pageX + 12 + "px")
         .style("top", d3.event.pageY - 10 + "px")

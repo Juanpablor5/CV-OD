@@ -17,10 +17,6 @@
       "nombre": "Agropecuario y agrícola"
     },
     {
-      "id": 6,
-      "nombre": "Clientelismo"
-    },
-    {
       "id": 7,
       "nombre": "Comunicaciones, medios y tecnologías de la información"
     },
@@ -59,10 +55,6 @@
     {
       "id": 16,
       "nombre": "Democracia"
-    },
-    {
-      "id": 17,
-      "nombre": "Deporte"
     },
     {
       "id": 18,
@@ -173,10 +165,6 @@
       "nombre": "Mujer"
     },
     {
-      "id": 45,
-      "nombre": "N/A"
-    },
-    {
       "id": 46,
       "nombre": "Notariado y registro"
     },
@@ -215,10 +203,6 @@
     {
       "id": 55,
       "nombre": "Pobreza"
-    },
-    {
-      "id": 56,
-      "nombre": "Política"
     },
     {
       "id": 57,
