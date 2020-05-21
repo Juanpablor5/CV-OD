@@ -201,13 +201,8 @@ font-family: 'Questrial'; }
   user-select: none;
   color: #666;
   width: 78%;
-<<<<<<< HEAD
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-=======
   font-family: 'Questrial', serif;
   font-size: 20px;
->>>>>>> origin
 }
 .ss-main .ss-single-selected {
   display: flex;
@@ -501,11 +496,7 @@ font-family: 'Questrial'; }
 
 .ss-content .ss-list .ss-optgroup .ss-option {
   padding: 6px 6px 6px 25px;
-<<<<<<< HEAD
-  font-size: 18px;
-=======
   font-size: 20px;
->>>>>>> origin
   color: #666;
 }
 .ss-content .ss-list .ss-optgroup-label-selectable {
@@ -610,8 +601,6 @@ font-family: 'Questrial'; }
   color: black;
   text-decoration: none;
   cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
 
@@ -646,5 +635,4 @@ font-family: 'Questrial'; }
     height: 72px;
     opacity: 0;
   }
->>>>>>> origin
 }
