@@ -7,7 +7,7 @@ setTimeout(() => {
     object.push({ text: años[i] });
   }
   let select = new SlimSelect({
-    select: "#años",
+    select: "#anios",
     placeholder: "Años",
     searchPlaceholder: "Buscar años",
     showSearch: true, // shows search field,

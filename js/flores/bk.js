@@ -7,9 +7,6 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     '<div id = "svgContent_abs" ></div>';
   document.getElementById("flr_asis").innerHTML =
     '<div id = "svgContent_asis" ></div>';
-
-  // let t0 = performance.now()
-
   let eti_selected = Array.from(etiquetas.selectedOptions).map(
     (option) => option.value
   );
@@ -47,7 +44,8 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   }
 
   let proy_etiq = [];
-  let cong_anio = [];
+  let proy_anio = [];
+  let proy_cong = [];
 
   let congre_selec = [];
 
@@ -71,7 +69,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
             (cong) => cong.nombre === cong_selected
           );
           if (typeof t !== "undefined") {
-            congre_selec.push(t.id);
+            congre_selec.push(t);
           }
         });
       });
@@ -80,97 +78,49 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
       fetch("data/json/CV/Anios.json")
         .then((resp) => resp.json())
         .then((anios) => {
-          if (congre_selec.length > 0) {
-            anio_selected.forEach((anio_selec) => {
-              cong_anio.push(
-                anios.find((anio) => anio.anio === parseInt(anio_selec))
-                  .congresista
-              );
-            });
-            fetch("data/json/CV/Proyectos.json")
-              .then((resp) => resp.json())
-              .then((proyectos) => {
-                let temp_id = [];
-                let proy_id = [];
-                for (let i = 0; i < cong_anio.length; i++) {
-                  const anio = cong_anio[i];
-                  congre_selec.forEach((cong_selec) => {
-                    anio.forEach((congre) => {
-                      if (cong_selec == congre.id) {
-                        congre.proyecto.forEach((proy) => {
-                          temp_id.push(proy.id);
-                        });
-                      }
-                    });
-                  });
-                }
-                $.each(temp_id, function (i, el) {
-                  if ($.inArray(el, proy_id) === -1) proy_id.push(el);
-                });
-                proy_id.forEach((pr_id) => {
-                  proy_fil.proyecto.push(
-                    proyectos.proyecto.find((pry) => pry.id === pr_id)
-                  );
-                });
-                proy_fil.proyecto.forEach((proyecto) => {
-                  proyecto.etiquetas.forEach((etiqueta) => {
-                    proy_etiq.forEach((seleccionada) => {
-                      if (seleccionada.nombre == etiqueta.nombre) {
-                        seleccionada.proyectos.push({
-                          id: proyecto.id,
-                          votos: [0, 0, 0, 0],
-                        });
-                      }
-                    });
+          anio_selected.forEach((anio_selec) => {
+            proy_anio.push(
+              anios.find((anio) => anio.anio === parseInt(anio_selec))
+                .congresista
+            );
+          });
+          fetch("data/json/CV/Proyectos.json")
+            .then((resp) => resp.json())
+            .then((proyectos) => {
+              let temp_id = [];
+              let proy_id = [];
+              for (let i = 0; i < proy_anio.length; i++) {
+                const element = proy_anio[i];
+                element.forEach((congre) => {
+                  congre.proyecto.forEach((proy) => {
+                    temp_id.push(proy.id);
                   });
                 });
+              }
+              $.each(temp_id, function (i, el) {
+                if ($.inArray(el, proy_id) === -1) proy_id.push(el);
               });
-          } else {
-            anio_selected.forEach((anio_selec) => {
-              cong_anio.push(
-                anios.find((anio) => anio.anio === parseInt(anio_selec))
-                  .congresista
-              );
-            });
-            fetch("data/json/CV/Proyectos.json")
-              .then((resp) => resp.json())
-              .then((proyectos) => {
-                let temp_id = [];
-                let proy_id = [];
-                for (let i = 0; i < cong_anio.length; i++) {
-                  const element = cong_anio[i];
-                  element.forEach((congre) => {
-                    congre.proyecto.forEach((proy) => {
-                      temp_id.push(proy.id);
-                    });
-                  });
-                }
-                $.each(temp_id, function (i, el) {
-                  if ($.inArray(el, proy_id) === -1) proy_id.push(el);
-                });
 
-                proy_id.forEach((pr_id) => {
-                  proy_fil.proyecto.push(
-                    proyectos.proyecto.find((pry) => pry.id === pr_id)
-                  );
-                });
-                proy_fil.proyecto.forEach((proyecto) => {
-                  proyecto.etiquetas.forEach((etiqueta) => {
-                    proy_etiq.forEach((seleccionada) => {
-                      if (seleccionada.nombre == etiqueta.nombre) {
-                        seleccionada.proyectos.push({
-                          id: proyecto.id,
-                          votos: [0, 0, 0, 0],
-                        });
-                      }
-                    });
+              proy_id.forEach((pr_id) => {
+                proy_fil.proyecto.push(
+                  proyectos.proyecto.find((pry) => pry.id === pr_id)
+                );
+              });
+              proy_fil.proyecto.forEach((proyecto) => {
+                proyecto.etiquetas.forEach((etiqueta) => {
+                  proy_etiq.forEach((seleccionada) => {
+                    if (seleccionada.nombre == etiqueta.nombre) {
+                      seleccionada.proyectos.push({
+                        id: proyecto.id,
+                        votos: [0, 0, 0, 0],
+                      });
+                    }
                   });
                 });
               });
-          }
+            });
         })
         .then((_) => {
-          console.log(proy_etiq);
           fetch(`data/json/CV/Votos_congresistas/Votos_Unido.json`)
             .then((resp) => resp.json())
             .then((data_vot) => {
@@ -211,12 +161,11 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
               });
             })
             .then((_) => {
+              // console.log(congre_selec)
               flower_si(flor_si);
               flower_no(flor_no);
               flower_abs(flor_abs);
               flower_asis(flor_asis);
-              // let t1 = performance.now()
-              // console.log("El proceso de filtrado tardó " + (t1 - t0) + " milisegundos.")
             });
         });
     });

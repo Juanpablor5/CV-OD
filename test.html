@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Civis Sum</title>
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Questrial">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  </head>
+  <body>
+   
+    <!--filtro por años -->
+
+<article id="slide-0" class="slide slide--text slide--locked" >
+    <div class="slide__inner" style="text-align: right;" >
+      <h3 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">Línea de tiempo</h3>
+      <p><em>Filtra por años</em></p>
+      <p style="font-size: 18px; padding-top: 20px;">
+      Podrás ver como es la representación ciudadana según los años.
+      </p>
+      <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">¡Elije algunos años!</h1>
+        <div class="row" style="align-self: center; font-size: 12 px;">
+          <div class="col-md-12">
+            <select id="anios" multiple class="font">
+              <script src="js/scripts/selectYear.js"></script>
+              <script src="js/scripts/slimselect.js"></script>
+            </select>
+            <button id="btn_anios" class="btn btn-primary">Seleccionar</button>
+          </div>
+        </div>
+    </div>
+  </article>
+  
+  <!--filtro por temas cv -->
+  
+  <article id="slide-1" class="slide slide--scrolling slide--text">
+    <div class="slide__inner">
+      <h1 style="padding-top: 15px; font-weight: 100; font-family: 'Questrial', serif;">... y temas!</h1>
+      <p style="font-size: 18px; padding-top: 20px;">Podrás ver como es la representación ciudadana según temáticas que
+        te interesen.</p>
+      <div class="row" style="align-self: center; font-size: 12 px;">
+        <div class="col-md-12">
+          <select id="etiquetas" multiple class="font">
+            <script src="js/scripts/select.js"></script>
+          </select>
+          <script src="js/flores/flower.js"></script>
+          <button id="btn_etiquetas" class="btn btn-primary">Buscar</button>
+        </div>
+      </div>
+    </div>
+  </article>
+  
+  <!--filtro congresistas -->
+  
+  <article id="slide-2" class="slide slide--text">
+    <div class="slide__inner">
+      <h2 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de los congresistas</h2>
+      <p class="demo-instructions" style="padding-top: 20px;" >los congresistas pueden votar frente a un proyecto de ley, con votos: Si, No o se Abstiene, el comportamiento de los congresistas revela algunos puntos importantes. Asimismo, el numero de inasistencias y abstenciones son un factor de representación.</p>
+      <select id="congresistas" multiple class="font">
+        <script src="js/scripts/select_congresistas.js"></script>
+      </select>
+      <script src="js/flores/flower.js"></script>
+      <button id="btn_congresistas" class="btn btn-primary">Buscar</button>
+      <script src="js/flores/data_flwr.js"></script>
+      <script src="js/scripts/slimselect.js"></script>
+    </div>
+  </article>
+  
+  <!--flores cv -->
+  
+  <article id="slide-3" class="slide">
+    <div class="row">
+      <div class="col-lg-6" id="flr_si"></div>
+      <div class="col-lg-6" id="flr_no"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6" id="flr_abs"></div>
+      <div class="col-lg-6" id="flr_asis"></div>
+    </div>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+  
+  </article>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/scripts/script.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  
+  </body>
+  
+</html>
