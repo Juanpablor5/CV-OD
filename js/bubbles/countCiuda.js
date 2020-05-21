@@ -35,6 +35,6 @@ fetch("data/json/CV/temas.json")
       data.forEach((u) => {
         temasCiu.push(u.id);
       });
-       console.log(temasCiu);
+      //  console.log(temasCiu);
     }
   });
