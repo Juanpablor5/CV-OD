@@ -1,6 +1,6 @@
-let botonAños = document.getElementById("btn_select1");
-let listaAños = document.getElementById("años");
-let listaPreguntas = document.getElementById("años");
+/*let botonAños = document.getElementById("btn_anios");
+let listaAños = document.getElementById("anios");
+let listaPreguntas = document.getElementById("anios");
 let listaEtiquetas = document.getElementById("preguntas");
 let preguntas = []
 let preguntalesFinales = []
@@ -67,7 +67,7 @@ botonAños.addEventListener("click", function() {
       closeOnSelect: false,
       data: object,
     });
-  }, 300);*/
+  }, 300);
 }, false);
-
+*/
 

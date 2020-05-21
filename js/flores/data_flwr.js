@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-$("#btn_select, #btn_select1").click(function () {
-=======
 $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
->>>>>>> origin
   document.getElementById("flr_si").innerHTML =
     '<div id = "svgContent_si" ></div>';
   document.getElementById("flr_no").innerHTML =
@@ -11,16 +7,6 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     '<div id = "svgContent_abs" ></div>';
   document.getElementById("flr_asis").innerHTML =
     '<div id = "svgContent_asis" ></div>';
-<<<<<<< HEAD
-  let eti_selected = Array.from(etiquetas.selectedOptions).map(
-    (option) => option.value
-  );
-
-  let anio_selected = Array.from(años.selectedOptions).map(
-    (option) => option.value
-  );
-
-=======
 
   // let t0 = performance.now()
 
@@ -36,7 +22,6 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     (option) => option.value
   );
 
->>>>>>> origin
   if (
     anio_selected.length == 0 ||
     anio_selected[0] == "2004" ||
@@ -62,14 +47,10 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   }
 
   let proy_etiq = [];
-<<<<<<< HEAD
-  let proy_anio = [];
-=======
   let cong_anio = [];
 
   let congre_selec = [];
 
->>>>>>> origin
   let proy_fil = { proyecto: [] };
 
   let flor_si = [];
@@ -81,54 +62,6 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     proy_etiq.push({ nombre: seleccionada, proyectos: [] });
   });
 
-<<<<<<< HEAD
-  fetch("data/json/CV/Anios.json")
-    .then((resp) => resp.json())
-    .then((anios) => {
-      anio_selected.forEach((anio_selec) => {
-        proy_anio.push(
-          anios.find((anio) => anio.anio === parseInt(anio_selec)).congresista
-        );
-      });
-      fetch("data/json/CV/Proyectos.json")
-        .then((resp) => resp.json())
-        .then((proyectos) => {
-          let temp_id = [];
-          let proy_id = [];
-          for (let i = 0; i < proy_anio.length; i++) {
-            const element = proy_anio[i];
-            element.forEach((congre) => {
-              congre.proyecto.forEach((proy) => {
-                temp_id.push(proy.id);
-              });
-            });
-          }
-          $.each(temp_id, function (i, el) {
-            if ($.inArray(el, proy_id) === -1) proy_id.push(el);
-          });
-
-          proy_id.forEach((pr_id) => {
-            proy_fil.proyecto.push(
-              proyectos.proyecto.find((pry) => pry.id === pr_id)
-            );
-          });
-          proy_fil.proyecto.forEach((proyecto) => {
-            proyecto.etiquetas.forEach((etiqueta) => {
-              proy_etiq.forEach((seleccionada) => {
-                if (seleccionada.nombre == etiqueta.nombre) {
-                  seleccionada.proyectos.push({
-                    id: proyecto.id,
-                    votos: [0, 0, 0, 0],
-                  });
-                }
-              });
-            });
-          });
-        });
-    })
-    .then((_) => {
-      fetch(`data/json/CV/Votos_congresistas/Votos_Unido.json`)
-=======
   fetch("data/json/CV/Congresistas.json")
     .then((resp) => resp.json())
     .then((partidos) => {
@@ -145,7 +78,6 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     })
     .then((_) => {
       fetch("data/json/CV/Anios.json")
->>>>>>> origin
         .then((resp) => resp.json())
         .then((anios) => {
           anio_selected.forEach((anio_selec) => {
@@ -226,7 +158,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                                   cont_no += proyecto.voto.no;
                                   cont_abs += proyecto.voto.se_abstuvo;
                                   cont_asis += proyecto.voto.no_asistio;
-    
+
                                   proy_selec.votos[0] += cont_si;
                                   proy_selec.votos[1] += cont_no;
                                   proy_selec.votos[2] += cont_abs;
@@ -267,7 +199,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                       }
                     });
                     flor_si.push({ Tema: eti_selec.nombre, abs: cont_si_tot });
-                    flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });                    
+                    flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });
                     flor_abs.push({ Tema: eti_selec.nombre, abs: cont_abs_tot });
                     flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
                   });
@@ -281,20 +213,6 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                   // console.log("El proceso de filtrado tardó " + (t1 - t0) + " milisegundos.")
                 });
             });
-<<<<<<< HEAD
-            flor_si.push({ Tema: eti_selec.nombre, abs: cont_si_tot });
-            flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });
-            flor_abs.push({ Tema: eti_selec.nombre, abs: cont_abs_tot });
-            flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
-          });
-        })
-        .then((_) => {
-          flower_si(flor_si);
-          flower_no(flor_no);
-          flower_abs(flor_abs);
-          flower_asis(flor_asis);
-=======
->>>>>>> origin
         });
     });
 });
