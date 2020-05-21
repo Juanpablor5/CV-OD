@@ -10,9 +10,13 @@ fetch("data/json/OD/perguntasCuatrenios.json")
       data.forEach((u) => {
         var categoria = u.Subcategoría;
         var pregunta = u.Labels;
-        categorias.push([pregunta, "1", "1"]);
+        var arreglo = u
+        var cuatrenio = u["2014-2018"]
+        if (cuatrenio == 1){
+          categorias.push([pregunta, "1", "1"]);
+        } 
       });
-      // console.log(categorias);
+      //console.log(categorias);
       let csvContent2 =
         "data:text/csv;charset=utf-8," +
         categorias.map((e) => e.join(";")).join("\n");
@@ -31,6 +35,6 @@ fetch("data/json/CV/temas.json")
       data.forEach((u) => {
         temasCiu.push(u.id);
       });
-      // console.log(temasCiu);
+       console.log(temasCiu);
     }
   });

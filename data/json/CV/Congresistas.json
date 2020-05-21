@@ -5,11 +5,19 @@
          "nombre": "AICO - Autoridades Indígenas de Colombia",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 184,
                "nombre": "Ernesto Ramiro Estacio"
             },
             {
                "id": 218,
+=======
+               "id": 180,
+               "nombre": "Ernesto Ramiro Estacio"
+            },
+            {
+               "id": 213,
+>>>>>>> origin
                "nombre": "German Bernardo Carlosama Lopez"
             }
          ]
@@ -19,7 +27,11 @@
          "nombre": "ALAS",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 606,
+=======
+               "id": 600,
+>>>>>>> origin
                "nombre": "Roberto Jose Herrera Diaz"
             }
          ]
@@ -29,6 +41,7 @@
          "nombre": "ASI - Alianza Social Independiente",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 149,
                "nombre": "Edgar Alexander Cipriano Moreno"
             },
@@ -42,6 +55,21 @@
             },
             {
                "id": 477,
+=======
+               "id": 148,
+               "nombre": "Edgar Alexander Cipriano Moreno"
+            },
+            {
+               "id": 317,
+               "nombre": "Jesus Enrique Piñacue Achicue"
+            },
+            {
+               "id": 413,
+               "nombre": "Juan Valdes"
+            },
+            {
+               "id": 471,
+>>>>>>> origin
                "nombre": "Marco Anibal Avirama Avirama"
             }
          ]
@@ -51,7 +79,11 @@
          "nombre": "Acción Social",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 303,
+=======
+               "id": 298,
+>>>>>>> origin
                "nombre": "Jairo Alfredo Fernandez Quessep"
             }
          ]
@@ -65,7 +97,11 @@
                "nombre": "Alexa Valencia Quijano"
             },
             {
+<<<<<<< HEAD
                "id": 631,
+=======
+               "id": 624,
+>>>>>>> origin
                "nombre": "Silfredo Morales Altamar"
             }
          ]
@@ -75,6 +111,7 @@
          "nombre": "Alas Equipo Colombia",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 27,
                "nombre": "Alirio Villamizar Afanador"
             },
@@ -104,6 +141,37 @@
             },
             {
                "id": 603,
+=======
+               "id": 26,
+               "nombre": "Alirio Villamizar Afanador"
+            },
+            {
+               "id": 33,
+               "nombre": "Álvaro Araujo Castro"
+            },
+            {
+               "id": 36,
+               "nombre": "Álvaro Moron Cuello"
+            },
+            {
+               "id": 54,
+               "nombre": "Antonio Valencia Duque"
+            },
+            {
+               "id": 208,
+               "nombre": "Gabriel Ignacio Zapata Correa"
+            },
+            {
+               "id": 351,
+               "nombre": "Jorge Hernando Pedraza Gutierrez"
+            },
+            {
+               "id": 565,
+               "nombre": "Óscar de Jesus Suarez Mira"
+            },
+            {
+               "id": 597,
+>>>>>>> origin
                "nombre": "Ricardo Chajin Florian"
             }
          ]
@@ -113,6 +181,7 @@
          "nombre": "Alianza Verde",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 41,
                "nombre": "Ana Cristina Paz Cardona "
             },
@@ -163,6 +232,58 @@
             {
                "id": 624,
                "nombre": "Sandra Liliana Ortiz Nova "
+=======
+               "id": 40,
+               "nombre": "Ana Cristina Paz Cardona"
+            },
+            {
+               "id": 49,
+               "nombre": "Angélica Lozano Correa"
+            },
+            {
+               "id": 125,
+               "nombre": "Claudia Nayibe Lopez Hernandez"
+            },
+            {
+               "id": 194,
+               "nombre": "Felix Jose Valera Ibañez"
+            },
+            {
+               "id": 271,
+               "nombre": "Inti Raúl Asprilla Reyes"
+            },
+            {
+               "id": 280,
+               "nombre": "Iván Leonidas Name Vásquez"
+            },
+            {
+               "id": 338,
+               "nombre": "Jorge Eduardo Londoño Ulloa"
+            },
+            {
+               "id": 341,
+               "nombre": "Jorge Eliecer Guevara"
+            },
+            {
+               "id": 342,
+               "nombre": "Jorge Elieser Prieto Riveros"
+            },
+            {
+               "id": 355,
+               "nombre": "Jorge Ivan Ospina Gomez"
+            },
+            {
+               "id": 562,
+               "nombre": "Óscar Ospina Quintero"
+            },
+            {
+               "id": 599,
+               "nombre": "River Franklin Legro Segura"
+            },
+            {
+               "id": 618,
+               "nombre": "Sandra Liliana Ortiz Nova"
+>>>>>>> origin
             }
          ]
       },
@@ -171,7 +292,11 @@
          "nombre": "Alternativa Democrática",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 651,
+=======
+               "id": 644,
+>>>>>>> origin
                "nombre": "Victoria Eugenia Vargas Vives"
             }
          ]
@@ -185,6 +310,7 @@
                "nombre": "Adriana Franco Castaño"
             },
             {
+<<<<<<< HEAD
                "id": 15,
                "nombre": "Alfonso Clavijo Gonzalez"
             },
@@ -438,6 +564,257 @@
             },
             {
                "id": 656,
+=======
+               "id": 18,
+               "nombre": "Alfonso Valdivieso Sarmiento"
+            },
+            {
+               "id": 53,
+               "nombre": "Antonio Restrepo Salazar"
+            },
+            {
+               "id": 55,
+               "nombre": "Antonio del Cristo Guerra de la Espriella"
+            },
+            {
+               "id": 60,
+               "nombre": "Arturo Char Chaljub"
+            },
+            {
+               "id": 63,
+               "nombre": "Atilano Alonso Giraldo Arboleda"
+            },
+            {
+               "id": 65,
+               "nombre": "Bayardo Gilberto Betancourt Pérez"
+            },
+            {
+               "id": 66,
+               "nombre": "Bernabe Celis Carrillo"
+            },
+            {
+               "id": 76,
+               "nombre": "Carlos Abraham Jiménez López"
+            },
+            {
+               "id": 78,
+               "nombre": "Carlos Alberto Cuenca Chaux"
+            },
+            {
+               "id": 97,
+               "nombre": "Carlos Enrique Alvarado Chavez"
+            },
+            {
+               "id": 101,
+               "nombre": "Carlos Fernando Galan Pachon"
+            },
+            {
+               "id": 102,
+               "nombre": "Carlos Fernando Motoa Solarte"
+            },
+            {
+               "id": 119,
+               "nombre": "Ciro Fernández Núñez"
+            },
+            {
+               "id": 123,
+               "nombre": "Claudia Janneth Wilches Sarmiento"
+            },
+            {
+               "id": 136,
+               "nombre": "David Char Navas"
+            },
+            {
+               "id": 174,
+               "nombre": "Eloy Chichi Quintero Romero"
+            },
+            {
+               "id": 176,
+               "nombre": "Emma Claudia Castellanos"
+            },
+            {
+               "id": 187,
+               "nombre": "Fabio Arango Torres"
+            },
+            {
+               "id": 190,
+               "nombre": "Fabián Gerardo Castillo Suárez"
+            },
+            {
+               "id": 205,
+               "nombre": "Fuad Ricardo Char Abdala"
+            },
+            {
+               "id": 216,
+               "nombre": "German Vargas Lleras"
+            },
+            {
+               "id": 220,
+               "nombre": "Germán Varón Cotrino"
+            },
+            {
+               "id": 223,
+               "nombre": "Gina Parody D'Echeona"
+            },
+            {
+               "id": 224,
+               "nombre": "Gloria Betty Zorro Africano"
+            },
+            {
+               "id": 240,
+               "nombre": "Heberth Artunduaga Ortiz"
+            },
+            {
+               "id": 252,
+               "nombre": "Hernando Chagres Sarmiento"
+            },
+            {
+               "id": 254,
+               "nombre": "Hernando Jose Padaui Alvarez"
+            },
+            {
+               "id": 266,
+               "nombre": "Humberto de Jesus Builes Correa"
+            },
+            {
+               "id": 268,
+               "nombre": "Héctor Javier Vergara Sierra"
+            },
+            {
+               "id": 294,
+               "nombre": "Jaime Rodríguez Contreras"
+            },
+            {
+               "id": 296,
+               "nombre": "Jair Arango Torres"
+            },
+            {
+               "id": 311,
+               "nombre": "Javier Enrique Caceres Leal"
+            },
+            {
+               "id": 344,
+               "nombre": "Jorge Emilio Rey Ángel"
+            },
+            {
+               "id": 348,
+               "nombre": "Jorge Enrique Rozo Rodriguez"
+            },
+            {
+               "id": 349,
+               "nombre": "Jorge Enrique Velez Garcia"
+            },
+            {
+               "id": 363,
+               "nombre": "Jose Fernando Castro Caycedo"
+            },
+            {
+               "id": 364,
+               "nombre": "Jose Francisco Herrera Acosta"
+            },
+            {
+               "id": 369,
+               "nombre": "Jose Ignacio Bermudez Sanchez"
+            },
+            {
+               "id": 385,
+               "nombre": "José Luis Pérez Oyuela"
+            },
+            {
+               "id": 388,
+               "nombre": "Juan Carlos Granados Becerra"
+            },
+            {
+               "id": 395,
+               "nombre": "Juan Carlos Salazar Uribe"
+            },
+            {
+               "id": 408,
+               "nombre": "Juan Manuel Hernandez Bohorquez"
+            },
+            {
+               "id": 422,
+               "nombre": "Karen Violette Cure Corcione"
+            },
+            {
+               "id": 442,
+               "nombre": "Luis Carlos Torres Rueda"
+            },
+            {
+               "id": 443,
+               "nombre": "Luis Eduardo Diazgranados Torres"
+            },
+            {
+               "id": 480,
+               "nombre": "Maria Violeta Niño Morales"
+            },
+            {
+               "id": 485,
+               "nombre": "Mario Londoño Arcila"
+            },
+            {
+               "id": 500,
+               "nombre": "Mauricio Maria de Eucaristia Zuluaga Ruiz"
+            },
+            {
+               "id": 501,
+               "nombre": "Mauricio Parodi Diaz"
+            },
+            {
+               "id": 505,
+               "nombre": "Mercedes Rincon Espinel"
+            },
+            {
+               "id": 510,
+               "nombre": "Miguel Antonio Carebilla Cuellar"
+            },
+            {
+               "id": 523,
+               "nombre": "Nancy Patricia Gutierrez Castañeda"
+            },
+            {
+               "id": 546,
+               "nombre": "Omar de Jesus Florez Velez"
+            },
+            {
+               "id": 558,
+               "nombre": "Óscar Humberto Henao Martinez"
+            },
+            {
+               "id": 560,
+               "nombre": "Óscar Leonidas Wilchez Carreño"
+            },
+            {
+               "id": 572,
+               "nombre": "Pedro Antonio Aguirre Racines"
+            },
+            {
+               "id": 592,
+               "nombre": "Reginaldo Enrique Montes Alvarez"
+            },
+            {
+               "id": 593,
+               "nombre": "Rene Rodrigo Garzon Martinez"
+            },
+            {
+               "id": 603,
+               "nombre": "Rodrigo Lara Restrepo"
+            },
+            {
+               "id": 608,
+               "nombre": "Rosmery Martinez Rosales"
+            },
+            {
+               "id": 630,
+               "nombre": "Tarquino Pacheco Camargo"
+            },
+            {
+               "id": 647,
+               "nombre": "William Ramon Garcia Tirado"
+            },
+            {
+               "id": 649,
+>>>>>>> origin
                "nombre": "William de Jesus Ortega Rojas"
             }
          ]
@@ -447,6 +824,7 @@
          "nombre": "Centro Democrático",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 24,
                "nombre": "Alfredo Ramos Maya "
             },
@@ -620,6 +998,181 @@
             },
             {
                "id": 660,
+=======
+               "id": 23,
+               "nombre": "Alfredo Ramos Maya"
+            },
+            {
+               "id": 24,
+               "nombre": "Alfredo Rangel Suarez"
+            },
+            {
+               "id": 665,
+               "nombre": "Álvaro Hernán Prada Artunduaga"
+            },
+            {
+               "id": 666,
+               "nombre": "Álvaro Uribe Vélez"
+            },
+            {
+               "id": 42,
+               "nombre": "Ana Mercedes Gomez Martinez"
+            },
+            {
+               "id": 79,
+               "nombre": "Carlos Alberto Cuero Valencia"
+            },
+            {
+               "id": 100,
+               "nombre": "Carlos Felipe Mejía Mejía"
+            },
+            {
+               "id": 117,
+               "nombre": "Ciro Alejandro Ramírez Cortés"
+            },
+            {
+               "id": 126,
+               "nombre": "Constantino Rodriguez Calvo"
+            },
+            {
+               "id": 133,
+               "nombre": "Daniel Alberto Cabrales Castillo"
+            },
+            {
+               "id": 165,
+               "nombre": "Edward David Rodríguez Rodríguez"
+            },
+            {
+               "id": 179,
+               "nombre": "Ernesto Macías Tovar"
+            },
+            {
+               "id": 182,
+               "nombre": "Esperanza Pinzon de Jimenez"
+            },
+            {
+               "id": 185,
+               "nombre": "Everth Bustamante Garcia"
+            },
+            {
+               "id": 191,
+               "nombre": "Faruk Urrutia Jalilie"
+            },
+            {
+               "id": 192,
+               "nombre": "Federico Eduardo Hoyos Salazar"
+            },
+            {
+               "id": 196,
+               "nombre": "Fernando Nicolás Araújo Rumié"
+            },
+            {
+               "id": 197,
+               "nombre": "Fernando Sierra Ramos"
+            },
+            {
+               "id": 261,
+               "nombre": "Honorio Miguel Henríquez Pinedo"
+            },
+            {
+               "id": 263,
+               "nombre": "Hugo Hernan Gonzalez Medina"
+            },
+            {
+               "id": 277,
+               "nombre": "Ivan Duque Márquez"
+            },
+            {
+               "id": 324,
+               "nombre": "Johana Chaves Garcia"
+            },
+            {
+               "id": 386,
+               "nombre": "José Obdulio Gaviria Vélez"
+            },
+            {
+               "id": 398,
+               "nombre": "Juan Carlos Velez Uribe"
+            },
+            {
+               "id": 427,
+               "nombre": "Leon Rigoberto Baron Neira"
+            },
+            {
+               "id": 429,
+               "nombre": "Libardo Antonio Taborda Castro"
+            },
+            {
+               "id": 474,
+               "nombre": "Marcos Yohan Diaz Barrera"
+            },
+            {
+               "id": 475,
+               "nombre": "Margarita María Restrepo Arango"
+            },
+            {
+               "id": 479,
+               "nombre": "Maria Regina Zuluaga Henao"
+            },
+            {
+               "id": 495,
+               "nombre": "María Fernanda Cabal Molina"
+            },
+            {
+               "id": 496,
+               "nombre": "María del Rosario Guerra de la Espriella"
+            },
+            {
+               "id": 537,
+               "nombre": "Nohora Stella Tovar Rey"
+            },
+            {
+               "id": 549,
+               "nombre": "Orlando Castañeda Serrano"
+            },
+            {
+               "id": 568,
+               "nombre": "Paloma Susana Valencia Laserna"
+            },
+            {
+               "id": 569,
+               "nombre": "Paola Andrea Holguín Moreno"
+            },
+            {
+               "id": 583,
+               "nombre": "Pierre Eugenio Garcia Jacquier"
+            },
+            {
+               "id": 590,
+               "nombre": "Ramon Elias Lopez Sabogal"
+            },
+            {
+               "id": 613,
+               "nombre": "Rubén Darío Molano Piñeros"
+            },
+            {
+               "id": 614,
+               "nombre": "Samuel Alejandro Hoyos Mejia"
+            },
+            {
+               "id": 621,
+               "nombre": "Santiago Valencia González"
+            },
+            {
+               "id": 629,
+               "nombre": "Susana Correa Borrero"
+            },
+            {
+               "id": 631,
+               "nombre": "Tatiana Cabello Florez"
+            },
+            {
+               "id": 634,
+               "nombre": "Thania Vega de Plazas"
+            },
+            {
+               "id": 653,
+>>>>>>> origin
                "nombre": "Wilson Córdoba Mena"
             }
          ]
@@ -629,6 +1182,7 @@
          "nombre": "Coalición",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 217,
                "nombre": "German Antonio Aguirre Muñoz"
             },
@@ -642,6 +1196,21 @@
             },
             {
                "id": 657,
+=======
+               "id": 212,
+               "nombre": "German Antonio Aguirre Muñoz"
+            },
+            {
+               "id": 439,
+               "nombre": "Luis Antonio Serrano Morales"
+            },
+            {
+               "id": 610,
+               "nombre": "Ruben Dario Quintero Villada"
+            },
+            {
+               "id": 650,
+>>>>>>> origin
                "nombre": "Wilmer David Gonzalez Brito"
             }
          ]
@@ -651,6 +1220,7 @@
          "nombre": "Colombia Democrática",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 32,
                "nombre": "Álvaro Alfonso Garcia Romero"
             },
@@ -672,6 +1242,25 @@
             },
             {
                "id": 602,
+=======
+               "id": 31,
+               "nombre": "Álvaro Alfonso Garcia Romero"
+            },
+            {
+               "id": 391,
+               "nombre": "Juan Carlos Martinez Sinisterra"
+            },
+            {
+               "id": 463,
+               "nombre": "Luzelena Restrepo Betancourt"
+            },
+            {
+               "id": 488,
+               "nombre": "Mario Uribe Escobar"
+            },
+            {
+               "id": 596,
+>>>>>>> origin
                "nombre": "Ricardo Ariel Elcure Chacon"
             }
          ]
@@ -681,7 +1270,11 @@
          "nombre": "Colombia Humana",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 675,
+=======
+               "id": 668,
+>>>>>>> origin
                "nombre": "Ángela María Robledo Gómez"
             }
          ]
@@ -691,7 +1284,11 @@
          "nombre": "Colombia Siempre",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 453,
+=======
+               "id": 447,
+>>>>>>> origin
                "nombre": "Luis Enrique Dussan Lopez"
             }
          ]
@@ -701,11 +1298,19 @@
          "nombre": "Colombia Viva",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 141,
                "nombre": "Dieb Nicolas Maloof Cuse"
             },
             {
                "id": 362,
+=======
+               "id": 140,
+               "nombre": "Dieb Nicolas Maloof Cuse"
+            },
+            {
+               "id": 357,
+>>>>>>> origin
                "nombre": "Jorge Luis Caballero Caballero"
             }
          ]
@@ -715,7 +1320,11 @@
          "nombre": "Compromiso Cívico Cristiano - C4",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 327,
+=======
+               "id": 322,
+>>>>>>> origin
                "nombre": "Jimmy Chamorro Cruz"
             }
          ]
@@ -725,7 +1334,11 @@
          "nombre": "Consejo Comunitario Renacer Negro",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 252,
+=======
+               "id": 247,
+>>>>>>> origin
                "nombre": "Heriberto Arrechea Banguera"
             }
          ]
@@ -736,13 +1349,18 @@
          "congresistas": [
             {
                "id": 4,
+<<<<<<< HEAD
                "nombre": "Aida Merlano Rebolledo "
+=======
+               "nombre": "Aida Merlano Rebolledo"
+>>>>>>> origin
             },
             {
                "id": 14,
                "nombre": "Alfonso Antonio Campo Escobar"
             },
             {
+<<<<<<< HEAD
                "id": 16,
                "nombre": "Alfonso Nuñez Lapeira"
             },
@@ -1184,6 +1802,445 @@
             },
             {
                "id": 669,
+=======
+               "id": 15,
+               "nombre": "Alfonso Nuñez Lapeira"
+            },
+            {
+               "id": 19,
+               "nombre": "Alfredo Ape Cuello Baute"
+            },
+            {
+               "id": 20,
+               "nombre": "Alfredo Bocanegra Varon"
+            },
+            {
+               "id": 35,
+               "nombre": "Álvaro Lopez Gil"
+            },
+            {
+               "id": 59,
+               "nombre": "Armando Antonio Zabaraín D'arce"
+            },
+            {
+               "id": 61,
+               "nombre": "Arturo Yepes Alzate"
+            },
+            {
+               "id": 69,
+               "nombre": "Buenaventura León León"
+            },
+            {
+               "id": 71,
+               "nombre": "Camilo Andres Abril Jaimes"
+            },
+            {
+               "id": 75,
+               "nombre": "Carlina de los Angeles Rodriguez Rodriguez"
+            },
+            {
+               "id": 81,
+               "nombre": "Carlos Alberto Zuluaga Diaz"
+            },
+            {
+               "id": 89,
+               "nombre": "Carlos Augusto Rojas Ortiz"
+            },
+            {
+               "id": 91,
+               "nombre": "Carlos Eduardo Enríquez Maya"
+            },
+            {
+               "id": 94,
+               "nombre": "Carlos Eduardo Leon Celis"
+            },
+            {
+               "id": 106,
+               "nombre": "Carlos Nery Lopez Carbono"
+            },
+            {
+               "id": 107,
+               "nombre": "Carlos Ramiro Chavarro Cuellar"
+            },
+            {
+               "id": 109,
+               "nombre": "Carlos Uriel Naranjo Velez"
+            },
+            {
+               "id": 112,
+               "nombre": "Cesar Augusto Franco Arbelaez"
+            },
+            {
+               "id": 114,
+               "nombre": "Cesar Tulio Delgado Blandon"
+            },
+            {
+               "id": 120,
+               "nombre": "Ciro Ramirez Pinzon"
+            },
+            {
+               "id": 135,
+               "nombre": "David Alejandro Barguil Assis"
+            },
+            {
+               "id": 141,
+               "nombre": "Diego Alberto Naranjo Escobar"
+            },
+            {
+               "id": 143,
+               "nombre": "Diela Liliana Benavides Solarte"
+            },
+            {
+               "id": 150,
+               "nombre": "Edgar Antonio Valderrama Zabala"
+            },
+            {
+               "id": 168,
+               "nombre": "Efraín José Cepeda Sarabia"
+            },
+            {
+               "id": 172,
+               "nombre": "Elias Raad Hernandez"
+            },
+            {
+               "id": 181,
+               "nombre": "Esmeralda Sarria Villa"
+            },
+            {
+               "id": 195,
+               "nombre": "Fernando Eustacio Tamayo Tamayo"
+            },
+            {
+               "id": 217,
+               "nombre": "German Villegas Villegas"
+            },
+            {
+               "id": 218,
+               "nombre": "Germán Alcides Blanco Álvarez"
+            },
+            {
+               "id": 228,
+               "nombre": "Gonzalo Garcia Angarita"
+            },
+            {
+               "id": 237,
+               "nombre": "Gustavo Hernán Puentes Díaz"
+            },
+            {
+               "id": 246,
+               "nombre": "Henry Humberto Arcila Moncada"
+            },
+            {
+               "id": 249,
+               "nombre": "Heriberto Sanabria Astudillo"
+            },
+            {
+               "id": 251,
+               "nombre": "Hernando Cardenas Cardoso"
+            },
+            {
+               "id": 255,
+               "nombre": "Hernán Francisco Andrade Serrano"
+            },
+            {
+               "id": 267,
+               "nombre": "Humphrey Roa Sarmiento"
+            },
+            {
+               "id": 270,
+               "nombre": "Ines Cecilia Lopez Florez"
+            },
+            {
+               "id": 272,
+               "nombre": "Ismael de Jesus Aldana Vivas"
+            },
+            {
+               "id": 273,
+               "nombre": "Issa Eljadue Gutierrez"
+            },
+            {
+               "id": 275,
+               "nombre": "Ivan David Hernandez Guzman"
+            },
+            {
+               "id": 276,
+               "nombre": "Ivan Diaz Mateus"
+            },
+            {
+               "id": 293,
+               "nombre": "Jaime Felipe Lozada Polanco"
+            },
+            {
+               "id": 299,
+               "nombre": "Jairo Diaz Contreras"
+            },
+            {
+               "id": 313,
+               "nombre": "Javier Mauricio Delgado Martinez"
+            },
+            {
+               "id": 314,
+               "nombre": "Javier Ramiro Devia Arias"
+            },
+            {
+               "id": 319,
+               "nombre": "Jesus Leon Puello Chamie"
+            },
+            {
+               "id": 328,
+               "nombre": "Jorge Alberto Garciaherreros Cabrera"
+            },
+            {
+               "id": 329,
+               "nombre": "Jorge Alberto Gerlein Echeverria"
+            },
+            {
+               "id": 337,
+               "nombre": "Jorge Eduardo Gonzalez Ocampo"
+            },
+            {
+               "id": 350,
+               "nombre": "Jorge Hernan Mesa Botero"
+            },
+            {
+               "id": 353,
+               "nombre": "Jorge Humberto Mantilla Serrano"
+            },
+            {
+               "id": 359,
+               "nombre": "Jorge Ubeimar Delgado Blandon"
+            },
+            {
+               "id": 362,
+               "nombre": "Jose Dario Salazar Cruz"
+            },
+            {
+               "id": 365,
+               "nombre": "Jose Gerardo Piamba Castro"
+            },
+            {
+               "id": 370,
+               "nombre": "Jose Ivan Clavijo Contreras"
+            },
+            {
+               "id": 372,
+               "nombre": "Jose Luis Arcila Cordoba"
+            },
+            {
+               "id": 374,
+               "nombre": "Jose Maria Conde Romero"
+            },
+            {
+               "id": 379,
+               "nombre": "Jose de los Santos Negrete Florez"
+            },
+            {
+               "id": 383,
+               "nombre": "José Elver Choco Hernández Casas"
+            },
+            {
+               "id": 387,
+               "nombre": "Juan Carlos García Gómez"
+            },
+            {
+               "id": 393,
+               "nombre": "Juan Carlos Rivera Peña"
+            },
+            {
+               "id": 396,
+               "nombre": "Juan Carlos Sanchez Franco"
+            },
+            {
+               "id": 399,
+               "nombre": "Juan Diego Gómez Jiménez"
+            },
+            {
+               "id": 405,
+               "nombre": "Juan Manuel Campo Eljach"
+            },
+            {
+               "id": 406,
+               "nombre": "Juan Manuel Corzo Román"
+            },
+            {
+               "id": 410,
+               "nombre": "Juan Mario Laserna Jaramillo"
+            },
+            {
+               "id": 412,
+               "nombre": "Juan Samy Merheg Marún"
+            },
+            {
+               "id": 415,
+               "nombre": "Juan de Jesus Cordoba Suarez"
+            },
+            {
+               "id": 416,
+               "nombre": "Juana Carolina Londoño Jaramillo"
+            },
+            {
+               "id": 417,
+               "nombre": "Julio Alberto Manzur Abdala"
+            },
+            {
+               "id": 425,
+               "nombre": "Laureano Augusto Acuña Díaz"
+            },
+            {
+               "id": 433,
+               "nombre": "Liliana Maria Rendon Roldan"
+            },
+            {
+               "id": 434,
+               "nombre": "Lina Maria Barrera Rueda"
+            },
+            {
+               "id": 446,
+               "nombre": "Luis Emilio Sierra Grajales"
+            },
+            {
+               "id": 451,
+               "nombre": "Luis Fernando Almario Rojas"
+            },
+            {
+               "id": 454,
+               "nombre": "Luis Fernando Urrego Carvajal"
+            },
+            {
+               "id": 459,
+               "nombre": "Luis Horacio Gallón Arango"
+            },
+            {
+               "id": 460,
+               "nombre": "Luis Humberto Gomez Gallo"
+            },
+            {
+               "id": 461,
+               "nombre": "Luis Jairo Ibarra Obando"
+            },
+            {
+               "id": 473,
+               "nombre": "Marco Tulio Leguizamon Roa"
+            },
+            {
+               "id": 481,
+               "nombre": "Marino Paz Ospina"
+            },
+            {
+               "id": 484,
+               "nombre": "Mario Enrique Varon Olarte"
+            },
+            {
+               "id": 491,
+               "nombre": "Marta Cecilia Ramirez Orrego"
+            },
+            {
+               "id": 503,
+               "nombre": "Mauricio Salazar Pelaez"
+            },
+            {
+               "id": 511,
+               "nombre": "Miguel Gomez Martinez"
+            },
+            {
+               "id": 514,
+               "nombre": "Miguel Ángel Barreto Castillo"
+            },
+            {
+               "id": 520,
+               "nombre": "Myriam Alicia Paredes Aguirre"
+            },
+            {
+               "id": 521,
+               "nombre": "Nadia Georgette Blel Scaff"
+            },
+            {
+               "id": 533,
+               "nombre": "Nicolás Albeiro Echeverry Alvarán"
+            },
+            {
+               "id": 534,
+               "nombre": "Nidia Marcela Osorio Salgado"
+            },
+            {
+               "id": 536,
+               "nombre": "Noel Ricardo Valencia Giraldo"
+            },
+            {
+               "id": 538,
+               "nombre": "Nora María García Burgos"
+            },
+            {
+               "id": 540,
+               "nombre": "Obed de Jesus Zuluaga Henao"
+            },
+            {
+               "id": 543,
+               "nombre": "Olga Lucia Suarez Mira"
+            },
+            {
+               "id": 545,
+               "nombre": "Omar Yepes Alzate"
+            },
+            {
+               "id": 547,
+               "nombre": "Orlando Alfonso Clavijo Clavijo"
+            },
+            {
+               "id": 548,
+               "nombre": "Orlando Anibal Guerra de la Rosa"
+            },
+            {
+               "id": 556,
+               "nombre": "Óscar Fernando Bravo Realpe"
+            },
+            {
+               "id": 571,
+               "nombre": "Pedrito Tomás Pereira Caballero"
+            },
+            {
+               "id": 573,
+               "nombre": "Pedro Antonio Jimenez Salazar"
+            },
+            {
+               "id": 575,
+               "nombre": "Pedro Maria Ramirez Ramirez"
+            },
+            {
+               "id": 577,
+               "nombre": "Pedro Nelson Pardo Rodriguez"
+            },
+            {
+               "id": 602,
+               "nombre": "Roberto Victor Gerlein Echeverria"
+            },
+            {
+               "id": 620,
+               "nombre": "Santiago Castro Gomez"
+            },
+            {
+               "id": 626,
+               "nombre": "Silvio Vasquez Villanueva"
+            },
+            {
+               "id": 640,
+               "nombre": "Victor Julio Vargas Polo"
+            },
+            {
+               "id": 654,
+               "nombre": "Wilson Hernando Gomez Velasquez"
+            },
+            {
+               "id": 657,
+               "nombre": "Yamina del Carmen Pestana Rojas"
+            },
+            {
+               "id": 658,
+               "nombre": "Yensi Alfonso Acosta Castañez"
+            },
+            {
+               "id": 662,
+>>>>>>> origin
                "nombre": "Zaida Marina Yanet Lindarte"
             }
          ]
@@ -1193,7 +2250,11 @@
          "nombre": "Conservador Colombiano-Movimiento de Salvación",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 297,
+=======
+               "id": 292,
+>>>>>>> origin
                "nombre": "Jaime Ernesto Canal Alban"
             }
          ]
@@ -1203,6 +2264,7 @@
          "nombre": "Convergencia Ciudadana",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 18,
                "nombre": "Alfonso Riaño Castillo"
             },
@@ -1268,6 +2330,73 @@
             },
             {
                "id": 666,
+=======
+               "id": 17,
+               "nombre": "Alfonso Riaño Castillo"
+            },
+            {
+               "id": 30,
+               "nombre": "Álvaro Alferez Tapias"
+            },
+            {
+               "id": 113,
+               "nombre": "Cesar Humberto Londoño Salgado"
+            },
+            {
+               "id": 131,
+               "nombre": "Daira de Jesús Galvis Méndez"
+            },
+            {
+               "id": 132,
+               "nombre": "Dairo Jose Bustillo Gomez"
+            },
+            {
+               "id": 149,
+               "nombre": "Edgar Alfonso Gómez Román"
+            },
+            {
+               "id": 189,
+               "nombre": "Fabiola Olaya Rivera"
+            },
+            {
+               "id": 290,
+               "nombre": "Jaime Enrique Durán Barrera"
+            },
+            {
+               "id": 312,
+               "nombre": "Javier Leonardo Cubides Vargas"
+            },
+            {
+               "id": 373,
+               "nombre": "Jose Manuel Herrera Cely"
+            },
+            {
+               "id": 378,
+               "nombre": "Jose Vicente Lozano Fernandez"
+            },
+            {
+               "id": 403,
+               "nombre": "Juan Gabriel Diaz Bernal"
+            },
+            {
+               "id": 414,
+               "nombre": "Juan de Jesus Cardenas Chavez"
+            },
+            {
+               "id": 437,
+               "nombre": "Luis Alberto Gil Castillo"
+            },
+            {
+               "id": 559,
+               "nombre": "Óscar Josue Reyes Cardenas"
+            },
+            {
+               "id": 612,
+               "nombre": "Ruben Dario Salazar Orozco"
+            },
+            {
+               "id": 659,
+>>>>>>> origin
                "nombre": "Yesid Espinosa Calderon"
             }
          ]
@@ -1277,12 +2406,21 @@
          "nombre": "Equipo Colombia",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 560,
                "nombre": "Óscar Alberto Arboleda Palacio"
             },
             {
                "id": 561,
                "nombre": "Óscar Darío Pérez Pineda "
+=======
+               "id": 554,
+               "nombre": "Óscar Alberto Arboleda Palacio"
+            },
+            {
+               "id": 555,
+               "nombre": "Óscar Darío Pérez Pineda"
+>>>>>>> origin
             }
          ]
       },
@@ -1291,12 +2429,21 @@
          "nombre": "Funeco - Fundación Ébano de Colombia",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 35,
                "nombre": "Álvaro Gustavo Rosado Aragon"
             },
             {
                "id": 523,
                "nombre": "Moises Orozco Vicuña "
+=======
+               "id": 34,
+               "nombre": "Álvaro Gustavo Rosado Aragon"
+            },
+            {
+               "id": 517,
+               "nombre": "Moises Orozco Vicuña"
+>>>>>>> origin
             }
          ]
       },
@@ -1306,7 +2453,11 @@
          "congresistas": [
             {
                "id": 6,
+<<<<<<< HEAD
                "nombre": "Albeiro Vanegas Osorio "
+=======
+               "nombre": "Albeiro Vanegas Osorio"
+>>>>>>> origin
             },
             {
                "id": 7,
@@ -1317,6 +2468,7 @@
                "nombre": "Alejandro Carlos Chacón Camargo"
             },
             {
+<<<<<<< HEAD
                "id": 33,
                "nombre": "Álvaro Antonio Ashton Giraldo"
             },
@@ -1883,6 +3035,566 @@
             {
                "id": 670,
                "nombre": "Zamir Eduardo Silva Amin "
+=======
+               "id": 32,
+               "nombre": "Álvaro Antonio Ashton Giraldo"
+            },
+            {
+               "id": 37,
+               "nombre": "Álvaro Pacheco Alvarez"
+            },
+            {
+               "id": 39,
+               "nombre": "Amparo Arbelaez Escalante"
+            },
+            {
+               "id": 44,
+               "nombre": "Andres Felipe Villamizar Ortiz"
+            },
+            {
+               "id": 45,
+               "nombre": "Andrés Cristo Bustos"
+            },
+            {
+               "id": 667,
+               "nombre": "Ángel María Gaitán Pulido"
+            },
+            {
+               "id": 48,
+               "nombre": "Angelo Antonio Villamil Benavides"
+            },
+            {
+               "id": 50,
+               "nombre": "Antenor Duran Carrillo"
+            },
+            {
+               "id": 56,
+               "nombre": "Argenis Velasquez Ramirez"
+            },
+            {
+               "id": 57,
+               "nombre": "Arleth Patricia Casado de Lopez"
+            },
+            {
+               "id": 72,
+               "nombre": "Camilo Armando Sanchez Ortega"
+            },
+            {
+               "id": 80,
+               "nombre": "Carlos Alberto Escobar Cordoba"
+            },
+            {
+               "id": 85,
+               "nombre": "Carlos Arturo Galvez Mejia"
+            },
+            {
+               "id": 86,
+               "nombre": "Carlos Arturo Piedrahita Cardenas"
+            },
+            {
+               "id": 87,
+               "nombre": "Carlos Arturo Quintero Marin"
+            },
+            {
+               "id": 96,
+               "nombre": "Carlos Emiro Barriga Peñaranda"
+            },
+            {
+               "id": 104,
+               "nombre": "Carlos Julio Bonilla Soto"
+            },
+            {
+               "id": 105,
+               "nombre": "Carlos Julio Gonzalez Villa"
+            },
+            {
+               "id": 111,
+               "nombre": "Cecilia Lopez Montaño"
+            },
+            {
+               "id": 115,
+               "nombre": "Charles William Schultz Navarro"
+            },
+            {
+               "id": 121,
+               "nombre": "Clara Isabel Pinillos Abozaglo"
+            },
+            {
+               "id": 122,
+               "nombre": "Clara Leticia Rojas Gonzalez"
+            },
+            {
+               "id": 127,
+               "nombre": "Consuelo Gonzalez de Perdomo"
+            },
+            {
+               "id": 128,
+               "nombre": "Crisanto Pizo Mazabuel"
+            },
+            {
+               "id": 130,
+               "nombre": "Cristobal Rufino Cordoba Mosquera"
+            },
+            {
+               "id": 134,
+               "nombre": "Dario Angarita Medellin"
+            },
+            {
+               "id": 142,
+               "nombre": "Diego Patiño Amariles"
+            },
+            {
+               "id": 145,
+               "nombre": "Dixon Ferney Tapasco Triviño"
+            },
+            {
+               "id": 147,
+               "nombre": "Dumith Antonio Nader Cura"
+            },
+            {
+               "id": 151,
+               "nombre": "Edgar Artunduaga Sanchez"
+            },
+            {
+               "id": 153,
+               "nombre": "Edgar Eulises Torres Murillo"
+            },
+            {
+               "id": 154,
+               "nombre": "Edinson Delgado Ruiz"
+            },
+            {
+               "id": 155,
+               "nombre": "Eduar Luis Benjumea Moreno"
+            },
+            {
+               "id": 167,
+               "nombre": "Efrain Torrado Garcia"
+            },
+            {
+               "id": 169,
+               "nombre": "Efren Palacios Serna"
+            },
+            {
+               "id": 177,
+               "nombre": "Enrique Emilio Ángel Barco"
+            },
+            {
+               "id": 183,
+               "nombre": "Eugenio Enrique Prieto Soto"
+            },
+            {
+               "id": 186,
+               "nombre": "Fabio Alonso Arroyave Botero"
+            },
+            {
+               "id": 188,
+               "nombre": "Fabio Raúl Amín Saleme"
+            },
+            {
+               "id": 200,
+               "nombre": "Flora Perdomo Andrade"
+            },
+            {
+               "id": 201,
+               "nombre": "Francisco Alfonso Fernando Pareja Gonzalez"
+            },
+            {
+               "id": 209,
+               "nombre": "Gema Lopez de Joaqui"
+            },
+            {
+               "id": 211,
+               "nombre": "German Alonso Olano Becerra"
+            },
+            {
+               "id": 221,
+               "nombre": "Gilberto Rondon Gonzalez"
+            },
+            {
+               "id": 229,
+               "nombre": "Griselda Janeth Restrepo Gallego"
+            },
+            {
+               "id": 231,
+               "nombre": "Guillermo Abel Rivera Florez"
+            },
+            {
+               "id": 233,
+               "nombre": "Guillermo Antonio Santos Marin"
+            },
+            {
+               "id": 234,
+               "nombre": "Guillermo García Realpe"
+            },
+            {
+               "id": 235,
+               "nombre": "Guillermo Gaviria Zapata"
+            },
+            {
+               "id": 239,
+               "nombre": "Harry Giovanny González García"
+            },
+            {
+               "id": 242,
+               "nombre": "Hector Heli Rojas Jimenez"
+            },
+            {
+               "id": 256,
+               "nombre": "Hernán Gustavo Estupiñán Calvache"
+            },
+            {
+               "id": 258,
+               "nombre": "Hernán Sinisterra Valencia"
+            },
+            {
+               "id": 260,
+               "nombre": "Honorio Galvis Aguilar"
+            },
+            {
+               "id": 262,
+               "nombre": "Horacio Serpa Uribe"
+            },
+            {
+               "id": 264,
+               "nombre": "Hugo Orlando Velasquez Jaramillo"
+            },
+            {
+               "id": 265,
+               "nombre": "Hugo Serrano Gomez"
+            },
+            {
+               "id": 274,
+               "nombre": "Ivan Dario Sandoval Perilla"
+            },
+            {
+               "id": 279,
+               "nombre": "Iván Darío Agudelo Zapata"
+            },
+            {
+               "id": 281,
+               "nombre": "Jack Housni Jaller"
+            },
+            {
+               "id": 291,
+               "nombre": "Jaime Enrique Serrano Perez"
+            },
+            {
+               "id": 297,
+               "nombre": "Jairo Alberto Llano Gomez"
+            },
+            {
+               "id": 303,
+               "nombre": "Jairo Mantilla Colmenares"
+            },
+            {
+               "id": 308,
+               "nombre": "James Britto Pelaez"
+            },
+            {
+               "id": 315,
+               "nombre": "Javier Tato Álvarez Montenegro"
+            },
+            {
+               "id": 318,
+               "nombre": "Jesus Ignacio Garcia Valencia"
+            },
+            {
+               "id": 323,
+               "nombre": "Jimmy Javier Sierra Palacio"
+            },
+            {
+               "id": 326,
+               "nombre": "John Jairo Roldán Avendaño"
+            },
+            {
+               "id": 333,
+               "nombre": "Jorge Camilo Abril Tarache"
+            },
+            {
+               "id": 334,
+               "nombre": "Jorge Carmelo Perez Alvarado"
+            },
+            {
+               "id": 335,
+               "nombre": "Jorge Eduardo Casabianca Prada"
+            },
+            {
+               "id": 340,
+               "nombre": "Jorge Eliecer Gomez Villamizar"
+            },
+            {
+               "id": 345,
+               "nombre": "Jorge Enrique Gomez Celis"
+            },
+            {
+               "id": 352,
+               "nombre": "Jorge Homero Giraldo Gutierrez"
+            },
+            {
+               "id": 354,
+               "nombre": "Jorge Ignacio Morales Gil"
+            },
+            {
+               "id": 371,
+               "nombre": "Jose Joaquin Camelo Ramos"
+            },
+            {
+               "id": 375,
+               "nombre": "Jose Neftali Santos Ramirez"
+            },
+            {
+               "id": 389,
+               "nombre": "Juan Carlos Losada Vargas"
+            },
+            {
+               "id": 392,
+               "nombre": "Juan Carlos Restrepo Escobar"
+            },
+            {
+               "id": 397,
+               "nombre": "Juan Carlos Valencia Montoya"
+            },
+            {
+               "id": 401,
+               "nombre": "Juan Fernando Cristo Bustos"
+            },
+            {
+               "id": 407,
+               "nombre": "Juan Manuel Galan Pachon"
+            },
+            {
+               "id": 409,
+               "nombre": "Juan Manuel Lopez Cabrales"
+            },
+            {
+               "id": 411,
+               "nombre": "Juan Pablo Sanchez Morales"
+            },
+            {
+               "id": 420,
+               "nombre": "Julián Bedoya Pulgarín"
+            },
+            {
+               "id": 424,
+               "nombre": "Kelyn Johana González Duarte"
+            },
+            {
+               "id": 428,
+               "nombre": "Leopoldo Suarez Melo"
+            },
+            {
+               "id": 431,
+               "nombre": "Lidio Arturo García Turbay"
+            },
+            {
+               "id": 432,
+               "nombre": "Liliana Baron Caballero"
+            },
+            {
+               "id": 436,
+               "nombre": "Luciano Grisales Londoño"
+            },
+            {
+               "id": 438,
+               "nombre": "Luis Alejandro Perea Albarracin"
+            },
+            {
+               "id": 452,
+               "nombre": "Luis Fernando Duque Garcia"
+            },
+            {
+               "id": 466,
+               "nombre": "Manuel Jose Vives Henriquez"
+            },
+            {
+               "id": 472,
+               "nombre": "Marco Sergio Rodriguez Merchan"
+            },
+            {
+               "id": 482,
+               "nombre": "Mario Alberto Castaño Pérez"
+            },
+            {
+               "id": 483,
+               "nombre": "Mario Alberto Fernández Alcocer"
+            },
+            {
+               "id": 486,
+               "nombre": "Mario Salomon Nader Muskus"
+            },
+            {
+               "id": 487,
+               "nombre": "Mario Suarez Florez"
+            },
+            {
+               "id": 498,
+               "nombre": "Mauricio Gómez Amín"
+            },
+            {
+               "id": 499,
+               "nombre": "Mauricio Jaramillo Martinez"
+            },
+            {
+               "id": 508,
+               "nombre": "Miguel Ángel Galvis Romero"
+            },
+            {
+               "id": 509,
+               "nombre": "Miguel Ángel Rangel Sosa"
+            },
+            {
+               "id": 513,
+               "nombre": "Miguel de Jesus Arenas Prada"
+            },
+            {
+               "id": 515,
+               "nombre": "Miguel Ángel Pinto Hernández"
+            },
+            {
+               "id": 518,
+               "nombre": "Monica del Carmen Anaya Anaya"
+            },
+            {
+               "id": 519,
+               "nombre": "Musa Abraham Besaile Fayad"
+            },
+            {
+               "id": 522,
+               "nombre": "Nancy Denise Castillo Garcia"
+            },
+            {
+               "id": 524,
+               "nombre": "Neftali Correa Diaz"
+            },
+            {
+               "id": 529,
+               "nombre": "Nevardo Eneiro Rincón Vergara"
+            },
+            {
+               "id": 535,
+               "nombre": "Nilton Córdoba Manyoma"
+            },
+            {
+               "id": 539,
+               "nombre": "Norbey Marulanda Muñoz"
+            },
+            {
+               "id": 544,
+               "nombre": "Olga Lucia Velasquez Nieto"
+            },
+            {
+               "id": 552,
+               "nombre": "Orlando Velandia Sepulveda"
+            },
+            {
+               "id": 557,
+               "nombre": "Óscar Gomez Agudelo"
+            },
+            {
+               "id": 563,
+               "nombre": "Óscar de Jesus Hurtado Perez"
+            },
+            {
+               "id": 564,
+               "nombre": "Óscar de Jesus Marin"
+            },
+            {
+               "id": 669,
+               "nombre": "Óscar Hernán Sánchez León"
+            },
+            {
+               "id": 566,
+               "nombre": "Pablo Aristobulo Sierra Leon"
+            },
+            {
+               "id": 567,
+               "nombre": "Pablo Enrique Salamanca Cortes"
+            },
+            {
+               "id": 574,
+               "nombre": "Pedro Jesus Orjuela Gomez"
+            },
+            {
+               "id": 578,
+               "nombre": "Pedro Pablo Perez Puerta"
+            },
+            {
+               "id": 581,
+               "nombre": "Piedad Esneda Cordoba Ruiz"
+            },
+            {
+               "id": 584,
+               "nombre": "Plinio Edilberto Olano Becerra"
+            },
+            {
+               "id": 586,
+               "nombre": "Rafael Antonio Madrid Hodeg"
+            },
+            {
+               "id": 589,
+               "nombre": "Rafael Romero Piñeros"
+            },
+            {
+               "id": 601,
+               "nombre": "Roberto Ortiz Urueña"
+            },
+            {
+               "id": 605,
+               "nombre": "Rodrigo Villalba Mosquera"
+            },
+            {
+               "id": 611,
+               "nombre": "Ruben Dario Rodriguez Gongora"
+            },
+            {
+               "id": 616,
+               "nombre": "Sandra Arabella Velasquez Salcedo"
+            },
+            {
+               "id": 625,
+               "nombre": "Silvio José Carrasquilla Torres"
+            },
+            {
+               "id": 627,
+               "nombre": "Simon Gaviria Muñoz"
+            },
+            {
+               "id": 628,
+               "nombre": "Sofia Alejandra Gaviria Correa"
+            },
+            {
+               "id": 637,
+               "nombre": "Vicente Blel Saad"
+            },
+            {
+               "id": 638,
+               "nombre": "Victor Hugo Moreno Bandeira"
+            },
+            {
+               "id": 641,
+               "nombre": "Victor Raul Yepes Florez"
+            },
+            {
+               "id": 642,
+               "nombre": "Victor Renan Barco Lopez"
+            },
+            {
+               "id": 645,
+               "nombre": "Viviane Aleyda Morales Hoyos"
+            },
+            {
+               "id": 660,
+               "nombre": "Yolanda Duque Naranjo"
+            },
+            {
+               "id": 661,
+               "nombre": "Yolanda Pinto Afanador de Gaviria"
+            },
+            {
+               "id": 663,
+               "nombre": "Zamir Eduardo Silva Amin"
+>>>>>>> origin
             }
          ]
       },
@@ -1891,8 +3603,13 @@
          "nombre": "MAIS - Movimiento Alternativo Indígena y Social",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 455,
                "nombre": "Luis Evelis Andrade Casama "
+=======
+               "id": 449,
+               "nombre": "Luis Evelis Andrade Casama"
+>>>>>>> origin
             }
          ]
       },
@@ -1901,6 +3618,7 @@
          "nombre": "MIO - Movimiento de Inclusión y Oportunidades",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 484,
                "nombre": "Maria Isabel Urrutia Ocoro"
             },
@@ -1910,6 +3628,17 @@
             },
             {
                "id": 556,
+=======
+               "id": 478,
+               "nombre": "Maria Isabel Urrutia Ocoro"
+            },
+            {
+               "id": 506,
+               "nombre": "Miguel Alfonso de la Espriella Burgos"
+            },
+            {
+               "id": 550,
+>>>>>>> origin
                "nombre": "Orlando Duque Quiroga"
             }
          ]
@@ -1919,11 +3648,15 @@
          "nombre": "MIPOL - Movimiento Integración Popular",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 365,
                "nombre": "Jorge de Jesus Castro Pacheco"
             },
             {
                "id": 582,
+=======
+               "id": 576,
+>>>>>>> origin
                "nombre": "Pedro Mary Muvdi Aranguena"
             }
          ]
@@ -1933,6 +3666,7 @@
          "nombre": "MIR - Movimiento de Integración Regional",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 71,
                "nombre": "Bérner León Zambrano Eraso"
             },
@@ -1942,6 +3676,17 @@
             },
             {
                "id": 424,
+=======
+               "id": 70,
+               "nombre": "Bérner León Zambrano Eraso"
+            },
+            {
+               "id": 368,
+               "nombre": "Jose Homero Cadena Bacca"
+            },
+            {
+               "id": 418,
+>>>>>>> origin
                "nombre": "Julio Eugenio Gallardo Archbold"
             }
          ]
@@ -1955,6 +3700,7 @@
                "nombre": "Alexandra Moreno Piraquive"
             },
             {
+<<<<<<< HEAD
                "id": 44,
                "nombre": "Ana Paola Agudelo García"
             },
@@ -1980,6 +3726,33 @@
             },
             {
                "id": 470,
+=======
+               "id": 43,
+               "nombre": "Ana Paola Agudelo García"
+            },
+            {
+               "id": 77,
+               "nombre": "Carlos Alberto Baena Lopez"
+            },
+            {
+               "id": 92,
+               "nombre": "Carlos Eduardo Guevara Villabón"
+            },
+            {
+               "id": 227,
+               "nombre": "Gloria Stella Diaz Ortiz"
+            },
+            {
+               "id": 230,
+               "nombre": "Guillermina Bravo Montaño"
+            },
+            {
+               "id": 358,
+               "nombre": "Jorge Muñoz Zapata"
+            },
+            {
+               "id": 464,
+>>>>>>> origin
                "nombre": "Manuel Antonio Virgüez Piraquive"
             }
          ]
@@ -1989,7 +3762,11 @@
          "nombre": "MOIR - Movimiento Obrero Independiente Revolucionario",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 352,
+=======
+               "id": 347,
+>>>>>>> origin
                "nombre": "Jorge Enrique Robledo Castillo"
             }
          ]
@@ -1999,7 +3776,11 @@
          "nombre": "MUIPC - Movimiento Unidad Indígena y Popular por Colombia",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 258,
+=======
+               "id": 253,
+>>>>>>> origin
                "nombre": "Hernando Hernandez Tapasco"
             }
          ]
@@ -2009,6 +3790,7 @@
          "nombre": "Moral - Movimiento Renovador de Acción Social",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 30,
                "nombre": "Alonso de Jesus Ramirez Torres"
             },
@@ -2022,6 +3804,21 @@
             },
             {
                "id": 655,
+=======
+               "id": 29,
+               "nombre": "Alonso de Jesus Ramirez Torres"
+            },
+            {
+               "id": 421,
+               "nombre": "Karelly Patricia Lara Vence"
+            },
+            {
+               "id": 512,
+               "nombre": "Miguel Pinedo Vidal"
+            },
+            {
+               "id": 648,
+>>>>>>> origin
                "nombre": "William Velez Mesa"
             }
          ]
@@ -2031,6 +3828,7 @@
          "nombre": "Movimiento Apertura Liberal",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 203,
                "nombre": "Fernando Tafur Diaz"
             },
@@ -2048,6 +3846,25 @@
             },
             {
                "id": 612,
+=======
+               "id": 198,
+               "nombre": "Fernando Tafur Diaz"
+            },
+            {
+               "id": 356,
+               "nombre": "Jorge Julian Silva Meche"
+            },
+            {
+               "id": 455,
+               "nombre": "Luis Fernando Vanegas Queruz"
+            },
+            {
+               "id": 456,
+               "nombre": "Luis Fernando Velasco Cháves"
+            },
+            {
+               "id": 606,
+>>>>>>> origin
                "nombre": "Rodrigo de Jesus Roncallo Fandiño"
             }
          ]
@@ -2057,7 +3874,11 @@
          "nombre": "Movimiento Convergencia Popular Cívica",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 212,
+=======
+               "id": 207,
+>>>>>>> origin
                "nombre": "Gabriel Antonio Espinosa Arrieta"
             }
          ]
@@ -2067,7 +3888,11 @@
          "nombre": "Movimiento Independiente Frente de Esperanza",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 321,
+=======
+               "id": 316,
+>>>>>>> origin
                "nombre": "Jesus Antonio Bernal Amorocho"
             }
          ]
@@ -2077,6 +3902,7 @@
          "nombre": "Movimiento Nacional",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 69,
                "nombre": "Bladimiro Nicolas Cuello Daza"
             },
@@ -2091,6 +3917,18 @@
             {
                "id": 630,
                "nombre": "Sergio Lopez Gomez"
+=======
+               "id": 68,
+               "nombre": "Bladimiro Nicolas Cuello Daza"
+            },
+            {
+               "id": 118,
+               "nombre": "Ciro Antonio Rodríguez Pinzón"
+            },
+            {
+               "id": 206,
+               "nombre": "Gabriel Acosta Bendek"
+>>>>>>> origin
             }
          ]
       },
@@ -2099,7 +3937,11 @@
          "nombre": "Movimiento Nacional Conservador",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 653,
+=======
+               "id": 646,
+>>>>>>> origin
                "nombre": "William Alfonso Montes Medina"
             }
          ]
@@ -2109,6 +3951,7 @@
          "nombre": "Movimiento Político Cien por Ciento por Colombia",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 326,
                "nombre": "Jhon Eduardo Molina Figueroa"
             },
@@ -2118,6 +3961,17 @@
             },
             {
                "id": 663,
+=======
+               "id": 321,
+               "nombre": "Jhon Eduardo Molina Figueroa"
+            },
+            {
+               "id": 376,
+               "nombre": "Jose Rodolfo Perez Suarez"
+            },
+            {
+               "id": 656,
+>>>>>>> origin
                "nombre": "Yahir Fernando Acuña Cardales"
             }
          ]
@@ -2127,11 +3981,19 @@
          "nombre": "Movimiento Progresismo Democrático",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 475,
                "nombre": "Manuel Ramiro Velasquez Arroyave"
             },
             {
                "id": 591,
+=======
+               "id": 469,
+               "nombre": "Manuel Ramiro Velasquez Arroyave"
+            },
+            {
+               "id": 585,
+>>>>>>> origin
                "nombre": "Pompilio de Jesus Avendaño Lopera"
             }
          ]
@@ -2141,11 +4003,19 @@
          "nombre": "Movimiento de Participación Popular",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 29,
                "nombre": "Alonso Rafael Acosta Osio"
             },
             {
                "id": 372,
+=======
+               "id": 28,
+               "nombre": "Alonso Rafael Acosta Osio"
+            },
+            {
+               "id": 366,
+>>>>>>> origin
                "nombre": "Jose Gonzalo Gutierrez"
             }
          ]
@@ -2155,6 +4025,7 @@
          "nombre": "Opción Ciudadana",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 52,
                "nombre": "Antonio Jose Correa Jimenez"
             },
@@ -2232,6 +4103,85 @@
             },
             {
                "id": 650,
+=======
+               "id": 51,
+               "nombre": "Antonio Jose Correa Jimenez"
+            },
+            {
+               "id": 74,
+               "nombre": "Candelaria Patricia Rojas Vergara"
+            },
+            {
+               "id": 98,
+               "nombre": "Carlos Enrique Avila Duran"
+            },
+            {
+               "id": 146,
+               "nombre": "Doris Clemencia Vega Quiroz"
+            },
+            {
+               "id": 152,
+               "nombre": "Edgar Espindola Niño"
+            },
+            {
+               "id": 160,
+               "nombre": "Eduardo Enrique Perez Santos"
+            },
+            {
+               "id": 184,
+               "nombre": "Euler Aldemar Martinez Rodriguez"
+            },
+            {
+               "id": 199,
+               "nombre": "Fernando de la Peña Márquez"
+            },
+            {
+               "id": 202,
+               "nombre": "Franklin del Cristo Lozano de la Ossa"
+            },
+            {
+               "id": 203,
+               "nombre": "Fredy Antonio Anaya Martinez"
+            },
+            {
+               "id": 248,
+               "nombre": "Heriberto Escobar Gonzalez"
+            },
+            {
+               "id": 331,
+               "nombre": "Jorge Antonio Trujillo Sarmiento"
+            },
+            {
+               "id": 361,
+               "nombre": "Jose Carlos Mizger Pacheco"
+            },
+            {
+               "id": 419,
+               "nombre": "Julio Miguel Guerra Sotto"
+            },
+            {
+               "id": 476,
+               "nombre": "Maria Eugenia Triana Vargas"
+            },
+            {
+               "id": 525,
+               "nombre": "Nerthink Mauricio Aguilar Hurtado"
+            },
+            {
+               "id": 588,
+               "nombre": "Rafael Elizalde Gomez"
+            },
+            {
+               "id": 598,
+               "nombre": "Ricardo Florez Rueda"
+            },
+            {
+               "id": 633,
+               "nombre": "Teresita Garcia Romero"
+            },
+            {
+               "id": 643,
+>>>>>>> origin
                "nombre": "Victor Velasquez Reyes"
             }
          ]
@@ -2249,6 +4199,7 @@
                "nombre": "Alexánder López Maya"
             },
             {
+<<<<<<< HEAD
                "id": 26,
                "nombre": "Alirio Uribe Muñoz "
             },
@@ -2338,6 +4289,97 @@
             },
             {
                "id": 662,
+=======
+               "id": 25,
+               "nombre": "Alirio Uribe Muñoz"
+            },
+            {
+               "id": 52,
+               "nombre": "Antonio Jose Navarro Wolff"
+            },
+            {
+               "id": 73,
+               "nombre": "Camilo Romero"
+            },
+            {
+               "id": 103,
+               "nombre": "Carlos Germán Navas Talero"
+            },
+            {
+               "id": 214,
+               "nombre": "German Enrique Reyes Forero"
+            },
+            {
+               "id": 225,
+               "nombre": "Gloria Ines Ramirez Rios"
+            },
+            {
+               "id": 226,
+               "nombre": "Gloria Isabel Cuartas Montoya"
+            },
+            {
+               "id": 232,
+               "nombre": "Guillermo Alfonso Jaramillo Martinez"
+            },
+            {
+               "id": 236,
+               "nombre": "Gustavo Francisco Petro Urrego"
+            },
+            {
+               "id": 278,
+               "nombre": "Iván Cepeda Castro"
+            },
+            {
+               "id": 289,
+               "nombre": "Jaime Dussan Calderon"
+            },
+            {
+               "id": 320,
+               "nombre": "Jesús Alberto Castilla Salazar"
+            },
+            {
+               "id": 497,
+               "nombre": "Mauricio Ernesto Ospina Gomez"
+            },
+            {
+               "id": 528,
+               "nombre": "Nestor Ivan Moreno Rojas"
+            },
+            {
+               "id": 553,
+               "nombre": "Orsinia Patricia Polanco Jusayu"
+            },
+            {
+               "id": 570,
+               "nombre": "Parmenio Cuellar Bastidas"
+            },
+            {
+               "id": 580,
+               "nombre": "Pedro Vicente Obando Ordoñez"
+            },
+            {
+               "id": 594,
+               "nombre": "Ricardo Alfredo Obando Reyes"
+            },
+            {
+               "id": 623,
+               "nombre": "Senen Niño Avendaño"
+            },
+            {
+               "id": 636,
+               "nombre": "Venus Albeiro Silva Gomez"
+            },
+            {
+               "id": 639,
+               "nombre": "Victor Javier Correa Velez"
+            },
+            {
+               "id": 652,
+               "nombre": "Wilson Alfonso Borja Diaz"
+            },
+            {
+               "id": 655,
+>>>>>>> origin
                "nombre": "Wilson Neber Arias Castillo"
             }
          ]
@@ -2347,6 +4389,7 @@
          "nombre": "PIN - Partido de Integración Nacional",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 139,
                "nombre": "Didier Alberto Tavera Amado"
             },
@@ -2400,12 +4443,68 @@
             },
             {
                "id": 621,
+=======
+               "id": 138,
+               "nombre": "Didier Alberto Tavera Amado"
+            },
+            {
+               "id": 164,
+               "nombre": "Eduardo Leon Lozano Perez"
+            },
+            {
+               "id": 244,
+               "nombre": "Hector Julio Alfonso Lopez"
+            },
+            {
+               "id": 245,
+               "nombre": "Hemel Hurtado Angulo"
+            },
+            {
+               "id": 259,
+               "nombre": "Holger Horacio Diaz Hernandez"
+            },
+            {
+               "id": 302,
+               "nombre": "Jairo Hinestroza Sinisterra"
+            },
+            {
+               "id": 309,
+               "nombre": "Javid Jose Benavides Aguas"
+            },
+            {
+               "id": 310,
+               "nombre": "Javier Alberto Vasquez Hernandez"
+            },
+            {
+               "id": 394,
+               "nombre": "Juan Carlos Rizzetto Luces"
+            },
+            {
+               "id": 430,
+               "nombre": "Libardo Enrique Garcia Guerrero"
+            },
+            {
+               "id": 467,
+               "nombre": "Manuel Julian Mazenet Corrales"
+            },
+            {
+               "id": 504,
+               "nombre": "Mercedes Eufemia Marquez Guenzati"
+            },
+            {
+               "id": 551,
+               "nombre": "Orlando Montoya Toro"
+            },
+            {
+               "id": 615,
+>>>>>>> origin
                "nombre": "Samuel Benjamin Arrieta Buelvas"
             }
          ]
       },
       {
          "id": 43,
+<<<<<<< HEAD
          "nombre": "Partido Verde ",
          "congresistas": [
             {
@@ -2426,6 +4525,28 @@
             },
             {
                "id": 610,
+=======
+         "nombre": "Partido Verde",
+         "congresistas": [
+            {
+               "id": 16,
+               "nombre": "Alfonso Prada Gil"
+            },
+            {
+               "id": 82,
+               "nombre": "Carlos Andres Amaya Rodriguez"
+            },
+            {
+               "id": 222,
+               "nombre": "Gilma Jimenez Gomez"
+            },
+            {
+               "id": 327,
+               "nombre": "John Sudarsky Rosenbaum"
+            },
+            {
+               "id": 604,
+>>>>>>> origin
                "nombre": "Rodrigo Romero Hernandez"
             }
          ]
@@ -2448,6 +4569,7 @@
             },
             {
                "id": 11,
+<<<<<<< HEAD
                "nombre": "Alexander Garcia Rodriguez "
             },
             {
@@ -2940,6 +5062,500 @@
             },
             {
                "id": 671,
+=======
+               "nombre": "Alexander Garcia Rodriguez"
+            },
+            {
+               "id": 21,
+               "nombre": "Alfredo Guillermo Molina Triana"
+            },
+            {
+               "id": 22,
+               "nombre": "Alfredo Rafael Deluque Zuleta"
+            },
+            {
+               "id": 27,
+               "nombre": "Alonso José del Río Cabarcas"
+            },
+            {
+               "id": 38,
+               "nombre": "Amanda Ricardo de Paez"
+            },
+            {
+               "id": 41,
+               "nombre": "Ana Maria Rincon Herrera"
+            },
+            {
+               "id": 46,
+               "nombre": "Andrés García Zuccardi"
+            },
+            {
+               "id": 47,
+               "nombre": "Ángel Custodio Cabrera Baez"
+            },
+            {
+               "id": 58,
+               "nombre": "Armando Alberto Benedetti Villaneda"
+            },
+            {
+               "id": 62,
+               "nombre": "Astrid Sánchez Montes de Oca"
+            },
+            {
+               "id": 64,
+               "nombre": "Augusto Posada Sanchez"
+            },
+            {
+               "id": 67,
+               "nombre": "Bernardo Miguel Elias Vidal"
+            },
+            {
+               "id": 83,
+               "nombre": "Carlos Armando Garcia Orjuela"
+            },
+            {
+               "id": 84,
+               "nombre": "Carlos Arturo Correa Mojica"
+            },
+            {
+               "id": 88,
+               "nombre": "Carlos Augusto Celis Gutierrez"
+            },
+            {
+               "id": 90,
+               "nombre": "Carlos Cardenas Ortiz"
+            },
+            {
+               "id": 93,
+               "nombre": "Carlos Eduardo Hernandez Mogollon"
+            },
+            {
+               "id": 95,
+               "nombre": "Carlos Edward Osorio Aguiar"
+            },
+            {
+               "id": 99,
+               "nombre": "Carlos Enrique Soto Jaramillo"
+            },
+            {
+               "id": 110,
+               "nombre": "Carmen Cecilia Gutierrez Mattos"
+            },
+            {
+               "id": 116,
+               "nombre": "Christian José Moreno Villamizar"
+            },
+            {
+               "id": 124,
+               "nombre": "Claudia Marcela Amaya Garcia"
+            },
+            {
+               "id": 129,
+               "nombre": "Cristobal Rodriguez Hernandez"
+            },
+            {
+               "id": 139,
+               "nombre": "Didier Burgos Ramirez"
+            },
+            {
+               "id": 144,
+               "nombre": "Dilian Francisca Toro Torres"
+            },
+            {
+               "id": 156,
+               "nombre": "Eduardo Agaton Diazgranados Abadia"
+            },
+            {
+               "id": 157,
+               "nombre": "Eduardo Alfonso Crissien Borrero"
+            },
+            {
+               "id": 158,
+               "nombre": "Eduardo Augusto Benitez Maldonado"
+            },
+            {
+               "id": 159,
+               "nombre": "Eduardo Carlos Merlano Morales"
+            },
+            {
+               "id": 161,
+               "nombre": "Eduardo Enrique Pulgar Daza"
+            },
+            {
+               "id": 162,
+               "nombre": "Eduardo Jose Castañeda Murillo"
+            },
+            {
+               "id": 163,
+               "nombre": "Eduardo Jose Joche Tous de la Ossa"
+            },
+            {
+               "id": 166,
+               "nombre": "Efrain Antonio Torres Monsalvo"
+            },
+            {
+               "id": 170,
+               "nombre": "Elbert Díaz Lozano"
+            },
+            {
+               "id": 171,
+               "nombre": "Elda Lucy Contento Sanz"
+            },
+            {
+               "id": 173,
+               "nombre": "Elkin Rodolfo Ospina Ospina"
+            },
+            {
+               "id": 175,
+               "nombre": "Elsa Gladys Cifuentes Aranzazu"
+            },
+            {
+               "id": 193,
+               "nombre": "Felipe Fabian Orozco Vivas"
+            },
+            {
+               "id": 204,
+               "nombre": "Fuad Emilio Rapag Matar"
+            },
+            {
+               "id": 210,
+               "nombre": "Gerardo Tamayo Tamayo"
+            },
+            {
+               "id": 219,
+               "nombre": "Germán Darío Hoyos Giraldo"
+            },
+            {
+               "id": 238,
+               "nombre": "Habib Merheg Marun"
+            },
+            {
+               "id": 241,
+               "nombre": "Hector Faber Giraldo Castaño"
+            },
+            {
+               "id": 243,
+               "nombre": "Hector Javier Osorio Botello"
+            },
+            {
+               "id": 250,
+               "nombre": "Hernando Betancourt Hurtado"
+            },
+            {
+               "id": 257,
+               "nombre": "Hernán Penagos Giraldo"
+            },
+            {
+               "id": 269,
+               "nombre": "Ignacio Antonio Javela Murcia"
+            },
+            {
+               "id": 282,
+               "nombre": "Jacobo Faustino Gomez Toro"
+            },
+            {
+               "id": 283,
+               "nombre": "Jaime Alejandro Amin Hernandez"
+            },
+            {
+               "id": 284,
+               "nombre": "Jaime Alonso Vasquez Bustamante"
+            },
+            {
+               "id": 285,
+               "nombre": "Jaime Alonso Zuluaga Aristizabal"
+            },
+            {
+               "id": 286,
+               "nombre": "Jaime Armando Yepes Martínez"
+            },
+            {
+               "id": 287,
+               "nombre": "Jaime Buenahora Febres"
+            },
+            {
+               "id": 288,
+               "nombre": "Jaime Cervantes Varelo"
+            },
+            {
+               "id": 295,
+               "nombre": "Jaime de Jesus Restrepo Cuartas"
+            },
+            {
+               "id": 300,
+               "nombre": "Jairo Enrique Castiblanco Parra"
+            },
+            {
+               "id": 301,
+               "nombre": "Jairo Enrique Merlano Fernandez"
+            },
+            {
+               "id": 304,
+               "nombre": "Jairo Ortega Samboni"
+            },
+            {
+               "id": 305,
+               "nombre": "Jairo Quintero Trujillo"
+            },
+            {
+               "id": 306,
+               "nombre": "Jairo Raul Clopatofsky Ghisays"
+            },
+            {
+               "id": 307,
+               "nombre": "Jairo de Jesus Tapias Ospina"
+            },
+            {
+               "id": 325,
+               "nombre": "John Jairo Cárdenas Morán"
+            },
+            {
+               "id": 330,
+               "nombre": "Jorge Anibal Visbal Martelo"
+            },
+            {
+               "id": 332,
+               "nombre": "Jorge Aurelio Iragorri Hormaza"
+            },
+            {
+               "id": 336,
+               "nombre": "Jorge Eduardo Gechem Turbay"
+            },
+            {
+               "id": 339,
+               "nombre": "Jorge Eliecer Ballesteros Bernier"
+            },
+            {
+               "id": 343,
+               "nombre": "Jorge Eliécer Tamayo Marulanda"
+            },
+            {
+               "id": 346,
+               "nombre": "Jorge Enrique Gomez Montealegre"
+            },
+            {
+               "id": 360,
+               "nombre": "Jose Bernardo Florez Asprilla"
+            },
+            {
+               "id": 367,
+               "nombre": "Jose Gonzalo Gutierrez Triviño"
+            },
+            {
+               "id": 377,
+               "nombre": "Jose Thyrone Carvajal Ceballos"
+            },
+            {
+               "id": 380,
+               "nombre": "José Alfredo Gnecco Zuleta"
+            },
+            {
+               "id": 381,
+               "nombre": "José David Name Cardozo"
+            },
+            {
+               "id": 382,
+               "nombre": "José Edilberto Caicedo Sastoque"
+            },
+            {
+               "id": 384,
+               "nombre": "José Ignacio Mesa Betancur"
+            },
+            {
+               "id": 390,
+               "nombre": "Juan Carlos Martinez Gutierrez"
+            },
+            {
+               "id": 400,
+               "nombre": "Juan Felipe Lemos Uribe"
+            },
+            {
+               "id": 402,
+               "nombre": "Juan Francisco Lozano Ramirez"
+            },
+            {
+               "id": 404,
+               "nombre": "Juan Lozano Galdino"
+            },
+            {
+               "id": 423,
+               "nombre": "Karime Mota y Morad"
+            },
+            {
+               "id": 426,
+               "nombre": "Leon Dario Ramirez Valencia"
+            },
+            {
+               "id": 435,
+               "nombre": "Lucero Cortes Mendez"
+            },
+            {
+               "id": 441,
+               "nombre": "Luis Carlos Restrepo Orozco"
+            },
+            {
+               "id": 444,
+               "nombre": "Luis Eduardo Vives Lacouture"
+            },
+            {
+               "id": 448,
+               "nombre": "Luis Enrique Salas Moises"
+            },
+            {
+               "id": 450,
+               "nombre": "Luis Felipe Barrios Barrios"
+            },
+            {
+               "id": 453,
+               "nombre": "Luis Fernando Ochoa Zuluaga"
+            },
+            {
+               "id": 457,
+               "nombre": "Luis Guillermo Barrera Gutierrez"
+            },
+            {
+               "id": 458,
+               "nombre": "Luis Guillermo Velez Trujillo"
+            },
+            {
+               "id": 462,
+               "nombre": "Luz Adriana Moreno Marmolejo"
+            },
+            {
+               "id": 465,
+               "nombre": "Manuel Guillermo Mora Jaramillo"
+            },
+            {
+               "id": 468,
+               "nombre": "Manuel Mesias Enriquez Rosero"
+            },
+            {
+               "id": 470,
+               "nombre": "Marco Alirio Cortes Torres"
+            },
+            {
+               "id": 477,
+               "nombre": "Maria Isabel Mejia Marulanda"
+            },
+            {
+               "id": 489,
+               "nombre": "Maritza Martínez Aristizábal"
+            },
+            {
+               "id": 490,
+               "nombre": "Marta Cecilia Curi Osorio"
+            },
+            {
+               "id": 492,
+               "nombre": "Martha Lucia Ramirez de Rincon"
+            },
+            {
+               "id": 493,
+               "nombre": "Martha Patricia Villalba Hodwalker"
+            },
+            {
+               "id": 494,
+               "nombre": "Martin Emilio Morales Diz"
+            },
+            {
+               "id": 502,
+               "nombre": "Mauricio Pimiento Barrera"
+            },
+            {
+               "id": 507,
+               "nombre": "Miguel Amín Escaf"
+            },
+            {
+               "id": 516,
+               "nombre": "Milton Arlex Rodriguez Sarmiento"
+            },
+            {
+               "id": 526,
+               "nombre": "Nery Oros Ortiz"
+            },
+            {
+               "id": 527,
+               "nombre": "Nestor Homero Cotrina"
+            },
+            {
+               "id": 530,
+               "nombre": "Nicolas Antonio Jimenez Paternina"
+            },
+            {
+               "id": 531,
+               "nombre": "Nicolas Daniel Guerrero Montaño"
+            },
+            {
+               "id": 532,
+               "nombre": "Nicolas Uribe Rueda"
+            },
+            {
+               "id": 541,
+               "nombre": "Odin Horacio Sanchez Montes de Oca"
+            },
+            {
+               "id": 542,
+               "nombre": "Olano Portela Rodriguez"
+            },
+            {
+               "id": 561,
+               "nombre": "Óscar Mauricio Lizcano Arango"
+            },
+            {
+               "id": 579,
+               "nombre": "Pedro Pablo Trujillo Ramirez"
+            },
+            {
+               "id": 582,
+               "nombre": "Piedad del Socorro Zuccardi de Garcia"
+            },
+            {
+               "id": 587,
+               "nombre": "Rafael Eduardo Palau Salazar"
+            },
+            {
+               "id": 591,
+               "nombre": "Raymundo Elias Mendez Bechara"
+            },
+            {
+               "id": 595,
+               "nombre": "Ricardo Arias Mora"
+            },
+            {
+               "id": 607,
+               "nombre": "Roosvelt Rodríguez Rengifo"
+            },
+            {
+               "id": 609,
+               "nombre": "Roy Leonardo Barreras Montealegre"
+            },
+            {
+               "id": 617,
+               "nombre": "Sandra Elena Villadiego Villadiego"
+            },
+            {
+               "id": 619,
+               "nombre": "Sandra Rocio Ceballos Arevalo"
+            },
+            {
+               "id": 622,
+               "nombre": "Sara Elena Piedrahita Lyons"
+            },
+            {
+               "id": 632,
+               "nombre": "Telesforo Pedraza Ortega"
+            },
+            {
+               "id": 635,
+               "nombre": "Tulio Cesar Bernal Bacca"
+            },
+            {
+               "id": 651,
+               "nombre": "Wilmer Ramiro Carrillo Mendoza"
+            },
+            {
+               "id": 664,
+>>>>>>> origin
                "nombre": "Zulema del Carmen Jattin Corrales"
             }
          ]
@@ -2949,7 +5565,11 @@
          "nombre": "Polo Democrático Independiente",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 446,
+=======
+               "id": 440,
+>>>>>>> origin
                "nombre": "Luis Carlos Avellaneda Tarazona"
             }
          ]
@@ -2959,7 +5579,11 @@
          "nombre": "Por el País que Soñamos",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 138,
+=======
+               "id": 137,
+>>>>>>> origin
                "nombre": "David Luna Sanchez"
             }
          ]
@@ -2969,7 +5593,11 @@
          "nombre": "Salvación Nacional",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 180,
+=======
+               "id": 178,
+>>>>>>> origin
                "nombre": "Enrique Gomez Hurtado"
             }
          ]
@@ -2979,7 +5607,11 @@
          "nombre": "Somos Colombia",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 109,
+=======
+               "id": 108,
+>>>>>>> origin
                "nombre": "Carlos Roberto Ferro Solanilla"
             }
          ]
@@ -2989,7 +5621,11 @@
          "nombre": "Vanguardia Moral y Social Vamos Colombia",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 451,
+=======
+               "id": 445,
+>>>>>>> origin
                "nombre": "Luis Elmer Arenas Parra"
             }
          ]
@@ -2999,7 +5635,11 @@
          "nombre": "Voluntad Popular",
          "congresistas": [
             {
+<<<<<<< HEAD
                "id": 220,
+=======
+               "id": 215,
+>>>>>>> origin
                "nombre": "German Nestor Viana Guerrero"
             }
          ]

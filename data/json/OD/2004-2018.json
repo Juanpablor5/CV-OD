@@ -1,5 +1,6 @@
-[
-  {
+{
+  "respuestas": [
+    {
     "año": 2004,
     "código": "a1",
     "nombre": "Todos los días o casi todos los días",
@@ -182621,4 +182622,5 @@
     "nombre": "Total",
     "conteo": 1661
   }
-]
+  ]
+}

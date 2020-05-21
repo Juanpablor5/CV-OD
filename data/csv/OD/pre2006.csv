@@ -1,0 +1,436 @@
+¿Escucha noticias por radio?;1;1
+¿Mira noticias en la TV?;1;1
+¿Lee noticias en los periódicos?;1;1
+¿Cuál es el problema más grave que está enfrentando el país?;1;1
+¿Lee noticias vía Internet?;1;1
+¿Cree que el voto puede mejorar las cosas en el futuro o cree que como quiera que vote, las cosas no van a mejorar?;1;1
+Cuál de las tres frases describe mejor su opinión: La forma en que nuestra sociedad está organizada debe ser completa y radicalmente cambiada por medios revolucionarios, o nuestra sociedad debe ser gradualmente mejorada o perfeccionada por reformas o nuestra sociedad debe ser valientemente defendida de los movimientos revolucionarios;1;1
+Denunció el hecho de victimización a alguna institución?;1;1
+Hablando del lugar o barrio donde vive, y pensando en la posibilidad de ser ser víctima de un asalto o robo, ¿Se siente muy seguro, algo seguro, algo inseguro o muy inseguro? ;1;1
+Y hablando del país en general ¿Qué tanto cree Ud. que el nivel de delincuencia que tenemos ahora representa una amenaza para el bienestar de nuestro futuro?;1;1
+Si fuera víctima de un robo o asalto, ¿Cuánto confiaría en que el sistema judicial castigaría al culpable?;1;1
+¿Hasta qué punto diría que su barrio esta afectado por las pandillas? ;1;1
+Algunas personas dicen que la policía en este barrio/municipio protege a la gente frente a los delincuentes, mientras otros dicen que es la policía la que está involucrada en la delincuencia. ¿Qué opina usted? [Leer alternativas];1;1
+¿A quién o a qué institución denunció el hecho del cual fue víctima?;1;1
+¿Por qué no denunció el hecho del cual fue víctima?;1;1
+Para poder capturar delincuentes ¿Cree usted que las autoridades siempre deben respetar las leyes o en ocasiones pueden actuar al margen de la ley?;1;1
+¿Nació en área urbana o rural?;1;1
+Hay gente que dice que necesitamos un líder fuerte que no tenga que ser elegido a través del voto. Otros dicen que aunque las cosas no funcionen bien, la democracia electoral, o sea el voto popular, es siempre lo mejor. ¿Qué piensa? ;1;1
+¿Hasta qué punto cree que los tribunales de justicia de Colombia garantizan un juicio justo?;1;1
+¿Hasta qué punto tiene confianza en el sistema de justicia?;1;1
+¿Hasta qué punto tiene confianza en el Consejo Nacional Electoral?;1;1
+¿Hasta qué punto tiene confianza en las Fuerza Armadas?;1;1
+¿Hasta qué punto tiene confianza en el Congreso Nacional?;1;1
+¿Hasta qué punto tiene confianza en el Gobierno Nacional?;1;1
+¿Hasta qué punto tiene confianza en la Fiscalía General de la Nación?;1;1
+¿Hasta qué punto tiene confianza en la Procuraduría General de nación?;1;1
+¿Hasta qué punto tiene confianza en la Defensoría del Pueblo?;1;1
+¿Hasta qué punto tiene confianza en la Policía?;1;1
+¿Hasta qué punto tiene confianza en la Contraloría?;1;1
+¿Hasta qué punto tiene respeto por las instituciones políticas de Colombia?;1;1
+¿Hasta qué punto tiene confianza en la Iglesia Católica?;1;1
+¿Hasta qué punto tiene confianza en los partidos políticos?;1;1
+¿Hasta qué punto tiene confianza usted en el presidente?;1;1
+¿Hasta que punto tiene confianza en los sindicatos?;1;1
+¿Hasta qué punto cree que los derechos básicos del ciudadano están bien protegidos?;1;1
+¿Hasta qué punto tiene usted confianza en la Corte Suprema de Justicia;1;1
+¿Hasta qué punto tiene usted confianza en su alcaldía?;1;1
+¿Hasta qué punto tiene usted confianza en la Gobernación de su departamento?;1;1
+¿Hasta qué punto tiene usted confianza en los medios de comunicación?;1;1
+¿Hasta qué punto se siente usted orgulloso de vivir bajo el sistema político colombiano?;1;1
+¿Hasta qué punto tiene usted orgullo de ser colombiano?;1;1
+¿Hasta que punto tiene usted confianza en las elecciones?;1;1
+¿Hasta qué punto cree usted que los tratados de libre comercio ayudarán a mejorar la economía?;1;1
+¿Hasta qué punto tiene usted confianza en la Corte Constitucional?;1;1
+¿Hasta qué punto piensa usted que se debe apoyar al sistema político colombiano?;1;1
+¿En los últimos 4 años algún candidato o alguien de un partido político le ofreció algo, como un favor, comida o alguna otra cosa o beneficio a cambio de que usted votara o apoyara a ese candidato o partido?;1;1
+Y pensando en la última vez que esto pasó, ¿lo que le ofrecieron le hizo estar más inclinado o menos inclinado a votar por el candidato o partido que le ofreció ese bien?;1;1
+En su opinión ¿Su municipio consulta a los ciudadanos antes de tomar una decisión?;1;1
+En su opinión ¿Su municipio hace públicos sus planes y decisiones?;1;1
+En su opinión ¿Su municipio comparte la información abiertamente y a tiempo?;1;1
+En su opinión ¿Su departamento consulta a los ciudadanos antes de tomar una decisión?;1;1
+En su opinión ¿Su departamento hace públicos sus planes y decisiones?;1;1
+En su opinión ¿Su departamento comparte la información abiertamente y a tiempo?;1;1
+En su opinión ¿El gobierno nacional consulta a los ciudadanos antes de tomar una  decisión?;1;1
+En su opinión ¿El gobierno nacional hace públicos sus planes y decisiones?;1;1
+En su opinión ¿El gobierno nacional comparte la información abiertamente y a tiempo?;1;1
+Los cultivos de coca y amapola son perjudiciales para su region. ¿Hasta qué punto está de acuerdo o en desacuerdo?;1;1
+¿Cuál es el tamaño de sus tierras?;1;1
+¿Cuál es el tamaño de la finca donde trabaja?;1;1
+Medida utilizada en [coladam10];1;1
+¿Alguna vez alguien lo ha presionado para cultivar coca o amapola?;1;1
+¿Alguna vez ha cultivado coca o amapola?;1;1
+¿Ha participado en algún proyecto de desarrollo alternativo o de promoción de cultivos alternativos?;1;1
+¿Alguna vez ha sustituido cultivos de coca o amapola por cultivos lícitos?;1;1
+¿Ha vuelto a cultivar coca o amapola?;1;1
+¿Ha pensado en volver a cultivar coca o amapola?;1;1
+¿Usted considera que la gente cultiva coca o amapola principalmente por motivos;1;1
+¿Usted cree que la razón principal para la reducción de cultivos de coca en el p;1;1
+¿Usted es el propietario de alguna finca?;1;1
+¿Tiene producción animal en su finca?;1;1
+¿Tiene cultivos de pancoger?;1;1
+¿En dónde comercializa la mayoría de sus productos?;1;1
+¿Ha recibido algún apoyo del gobierno para el desarrollo de su producción agrícola?;1;1
+¿Cuál cree usted que es el mayor obstáculo para la comercialización de sus productos?;1;1
+¿Hasta qué punto tiene usted confianza en el concejo de su municipio?;1;1
+Usted diría que las decisiones de las autoridades Judiciales son:;1;1
+¿Cómo considera usted el acceso a los servicios de justicia en las Comisarías de familia;1;1
+¿Cómo considera usted el acceso a los servicios de justicia en la Fiscalía?;1;1
+¿Cómo considera usted el acceso a los servicios de justicia en las Inspecciones de Policía;1;1
+¿Cómo considera usted el acceso a los servicios de justicia en los Consultorios Jurídicos;1;1
+¿Cómo considera usted el acceso a los servicios de justicia en la Defensoría del Pueblo;1;1
+¿Cómo considera usted el acceso a los servicios de justicia en los Juzgados?;1;1
+¿Cómo considera usted el acceso a los servicios de justicia en la casa de justicia;1;1
+Cuando usted enfrenta un conflicto legal, civil, interpersonal, etc., usted:;1;1
+¿Usted ha participado en alguna conciliación?;1;1
+¿Qué tan satisfecho quedó usted con la forma en que se llevó a cabo el proceso de conciliación?;1;1
+¿Hasta que punto tiene confianza en el ELN?;1;1
+¿Hasta que punto tiene confianza en las autodefensas?;1;1
+¿Alguna vez ha participado en un Consejo Comunitario organizado en su municipio?;1;1
+¿La constitución expresa los valores y las aspiraciones de los colombianos?;1;1
+¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a algún concejal de su municipio?;1;1
+¿Reuniones de grupos de mujeres?;1;1
+¿Ha participado usted, alguna vez, en algún comité de control ciudadano o de veeduría?;1;1
+¿Considera que la información sobre la administración municipal fue...?;1;1
+¿Usted considera que su Municipio rinde cuentas sobre el manejo de los recursos?;1;1
+¿Usted considera que su Departamento rinde cuentas sobre el manejo de los recursos?;1;1
+¿Usted considera que el Gobierno Nacional rinde cuentas sobre el manejo de los recursos?;1;1
+¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a algún conciliador o juez?;1;1
+¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a la policía;1;1
+¿Asiste a reuniones de la Junta de Acción Comunal?;1;1
+Un policía de tránsito detiene a un conductor por hacer un cruce indebido, y éste le ofrece 50.000 pesos al policía para que no le ponga el parte y lo deje ir.;1;1
+El policía recibe los 50.000 pesos y deja ir al conductor sin ponerle el parte.;1;1
+¿Y lo que hizo la empresa que pagó los diez mil dólares?¿Considera usted que es…;1;1
+¿Qué tan eficiente ha sido el Estado Colombiano en prevenir las violaciones masivas a los Derechos Humanos (Masacres y Desplazamiento Forzado)?;1;1
+En caso de tener conocimiento o ser objeto de una violación a los derechos humanos, usted acudiría a las siguientes instituciones para denunciar el hecho?;1;1
+¿Por qué eligió "ninguna de las anteriores?;1;1
+¿Usted cree que la política de Seguridad Ciudadana del presidente Álvaro Uribe ha incrementado o disminuido las violaciones a los Derechos Humanos?;1;1
+¿Usted diría que hoy las oportunidades de trabajo en su comunidad son mejores, iguales, peores, no sabe?;1;1
+¿Considera que su madre es o era una persona blanca, mestiza, indígena, negra o mulata?;1;1
+Teniendo en cuenta su experiencia ¿la corrupción de los funcionarios departamentamentales está…?;1;1
+Teniendo en cuenta su experiencia ¿la corrupción de los jueces está...?;1;1
+Teniendo en cuenta su experiencia ¿la corrupción de los funcionarios municipales está…?;1;1
+¿Está usted inscrito en el programa "Familias en Acción"?;1;1
+¿Se justificaría que los militares tomen el poder por un golpe de estado frente a un agravamiento del conflicto armado?;1;1
+Frente a una seria amenaza terrorista;1;1
+¿Cree usted que el municipio responde a lo que quiere el pueblo?;1;1
+¿Considera usted que el municipio permite la participación ciudadana en la gestión municipal?;1;1
+¿Hasta qué punto diría que el gobierno actual resuelve el conflicto armado?;1;1
+¿hasta qué punto diría que el gobierno actual sanea las finanzas estatales? ;1;1
+¿Hasta qué punto diría usted que el Gobierno actual combate la reorganización de los grupos paramilitares?;1;1
+¿La mejor opción para solucionar el conflicto con la guerrilla?;1;1
+¿La mejor opción para solucionar el conflicto con los grupos paramilitares?;1;1
+¿Qué tanto cree que es posible una solución negociada en un plazo razonable, diga usted de 4 años, con las Farc?;1;1
+¿Qué tanto cree que es posible una solución negociada en un plazo razonable, diga usted de 4 años, con el ELN?;1;1
+¿Qué tanto cree que es posible una solución negociada en un plazo razonable, diga usted de 4 años, con los paramilitares?;1;1
+¿Estaría de acuerdo con la desmovilización y reinserción de la guerrilla?;1;1
+¿Estaría de acuerdo con la desmovilización y reinserción de los paramilitares?;1;1
+¿Cree usted que la desmovilización de grupos guerrilleros mejoraría o empeoraría la seguridad de su región?;1;1
+¿Cree usted que la desmovilización de grupos paramilitares mejoraría o empeoraría la seguridad de su región? ;1;1
+¿Usted ve posible el perdón y la reconciliación de los ciudadanos con miembros desmovilizados de la guerrilla FARC?;1;1
+¿Usted ve posible el perdón y la reconciliación de los ciudadanos con miembros desmovilizados de los paramilitares?;1;1
+Los partidos políticos colombianos escuchan a la gente. ¿Qué tan de acuerdo está con esta afirmación?;1;1
+¿Diría usted que los servicios de salud que el municipio está dando a la gente son…?;1;1
+¿Diría usted que los servicios de Energía Eléctrica que el municipio está dando a la gente son…?;1;1
+¿Está usted afiliado al SISBEN?;1;1
+Quisiera que me dijera hasta qué punto está de acuerdo o en desacuerdo con la (reelección);1;1
+¿Dónde ubicaría los siguientes personajes de la vida nacional? Horacio Serpa U;1;1
+¿Dónde ubicaría los siguientes personajes de la vida nacional? A Alvaro Uribe Velez;1;1
+¿Dónde ubicaría los siguientes personajes de la vida nacional? Antonio Navarro;1;1
+¿Dónde ubicaría los siguientes personajes de la vida nacional? César Gaviria Trujillo;1;1
+Concepto Clara López;1;1
+Concepto Juan Manuel Santos;1;1
+Concepto Oscar Iván Zuluaga;1;1
+Concepto Aída Avella;1;1
+Juan Manuel Santos es una persona honesta;1;1
+Juan Manuel Santos es una persona preparada para gobernar;1;1
+Juan Manuel Santos es el mejor líder;1;1
+Juan Manuel Santos es capaz de conducir el país hacia la paz;1;1
+Antanas Mockus es una persona honesta;1;1
+Antanas Mockus es una persona preparada para gobernar;1;1
+Antanas Mockus es el mejor líder;1;1
+Antanas Mockus es capaz de conducir el país hacia la paz;1;1
+Germán Vargas Lleras es un hombre honesto;1;1
+Noemí Sanín es una persona honesta;1;1
+Noemí Sanín es una persona preparada para gobernar;1;1
+Noemí Sanín es la mejor líder;1;1
+¿Qué tan importante fue para usted la información ofrecida por los noticieros de TV?;1;1
+¿Qué tan importante fue para usted la información ofrecida por los programas de radio?;1;1
+¿Qué tan importante fue para usted la información ofrecida por los periódicos;1;1
+¿Qué tan importante fue para usted la información ofrecida por las revistas de actualidad y de noticias;1;1
+¿Dónde se ubicaría usted con respecto a esta escala, donde los extremos son si el gobierno debería resolver el conflicto armado por la vía del diálogo o si debería resolverlo por la vía militar?;1;1
+¿Dónde cree que se ubicaría JMS?;1;1
+¿Dónde cree que se ubicaría Horacio Serpa?;1;1
+¿Dónde cree que se ubicaría Carlos Gaviria?;1;1
+¿Dónde cree que se ubicaría usted con respecto a esta escala, donde los extremos son si el gobierno debería tomar en consideración las críticas de la oposición o si debería ignorarlas?;1;1
+¿Dónde cree que se ubicaría Alvaro Uribe?;1;1
+¿Dónde cree que se ubicaría Horacio Serpa?;1;1
+¿Dónde cree que se ubicaría Carlos Gaviria?;1;1
+¿Dónde se ubicaría usted mismo con respecto a esta escala, donde los extremos son si el gobierno debería aumentar el gasto social o dejarlo en los niveles actuales?;1;1
+¿Dónde cree que se ubicaría JMS?;1;1
+¿Dónde cree que se ubicaría Horacio Serpa?;1;1
+¿Dónde cree que se ubicaría Carlos Gaviria?;1;1
+¿Alguna vez lo han presionado con amenazas para que vote a favor de algún candidato?;1;1
+¿A algún familiar o amigo cercano alguna vez lo han presionado con amenazas para que vote a favor de algún candidato o partido?;1;1
+¿Alguna vez lo han presionado con amenazas para que NO vote?;1;1
+¿A algún familiar o amigo cercano alguna vez lo han presionado con amenazas para que NO vote?;1;1
+¿Alguna vez le han ofrecido dinero o bienes materiales para que vote a favor de algún candidato o partido? ;1;1
+¿Alguna vez ha accedido a votar por algún candidato o partido a cambio de dinero?;1;1
+¿A algún familiar o amigo cercano alguna vez le han ofrecido dinero o bienes materiales para que vote a favor de algún candidato o partido? ;1;1
+¿Alguna vez algún familiar o amigo cercano ha accedido a votar por algún candidato o partido a cambio de dinero?;1;1
+¿Se considera Usted miembro o simpatizante del Partido Conservador, del Polo Democrático, del Partido Liberal, de otro movimiento político, o se considera usted independiente o sin partido?;1;1
+¿Considera usted que se inclina más hacia los Liberales, hacia los Conservadores o hacia el Polo Democrático?  ;1;1
+¿Piensa votar en las elecciones para alcaldías de octubre próximo?;1;1
+¿Ya sabe por quién votaría para alcalde de su municipio?;1;1
+Las elecciones de octubre próximo en su municipio serán libres y justas.;1;1
+Las elecciones de octubre próximo en su municipio se ven amenazadas por la acción de grupos paramilitares;1;1
+Las elecciones de octubre próximo en su municipio se ven amenazadas por la acción de grupos guerrilleros;1;1
+Las elecciones de octubre próximo en su municipio se ven amenazadas por la acción de narcotraficantes;1;1
+¿Las elecciones de octubre próximo en su municipio se ven amenazadas por el clientelismo?;1;1
+Victimización por: La guerrilla;1;1
+Victimización por: Los paramilitares;1;1
+Victimización por: Exparamilitares que se han reagrupado responsables de los hechos;1;1
+Victimización por: El ejército;1;1
+Victimización por: La policía;1;1
+¿Qué grupo, o grupos fueron responsables de estos hechos? Otro (Si wc1, wc2 y wc3);1;1
+¿Asiste a reuniones de un sindicato? ¿Asiste…;1;1
+¿Asiste a reuniones de una Cooperativa? ¿Asiste…;1;1
+¿Asiste a reuniones de un partido o movimiento político? ¿Asiste…;1;1
+¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a algún Congresista?;1;1
+¿Reuniones de asociaciones o grupos de mujeres o amas de casa?;1;1
+A algún ministerio, institución pública u oficina del Estado;1;1
+¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación al Alcade de su municipio, funcionario de la alcaldía, concejal o edil?;1;1
+¿En el último año usted ha contribuido o ha tratado de contribuir para la solución de algún problema de su comunidad o de los vecinos de su barrio?;1;1
+¿Ha donado dinero o materiales para ayudar a solucionar algún problema de la comunidad o de su barrio?;1;1
+¿Ha contribuido con su propio trabajo o mano de obra?;1;1
+¿Ha estado asistiendo a reuniones comunitarias sobre algún problema?;1;1
+¿Ha tratado de ayudar a organizar algún grupo nuevo para resolver algun problema de su comunidad?;1;1
+¿Asiste a reuniones de alguna organización religiosa ¿Asiste…;1;1
+¿Asiste a reuniones de una asociación de padres de familia de la escuela o colegio?;1;1
+¿Asiste a reuniones de un comité o junta de mejoras para la comunidad? ¿Asiste…;1;1
+¿Asiste a reuniones de una asociación de profesionales, comerciantes o productores? ¿Asiste…;1;1
+Algunos dicen que nuestro país está sufriendo una de las crisis económicas más g;1;1
+¿Quién de los siguientes es el más culpable de la crisis económica actual en nue;1;1
+Hay personas que siempre hablan mal de la forma de gobierno, no solo del gobierno de turno, sino la forma de gobierno, ¿con qué firmeza aprueba o desaprueba el derecho de votar de esas personas? ;1;1
+¿Con qué firmeza aprueba o desaprueba el que estas personas puedan llevar a cabo manifestaciones pacíficas con el propósito de expresar sus puntos de vista?;1;1
+Hay personas que siempre hablan mal de la forma de gobierno, no solo del gobierno de turno, sino la forma de gobierno, ¿Con qué firmeza aprueba o desaprueba que estas personas puedan postularse para postularse para cargos públicos?;1;1
+¿Hasta qué punto aprueba o desaprueba una ley que prohíba las protestas públicas;1;1
+¿Hasta qué punto aprueba o desaprueba una ley que prohíba reuniones de cualquier grupo que critique el sistema político colombiano?;1;1
+¿Hasta qué punto aprueba o desaprueba que el gobierno censure programas de televisión?;1;1
+¿Hasta qué punto aprueba o desaprueba que el gobierno censure libros que están están en las bibliotecas de las escuelas públicas?;1;1
+¿Hasta qué punto aprueba o desaprueba que el gobierno censure a los medios de comunicación que lo critican?;1;1
+Hay personas que siempre hablan mal de la forma de gobierno de Colombia, no solo del gobierno de turno, sino la forma de gobierno, ¿Con qué firmeza aprueba o desaprueba que estas personas salgan en la televisión para dar un discurso?;1;1
+Pensando en los homosexuales ¿Con qué firmeza aprueba o desaprueba que estas personas puedan postularse para cargos públicos?;1;1
+Un congresista acepta un soborno de diez mil dólares pagado por una empresa.  ¿Considera usted que lo que hizo el congresista es...;1;1
+Una madre con varios hijos tiene que sacar una partida de nacimiento para uno de ellos.  Para no perder tiempo esperando, ella le paga diez mil pesos de más al empleado público municipal.  ¿Cree usted que lo que hizo la señora es… ;1;1
+Una persona desempleada es cuñado de un político importante, y éste usa su palanca para conseguirle un empleo público. ¿Usted cree que el político es… ;1;1
+¿Cree usted que en nuestro país hace falta un gobierno de mano dura, o cree que los problemas pueden resolverse con la participación de todos?;1;1
+¿En pocas palabras, que significa para usted la democracia?;1;1
+¿Significa algo más - 2a respuesta;1;1
+¿Significa algo más - 3a respuesta;1;1
+¿De estos significados de democracia que usted ha dicho, en su opinión cuál es el más importante?;1;1
+¿Cuál es la mejor forma para fortalecer la democracia en Colombia?;1;1
+¿Con cuál de las siguientes tres frases está usted más de acuerdo? (1) A la gente como uno, le da lo mismo un régimen democrático que uno no democrático. (2) La democracia es preferible a cualquier otra forma de gobierno. (3) En algunas circunstancias un gobierno autoritario puede ser preferible a uno democrático.;1;1
+Puede haber democracia sin que existan partidos políticos. ¿Hasta qué punto está;1;1
+Departamento donde nació;1;1
+Participar para resolver problemas de su comunidad ¿Lo haría usted sin temor, con un poco de temor, o con mucho temor?;1;1
+Votar en una elección nacional ¿Lo haría usted sin temor, con un poco de temor,;1;1
+Participar en una manifestación pacífica ¿Lo haría usted sin temor, con un poco;1;1
+Postularse para un cargo de elección popular ¿Lo haría usted sin temor, con un p;1;1
+¿Por cuántas semanas durante el último año no ha tenido trabajo?;1;1
+En las oficinas del gobierno (juzgados, ministerios, alcaldías);1;1
+Cuando buscaba trabajo en alguna empresa o negocio;1;1
+En reuniones o eventos sociales;1;1
+En lugares públicos (como en la calle, la plaza o el mercado);1;1
+¿Con qué firmeza aprobaría o desaprobaría que las personas trabajen en campañas electorales para un partido político o candidato;1;1
+¿Con qué firmeza aprobaría o desaprobaría que las personas invadan propiedades o terrenos privados;1;1
+¿Con qué firmeza aprobaría o desaprobaría que las personas participen en un cierre o bloqueo de calles o carreteras;1;1
+¿Con qué firmeza aprobaría o desaprobaría que las personas hagan justicia por su propia mano cuando el Estado no castiga a los criminales;1;1
+¿Con qué firmeza aprobaría o desaprobaría que las personas ocupen fábricas, ofic;1;1
+¿Con qué firmeza aprobaría o desaprobaría que las personas participen en un grup;1;1
+¿Con qué firmeza aprobaría o desaprobaría que las personas participen en manifestaciones permitidas por la ley;1;1
+¿Con qué firmeza aprobaría o desaprobaría que las personas participen en un grupo para tratar de resolver los problemas de las comunidades;1;1
+¿Hasta qué punto el Congreso estorba la labor del presidente?;1;1
+¿Y qué tanto tiempo pierden los congresistas discutiendo y debatiendo?;1;1
+¿Qué tan importantes son para el país las leyes que aprueba el Congreso?;1;1
+¿Hasta qué punto el Congreso cumple con lo que usted espera de él?;1;1
+¿Cuál fue el último año de enseñanza que aprobó?;1;1
+¿Y hasta qué nivel educativo llegó su mamá?;1;1
+¿Y hasta qué nivel educativo llegó su madre?;1;1
+¿Hasta qué nivel educativo llegó su padre?;1;1
+A los que gobiernan el país les interesa lo que piensa la gente como usted. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?;1;1
+Usted siente que entiende bien los asuntos políticos más importantes del país. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?;1;1
+Pensando en los partidos políticos en general ¿Hasta qué punto los partidos polí;1;1
+¿Hasta qué punto hay corrupción en los partidos políticos colombianos?;1;1
+¿Qué tanto los partidos políticos escuchan a la gente como uno?;1;1
+Se considera blanco, mestizo, indígena o afrocolombiano?;1;1
+¿Ha sido acusado durante el último año por un agente de policía por una infracción que no cometió?;1;1
+Para tramitar algo en la alcaldía (como un permiso, por ejemplo) durante el último año. ¿Ha tenido que pagar alguna suma además de lo exigido por la ley? ;1;1
+En su trabajo ¿Le han solicitado algún pago no correcto en el último año?;1;1
+¿Ha tenido que pagar una mordida (coima, soborno) en los juzgados en el último año?;1;1
+Para ser atendido en un hospital o en un puesto de salud durante el último año. ¿Ha tenido que pagar alguna mordida? ;1;1
+En la escuela o colegio durante el último año ¿Tuvo que pagar alguna mordida?;1;1
+¿Alguien le pidió un soborno para evitar el corte de la luz eléctrica?;1;1
+¿Cree que como están las cosas a veces se justifica pagar un soborno o mordida?;1;1
+Algún agente de policía le pidió una mordida (o soborno) en el último a?o?;1;1
+¿Un empleado público le ha solicitado una mordida en el último año?;1;1
+Teniendo en cuenta su experiencia ¿la corrupción de los funcionarios públicos está…?;1;1
+Pensando en los políticos de otros países, usando esta escala, ¿qué tan cercano se siente del presidente de Venezuela Hugo Chávez?;1;1
+¿Y del presidente de Estados Unidos George Bush?;1;1
+¿Qué tan cercano se siente del presidente de Bolivia Evo Morales?;1;1
+¿Y del presidente de Brasil Lula da Silva?;1;1
+¿Y de Fidel Castro?;1;1
+¿Recuerda usted cómo se llama el actual presidente de los Estados Unidos?;1;1
+¿Cómo se llama el Presidente del Congreso de Colombia?;1;1
+Recuerda usted cuantos departamentos tiene Colombia?;1;1
+¿Cuánto tiempo dura el período presidencial en Colombia?;1;1
+¿Recuerda usted cómo se llama el presidente de Brasil?;1;1
+¿Cómo calificaría en general su situación económica?  ¿Diría usted que es muy buena, buena, ni buena ni mala, mala o muy mala?;1;1
+¿Considera usted que su situación económica actual es mejor, igual o peor que la de hace doce meses?;1;1
+¿Considera usted que dentro de 12 meses su situación económica sería mejor, igual o peor?;1;1
+Puede que la democracia tenga problemas pero es mejor que cualquier otra forma de Gobierno. ¿Hasta qué punto está de acuerdo o en desacuerdo?;1;1
+¿Diría que la gente de su comunidad es muy confiable, algo confiable, poco confiable o nada confiable? ;1;1
+¿Diría usted que se puede confiar en la mayoría de las personas o que uno tiene que ser muy cuidadoso cuando trata con los demás?;1;1
+Frente al Desempleo muy alto;1;1
+¿Se justificaría que hubiera un golpe de estado por los militares frente a mucha delincuencia?;1;1
+Frente a la alta inflación, con aumento excesivo de precios;1;1
+Frente a mucha corrupción (1) Se justificaría que los militares tomen el poder por un golpe de Estado o (2) No se justificaría que los militares tomen el poder por un golpe de Estado;1;1
+¿Cree Ud. que alguna vez puede haber razón suficiente para un golpe de estado o cree que nunca hay suficiente razón para eso?;1;1
+Frente a muchas protestas sociales;1;1
+Según el sentido que tengan para usted los términos ""izquierda"" y ""derecha"" cuando piensa sobre su punto de vista político, ¿dónde se colocaría  en esta escala?;1;1
+¿Cuál es su lengua materna, o el primer idioma que habló de pequeño en su casa?;1;1
+En su opinión, ¿se le debe dar más obligaciones y más dinero al municipio, o se debe dejar que el gobierno nacional asuma más obligaciones y servicios municipales?;1;1
+Y tomando en cuenta los recursos económicos existentes en el país ¿Quién debería;1;1
+En general ¿Hasta qué punto se encuentra satisfecho con su vida? ¿Diría que se encuentra…;1;1
+En esta tarjeta hay una escalera con escalones numerados del cero al diez. El cero es el escalón más bajo y representa la peor vida posible para usted. El diez es el escalón más alto y representa la mejor vida posible para usted. ¿En qué escalón de la escalera se siente usted en estos momentos?;1;1
+¿En qué escalón diría usted que se encontraba dos años atrás?;1;1
+Hablando en general del actual gobierno ¿Diría que el trabajo que esta haciendo el Presidente es:;1;1
+¿Usted cree que los congresistas colombianos están haciendo su trabajo muy bien, bien, ni bien ni mal, mal, o muy mal?;1;1
+Durante su niñez ¿Donde vivió usted principalmente?;1;1
+Hace 5 años, ¿donde residía usted?;1;1
+El lugar donde vivia hace 5 años era:;1;1
+Ahora vamos a hablar de su municipio... ¿Le resolvieron su asunto o petición?;1;1
+Municipio donde nació;1;1
+¿Hasta qué punto diría que el gobierno actual combate la pobreza?;1;1
+¿Hasta qué punto diría que el gobierno actual protege los derechos humanos?;1;1
+ ¿hasta qué punto diría que el gobierno actual mejora la seguridad ciudadana?;1;1
+¿hasta qué punto diría que el gobierno actual combate el desempleo?;1;1
+¿hasta qué punto diría que el gobierno actual está manejando bien la economía?;1;1
+¿hasta qué punto diría que el gobierno actual promueve y protege los principios democráticos?;1;1
+¿Hasta qué punto diría que el gobierno actual combate la corrupción en el gobierno?;1;1
+¿Ha asistido a un cabildo abierto o una sesión municipal durante los últimos 12 meses?;1;1
+¿Ha asistido a alguna reunión convocada por el alcalde durante los últimos 12 meses?;1;1
+¿Hasta qué punto cree Ud. que los funcionarios del municipio hacen caso a lo que pide la gente en estas reuniones?  ;1;1
+¿Ha solicitado ayuda o ha presentado una petición a alguna oficina, funcionario o concejal del municipio durante los últimos 12 meses?;1;1
+¿Ha participado en alguna reunión para discutir o planificar el presupuesto de su municipio?;1;1
+¿Cuál es su ocupación principal?;1;1
+En esta ocupación por lo general usted es:;1;1
+¿Cuál era la ocupación o tipo de trabajo que realizaba su padre o madre (quien f;1;1
+¿En total cuántos empleados hay en la empresa o en el lugar donde usted trabaja?;1;1
+¿A qué se dedica usted principalmente? ¿Está usted actualmente:;1;1
+¿Se encuentra usted afiliado a un sistema de pensiones?;1;1
+¿A qué sistema de pensiones está usted afiliado?;1;1
+En los últimos 12 meses, usted cotizó a su fondo de pensión;1;1
+Se considera usted una persona que es: Sociable y activa;1;1
+Se considera usted una persona que es: Poco creativa y con poca imaginación;1;1
+Se considera usted una persona que es: Criticona y peleadora;1;1
+Se considera usted una persona que es: Confiable y disciplinada;1;1
+Se considera usted una persona que es: Ansiosa y fácil de molestarse;1;1
+Se considera usted una persona que es: Abierta a nuevas experiencias e intelectu;1;1
+Se considera usted una persona que es: Callada y tímida;1;1
+Se considera usted una persona que es: Generosa y cariñosa;1;1
+Se considera usted una persona que es: Desorganizada y descuidada;1;1
+Se considera usted una persona que es: Calmada y emocionalmente estable;1;1
+A pesar de nuestras diferencias, los colombianos tenemos muchas cosas y valores que nos unen como país.  ¿Hasta qué punto está de acuerdo o en desacuerdo?;1;1
+En general ¿Diría que está muy satisfecho, satisfecho, insatisfecho o muy insatisfecho como la democracia funciona en su país?;1;1
+¿Colombia es un país muy democrático, algo democrático, poco democrático, o nada democrático?;1;1
+¿Colombia se ha vuelto mas democrática, igual de democrática o menos democrática?;1;1
+¿Qué tanto interés tiene usted en la política...;1;1
+¿Con qué frecuencia habla usted de política con otras personas?;1;1
+Teniendo en cuenta la situación actual del país, quisiera que me dijera con cuál de las siguientes frases está más de acuerdo? Para el progreso del país, es necesario que nuestros presidentes limiten la voz y el voto de los partidos de la oposición, (o al contrario), Aunque atrase el progreso del país, nuestros presidentes no deben limitar la voz y el voto de los partidos de la oposición;1;1
+Para el progreso del país, es necesario que nuestros presidentes limiten la voz y  el voto de los partidos de la oposición;1;1
+¿Cuando el Congreso estorba el trabajo del gobierno, nuestros presidentes deben gobernar sin el Congreso?;1;1
+Cuando la Corte Constitucional estorba el trabajo del gobierno, debe ser ignorada por nuestros presidentes;1;1
+¿El pueblo debe gobernar directamente, y no a través de los representantes electos?;1;1
+¿Aquellos que no concuerdan con la mayoría representan una amenaza para el país?;1;1
+El Congreso impide mucho la labor de nuestros presidentes, y debería ser ignorado (o al contrario), Aun cuando estorbe la labor del presidente, nuestros presidentes no debieran pasar por encima del Congreso;1;1
+Los jueces con frecuencia estorban la labor de nuestros presidentes, y deberían ser ignorados (o al contrario), Aun cuando a veces los jueces estorban la labor de nuestros presidentes, las decisiones de los jueces siempre tienen que ser obedecidas;1;1
+Nuestros presidentes deben tener el poder necesario para que puedan actuar a favor del interés nacional (o al contrario), Se debe limitar el poder de nuestros presidentes para que  nuestras libertades no corran peligro;1;1
+Nuestros presidentes deben hacer lo que el pueblo quiere aunque las leyes se lo impidan (o al contrario), Nuestros presidentes deben obedecer las leyes aunque al pueblo no le guste;1;1
+¿Con qué frecuencia ha tratado usted de convencer a otros para que voten por un partido o candidato?;1;1
+¿Trabajó para algún candidato o partido en las pasadas elecciones presidenciales;1;1
+¿Ha participado Ud. en una manifestación o protesta pública? ¿Lo ha hecho algunas veces, casi nunca o nunca?;1;1
+¿En el último año, ha participado en una manifestación o protesta pública?  ¿Lo ha hecho algunas veces, casi nunca o nunca?;1;1
+Género;1;1
+¿En cuál de los siguientes rangos se encuentran los ingresos familiares mensuales de esta casa, incluyendo las remesas del exterior y el ingreso de todos los adultos e hijos que trabajan?;1;1
+¿Recibe su familia remesas o giros del exterior?;1;1
+¿En qué utiliza generalmente el dinero de las remesas?;1;1
+¿Hasta qué punto dependen los ingresos familiares de esta casa de las remesas del exterior?;1;1
+¿Tiene usted familiares cercanos que antes vivieron en esta casa y que hoy estén viviendo en el exterior?;1;1
+Nivel de sutento que permite el salario y el total del ingreso familiar;1;1
+En los últimos dos años, el ingreso de su hogar ha ha disminuido, aumentado o permanecido igual?;1;1
+¿Cuál fue la principal razón por la que el ingreso de su hogar disminuyó en los últimos 12 meses?;1;1
+¿Cuál es su estado civil?;1;1
+Cuántos hijos(as) tiene?;1;1
+¿Cuántos hijos viven en su hogar en este momento?;1;1
+¿Tiene usted intenciones de irse a vivir o a trabajar a otro país en los próximos 12 meses?;1;1
+¿Con que frecuencia se comunica con ellos?;1;1
+¿Cuál es su edad en años cumplidos?;1;1
+Día de nacimiento;1;1
+Religión;1;1
+¿Con qué frecuencia asiste usted a servicios religiosos?;1;1
+¿Podría decirme si en su casa tienen Television?;1;1
+¿Podría decirme si en su casa tienen agua potable dentro de la casa?;1;1
+¿Podría decirme si en su casa tienen cuarto de baño dentro de la casa?;1;1
+¿Podría decirme si en su casa tienen computadora?;1;1
+¿Podría decirme si en su casa tienen televisor de pantalla plana?;1;1
+¿Podría decirme si en su casa tienen Internet de alta velocidad (banda ancha)?;1;1
+¿Podría decirme si en su casa tienen refrigeradora (nevera)?;1;1
+¿Podría decirme si en su casa tienen teléfono convencional (no celular)?;1;1
+¿Podría decirme si en su casa tienen teléfono celular?;1;1
+¿Podría decirme si en su casa tienen vehículo?;1;1
+¿Podría decirme si en su casa tienen lavadora de ropa?;1;1
+¿Podría decirme si en su casa tienen microondas?;1;1
+¿Podría decirme si en su casa tienen motocicletas?;1;1
+¿Alguna vez se ha sentido discriminado o tratado de manera injusta por su color de piel?;1;1
+Según los datos del Censo de Población del 2005, la gente negra es más pobre. ¿Usted cuál cree que es la principal razón de esto? ;1;1
+En Colombia no hay racismo. ¿Hasta qué punto está de acuerdo o en desacuerdo?;1;1
+¿Usted piensa que en Colombia las personas negras son tratadas mejor, igual o peor que las demás personas en las escuelas, colegios y universidades?;1;1
+¿Usted piensa que en Colombia las personas negras son tratadas mejor, igual o peor que las demás personas al buscar empleo?;1;1
+¿Usted piensa que en Colombia las personas negras son tratadas mejor, igual o que las demás personas por la policía?;1;1
+El Estado colombiano, en lugar del sector privado, debería ser el dueño de las empresas e industrias más importantes del país;1;1
+El Estado colombiano, más que los individuos, debería ser el principal responsable de asegurar el bienestar de la gente;1;1
+El Estado colombiano, más que la empresa privada, debería ser el principal responsable de crear empleos.;1;1
+El Estado colombiano debe implementar políticas firmes para reducir la desigualdad de ingresos entre ricos y pobres.;1;1
+El estado colombiano, más que el sector privado, debería ser el responsable principal de las pensiones de jubilación;1;1
+El estado colombiano, más que el sector privado, debería ser el responsable principal de los servicios de salud;1;1
+¿Está usted afiliado al POS (Plan Obligatorio de Salud)?;1;1
+¿Tiene usted algún servicio de salud adicional al POS?;1;1
+¿En su POS, es usted cotizante o beneficiario?;1;1
+¿Diría usted que los servicios de que el municipio está dando a la gente son…?;1;1
+¿Cómo calificaría la situación económica del país?;1;1
+¿Considera usted que la situación económica actual del país es mejor, igual o peor que hace doce meses?;1;1
+¿Cree Ud. que en los próximos doce meses la situación económica del país será mejor, igual o peor en los próximos 12 meses?;1;1
+Satisfacción con: La policía nacional;1;1
+Satisfacción con: Los juzgados o tribunales de justicia;1;1
+Satisfacción con: La fiscalía;1;1
+Satisfacción con: La alcaldía;1;1
+Siempre ha habido ricos y pobres y eso no se puede cambiar. ¿Hasta qué punto est;1;1
+Es bueno que exista desigualdad para que las personas más pobres se esfuercen má;1;1
+Estar muy cerca de alguien que tiene mucho más dinero que usted (por ejemplo en la calle o en un espectáculo) lo/a hace sentir incómodo/a.;1;1
+Estar muy cerca de alguien que tiene mucho menos dinero que usted (por ejemplo en la calle o en un espectáculo) lo/a hace sentir incómodo/a.;1;1
+Estaría dispuesto/a a pagar más impuestos si éstos se usaran para darle más a quien tiene menos.;1;1
+¿Tiene cédula de ciudadanía? ¿Está su cédula inscrita para votar?;1;1
+¿Smpatiza con algún partido político?;1;1
+¿Y usted diría que su simpatía por ese partido [partido que mencionó en VB11] es…?;1;1
+¿Votó en las pasadas elecciones presidenciales de 2002 (INDICAR AÑO)?;1;1
+¿Si esta semana fueran las próximas elecciones presidenciales, qué haría usted?;1;1
+¿Cuál es la forma en que usted cree que puede influir más para cambiar las cosas?;1;1
+¿Por qué no votó usted en las pasadas elecciones presidenciales [No leer alterna;1;1
+Ahora dígame ¿Votó usted en las últimas elecciones para Alcalde en el 2003?;1;1
+Los hombres son mejores líderes políticos que las mujeres;1;1
+¿Ha sido víctima de algún acto de delincuencia en los últimos doce meses?;1;1
+¿Qué tipo de acto delincuencial sufrió?;1;1
+¿Ud. ha perdido algún miembro de su familia o pariente cercano a consecuencia del conflicto armado?;1;1
+Y ¿Algún miembro de su familia tuvo que refugiarse o abandonar su lugar de vivienda  a consecuencia del conflicto armado?;1;1
+¿Por razones de conflicto algún miembro de su familia tuvo que irse del país?;1;1

@@ -130,7 +130,6 @@ botonEtiquetas.addEventListener("click", function() {
 
       if (etiqueta === laEtiqueta) {
         preguntalesFinales.push({ nombre: nombre });
-
       }
 
     }
