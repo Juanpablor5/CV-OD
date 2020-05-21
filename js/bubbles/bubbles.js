@@ -1,9 +1,9 @@
 function bubbleChart() {
-    const width = 620;
-    const height = 720;
+    const width = 600;
+    const height = 400;
 
     // location to centre the bubbles
-    const centre = { x: width/2 , y: height/2 - 50 };
+    const centre = { x: width/2 - 10 , y: height/2 - 70 };
 
     // strength to apply to the position forces
     const forceStrength = 0.03;
@@ -33,7 +33,7 @@ function bubbleChart() {
     // set up colour scale
     const fillColour = d3.scaleOrdinal()
     .domain(["1", "2", "3", "4", "5"])
-    .range(["#E13B2A", "#009900", "#4C0099", "#FFDF00", "#1361C1"]);
+    .range(["#3abae9", "#5DC1DB", "#7FC8CD", "#A2CFBF", "#C4D6B0"]);
 
     // data manipulation function takes raw data from csv and converts it into an array of node objects
     // each node will store data and visualisation values to draw a bubble
@@ -47,7 +47,7 @@ function bubbleChart() {
       // size bubbles based on area
       const radiusScale = d3.scaleLinear()
         .domain([0, maxSize+10])
-        .range([5, 45])
+        .range([5, 35])
 
       // use map() to convert raw data into node data
       const myNodes = rawData.map(d => ({
@@ -113,20 +113,19 @@ function bubbleChart() {
         .style('font-size', 10)
         //.text(d => d.id)
 
-        svg.append("circle").attr("cx",140).attr("cy",600).attr("r", 8).style("fill", "#E13B2A")
-        svg.append("circle").attr("cx",280).attr("cy",600).attr("r", 8).style("fill", "#009900")
-        svg.append("circle").attr("cx",440).attr("cy",600).attr("r", 8).style("fill", "#4C0099")
+        svg.append("circle").attr("cx",120).attr("cy",360).attr("r", 8).style("fill", "#3abae9")
+        svg.append("circle").attr("cx",250).attr("cy",360).attr("r", 8).style("fill", "#5DC1DB")
+        svg.append("circle").attr("cx",420).attr("cy",360).attr("r", 8).style("fill", "#7FC8CD")
 
-        svg.append("circle").attr("cx",210).attr("cy",630).attr("r", 8).style("fill", "#FFDF00")
-        svg.append("circle").attr("cx",360).attr("cy",630).attr("r", 8).style("fill", "#1361C1")
+        svg.append("circle").attr("cx",190).attr("cy",385).attr("r", 8).style("fill", "#A2CFBF")
+        svg.append("circle").attr("cx",340).attr("cy",385).attr("r", 8).style("fill", "#C4D6B0")
 
-        svg.append("text").attr("x", 160).attr("y", 600).text("Gobierno").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 300).attr("y", 600).text("Iniciativa Popular").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 460).attr("y", 600).text("Legislativa").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 230).attr("y", 630).text("Mixta").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
-        svg.append("text").attr("x", 380).attr("y", 630).text("Otras Entidades").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 140).attr("y", 360).text("Gobierno").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 270).attr("y", 360).text("Iniciativa Popular").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 440).attr("y", 360).text("Legislativa").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 210).attr("y", 385).text("Mixta").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
+        svg.append("text").attr("x", 360).attr("y", 385).text("Otras Entidades").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
 
-        svg.append("text").attr("x", 160).attr("y", 600).text("Gobierno").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
       // set simulation's nodes to our newly created nodes array
       // simulation starts running automatically once nodes are set
       simulation.nodes(nodes)

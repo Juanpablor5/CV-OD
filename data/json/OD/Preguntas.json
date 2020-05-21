@@ -1,0 +1,4825 @@
+{
+  "preguntas": [
+    {
+    "código": "a1",
+    "nombre": "¿Escucha noticias por radio?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "a2",
+    "nombre": "¿Mira noticias en la TV?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "a3",
+    "nombre": "¿Lee noticias en los periódicos?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "a4",
+    "nombre": "¿Cuál es el problema más grave que está enfrentando el país?",
+    "categoría": "Principal problema"
+  },
+  {
+    "código": "a4i",
+    "nombre": "¿Lee noticias vía Internet?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "a4loc",
+    "nombre": "¿Cuál es el problema más grave que está enfrentando su municipio?",
+    "categoría": "Principal problema"
+  },
+  {
+    "código": "ab1",
+    "nombre": "¿Qué es más importante para un varón una niña los niños y las niñas? (1) Independencia o (2) Respeto a los mayores",
+    "categoría": "Familia"
+  },
+  {
+    "código": "ab2",
+    "nombre": "¿Qué es más importante para un varón una niña los niños y las niñas? (1) Obediencia o (2) Autosuficiencia (valerse por sí mismo)",
+    "categoría": "Familia"
+  },
+  {
+    "código": "ab5",
+    "nombre": "¿Qué es más importante para un varón una niña los niños y las niñas? (1) Creatividad o (2) Disciplina",
+    "categoría": "Familia"
+  },
+  {
+    "código": "abs5",
+    "nombre": "¿Cree que el voto puede mejorar las cosas en el futuro o cree que como quiera que vote, las cosas no van a mejorar?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "aclist1",
+    "nombre": "Todas las personas deberían tener acceso a los servicios básico de salud",
+    "categoría": "Salud"
+  },
+  {
+    "código": "aclist3",
+    "nombre": "La alcaldía de este municipio debería invertir más recursos en educación",
+    "categoría": "Educación"
+  },
+  {
+    "código": "acnun",
+    "nombre": "Y pensando en otro asunto ¿Con qué firmeza aprueba o desaprueba un programa que de dinero a las familias pobres a cambio de mantener a sus hijos en la escuela?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "acr1",
+    "nombre": "Cuál de las tres frases describe mejor su opinión: La forma en que nuestra sociedad está organizada debe ser completa y radicalmente cambiada por medios revolucionarios, o nuestra sociedad debe ser gradualmente mejorada o perfeccionada por reformas o nuestra sociedad debe ser valientemente defendida de los movimientos revolucionarios",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "adfarc",
+    "nombre": "Algunas personas creen que las FARC deberían ganar más influencia política ¿Uste",
+    "categoría": "Política"
+  },
+  {
+    "código": "adfarc1",
+    "nombre": "Algunas personas creen que las FARC deberían ganar más influencia política",
+    "categoría": "Política"
+  },
+  {
+    "código": "adigle",
+    "nombre": "Algunas personas creen que los políticos colombianos deberían prestar más atención a las opiniones de los líderes de la Iglesia Católica.",
+    "categoría": "Religión"
+  },
+  {
+    "código": "adigle1",
+    "nombre": "Algunas personas creen que los políticos colombianos deberían prestar más atención a las opiniones de los líderes de la Iglesia Católica. ¿Qué tanto apoya esta idea? [Leer opciones]",
+    "categoría": "Religión"
+  },
+  {
+    "código": "aoj1",
+    "nombre": "Denunció el hecho de victimización a alguna institución?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "aoj11",
+    "nombre": "Hablando del lugar o barrio donde vive, y pensando en la posibilidad de ser ser víctima de un asalto o robo, ¿Se siente muy seguro, algo seguro, algo inseguro o muy inseguro?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "aoj11a",
+    "nombre": "Y hablando del país en general ¿Qué tanto cree Ud. que el nivel de delincuencia que tenemos ahora representa una amenaza para el bienestar de nuestro futuro?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "aoj12",
+    "nombre": "Si fuera víctima de un robo o asalto, ¿Cuánto confiaría en que el sistema judicial castigaría al culpable?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "aoj16",
+    "nombre": "¿Hasta qué punto teme Ud. violencia por parte de miembros de su propia familia?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "aoj17",
+    "nombre": "¿Hasta qué punto diría que su barrio esta afectado por las pandillas?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "aoj18",
+    "nombre": "Algunas personas dicen que la policía en este barrio/municipio protege a la gente frente a los delincuentes, mientras otros dicen que es la policía la que está involucrada en la delincuencia. ¿Qué opina usted? [Leer alternativas]",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "aoj1a",
+    "nombre": "¿A quién o a qué institución denunció el hecho del cual fue víctima?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "aoj1b",
+    "nombre": "¿Por qué no denunció el hecho del cual fue víctima?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "aoj20",
+    "nombre": "Y pensando en su seguridad y la de su familia, ¿usted se siente más seguro(a), igual de seguro(a), o menos seguro(a) que hace cinco años?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "aoj21",
+    "nombre": "Voy a mencionarle algunos grupos y le voy a pedir que me indique cuál de ellos representa la amenaza más grande para su seguridad? (1) Vecinos de su barrio o comunidad (2) Pandillas (3) Policía o militares (4) Crimen organizado y narcotraficantes (5) Personas pertenecientes a su familia (6) Delincuentes comunes (7) Guerrilla (8) Las BACRIM (9) [NO LEER] Otros (10) [NO LEER] Ninguno (88) NS (98) NR",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "aoj22",
+    "nombre": "¿En su opinión, qué hay que hacer para reducir la criminalidad en un país como el nuestro: implementar medidas de prevención o aumentar los castigos a los delincuentes?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "aoj22new",
+    "nombre": "Para reducir la criminalidad en un país como el nuestro hay que aumentar los castigos a los delincuentes. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "aoj8",
+    "nombre": "Para poder capturar delincuentes ¿Cree usted que las autoridades siempre deben respetar las leyes o en ocasiones pueden actuar al margen de la ley?",
+    "categoría": "Rama Legislativa"
+  },
+  {
+    "código": "areanac",
+    "nombre": "¿Nació en área urbana o rural?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "arm2",
+    "nombre": "si usted pudiera, ¿tendría un arma de fuego para su protección?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "aut1",
+    "nombre": "Hay gente que dice que necesitamos un líder fuerte que no tenga que ser elegido a través del voto. Otros dicen que aunque las cosas no funcionen bien, la democracia electoral, o sea el voto popular, es siempre lo mejor. ¿Qué piensa?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "b0",
+    "nombre": "¿Hasta qué punto le gusta a usted ver televisión?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "b1",
+    "nombre": "¿Hasta qué punto cree que los tribunales de justicia de Colombia garantizan un juicio justo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "b10a",
+    "nombre": "¿Hasta qué punto tiene confianza en el sistema de justicia?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "b11",
+    "nombre": "¿Hasta qué punto tiene confianza en el Consejo Nacional Electoral?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "b12",
+    "nombre": "¿Hasta qué punto tiene confianza en las Fuerza Armadas?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "b13",
+    "nombre": "¿Hasta qué punto tiene confianza en el Congreso Nacional?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "b14",
+    "nombre": "¿Hasta qué punto tiene confianza en el Gobierno Nacional?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "b15",
+    "nombre": "¿Hasta qué punto tiene confianza en la Fiscalía General de la Nación?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "b16",
+    "nombre": "¿Hasta qué punto tiene confianza en la Procuraduría General de nación?",
+    "categoría": "Organismos de Control y Ministerio público"
+  },
+  {
+    "código": "b17",
+    "nombre": "¿Hasta qué punto tiene confianza en la Defensoría del Pueblo?",
+    "categoría": "Organismos de Control y Ministerio público"
+  },
+  {
+    "código": "b18",
+    "nombre": "¿Hasta qué punto tiene confianza en la Policía?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "b19",
+    "nombre": "¿Hasta qué punto tiene confianza en la Contraloría?",
+    "categoría": "Organismos de Control y Ministerio público"
+  },
+  {
+    "código": "b2",
+    "nombre": "¿Hasta qué punto tiene respeto por las instituciones políticas de Colombia?",
+    "categoría": "Política"
+  },
+  {
+    "código": "b20",
+    "nombre": "¿Hasta qué punto tiene confianza en la Iglesia Católica?",
+    "categoría": "Religión"
+  },
+  {
+    "código": "b20a",
+    "nombre": "¿Hasta que punto tiene confianza en la Iglesia Protestante?",
+    "categoría": "Religión"
+  },
+  {
+    "código": "b20b",
+    "nombre": "¿Hasta que punto tiene confianza en las Iglesias Cristianas Evangélicas?",
+    "categoría": "Religión"
+  },
+  {
+    "código": "b21",
+    "nombre": "¿Hasta qué punto tiene confianza en los partidos políticos?",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "b21a",
+    "nombre": "¿Hasta qué punto tiene confianza usted en el presidente?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "b23",
+    "nombre": "¿Hasta que punto tiene confianza en los sindicatos?",
+    "categoría": "Sindicatos"
+  },
+  {
+    "código": "b3",
+    "nombre": "¿Hasta qué punto cree que los derechos básicos del ciudadano están bien protegidos?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "b31",
+    "nombre": "¿Hasta qué punto tiene usted confianza en la Corte Suprema de Justicia",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "b32",
+    "nombre": "¿Hasta qué punto tiene usted confianza en su alcaldía?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "b33",
+    "nombre": "¿Hasta qué punto tiene usted confianza en la Gobernación de su departamento?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "b37",
+    "nombre": "¿Hasta qué punto tiene usted confianza en los medios de comunicación?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "b3milx",
+    "nombre": "¿Hasta qué punto cree que las Fuerzas Armadas colombianas respetan los derechos humanos de los colombianos hoy en día?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "b3polx",
+    "nombre": "¿Hasta qué punto cree que la Policía Nacional respeta los derechos humanos de los colombianos hoy en día?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "b4",
+    "nombre": "¿Hasta qué punto se siente usted orgulloso de vivir bajo el sistema político colombiano?",
+    "categoría": "Política"
+  },
+  {
+    "código": "b43",
+    "nombre": "¿Hasta qué punto tiene usted orgullo de ser colombiano?",
+    "categoría": "Patria"
+  },
+  {
+    "código": "b47",
+    "nombre": "¿Hasta que punto tiene usted confianza en las elecciones?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "b47a",
+    "nombre": "¿Hasta qué punto tiene usted confianza en las elecciones en este país?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "b48",
+    "nombre": "¿Hasta qué punto cree usted que los tratados de libre comercio ayudarán a mejorar la economía?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "b48a",
+    "nombre": "¿Hasta qué punto cree usted que los tratados de libre comercio con otros países de América Latina ayudarán a mejorar la economía de Colombia?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "b48b",
+    "nombre": "¿Y con Europa?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "b48c",
+    "nombre": "¿Con Estados Unidos?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "b48d",
+    "nombre": "¿Con China?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "b50",
+    "nombre": "¿Hasta qué punto tiene usted confianza en la Corte Constitucional?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "b6",
+    "nombre": "¿Hasta qué punto piensa usted que se debe apoyar al sistema político colombiano?",
+    "categoría": "Política"
+  },
+  {
+    "código": "btlist1farc",
+    "nombre": "Todas las personas deberían tener acceso a los servicios básicos de salud.",
+    "categoría": "Salud"
+  },
+  {
+    "código": "btlist2bacrim",
+    "nombre": "¿Colombia debería fortalecer la lucha contra la corrupción?",
+    "categoría": "Corrupción"
+  },
+  {
+    "código": "btlist3igle",
+    "nombre": "(1) La alcaldía de este municipio debería invertir más recursos en educación. (2",
+    "categoría": "Educación"
+  },
+  {
+    "código": "btlist4milit",
+    "nombre": "(2) El gobierno colombiano debería firmar un tratado de libre comercio con Corea",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "btnun1",
+    "nombre": "¿Con qué firmeza aprueba o desaprueba un programa, liderado por el presidente Santos, que de dinero a las familias pobres a cambio de mantener a sus hijos en la escuela?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "cclist4",
+    "nombre": "Los colegios públicos de este municipio deberían invertir más dinero para la enseñanza del idioma inglés.",
+    "categoría": "Educación"
+  },
+  {
+    "código": "cct1",
+    "nombre": "¿Usted o alguien en su casa recibe ayuda mensual en dinero o en productos por parte del gobierno, como por ejemplo del programa Familias en Acción?",
+    "categoría": "Subsidio"
+  },
+  {
+    "código": "cct1b",
+    "nombre": "Ahora, hablando específicamente sobre el Programa Familias en Acción, ¿usted o alguien en su casa es beneficiario de ese programa?",
+    "categoría": "Subsidio"
+  },
+  {
+    "código": "cct1new",
+    "nombre": "¿Usted o alguien en su casa recibe ayuda mensual en dinero o en productos por parte del gobierno?",
+    "categoría": "Subsidio"
+  },
+  {
+    "código": "cct3",
+    "nombre": "Algunas personas dicen que la gente que recibe ayuda de los programas sociales del gobierno es floja. ¿Hasta qué punto usted está de acuerdo o en desacuerdo?",
+    "categoría": "Subsidio"
+  },
+  {
+    "código": "cdbacrim",
+    "nombre": "Algunas personas creen que las BACRIM deberían ganar más influencia política ¿Us",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "cdbacrim1",
+    "nombre": "Algunas personas creen que las BACRIM deberían ganar más influencia política ¿Usted apoya esta idea? ¿Qué tanto apoya esta idea? [Leer opciones]",
+    "categoría": "Política"
+  },
+  {
+    "código": "cdmilit",
+    "nombre": "Algunas personas creen que las fuerzas militares colombianas deberían tener mayo",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "cdmilit1",
+    "nombre": "Algunas personas creen que las fuerzas militares colombianas deberían tener mayor libertad para combatir la guerrilla de la manera que ellas lo consideren adecuado ¿Qué tanto apoya esta idea? [Leer opciones]",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "clien1",
+    "nombre": "¿En los últimos 4 años algún candidato o alguien de un partido político le ofreció algo, como un favor, comida o alguna otra cosa o beneficio a cambio de que usted votara o apoyara a ese candidato o partido?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "clien2",
+    "nombre": "Y pensando en la última vez que esto pasó, ¿lo que le ofrecieron le hizo estar más inclinado o menos inclinado a votar por el candidato o partido que le ofreció ese bien?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "coer1",
+    "nombre": "Cuando hace las compras en la tienda de su barrio/vereda, ¿y aunque usted no lo pida, le dan recibo?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "coer2",
+    "nombre": "Suponga que a alguien de este barrio le roban un aparato de televisión de su casa y que un vecino presencia el robo. ¿Cree que su vecino hará la denuncia a la policía?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "coer3",
+    "nombre": "Y pensando en lo que ha pasado en su barrio/vereda en el último año ¿Usted ha sabido de alguien que haya buscado hacer justicia por mano propia?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colac1a",
+    "nombre": "En su opinión ¿Su municipio consulta a los ciudadanos antes de tomar una decisión?",
+    "categoría": "Representación ciudadana"
+  },
+  {
+    "código": "colac1b",
+    "nombre": "En su opinión ¿Su municipio hace públicos sus planes y decisiones?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colac1c",
+    "nombre": "En su opinión ¿Su municipio comparte la información abiertamente y a tiempo?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colac2a",
+    "nombre": "En su opinión ¿Su departamento consulta a los ciudadanos antes de tomar una decisión?",
+    "categoría": "Representación ciudadana"
+  },
+  {
+    "código": "colac2b",
+    "nombre": "En su opinión ¿Su departamento hace públicos sus planes y decisiones?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colac2c",
+    "nombre": "En su opinión ¿Su departamento comparte la información abiertamente y a tiempo?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colac3a",
+    "nombre": "En su opinión ¿El gobierno nacional consulta a los ciudadanos antes de tomar una  decisión?",
+    "categoría": "Representación ciudadana"
+  },
+  {
+    "código": "colac3b",
+    "nombre": "En su opinión ¿El gobierno nacional hace públicos sus planes y decisiones?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colac3c",
+    "nombre": "En su opinión ¿El gobierno nacional comparte la información abiertamente y a tiempo?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "coladam1",
+    "nombre": "Los cultivos de coca y amapola son perjudiciales para su region. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "coladam10",
+    "nombre": "¿Cuál es el tamaño de sus tierras?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam10a",
+    "nombre": "¿Cuál es el tamaño de la finca donde trabaja?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam10b",
+    "nombre": "Medida utilizada en [coladam10]",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam11",
+    "nombre": "¿Alguna vez alguien lo ha presionado para cultivar coca o amapola?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "coladam12",
+    "nombre": "¿Alguna vez ha cultivado coca o amapola?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "coladam13",
+    "nombre": "¿Ha participado en algún proyecto de desarrollo alternativo o de promoción de cultivos alternativos?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam14",
+    "nombre": "¿Alguna vez ha sustituido cultivos de coca o amapola por cultivos lícitos?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "coladam15",
+    "nombre": "¿Ha vuelto a cultivar coca o amapola?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "coladam16",
+    "nombre": "¿Ha pensado en volver a cultivar coca o amapola?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "coladam2",
+    "nombre": "¿Usted considera que la gente cultiva coca o amapola principalmente por motivos",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "coladam3",
+    "nombre": "¿Usted cree que la razón principal para la reducción de cultivos de coca en el p",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "coladam4",
+    "nombre": "¿Usted es el propietario de alguna finca?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam5",
+    "nombre": "¿Tiene producción animal en su finca?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam6",
+    "nombre": "¿Tiene cultivos de pancoger?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam7",
+    "nombre": "¿En dónde comercializa la mayoría de sus productos?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam8",
+    "nombre": "¿Ha recibido algún apoyo del gobierno para el desarrollo de su producción agrícola?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "coladam9",
+    "nombre": "¿Cuál cree usted que es el mayor obstáculo para la comercialización de sus productos?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "colafro1a",
+    "nombre": "¿las comunidades afrocolombianas están ayudando a que nuestro país sea más desarrollado?",
+    "categoría": "Desarrollo"
+  },
+  {
+    "código": "colag1",
+    "nombre": "La sustitución de “cultivos ilícitos” es la mejor manera de acabar con el narcotráfico en Colombia. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "colag2",
+    "nombre": "Los tratados de libre comercio (TLC) son muy positivos para la economía colombiana ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "colag4",
+    "nombre": "¿Las grandes fincas improductivas deben ser expropiadas y entregadas a pequeños productores?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "colag5",
+    "nombre": "¿Las compañías extranjeras deben tener la posibilidad de comprar tierras en Colombia?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "colaoj21a",
+    "nombre": "Ahora voy a mencionarle algunos grupos y le voy a pedir que me indique cuál de ellos garantiza la seguridad en el lugar donde vive [Leer alternativas. Marcar sólo una respuesta] (1) Vecinos de su barrio o comunidad (2) Pandillas (3) Policía o militares (4) Crimen organizado y narcotraficantes (5) Personas pertenecientes a su familia (6) Delincuentes comunes (7) Guerrilla (8) Las BACRIM (9) Seguridad privada (celadores) (10) [NO LEER] Otros (11) [NO LEER] Ninguno (888888) No sabe [NO LEER] (988888) No responde [NO LEER]",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colaoj21b",
+    "nombre": "¿Y cuál de los siguientes grupos garantizaba la seguridad hace doce meses en el lugar donde usted vive? [Leer alternativas. Marcar sólo una respuesta] (1) Vecinos de su barrio o comunidad (2) Pandillas (3) Policía o militares (4) Crimen organizado y narcotraficantes (5) Personas pertenecientes a su familia (6) Delincuentes comunes (7) Guerrilla (8) Las BACRIM (9) Seguridad privada o celadores (10) [NO LEER] Otros (11) [NO LEER] Ninguno (888888) No sabe [NO LEER] (988888) No responde [NO LEER]",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colb32a",
+    "nombre": "¿Hasta qué punto tiene usted confianza en el concejo de su municipio?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colb50",
+    "nombre": "Usted diría que las decisiones de las autoridades Judiciales son:",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb51",
+    "nombre": "¿Hasta qué punto tiene confianza en el Alto Comisionado para la Paz?",
+    "categoría": "Paz"
+  },
+  {
+    "código": "colb51a",
+    "nombre": "¿Cómo considera usted el acceso a los servicios de justicia en las Comisarías de familia",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb51b",
+    "nombre": "¿Cómo considera usted el acceso a los servicios de justicia en la Fiscalía?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb51c",
+    "nombre": "¿Cómo considera usted el acceso a los servicios de justicia en las Inspecciones de Policía",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb51d",
+    "nombre": "¿Cómo considera usted el acceso a los servicios de justicia en los Consultorios Jurídicos",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb51e",
+    "nombre": "¿Cómo considera usted el acceso a los servicios de justicia en la Defensoría del Pueblo",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb51f",
+    "nombre": "¿Cómo considera usted el acceso a los servicios de justicia en los Juzgados?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb51g",
+    "nombre": "¿Cómo considera usted el acceso a los servicios de justicia en la casa de justicia",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb52",
+    "nombre": "Cuando usted enfrenta un conflicto legal, civil, interpersonal, etc., usted:",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colb53",
+    "nombre": "¿Usted ha participado en alguna conciliación?",
+    "categoría": "Conciliación"
+  },
+  {
+    "código": "colb53b",
+    "nombre": "¿Qué tan satisfecho quedó usted con la forma en que se llevó a cabo el proceso de conciliación?",
+    "categoría": "Conciliación"
+  },
+  {
+    "código": "colb54",
+    "nombre": "¿Cree usted que el hecho de que las audiencias en los proceso penales sean públicas dentro de un tribunal abierto al público contribuye a disminuir la impunidad?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colb55",
+    "nombre": "Cuando usted oye el término Defensa Pública ¿Usted cree que es:",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb55a",
+    "nombre": "¿Sabía usted que en caso de no tener dinero para pagar un abogado en un proceso penal, usted tiene el derecho a un abogado pagado por el Estado para su defensa?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colb60n",
+    "nombre": "¿Hasta qué punto tiene usted confianza en la FARC?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colb61",
+    "nombre": "¿Hasta que punto tiene confianza en el ELN?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colb62",
+    "nombre": "¿Hasta que punto tiene confianza en las autodefensas?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colb65",
+    "nombre": "¿Hasta qué punto tiene usted confianza en las BACRIM?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colb66",
+    "nombre": "¿Hasta qué punto tiene confianza usted en la Marcha Patriótica?",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "colb67",
+    "nombre": "¿Hasta qué punto tiene confianza en su Junta de Acción Comunal?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colcamp1a",
+    "nombre": "¿Los campesinos están ayudando a que nuestro país sea más desarrollado?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "colconce1",
+    "nombre": "Los miembros rasos de las FARC (no comandantes) que se desmovilicen no deben ser castigados por la justicia colombiana. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colconce2",
+    "nombre": "El gobierno colombiano debe entregar ayudas económicas a los miembros rasos de las FARC (no comandantes) que decidan desmovilizarse ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colconce3",
+    "nombre": "¿El gobierno colombiano debe entregar tierras a los miembros rasos de las FARC (no comandantes) que decidan desmovilizarse?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "colconce4",
+    "nombre": "El gobierno colombiano debe garantizar que los miembros de las FARC que se desmovilicen puedan participar en política. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Política"
+  },
+  {
+    "código": "colconce5",
+    "nombre": "El gobierno colombiano debe entregar algunos espacios de representación política (por ejemplo una curul en el Congreso) a algunos miembros de las FARC una vez se desmovilicen. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Política"
+  },
+  {
+    "código": "colconce6",
+    "nombre": "Los miembros rasos de las FARC (no comandantes) que ayuden a la identificación y eliminación de las minas antipersona no deben ser jzugados por la justicia colombiana. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colconce7",
+    "nombre": "Los miembros rasos de las FARC (no comandantes) que confiesen sus crímenes deben recibir una redución en sus condenas. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colconcom",
+    "nombre": "¿Alguna vez ha participado en un Consejo Comunitario organizado en su municipio?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colconf",
+    "nombre": "Cuándo usted tiene un conflicto con un vecino, el cual no puede resolver amigablemente, ¿a quién busca usted para que le ayude a resolverlo?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colconst1",
+    "nombre": "¿La constitución expresa los valores y las aspiraciones de los colombianos?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "colcp1",
+    "nombre": "¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a algún concejal de su municipio?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp14",
+    "nombre": "¿Reuniones de grupos de mujeres?",
+    "categoría": "Mujer"
+  },
+  {
+    "código": "colcp15a",
+    "nombre": "¿Ha participado usted, alguna vez, en algún comité de control ciudadano o de veeduría?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp15a1",
+    "nombre": "¿Considera que la información sobre la administración municipal fue...?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colcp16a",
+    "nombre": "¿Usted considera que su Municipio rinde cuentas sobre el manejo de los recursos?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colcp16b",
+    "nombre": "¿Usted considera que su Departamento rinde cuentas sobre el manejo de los recursos?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colcp16c",
+    "nombre": "¿Usted considera que el Gobierno Nacional rinde cuentas sobre el manejo de los recursos?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colcp2",
+    "nombre": "¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a algún conciliador o juez?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp22",
+    "nombre": "¿Reuniones de organizaciones estudiantiles? Asiste...",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp3",
+    "nombre": "¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a la policía",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp4",
+    "nombre": "¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación en alguna casa de justicia",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp5",
+    "nombre": "¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación al ICBF",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp6",
+    "nombre": "¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a algún profesor",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp8a",
+    "nombre": "¿Asiste a reuniones de la Junta de Acción Comunal?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "colcp8b",
+    "nombre": "¿Asiste a reuniones de organizaciones o grupos que promueven la paz?",
+    "categoría": "Paz"
+  },
+  {
+    "código": "colcp8c",
+    "nombre": "¿Asiste a reuniones de organizaciones o grupos medioambientales?",
+    "categoría": "Medio ambiente"
+  },
+  {
+    "código": "coldc14",
+    "nombre": "Un policía de tránsito detiene a un conductor por hacer un cruce indebido, y éste le ofrece 50.000 pesos al policía para que no le ponga el parte y lo deje ir.",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "coldc15",
+    "nombre": "El policía recibe los 50.000 pesos y deja ir al conductor sin ponerle el parte.",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "coldc1a",
+    "nombre": "¿Y lo que hizo la empresa que pagó los diez mil dólares?¿Considera usted que es…",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "coldesm1a",
+    "nombre": "Pensando en un lugar donde la mayoría de personas que lo rodean son excombatientes desmovilizados de grupos armados ilegales? Usted se sentiría: Tranquilo",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm1b",
+    "nombre": "Pensando en un lugar donde la mayoría de personas que lo rodean son excombatientes desmovilizados de grupos armados ilegales? Usted se sentiría: Nervioso(a) o ansioso(a)",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm1c",
+    "nombre": "Pensando en un lugar donde la mayoría de personas que lo rodean son excombatientes desmovilizados de grupos armados ilegales? Usted se sentiría: en peligro o inseguro(a)",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm1d",
+    "nombre": "Pensando en un lugar donde la mayoría de personas que lo rodean son excombatientes desmovilizados de grupos armados ilegales? Usted se sentiría: Seguro(a)",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm2a",
+    "nombre": "¿Hasta qué punto usted cree que los excombatientes desmovilizados de grupos armados ilegales son amigables?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm2b",
+    "nombre": "¿Hasta qué punto usted cree que los excombatientes desmovilizados de grupos armados ilegales son violentos?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm2c",
+    "nombre": "¿Hasta qué punto usted cree que los excombatientes desmovilizados de grupos armados ilegales son perezosos?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm2d",
+    "nombre": "¿Hasta qué punto usted cree que los excombatientes desmovilizados de grupos armados ilegales son trabajadores?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm2e",
+    "nombre": "¿Hasta qué punto usted cree que los excombatientes desmovilizados de grupos armados ilegales son peligrosos?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm3a",
+    "nombre": "¿Hasta qué punto usted está de acuerdo con que al compartir el mismo espacio con los excombatientes desmovilizados e interactuar con ellos se corromperían los valores sociales?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm3b",
+    "nombre": "¿Hasta qué punto usted está de acuerdo con que al compartir el mismo espacio con los excombatientes desmovilizados e interactuar con ellos se reducirían las oportunidades laborales?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm3c",
+    "nombre": "¿Hasta qué punto usted está de acuerdo con que al compartir el mismo espacio con los excombatientes desmovilizados e interactuar con ellos se aumentarían las tasas de criminalidad?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm3d",
+    "nombre": "¿Hasta qué punto usted está de acuerdo con que al compartir el mismo espacio con los excombatientes desmovilizados e interactuar con ellos se afectaría negativamente el desarrollo económico?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldesm3e",
+    "nombre": "¿Hasta qué punto usted está de acuerdo con que al compartir el mismo espacio con los excombatientes desmovilizados e interactuar con ellos se construiría una sociedad más incluyente?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldh1",
+    "nombre": "¿Qué tan eficiente ha sido el Estado Colombiano en prevenir las violaciones masivas a los Derechos Humanos (Masacres y Desplazamiento Forzado)?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "coldh2",
+    "nombre": "En caso de tener conocimiento o ser objeto de una violación a los derechos humanos, usted acudiría a las siguientes instituciones para denunciar el hecho?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "coldh2a",
+    "nombre": "¿Por qué eligió \"ninguna de las anteriores?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "coldh3",
+    "nombre": "¿Usted cree que la política de Seguridad Ciudadana del presidente Álvaro Uribe ha incrementado o disminuido las violaciones a los Derechos Humanos?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "coldis14",
+    "nombre": "Por su orientación sexual?",
+    "categoría": "Minoría sexual"
+  },
+  {
+    "código": "coldis15",
+    "nombre": "Por alguna condición o situación de discapacidad?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "coldis17n",
+    "nombre": "Pensando en los últimos cinco años, ¿alguna vez se ha sentido discriminado o ha sido tratado mal o de manera injusta: Por sus creencias religiosas?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "coldis18n",
+    "nombre": "Pensando en los últimos cinco años, ¿alguna vez se ha sentido discriminado o ha sido tratado mal o de manera injusta: Por sus opiniones políticas?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "coldis35f",
+    "nombre": "Desmovilizados de los grupos armados ¿No los quisiera tener de vecinos?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldis35g",
+    "nombre": "Desplazados por el conflicto armado. ¿No los quisiera tener de vecinos?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "coldis35h",
+    "nombre": "Personas transgénero. ¿No los quisiera tener de vecinos?",
+    "categoría": "Minoría sexual"
+  },
+  {
+    "código": "coldis35i",
+    "nombre": "Personas con esquizofrenia. ¿No los quisiera tener de vecinos?",
+    "categoría": "Salud mental"
+  },
+  {
+    "código": "coldvw1a",
+    "nombre": "El esposo descuida sus responsabilidades con el hogar. ¿Usted aprobaría que la esposa golpee a su esposo, o usted no lo aprobaría pero lo entendería, o usted ni lo aprobaría ni lo entendería?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "coldvw2a",
+    "nombre": "El esposo es infiel. ¿Usted aprobaría que la esposa golpee a su esposo, o usted no lo aprobaría pero lo entendería, o usted ni lo aprobaría ni lo entendería?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "coldvw3a",
+    "nombre": "Ahora suponga que la esposa descuida su apariencia física. ¿Usted aprobaría que el esposo amenace con abandonar a su esposa, o usted no lo aprobaría pero lo entendería, o usted ni lo aprobaría ni lo entendería?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "coldvw3b",
+    "nombre": "Ahora suponga que el esposo descuida su apariencia física. ¿Usted aprobaría que la esposa amenace con abandonar a su esposo, o usted no lo aprobaría pero lo entendería, o usted ni lo aprobaría ni lo entendería?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "coldvw6",
+    "nombre": "Si una mujer desea visitar su familia o sus amigos, ella necesita permiso de su esposo. ¿Hasta qué punto está usted de acuerdo o en desacuerdo con esta afirmación?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "coldvw7",
+    "nombre": "La principal razón por la que las mujeres se preocupan por su apariencia física es porque quieren atraer la atención de los hombres. ¿Hasta qué punto está usted de acuerdo o en desacuerdo con esta afirmación?",
+    "categoría": "Mujer"
+  },
+  {
+    "código": "coldvw9",
+    "nombre": "Una mujer solo puede sentirse realizada cuando es madre. ¿Hasta qué punto está usted de acuerdo o en desacuerdo con esta afirmación?",
+    "categoría": "Mujer"
+  },
+  {
+    "código": "cole17",
+    "nombre": "Que las personas participen en un sindicato. ¿Hasta qué punto aprueba o desaprueba",
+    "categoría": "Sindicatos"
+  },
+  {
+    "código": "colemp",
+    "nombre": "¿Usted diría que hoy las oportunidades de trabajo en su comunidad son mejores, iguales, peores, no sabe?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "colespa1",
+    "nombre": "Que formen un partido político. ¿Hasta qué punto aprueba o desaprueba?",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "colespa10",
+    "nombre": "Si en las próximas elecciones locales de Congreso, es decir las de 2018, un desmovilizado de las FARC se presenta como candidato al Congreso de la República la alcaldía de su municipio, ¿qué haría usted?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "colespa2",
+    "nombre": "Que presenten candidatos a las elecciones locales de 2015 (alcaldías y concejos municipales). ¿Hasta qué punto aprueba o desaprueba?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colespa2a",
+    "nombre": "Que presenten candidatos a las elecciones. ¿Hasta qué punto aprueba o desaprueba?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colespa3",
+    "nombre": "¿Que los desmovilizados de las FARC presenten candidatos al Congreso en las elecciones de 2014?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "colespa4",
+    "nombre": "Que presenten un candidato a las elecciones presidenciales de 2014. ¿Hasta qué punto aprueba o desaprueba?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colespa6",
+    "nombre": "Si en las próximas elecciones locales, es decir las de 2015, un desmovilizado de las FARC se presenta como candidato a la alcaldía de su municipio,  ¿qué haría usted?  [Leer opciones]",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colespa7",
+    "nombre": "Y si ese candidato a las elecciones locales fuera una mujer desmovilizada de las FARC, ¿qué haría usted?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colespa8",
+    "nombre": "Si en las próximas elecciones locales, es decir las de 2015, un desmovilizado de las FARC gana la alcaldía de su municipio, ¿qué haría usted?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colespa9",
+    "nombre": "Si en las próximas elecciones presidenciales, es decir las de 2014, un desmovilizado de las FARC se presenta como candidato a la presidencia de Colombia, ¿qué haría usted?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colestsoc_col",
+    "nombre": "Estrato Socioeconómico",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "coletida",
+    "nombre": "¿Considera que su madre es o era una persona blanca, mestiza, indígena, negra o mulata?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "colexc10",
+    "nombre": "Teniendo en cuenta su experiencia ¿la corrupción de los funcionarios departamentamentales está…?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colexc11",
+    "nombre": "Teniendo en cuenta su experiencia ¿la corrupción de los jueces está...?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colexc7",
+    "nombre": "Teniendo en cuenta su experiencia ¿la corrupción de los funcionarios municipales está…?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colexc8",
+    "nombre": "Teniendo en cuenta su experiencia ¿la corrupción de los funcionarios de la personería municipal está…?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colfamacc",
+    "nombre": "¿Está usted inscrito en el programa \"Familias en Acción\"?",
+    "categoría": "Subsidio"
+  },
+  {
+    "código": "colgi8",
+    "nombre": "¿Cuál es la pena máxima en años para un excombatiente desmovilizado de las FARC que se acoja a la Justicia Especial de Paz?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colideol3a",
+    "nombre": "Los ingresos de las personas deberían hacerse más iguales",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "colideol3c",
+    "nombre": "Es necesario aumentar los impuestos para mejorar los planes sociales del gobiern",
+    "categoría": "Impuestos"
+  },
+  {
+    "código": "colideol3d",
+    "nombre": "Debería incrementarse la propiedad estatal de las empresas",
+    "categoría": "Economía"
+  },
+  {
+    "código": "colideol3e",
+    "nombre": "¿El estado debería ocuparse de que todas las personas tengan sus necesidades básicas?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "colideol4a",
+    "nombre": "¿Hasta qué punto aprueba o desaprueba el aborto?",
+    "categoría": "Aborto"
+  },
+  {
+    "código": "colideol4b",
+    "nombre": "[Hasta qué punto aprueba o desaprueba] La Homosexualidad",
+    "categoría": "Minoría sexual"
+  },
+  {
+    "código": "colideol4c",
+    "nombre": "¿Hasta qué punto aprueba o desaprueba la eutanasia?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "colideol4d",
+    "nombre": "[Hasta qué punto aprueba o desaprueba] El Divorcio",
+    "categoría": "Familia"
+  },
+  {
+    "código": "colideol4e",
+    "nombre": "[Hasta qué punto aprueba o desaprueba] El Matrimonio entre personas del mismo sexo",
+    "categoría": "Minoría sexual"
+  },
+  {
+    "código": "colideol4f",
+    "nombre": "[Hasta qué punto aprueba o desaprueba] Fumar Marihuana",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "colideol4g",
+    "nombre": "[Hasta qué punto aprueba o desaprueba] El Sexo antes del matrimonio",
+    "categoría": "Religión"
+  },
+  {
+    "código": "colideol4h",
+    "nombre": "[Hasta qué punto aprueba o desaprueba] Uso de métodos anticonceptivos",
+    "categoría": "Salud"
+  },
+  {
+    "código": "colind1a",
+    "nombre": "¿Los grupos indígenas están ayudando a que nuestro país sea más desarrollado?",
+    "categoría": "Desarrollo"
+  },
+  {
+    "código": "coljc14",
+    "nombre": "¿Se justificaría que los militares tomen el poder por un golpe de estado frente a un agravamiento del conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "coljc15",
+    "nombre": "Frente a una seria amenaza terrorista",
+    "categoría": "Terrorismo"
+  },
+  {
+    "código": "coljp5",
+    "nombre": "Los miembros de grupos guerrilleros (FARC) que confiesen sus crímenes no deben ser castigados. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "collg1",
+    "nombre": "¿Cree usted que el municipio responde a lo que quiere el pueblo?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "collg2",
+    "nombre": "¿Considera usted que el municipio permite la participación ciudadana en la gestión municipal?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "collt1",
+    "nombre": "¿sabe usted que es la ley de tierras?",
+    "categoría": "Rama Legislativa"
+  },
+  {
+    "código": "collt2",
+    "nombre": "¿hasta qué punto cree que la ley de tierras del gobierno mejorará las condiciones de vida de los colombianos?",
+    "categoría": "Rama Legislativa"
+  },
+  {
+    "código": "collt3",
+    "nombre": "¿hasta qué punto cree que la ley de tierras contribuirá a que las víctimas de la",
+    "categoría": "Rama Legislativa"
+  },
+  {
+    "código": "collt4",
+    "nombre": "¿hasta qué punto cree que la ley de tierras contribuirá a mejorar las condicione",
+    "categoría": "Rama Legislativa"
+  },
+  {
+    "código": "collt5",
+    "nombre": "¿Hace parte usted del registro nacional de víctimas del conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "collt6",
+    "nombre": "¿Ha recibido algún tipo de reparación por parte del Gobierno Nacional?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "collt7a",
+    "nombre": "¿ha recibido reparación en dinero?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "collt7b",
+    "nombre": "¿Le han adjudicado tierras como forma de reparación?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "collt7c",
+    "nombre": "¿ha recibido reparación de alguna otra forma?",
+    "categoría": "Víctimas"
+  },
+  {
+    "código": "colmar1d",
+    "nombre": "¿Usted ha consumido o tomado marihuana?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "colmarcha1",
+    "nombre": "¿Sabe usted qué es el movimiento Marcha Patriótica?",
+    "categoría": "Política"
+  },
+  {
+    "código": "colmarcha2",
+    "nombre": "¿Sabe Usted si en su municipio o en su comunidad el movimiento Marcha Patriótica",
+    "categoría": "Política"
+  },
+  {
+    "código": "colmarcha3",
+    "nombre": "¿Conoce a alguien que haya asistido a un evento organizado por el movimiento Mar",
+    "categoría": "Política"
+  },
+  {
+    "código": "colmarcha4",
+    "nombre": "¿Usted ha asistido a algún evento público organizado por el movimiento Marcha Pa",
+    "categoría": "Política"
+  },
+  {
+    "código": "colmarcha5",
+    "nombre": "¿Ha escuchado a personas de su barrio hablar sobre el movimiento Marcha Patrióti",
+    "categoría": "Política"
+  },
+  {
+    "código": "colmarex1",
+    "nombre": "Le voy a entregar una tarjeta donde se mencionan varios productos, y quisiera que me señale cuántos de éstos usted consume o toma. Por favor, no me diga cuáles son los productos que consume o toma, sino solamente CUÁNTOS de estos. Dígame el número. - Alcohol - Café - Marihuana - Tabaco - Cartílago de tiburón",
+    "categoría": "Economía"
+  },
+  {
+    "código": "colmarex2",
+    "nombre": "Le voy a entregar una tarjeta donde se mencionan varios productos, y quisiera que me señale cuántos de éstos usted consume o toma. Por favor, no me diga cuáles son los productos que consume o toma, sino solamente CUÁNTOS de estos. Dígame el número. - Alcohol - Café - Tabaco - Cartílago de tiburón",
+    "categoría": "Economía"
+  },
+  {
+    "código": "colmer1c",
+    "nombre": "¿Con qué firmeza aprueba o desaprueba que el gobierno colombiano entregue dinero a los congresistas para que realicen obras en su departamento?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "colmer1t",
+    "nombre": "¿Con qué firmeza aprueba o desaprueba que el gobierno colombiano entregue “mermelada” a los congresistas para que realicen obras en su departamento?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "coln11",
+    "nombre": "¿Hasta qué punto diría que el gobierno actual resuelve el conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "coln12",
+    "nombre": "¿hasta qué punto diría que el gobierno actual sanea las finanzas estatales?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "coln13",
+    "nombre": "¿Hasta qué punto diría usted que el Gobierno actual combate la reorganización de los grupos paramilitares?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "coln16",
+    "nombre": "¿Hasta qué punto diría que el gobierno actual está manejando bien las relaciones con los países vecinos?",
+    "categoría": "Relaciones Internacionales"
+  },
+  {
+    "código": "colnun2",
+    "nombre": "En su opinión, ¿quién es el principal responsable de las mejoras en su municipio",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colnun3",
+    "nombre": "Hoy en día cuando se habla de política, mucha gente habla de los aliados y los opositores del Presidente. En esta tarjeta tenemos una escala, en la que el 1 significa total opositor y el 10 significa total aliado. Según el sentido que tengan para usted los términos \"total opositor\" y \"total aliado\" y usando esta escala dígame ¿donde se ubicaría el alcalde de su municipio con relación al presidente Santos?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "colocup1b",
+    "nombre": "¿Usted recibe prestaciones sociales tales como servicio de salud y ahorro para su pensión?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "colocup4a",
+    "nombre": "¿A qué se dedica usted principalmente? ¿Está usted actualmente:",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "colpact1",
+    "nombre": "Se acordó que los miembros rasos de las FARC (no comandantes) que se desmovilicen no irán a la cárcel. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colpact10",
+    "nombre": "¿Distribuir tierras baldías entre campesinos que no tienen suficiente tierra para cultivar?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "colpact11",
+    "nombre": "Se acordó que los partidos políticos formados por desmovilizados de las FARC tendrán las mismas garantías de seguridad y de acceso a medios de comunicación que ya tienen los demás partidos políticos. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "colpact11a",
+    "nombre": "Se acordó que los miembros desmovilizados de las FARC, responsables de crímenes atroces y que confiesen sus delitos, paguen entre cinco (5) y ocho (8) años de privación de la libertad. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colpact12",
+    "nombre": "Se acordó mantener cultivos de coca bajo supervisión del Estado y con fines netamente medicinales y científicos. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "colpact12a",
+    "nombre": "Se acordó que los miembros de las FARC, que hayan sido responsables de crímenes atroces y no confiesen sus delitos, paguen más de ocho (8) años de cárcel. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colpact13",
+    "nombre": "Se acordó que los miembros de las Fuerzas armadas responsables de crímenes atroces y que confiesen sus delitos, serán tratados por la justicia de igual manera que los miembros desmovilizados de las FARC que hayan confesado crímenes atroces. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colpact14",
+    "nombre": "Se acordó que los miembros de las FARC se concentrarán en algunas regiones del país. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpact15",
+    "nombre": "Se acordó que las Naciones  Unidas recibirán la totalidad de las armas de las FARC. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpact16a",
+    "nombre": "El Gobierno cumplirá con lo pactado en el acuerdo de paz firmado en La Habana. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpact16b",
+    "nombre": "Las FARC cumplirán con lo pactado en el acuerdo de paz firmado en La Habana. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpact17a",
+    "nombre": "La Justicia Especial para la Paz contempla rebajas de penas a desmovilizados de las FARC que confiesen sus crímenes. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colpact17b",
+    "nombre": "La Justicia Especial para la Paz contempla rebajas de penas a miembros de las Fuerzas Militares que confiesen sus crímenes. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colpact18a",
+    "nombre": "La Justicia Especial para la Paz contempla privación de la libertad sin cárcel a desmovilizados de las FARC que confiesen sus crímenes. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colpact18b",
+    "nombre": "La Justicia Especial para la Paz contempla privación de la libertad sin cárcel a miembros de las Fuerzas Militares que confiesen sus crímenes. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colpact19",
+    "nombre": "Que se desarrollen programas de sustitución de cultivos en su municipio ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpact20",
+    "nombre": "El presidente Iván Duque propuso durante su  campaña electoral, modificar los acuerdos alcanzados entre el gobierno colombiano y las FARC. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpact8",
+    "nombre": "¿Reservar curules del Congreso para las regiones más afectadas por el conflicto armado, con el fin de que estas regiones tengan mayor representación en el Congreso?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "colpact9",
+    "nombre": "¿Establecer Zonas de Reserva Campesina, que beneficiarán a pequeños productores  y las cuales no se podrán vender a grandes empresas?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "colpaz1a",
+    "nombre": "¿La mejor opción para solucionar el conflicto con la guerrilla?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colpaz1b",
+    "nombre": "¿La mejor opción para solucionar el conflicto con los grupos paramilitares?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colpaz1c",
+    "nombre": "¿La mejor opción para solucionar el conflicto con las BACRIM?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colpaz2a",
+    "nombre": "¿Qué tanto cree que es posible una solución negociada en un plazo razonable, diga usted de 4 años, con las Farc?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colpaz2b",
+    "nombre": "¿Qué tanto cree que es posible una solución negociada en un plazo razonable, diga usted de 4 años, con el ELN?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colpaz2bn",
+    "nombre": "¿Qué tan posible cree que es una solución negociada en un plazo de un (1) año, con el ELN?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colpaz2c",
+    "nombre": "¿Qué tanto cree que es posible una solución negociada en un plazo razonable, diga usted de 4 años, con los paramilitares?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colpaz3a",
+    "nombre": "¿Estaría de acuerdo con la desmovilización y reinserción de la guerrilla?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colpaz3b",
+    "nombre": "¿Estaría de acuerdo con la desmovilización y reinserción de los paramilitares?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colpaz4",
+    "nombre": "¿Cree usted que la desmovilización de grupos guerrilleros mejoraría o empeoraría la seguridad de su región?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colpaz4a",
+    "nombre": "¿Estaría de acuerdo con la reinserción de los desmovilizados de las FARC?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpaz4an",
+    "nombre": "¿Estaría de acuerdo con la reintegración a la sociedad de los excombatientes desmovilizados de Las FARC?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpaz4b",
+    "nombre": "COLPAZ4B  Las BACRIM?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colpaz4bn",
+    "nombre": "Las bandas criminales (BACRIM)?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colpaz4c",
+    "nombre": "COLPAZ4C  El ELN ?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colpaz4cn",
+    "nombre": "El ELN?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colpaz5",
+    "nombre": "¿Cree usted que la desmovilización de grupos paramilitares mejoraría o empeoraría la seguridad de su región?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colpaz6a",
+    "nombre": "¿Usted ve posible el perdón y la reconciliación de los ciudadanos con miembros desmovilizados de la guerrilla FARC?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpaz6b",
+    "nombre": "¿Usted ve posible el perdón y la reconciliación de los ciudadanos con miembros desmovilizados de los paramilitares?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpaz6c",
+    "nombre": "¿Usted ve posible el perdón y la reconciliación de los ciudadanos con los miembros desmovilizados de el ELN?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpgen1",
+    "nombre": "¿Quién cree usted que se reintegrará más fácilmente a la vida civil: un hombre desmovilizado o una mujer desmovilizada?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpgen2",
+    "nombre": "¿Quién cree usted que aprovechará mejor las oportunidades que les ofrecerá el gobierno a los desmovilizados: un hombre desmovilizado o una mujer desmovilizada?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpgen3",
+    "nombre": "Y en el evento que los desmovilizados de las FARC formen un movimiento o un part",
+    "categoría": "Política"
+  },
+  {
+    "código": "colpop1",
+    "nombre": "¿Los políticos en el Congreso tienen que seguir la voluntad del pueblo?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "colpop103a",
+    "nombre": "Cuando la Corte Suprema de Justicia estorba el trabajo del gobierno, la Corte Suprema debe ser ignorada por nuestros presidentes. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "colpop2",
+    "nombre": "¿Las decisiones más importantes deberían ser tomadas por el pueblo y no por los políticos?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "colpop3",
+    "nombre": "¿Las diferencias políticas entre la elite y el pueblo son más grandes que las diferencias que existen en el pueblo?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "colpop4",
+    "nombre": "Preferiría ser representado por un ciudadano común que por un político experimentado. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Representación ciudadana"
+  },
+  {
+    "código": "colpop5",
+    "nombre": "Los políticos hablan mucho y hacen muy poco. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Política"
+  },
+  {
+    "código": "colpop6",
+    "nombre": "En política se llama consenso a lo que realmente significa renunciar a los propios principios. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Política"
+  },
+  {
+    "código": "colpp2",
+    "nombre": "Los partidos políticos colombianos escuchan a la gente. ¿Qué tan de acuerdo está con esta afirmación?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colpp2a",
+    "nombre": "¿Está trabajando actualmente para algún partido o candidato en la campaña electoral para la presidencia?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colpropaz1",
+    "nombre": "Actualmente el gobierno del presidente Juan Manuel Santos adelanta un proceso de paz con las FARC. Usando la misma escalera  ¿Hasta qué punto apoya usted el proceso de paz?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz10",
+    "nombre": "¿Cuál de los siguientes actores internacionales debería ayudar a implementar el acuerdo de paz?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz11a",
+    "nombre": "La firma de la paz mejorará la situación económica del país. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz11b",
+    "nombre": "La firma de la paz mejorará la seguridad en el país. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz11c",
+    "nombre": "La firma de la paz fortalecerá la democracia colombiana. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz12a",
+    "nombre": "¿Qué tan dispuesto estaría usted a participar en alguna organización, grupo o comité que ayude a implementar los acuerdos de paz alcanzados entre el Gobierno y las FARC?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz13c",
+    "nombre": "¿La implementación del acuerdo fortalecerá la democracia colombiana?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "colpropaz13j",
+    "nombre": "La implementación del acuerdo mejorará la seguridad en su municipio. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colpropaz13k",
+    "nombre": "La implementación del acuerdo mejorará la situación económica en el lugar donde usted vive. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "colpropaz13m",
+    "nombre": "¿La implementación del acuerdo mejorará el acceso a la tierra en el lugar donde usted vive?",
+    "categoría": "Agropecuario y agrícola"
+  },
+  {
+    "código": "colpropaz1b",
+    "nombre": "El gobierno del expresidente Juan Manuel Santos y las FARC firmaron un acuerdo de paz. ¿Hasta qué punto apoya usted este acuerdo de paz?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz1cn",
+    "nombre": "El gobierno del presidente Juan Manuel Santos inició un proceso de paz con el ELN. ¿Hasta qué punto apoya usted este proceso de paz?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz2",
+    "nombre": "¿Qué tan posible cree usted que el proceso de paz que adelanta actualmente el gobierno con las FARC conducirá a la desmovilización definitiva de este grupo guerrillero?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpropaz2a",
+    "nombre": "Qué tan posible cree usted que después de la firma de los acuerdos de paz entre el gobierno y las FARC este grupo guerrillero dejarán el narcotráfico?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "colpropaz2b",
+    "nombre": "¿Qué tan posible cree usted que después de la firma de los acuerdos de paz entre el gobierno y las FARC este grupo guerrillero se desmovilizará definitivamente?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpropaz3",
+    "nombre": "¿Qué tan posible cree usted que el proceso de paz que adelanta actualmente el gobierno con las ELN conducirá a la desmovilización definitiva de este grupo guerrillero?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpropaz4",
+    "nombre": "¿Cree usted que la desmovilización de las FARC fortalecería o debilitaría la democracia colombiana?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "colpropaz5",
+    "nombre": "¿Cree usted que la desmovilización de las FARC mejoraría o empeoraría la SEGURID",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colpropaz6",
+    "nombre": "¿Cree usted que la desmovilización de las FARC mejoraría o empeoraría la situación económica de su municipio o comunidad?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpropaz7a",
+    "nombre": "Los desmovilizados de las FARC buscarían participar en política para promover su",
+    "categoría": "Política"
+  },
+  {
+    "código": "colpropaz7b",
+    "nombre": "¿Los desmovilizados de las FARC buscarían participar en política para tener acceso a dineros públicos?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpropaz7c",
+    "nombre": "¿Los desmovilizados de las FARC buscarían participar en política para obtener apoyo internacional?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpropaz7d",
+    "nombre": "¿Los desmovilizados de las FARC buscarían participar en política para tener garantías de seguridad para sus excombatientes?",
+    "categoría": "Desmovilización"
+  },
+  {
+    "código": "colpropaz8a",
+    "nombre": "Si el gobierno y las FARC firman un acuerdo de paz, ¿está usted de acuerdo si o no con que se use un referendo para ratificar electoralmente el acuerdo de paz entre el gobierno y las FARC?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz8b",
+    "nombre": "Por cuál de las siguientes razones no estaría de acuerdo con el referendo",
+    "categoría": "Votación"
+  },
+  {
+    "código": "colpropaz8c",
+    "nombre": "Y en el evento en que se realizara un referendo para ratificar un acuerdo de paz entre el gobierno y las FARC, ¿cómo votaría usted en ese referendo?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "colpropaz8d",
+    "nombre": "Si el gobierno y las FARC firman un acuerdo de paz, ¿está usted de acuerdo sí o no con que haya una votación popular para refrendar el acuerdo de paz entre el gobierno y las FARC?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "colpropaz8e",
+    "nombre": "¿Por cuál de las siguientes razones no estaría de acuerdo con que haya una votación popular para refrendar el acuerdo de paz entre el gobierno y las FARC?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "colpropaz8f",
+    "nombre": "Y en el evento en que se realizara una votación popular para refrendar el acuerdo de paz entre el gobierno y las FARC, ¿cómo votaría usted?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "colpropaz9",
+    "nombre": "Si el gobierno y las FARC firman un acuerdo de paz, un actor internacional debe",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colpropaz9a",
+    "nombre": "Si el gobierno y las FARC firman la paz, está usted de acuerdo con que un actor internacional ayude a implementar dicho acuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colprotmuj2",
+    "nombre": "Si una mujer desea visitar su familia o sus amigos, ella necesita permiso de su esposo. ¿Hasta qué punto está usted de acuerdo o en desacuerdo con esta afirmación?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "colrac2b",
+    "nombre": "Las universidades deberían reservar cupos para los alumnos indígenas, aunque tengan que excluir a otros alumnos. ¿Hasta qué punto está usted de acuerdo o en desacuerdo con esta afimación?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "colrecon1",
+    "nombre": "Recordar públicamente los crímenes cometidos por las FARC contribuiría a la reconciliación. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colrecon10",
+    "nombre": "Que los miembros de las FARC confiesen sus crímenes",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colrecon11",
+    "nombre": "Que los miembros de las FARC responsables de crímenes atroces paguen entre 5 y 8 años de cárcel",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colrecon12",
+    "nombre": "Que los miembros de las FARC responsables de crímenes atroces paguen más de 8 años",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colrecon13",
+    "nombre": "Que los miembros de las FARC reparen económicamente a sus víctimas",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colrecon14",
+    "nombre": "Que una hija o hijo suyo fuera amigo de un homosexual. ¿Hasta qué punto aprueba o desaprueba esta situación?",
+    "categoría": "Minoría sexual"
+  },
+  {
+    "código": "colrecon15",
+    "nombre": "Que una hija o hijo suyo fuera amigo de una persona transgénero. ¿Hasta qué punto aprueba o desaprueba esta situación?",
+    "categoría": "Minoría sexual"
+  },
+  {
+    "código": "colrecon16",
+    "nombre": "Que en la empresa o lugar donde usted trabaje le dieran empleo a una persona con Síndrome de Down. ¿Hasta qué punto aprueba o desaprueba esta situación?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "colrecon17",
+    "nombre": "Que en el colegio de su hija o hijo estudien niños con autismo. ¿Hasta qué punto aprueba o desaprueba esta situación?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "colrecon18",
+    "nombre": "Que en el colegio de su hija o hijo estudien hijos de desmovilizados de grupos armados ilegales. ¿Hasta qué punto aprueba o desaprueba esta situación?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "colrecon19a",
+    "nombre": "Que los responsables de crímenes atroces, que confiesen sus delitos, paguen entre 5 y 8 años de privación de la libertad",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colrecon19b",
+    "nombre": "Que los responsables de crímenes atroces pidan perdón a las víctimas.",
+    "categoría": "Víctimas"
+  },
+  {
+    "código": "colrecon19c",
+    "nombre": "Que el Estado indemnice a las víctimas del conflicto armado.",
+    "categoría": "Víctimas"
+  },
+  {
+    "código": "colrecon19d",
+    "nombre": "¿Que el Estado repare a las comunidades que fueron afectadas por el conflicto armado.?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colrecon19e",
+    "nombre": "Que se realicen eventos conmemorativos para recordar públicamente a las víctimas del conflicto armado.",
+    "categoría": "Víctimas"
+  },
+  {
+    "código": "colrecon2",
+    "nombre": "El establecimiento de la verdad sobre los crímenes cometidos por las FARC contribuiría a la reconciliación ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "colrecon20a",
+    "nombre": "Que los responsables de crímenes atroces, que no confiesen sus delitos, paguen más de 8 años de cárcel.",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colrecon20b",
+    "nombre": "¿Que se establezca la verdad sobre los hechos ocurridos en el marco del conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colrecon20c",
+    "nombre": "¿Que los victimarios indemnicen a las víctimas del conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colrecon20d",
+    "nombre": "¿Que los victimarios reparen a las comunidades que fueron afectadas por el conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colrecon20e",
+    "nombre": "¿Que se construya un museo en el que se recuerden los hechos ocurridos en el  marco del conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colrecon3",
+    "nombre": "Someter a juicio a los miembros de las FARC que cometieron graves violaciones a los Derechos Humanos contribuiría a la reconciliación ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colrecon4",
+    "nombre": "Reparar a las víctimas de las FARC contribuiría para la reconciliación ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Víctimas"
+  },
+  {
+    "código": "colrecon6",
+    "nombre": "Que una hija o hijo suyo fuera amigo de un desmovilizado de las FARC. ¿Hasta qué",
+    "categoría": "Familia"
+  },
+  {
+    "código": "colrecon7",
+    "nombre": "Que en la empresa o lugar donde usted trabaje le dieran empleo a un hombre desmo",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "colrecon7n",
+    "nombre": "Que en la empresa o lugar donde usted trabaje le dieran empleo a un desmovilizado o desmovilizada de las FARC. ¿Hasta qué punto aprueba o desaprueba esta situación?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "colrecon8",
+    "nombre": "Que en la empresa o lugar donde usted trabaje le dieran empleo a una mujer desmo",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "colrecon9",
+    "nombre": "¿Recordar públicamente los crímenes cometidos por los miembros de las FARC contribuirá a la reconciliación?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colros7",
+    "nombre": "El Estado colombiano, más que el sector privado, debería ser el principal responsable de proveer educación para los colombianos",
+    "categoría": "Educación"
+  },
+  {
+    "código": "colsd6new",
+    "nombre": "¿y la calidad de los servicios de energía eléctrica? [sondee: está muy satisfecho, etc.]",
+    "categoría": "Energía eléctrica"
+  },
+  {
+    "código": "colsd8new2",
+    "nombre": "¿Cómo es la calidad de los servicios de acueducto y alcantarillado?",
+    "categoría": "Acueducto y alcantarillado"
+  },
+  {
+    "código": "colsgl1b",
+    "nombre": "¿Diría usted que los servicios de salud que el municipio está dando a la gente son…?",
+    "categoría": "Salud"
+  },
+  {
+    "código": "colsgl1c",
+    "nombre": "¿Diría usted que los servicios de Energía Eléctrica que el municipio está dando a la gente son…?",
+    "categoría": "Energía eléctrica"
+  },
+  {
+    "código": "colsisben",
+    "nombre": "¿Está usted afiliado al SISBEN?",
+    "categoría": "Socioeconomía"
+  },
+  {
+    "código": "colsoc14",
+    "nombre": "En su opinión, ¿quiénes pagan más impuestos en Colombia? [LEER OPCIONES] (1) Las clases bajas (2) Las clases medias (3) Las clases altas",
+    "categoría": "Impuestos"
+  },
+  {
+    "código": "colsoc15",
+    "nombre": "En su opinión, ¿quiénes reciben más beneficios del Estado, como subsidios en salud y educación, en Colombia? [LEER OPCIONES] (1) Las clases bajas (2) Las clases medias (3) Las clases altas",
+    "categoría": "Subsidio"
+  },
+  {
+    "código": "coltrans1",
+    "nombre": "¿Algún candidato o alguien de un partido político le ofrecieron un favor, regalo u otro beneficio para votar en un municipio diferente a su lugar de residencia?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "colvb10a",
+    "nombre": "Quisiera que me dijera hasta qué punto está de acuerdo o en desacuerdo con la (reelección)",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colvb10b",
+    "nombre": "¿Dónde ubicaría los siguientes personajes de la vida nacional? Horacio Serpa U",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb10c",
+    "nombre": "¿Dónde ubicaría los siguientes personajes de la vida nacional? A Alvaro Uribe Velez",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb10d",
+    "nombre": "¿Dónde ubicaría los siguientes personajes de la vida nacional? Antonio Navarro",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb10e",
+    "nombre": "¿Dónde ubicaría los siguientes personajes de la vida nacional? César Gaviria Trujillo",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb10f",
+    "nombre": "Si las elecciones presidenciales fueran mañana y los candidatos en segunda vuelta fueran Álvaro Uribe Vélez y César Gaviria Trujillo, ¿por quién votaría?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb10g",
+    "nombre": "Si las elecciones presidenciales fueran mañana y los candidatos en segunda vuelta fueran Álvaro Uribe Vélez y Horacio Serpa Uribe, ¿por quién votaría?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb17a",
+    "nombre": "Concepto Clara López",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb17b",
+    "nombre": "Concepto Juan Manuel Santos",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb17c",
+    "nombre": "Concepto Oscar Iván Zuluaga",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb17d",
+    "nombre": "Concepto Aída Avella",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb18a",
+    "nombre": "Juan Manuel Santos es una persona honesta",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb18b",
+    "nombre": "Juan Manuel Santos es una persona preparada para gobernar",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb18c",
+    "nombre": "Juan Manuel Santos es el mejor líder",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb18d",
+    "nombre": "Juan Manuel Santos es capaz de conducir el país hacia la paz",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb19a",
+    "nombre": "Antanas Mockus es una persona honesta",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb19b",
+    "nombre": "Antanas Mockus es una persona preparada para gobernar",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb19c",
+    "nombre": "Antanas Mockus es el mejor líder",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb19d",
+    "nombre": "Antanas Mockus es capaz de conducir el país hacia la paz",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb20",
+    "nombre": "¿Si este domingo fueran las próximas elecciones presidenciales, por qué candidato votaría usted?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb20a",
+    "nombre": "Germán Vargas Lleras es un hombre honesto",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb20b",
+    "nombre": "Noemí Sanín es una persona honesta",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb20c",
+    "nombre": "Noemí Sanín es una persona preparada para gobernar",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb20d",
+    "nombre": "Noemí Sanín es la mejor líder",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb21a",
+    "nombre": "¿Qué tan importante fue para usted la información ofrecida por los noticieros de TV?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "colvb21b",
+    "nombre": "¿Qué tan importante fue para usted la información ofrecida por los programas de radio?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "colvb21c",
+    "nombre": "¿Qué tan importante fue para usted la información ofrecida por los periódicos",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "colvb21d",
+    "nombre": "¿Qué tan importante fue para usted la información ofrecida por las revistas de actualidad y de noticias",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "colvb22a",
+    "nombre": "¿Dónde se ubicaría usted con respecto a esta escala, donde los extremos son si el gobierno debería resolver el conflicto armado por la vía del diálogo o si debería resolverlo por la vía militar?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb22b",
+    "nombre": "¿Dónde cree que se ubicaría JMS?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb22c",
+    "nombre": "¿Dónde cree que se ubicaría Horacio Serpa?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb22cn",
+    "nombre": "¿Dónde cree que se ubicaría Clara Lopez?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb22d",
+    "nombre": "¿Dónde cree que se ubicaría Carlos Gaviria?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb22dn",
+    "nombre": "¿Dónde cree que se ubicaría Oscar Ivan Zuluaga?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb22f",
+    "nombre": "¿Dónde cree que se ubicaría Martha Lucía Ramírez?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb22g",
+    "nombre": "¿Dónde cree que se ubicaría Enrique Peñalosa?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb23a",
+    "nombre": "¿Dónde cree que se ubicaría usted con respecto a esta escala, donde los extremos son si el gobierno debería tomar en consideración las críticas de la oposición o si debería ignorarlas?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb23b",
+    "nombre": "¿Dónde cree que se ubicaría Alvaro Uribe?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb23c",
+    "nombre": "¿Dónde cree que se ubicaría Horacio Serpa?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb23d",
+    "nombre": "¿Dónde cree que se ubicaría Carlos Gaviria?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb24a",
+    "nombre": "¿Dónde se ubicaría usted mismo con respecto a esta escala, donde los extremos son si el gobierno debería aumentar el gasto social o dejarlo en los niveles actuales?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb24b",
+    "nombre": "¿Dónde cree que se ubicaría JMS?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb24c",
+    "nombre": "¿Dónde cree que se ubicaría Horacio Serpa?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb24d",
+    "nombre": "¿Dónde cree que se ubicaría Carlos Gaviria?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb25a",
+    "nombre": "¿Alguna vez lo han presionado con amenazas para que vote a favor de algún candidato?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "colvb25b",
+    "nombre": "¿A algún familiar o amigo cercano alguna vez lo han presionado con amenazas para que vote a favor de algún candidato o partido?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "colvb25c",
+    "nombre": "¿Alguna vez lo han presionado con amenazas para que NO vote?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "colvb25d",
+    "nombre": "¿A algún familiar o amigo cercano alguna vez lo han presionado con amenazas para que NO vote?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "colvb26a",
+    "nombre": "¿Alguna vez le han ofrecido dinero o bienes materiales para que vote a favor de algún candidato o partido?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "colvb26b",
+    "nombre": "¿Alguna vez ha accedido a votar por algún candidato o partido a cambio de dinero?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "colvb26c",
+    "nombre": "¿A algún familiar o amigo cercano alguna vez le han ofrecido dinero o bienes materiales para que vote a favor de algún candidato o partido?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "colvb26d",
+    "nombre": "¿Alguna vez algún familiar o amigo cercano ha accedido a votar por algún candidato o partido a cambio de dinero?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "colvb27a",
+    "nombre": "¿Qué tan cercano políticamente se siente al Partido Liberal?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb27b",
+    "nombre": "¿Qué tan cercano políticamente se siente al Centro Democrático?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb27c",
+    "nombre": "¿Qué tan cercano políticamente se siente al El Partido de la U (Partido Social de Unidad Nacional)?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb27d",
+    "nombre": "¿Qué tan cercano políticamente se siente al Polo Democrático Alternativo?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb27e",
+    "nombre": "¿Qué tan cercano políticamente se siente al Partido Cambio Radical?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb27f",
+    "nombre": "¿Qué tan cercano políticamente se siente al Partido Conservador?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb27g",
+    "nombre": "¿Qué tan cercano políticamente se siente al Partido Alianza Verde?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb27h",
+    "nombre": "¿Qué tan cercano políticamente se siente al Colombia Humana/UP?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb7b",
+    "nombre": "¿Votó usted en las pasadas elecciones locales de octubre 2015?",
+    "categoría": "Participación electoral"
+  },
+  {
+    "código": "colvb7c",
+    "nombre": "¿Usted votó por un candidato, votó en blanco o anuló su voto?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb8",
+    "nombre": "¿Se considera Usted miembro o simpatizante del Partido Conservador, del Polo Democrático, del Partido Liberal, de otro movimiento político, o se considera usted independiente o sin partido?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvb9",
+    "nombre": "¿Considera usted que se inclina más hacia los Liberales, hacia los Conservadores o hacia el Polo Democrático?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvbloc1",
+    "nombre": "¿Piensa votar en las elecciones para alcaldías de octubre próximo?",
+    "categoría": "Participación electoral"
+  },
+  {
+    "código": "colvbloc10",
+    "nombre": "Las elecciones locales en su municipio se vieron afectadas por el fraude electoral. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Corrupción"
+  },
+  {
+    "código": "colvbloc1a",
+    "nombre": "¿Ya sabe por quién votaría para alcalde de su municipio?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "colvbloc2",
+    "nombre": "Las elecciones de octubre próximo en su municipio serán libres y justas.",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "colvbloc3",
+    "nombre": "Las elecciones de octubre próximo en su municipio se ven amenazadas por la acción de grupos paramilitares",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colvbloc3a",
+    "nombre": "Las elecciones de octubre próximo en su municipio se ven amenazadas por la acción de las BACRIM",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colvbloc4",
+    "nombre": "Las elecciones de octubre próximo en su municipio se ven amenazadas por la acción de grupos guerrilleros",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colvbloc5",
+    "nombre": "Las elecciones de octubre próximo en su municipio se ven amenazadas por la acción de narcotraficantes",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "colvbloc6",
+    "nombre": "¿Las elecciones de octubre próximo en su municipio se ven amenazadas por el clientelismo?",
+    "categoría": "Clientelismo"
+  },
+  {
+    "código": "colvbloc9",
+    "nombre": "Las elecciones locales en su municipio se vieron amenazadas por la acción de grupos armados ilegales. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colvic2",
+    "nombre": "Pensando en el último acto delincuencial del cual usted fue víctima, de la lista que le voy a leer, ¿qué tipo de acto delincuencial sufrió?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "colvioldh",
+    "nombre": "En los últimos 12 meses, ¿a Usted o a algún miembro de su familia, es decir, a sus padres, sus hermanos, sus hijos, su cónyuge o pareja, le han violado alguno de los siguientes derechos: derecho a la vida, a la integridad personal, a la seguridad personal, a la libertad personal o a la libre circulación?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "colvioldh1",
+    "nombre": "¿Denunció el hecho del que fue víctima a alguna institución?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colvioldh1a",
+    "nombre": "¿A quién o a qué institución denunció el hecho?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colvioldh1b",
+    "nombre": "¿Por qué no denunció el hecho?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colvioldh1c",
+    "nombre": "¿Por qué no denunciaría el hecho?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "colviom1",
+    "nombre": "¿Cree usted, sí o no, que la mujer afectada debe denunciar al esposo ante la policía o ante algún juzgado?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colviom2",
+    "nombre": "Suponiendo que usted conoce a la mujer agredida, ¿usted le recomendaría, sí o no, a la mujer que denuncie al esposo ante la policía o ante algún juzgado?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colviom3",
+    "nombre": "Suponiendo que usted fue testigo de la agresión, ¿usted denunciaría, sí o no, este hecho ante un policía o ante algún juzgado?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "colvol202",
+    "nombre": "Suponga que una persona mata a alguien que le ha violado a un/a hija/o. ¿Usted aprobaría que mate al violador, o no lo aprobaría pero lo entendería, o no lo aprobaría ni lo entendería?",
+    "categoría": "Ética"
+  },
+  {
+    "código": "colvol204",
+    "nombre": "Si un grupo de personas hace limpiezas sociales, es decir, mata gente que algunos consideran indeseable. ¿Usted aprobaría que maten a la gente considerada indeseable, o no lo aprobaría pero lo entendería, o no lo aprobaría ni lo entendería?",
+    "categoría": "Ética"
+  },
+  {
+    "código": "colvol205",
+    "nombre": "Si la policía tortura a un delincuente para conseguir información sobre un grupo de crimen organizado muy peligroso. ¿Usted aprobaría que la policía torture a un delincuente, o no lo aprobaría pero lo entendería, o no lo aprobaría ni lo entendería?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "colw14c",
+    "nombre": "¿Cree usted que se justificaría un aborto en alguno de los 3 casos en el que es legal en Colombia?",
+    "categoría": "Aborto"
+  },
+  {
+    "código": "colw8a",
+    "nombre": "¿A la hora de subirse a un bus de transporte público, quién le inspira más confianza: un conductor hombre o una conductora mujer?",
+    "categoría": "Tránsito y transporte"
+  },
+  {
+    "código": "colwc4a",
+    "nombre": "Victimización por: La guerrilla",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colwc4b",
+    "nombre": "Victimización por: Los paramilitares",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colwc4c",
+    "nombre": "Victimización por: Exparamilitares que se han reagrupado responsables de los hechos",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colwc4d",
+    "nombre": "Victimización por: El ejército",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "colwc4e",
+    "nombre": "Victimización por: La policía",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "colwc4f",
+    "nombre": "¿Qué grupo, o grupos fueron responsables de estos hechos? Otro (Si wc1, wc2 y wc3)",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colwc4g",
+    "nombre": "Victimización por:  BACRIM (Bandas criminales)",
+    "categoría": "Grupo armado"
+  },
+  {
+    "código": "colwc4gen",
+    "nombre": "¿El miembro o miembros de su familia víctimas de estos hechos eran hombres, muje",
+    "categoría": "Género"
+  },
+  {
+    "código": "colwc5",
+    "nombre": "¿Por razones del conflicto armado algún miembro de su familia fue reclutado forzosamente?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colwc5t",
+    "nombre": "¿este o estos hechos ocurrieron en los últimos 12 meses?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colwc6",
+    "nombre": "¿Por razones del conflicto armado algún miembro de su familia fue víctima de violencia sexual?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colwc6t",
+    "nombre": "¿Este o estos hechos ocurrieron en los últimos 12 meses?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colwc7",
+    "nombre": "¿Por razones del conflicto armado algún miembro de su familia fue víctima de una tortura?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colwc7t",
+    "nombre": "¿Este o estos hechos ocurrieron en los últimos 12 meses?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colwc8",
+    "nombre": "¿Algún miembro de su familia fue víctima de un secuestro?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "colwc8t",
+    "nombre": "¿Esto sucedió en los últimos 12 meses?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "colwc9",
+    "nombre": "¿Por razones del conflicto armado algún miembro de su familia fue despojado de s",
+    "categoría": "Familia"
+  },
+  {
+    "código": "colwc9f",
+    "nombre": "¿El familiar víctima de este hecho era uno de sus padres, sus hermanos, sus hijos o su cónyuge (pareja)?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "colwom2a",
+    "nombre": "Suponga que una pareja decide que el esposo se hará cargo de las labores domésticas y el cuidado de los hijos y la mujer saldrá a trabajar para mantener el hogar ¿Hasta qué punto está de acuerdo o en desacuerdo con esta decisión?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "colwom6",
+    "nombre": "Suponga que hay una familia que no tiene suficiente dinero para mandar a todos sus hijos a la universidad, así que decide mandar a los hijos antes que a las hijas. ¿Hasta qué punto está usted de acuerdo o en desacuerdo con esta situación?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "cp10",
+    "nombre": "¿Asiste a reuniones de un sindicato? ¿Asiste…",
+    "categoría": "Sindicatos"
+  },
+  {
+    "código": "cp11",
+    "nombre": "¿Asiste a reuniones de una Cooperativa? ¿Asiste…",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp13",
+    "nombre": "¿Asiste a reuniones de un partido o movimiento político? ¿Asiste…",
+    "categoría": "Política"
+  },
+  {
+    "código": "cp2",
+    "nombre": "¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación a algún Congresista?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "cp20",
+    "nombre": "¿Reuniones de asociaciones o grupos de mujeres o amas de casa?",
+    "categoría": "Mujer"
+  },
+  {
+    "código": "cp21",
+    "nombre": "¿Asiste usted a reuniones de asociaciones o grupos de afrocolombianos?",
+    "categoría": "Afrocolombianos"
+  },
+  {
+    "código": "cp4",
+    "nombre": "A algún ministerio, institución pública u oficina del Estado",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "cp4a",
+    "nombre": "¿Para resolver sus problemas, alguna vez ha pedido Ud. Ayuda o cooperación al Alcade de su municipio, funcionario de la alcaldía, concejal o edil?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp5",
+    "nombre": "¿En el último año usted ha contribuido o ha tratado de contribuir para la solución de algún problema de su comunidad o de los vecinos de su barrio?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp5a",
+    "nombre": "¿Ha donado dinero o materiales para ayudar a solucionar algún problema de la comunidad o de su barrio?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp5b",
+    "nombre": "¿Ha contribuido con su propio trabajo o mano de obra?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp5c",
+    "nombre": "¿Ha estado asistiendo a reuniones comunitarias sobre algún problema?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp5d",
+    "nombre": "¿Ha tratado de ayudar a organizar algún grupo nuevo para resolver algun problema de su comunidad?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp6",
+    "nombre": "¿Asiste a reuniones de alguna organización religiosa ¿Asiste…",
+    "categoría": "Religión"
+  },
+  {
+    "código": "cp6l",
+    "nombre": "¿y sólo asiste como miembro simple, o participa en la dirección del grupo?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp7",
+    "nombre": "¿Asiste a reuniones de una asociación de padres de familia de la escuela o colegio?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "cp7l",
+    "nombre": "¿y sólo asiste como miembro simple, o participa en la dirección del grupo?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp8",
+    "nombre": "¿Asiste a reuniones de un comité o junta de mejoras para la comunidad? ¿Asiste…",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp8l",
+    "nombre": "¿y sólo asiste como miembro simple, o participa en la dirección del grupo?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "cp9",
+    "nombre": "¿Asiste a reuniones de una asociación de profesionales, comerciantes o productores? ¿Asiste…",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "crisis1",
+    "nombre": "Algunos dicen que nuestro país está sufriendo una de las crisis económicas más g",
+    "categoría": "Economía"
+  },
+  {
+    "código": "crisis2",
+    "nombre": "¿Quién de los siguientes es el más culpable de la crisis económica actual en nue",
+    "categoría": "Economía"
+  },
+  {
+    "código": "ctnun2",
+    "nombre": "Y pensando en otro asunto ¿Con qué firmeza aprueba o desaprueba un programa, liderado por el alcalde de su municipio, que de dinero a las familias pobres a cambio de mantener a sus hijos en la escuela?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "d1",
+    "nombre": "Hay personas que siempre hablan mal de la forma de gobierno, no solo del gobierno de turno, sino la forma de gobierno, ¿con qué firmeza aprueba o desaprueba el derecho de votar de esas personas?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "d2",
+    "nombre": "¿Con qué firmeza aprueba o desaprueba el que estas personas puedan llevar a cabo manifestaciones pacíficas con el propósito de expresar sus puntos de vista?",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "d3",
+    "nombre": "Hay personas que siempre hablan mal de la forma de gobierno, no solo del gobierno de turno, sino la forma de gobierno, ¿Con qué firmeza aprueba o desaprueba que estas personas puedan postularse para postularse para cargos públicos?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "d32",
+    "nombre": "¿Hasta qué punto aprueba o desaprueba una ley que prohíba las protestas públicas",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "d33",
+    "nombre": "¿Hasta qué punto aprueba o desaprueba una ley que prohíba reuniones de cualquier grupo que critique el sistema político colombiano?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "d34",
+    "nombre": "¿Hasta qué punto aprueba o desaprueba que el gobierno censure programas de televisión?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "d36",
+    "nombre": "¿Hasta qué punto aprueba o desaprueba que el gobierno censure libros que están están en las bibliotecas de las escuelas públicas?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "d37",
+    "nombre": "¿Hasta qué punto aprueba o desaprueba que el gobierno censure a los medios de comunicación que lo critican?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "d4",
+    "nombre": "Hay personas que siempre hablan mal de la forma de gobierno de Colombia, no solo del gobierno de turno, sino la forma de gobierno, ¿Con qué firmeza aprueba o desaprueba que estas personas salgan en la televisión para dar un discurso?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "d5",
+    "nombre": "Pensando en los homosexuales ¿Con qué firmeza aprueba o desaprueba que estas personas puedan postularse para cargos públicos?",
+    "categoría": "Política"
+  },
+  {
+    "código": "d6",
+    "nombre": "¿Con qué firmeza aprueba o desaprueba que las parejas del mismo sexo puedan tener el derecho a casarse?",
+    "categoría": "Minoría sexual"
+  },
+  {
+    "código": "d7",
+    "nombre": "¿con qué firmeza aprueba o desaprueba que se permita que las personas con discapacidad se postulen para cargos públicos?",
+    "categoría": "Política"
+  },
+  {
+    "código": "d8",
+    "nombre": "¿con qué firmeza aprueba o desaprueba que el estado tenga el derecho de prohibir que los periódicos publiquen noticias que le puedan producir daño político?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "dc1",
+    "nombre": "Un congresista acepta un soborno de diez mil dólares pagado por una empresa.  ¿Considera usted que lo que hizo el congresista es...",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "dc10",
+    "nombre": "Una madre con varios hijos tiene que sacar una partida de nacimiento para uno de ellos.  Para no perder tiempo esperando, ella le paga diez mil pesos de más al empleado público municipal.  ¿Cree usted que lo que hizo la señora es…",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "dc13",
+    "nombre": "Una persona desempleada es cuñado de un político importante, y éste usa su palanca para conseguirle un empleo público. ¿Usted cree que el político es…",
+    "categoría": "Corrupción"
+  },
+  {
+    "código": "dem11",
+    "nombre": "¿Cree usted que en nuestro país hace falta un gobierno de mano dura, o cree que los problemas pueden resolverse con la participación de todos?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "dem13a",
+    "nombre": "¿En pocas palabras, que significa para usted la democracia?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "dem13b",
+    "nombre": "¿Significa algo más - 2a respuesta",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "dem13c",
+    "nombre": "¿Significa algo más - 3a respuesta",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "dem13d",
+    "nombre": "¿De estos significados de democracia que usted ha dicho, en su opinión cuál es el más importante?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "dem14",
+    "nombre": "¿Cuál es la mejor forma para fortalecer la democracia en Colombia?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "dem2",
+    "nombre": "¿Con cuál de las siguientes tres frases está usted más de acuerdo? (1) A la gente como uno, le da lo mismo un régimen democrático que uno no democrático. (2) La democracia es preferible a cualquier otra forma de gobierno. (3) En algunas circunstancias un gobierno autoritario puede ser preferible a uno democrático.",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "dem23",
+    "nombre": "Puede haber democracia sin que existan partidos políticos. ¿Hasta qué punto está",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "depnac",
+    "nombre": "Departamento donde nació",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "der1",
+    "nombre": "Participar para resolver problemas de su comunidad ¿Lo haría usted sin temor, con un poco de temor, o con mucho temor?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "der2",
+    "nombre": "Votar en una elección nacional ¿Lo haría usted sin temor, con un poco de temor,",
+    "categoría": "Votación"
+  },
+  {
+    "código": "der3",
+    "nombre": "Participar en una manifestación pacífica ¿Lo haría usted sin temor, con un poco",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "der4",
+    "nombre": "Postularse para un cargo de elección popular ¿Lo haría usted sin temor, con un p",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "desoc1",
+    "nombre": "¿Ha estado desocupado (desempleado) durante el último año?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "desoc2",
+    "nombre": "¿Por cuántas semanas durante el último año no ha tenido trabajo?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "dis11",
+    "nombre": "Por su color de piel? ¿Usted diría que eso ha sucedido muchas veces, algunas veces, pocas veces, o nunca?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dis11n",
+    "nombre": "Pensando en los últimos cinco años, ¿alguna vez se ha sentido discriminado o ha sido tratado mal o de manera injusta: Por su color de piel? ¿Usted se ha sentido discriminado?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dis12",
+    "nombre": "Por su género o sexo?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dis12n",
+    "nombre": "Pensando en los últimos cinco años, ¿alguna vez se ha sentido discriminado o ha sido tratado mal o de manera injusta: Por su género?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dis12xn",
+    "nombre": "Por su sexo?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dis13",
+    "nombre": "Por su condición económica?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dis13n",
+    "nombre": "Pensando en los últimos cinco años, ¿alguna vez se ha sentido discriminado o ha sido tratado mal o de manera injusta:  Por su condición económica?¿Usted se ha sentido discriminado?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dis2",
+    "nombre": "En las oficinas del gobierno (juzgados, ministerios, alcaldías)",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dis3",
+    "nombre": "Cuando buscaba trabajo en alguna empresa o negocio",
+    "categoría": "Proceso de paz"
+  },
+  {
+    "código": "dis35a",
+    "nombre": "Homosexuales. ¿No los quisiera tener de vecinos?",
+    "categoría": "Minoría sexual"
+  },
+  {
+    "código": "dis35b",
+    "nombre": "Pobres ¿No los quisiera tener de vecinos?",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "dis35c",
+    "nombre": "Gente de otros países ¿No los quisiera tener de vecinos?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "dis35d",
+    "nombre": "Afro-colombianos/negros ¿No los quisiera tener de vecinos?",
+    "categoría": "Racismo"
+  },
+  {
+    "código": "dis35e",
+    "nombre": "Indígenas ¿No los quisiera tener de vecinos?",
+    "categoría": "Indígenas"
+  },
+  {
+    "código": "dis4",
+    "nombre": "En reuniones o eventos sociales",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "dis5",
+    "nombre": "En lugares públicos (como en la calle, la plaza o el mercado)",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "dis6",
+    "nombre": "¿Alguna vez se ha sentido discriminada por algún partido político?",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "dis7",
+    "nombre": "¿Alguna vez se ha sentido discriminada por ser mujer?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "dvw1",
+    "nombre": "La esposa descuida las labores del hogar. ¿Usted aprobaría que el esposo golpee a su esposa, o usted no lo aprobaría pero lo entendería, o usted ni lo aprobaría ni lo entendería?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "dvw2",
+    "nombre": "La esposa es infiel. ¿Usted aprobaría que el esposo golpee a su esposa, o usted no lo aprobaría pero lo entendería, o usted ni lo aprobaría ni lo entendería?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "e11",
+    "nombre": "¿Con qué firmeza aprobaría o desaprobaría que las personas trabajen en campañas electorales para un partido político o candidato",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "e14",
+    "nombre": "¿Con qué firmeza aprobaría o desaprobaría que las personas invadan propiedades o terrenos privados",
+    "categoría": "Propiedad privada"
+  },
+  {
+    "código": "e15",
+    "nombre": "¿Con qué firmeza aprobaría o desaprobaría que las personas participen en un cierre o bloqueo de calles o carreteras",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "e16",
+    "nombre": "¿Con qué firmeza aprobaría o desaprobaría que las personas hagan justicia por su propia mano cuando el Estado no castiga a los criminales",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "e2",
+    "nombre": "¿Con qué firmeza aprobaría o desaprobaría que las personas ocupen fábricas, ofic",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "e3",
+    "nombre": "¿Con qué firmeza aprobaría o desaprobaría que las personas participen en un grup",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "e5",
+    "nombre": "¿Con qué firmeza aprobaría o desaprobaría que las personas participen en manifestaciones permitidas por la ley",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "e8",
+    "nombre": "¿Con qué firmeza aprobaría o desaprobaría que las personas participen en un grupo para tratar de resolver los problemas de las comunidades",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "ec1",
+    "nombre": "¿Hasta qué punto el Congreso estorba la labor del presidente?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "ec2",
+    "nombre": "¿Y qué tanto tiempo pierden los congresistas discutiendo y debatiendo?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "ec3",
+    "nombre": "¿Qué tan importantes son para el país las leyes que aprueba el Congreso?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "ec4",
+    "nombre": "¿Hasta qué punto el Congreso cumple con lo que usted espera de él?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "ed",
+    "nombre": "¿Cuál fue el último año de enseñanza que aprobó?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "ed2",
+    "nombre": "¿Y hasta qué nivel educativo llegó su mamá?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "edmadre",
+    "nombre": "¿Y hasta qué nivel educativo llegó su madre?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "edpadre",
+    "nombre": "¿Hasta qué nivel educativo llegó su padre?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "eff1",
+    "nombre": "A los que gobiernan el país les interesa lo que piensa la gente como usted. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?",
+    "categoría": "Representación ciudadana"
+  },
+  {
+    "código": "eff2",
+    "nombre": "Usted siente que entiende bien los asuntos políticos más importantes del país. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?",
+    "categoría": "Política"
+  },
+  {
+    "código": "env1",
+    "nombre": "¿A qué debe darse más prioridad: proteger el medio ambiente o promover el crecimiento económico?",
+    "categoría": "Desarrollo"
+  },
+  {
+    "código": "epp1",
+    "nombre": "Pensando en los partidos políticos en general ¿Hasta qué punto los partidos polí",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "epp2",
+    "nombre": "¿Hasta qué punto hay corrupción en los partidos políticos colombianos?",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "epp3",
+    "nombre": "¿Qué tanto los partidos políticos escuchan a la gente como uno?",
+    "categoría": "Política"
+  },
+  {
+    "código": "etid",
+    "nombre": "Se considera blanco, mestizo, indígena o afrocolombiano?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "exc1",
+    "nombre": "¿Ha sido acusado durante el último año por un agente de policía por una infracción que no cometió?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "exc11",
+    "nombre": "Para tramitar algo en la alcaldía (como un permiso, por ejemplo) durante el último año. ¿Ha tenido que pagar alguna suma además de lo exigido por la ley?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "exc11a",
+    "nombre": "¿Ha tramitado algo en el municipio en los últimos 12 meses?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "exc13",
+    "nombre": "En su trabajo ¿Le han solicitado algún pago no correcto en el último año?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "exc13a",
+    "nombre": "¿Usted trabaja?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "exc14",
+    "nombre": "¿Ha tenido que pagar una mordida (coima, soborno) en los juzgados en el último año?",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "exc14a",
+    "nombre": "¿En los últimos 12 meses, tuvo algún trato con los juzgados?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "exc15",
+    "nombre": "Para ser atendido en un hospital o en un puesto de salud durante el último año. ¿Ha tenido que pagar alguna mordida?",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "exc15a",
+    "nombre": "¿Usó servicios médicos públicos (del Estado) en los últimos 12 meses?",
+    "categoría": "Salud"
+  },
+  {
+    "código": "exc16",
+    "nombre": "En la escuela o colegio durante el último año ¿Tuvo que pagar alguna mordida?",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "exc16a",
+    "nombre": "En el último año, ¿tuvo algún hijo en la escuela o colegio?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "exc17",
+    "nombre": "¿Alguien le pidió un soborno para evitar el corte de la luz eléctrica?",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "exc18",
+    "nombre": "¿Cree que como están las cosas a veces se justifica pagar un soborno o mordida?",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "exc2",
+    "nombre": "Algún agente de policía le pidió una mordida (o soborno) en el último a?o?",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "exc20",
+    "nombre": "¿En los últimos doce meses, algún soldado u oficial militar le ha solicitado un soborno?",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "exc6",
+    "nombre": "¿Un empleado público le ha solicitado una mordida en el último año?",
+    "categoría": "Soborno"
+  },
+  {
+    "código": "exc7",
+    "nombre": "Teniendo en cuenta su experiencia ¿la corrupción de los funcionarios públicos está…?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "exc7b",
+    "nombre": "Pensando en los funcionarios públicos de Colombia, ¿cuántos de ellos cree usted que están involucrados en corrupción?",
+    "categoría": "Corrupción"
+  },
+  {
+    "código": "exc7mil",
+    "nombre": "Teniendo en cuenta su propia experiencia o lo que ha escuchado, la corrupción en las Fuerzas Armadas está…",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "exc7new",
+    "nombre": "Pensando en los políticos de Colombia, ¿cuántos de ellos cree usted que están involucrados en corrupción?",
+    "categoría": "Política"
+  },
+  {
+    "código": "fear10",
+    "nombre": "Para protegerse de la delincuencia en los últimos 12 meses, ¿ha tomado alguna medida como evitar caminar por algunas zonas de su barrio porque puedan ser peligrosas?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "for1",
+    "nombre": "¿cuál de los siguientes países es el que tiene más influencia en América Latina?",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for1n",
+    "nombre": "Ahora vamos a hablar sobre sus opiniones respecto de algunos países. ¿Cuál de los siguientes países es el que tiene más influencia en América Latina/el Caribe?",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for2",
+    "nombre": "y pensando en {for1}, ¿cree usted que su influencia es muy positiva, positiva, negativa, etc.?",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for3",
+    "nombre": "y pensando en china y la influencia que tiene en amÉrica latina. ¿cree usted que su influencia es muy positiva, positiva, negativa, etc.?",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for4",
+    "nombre": "y dentro de 10 años, en su opinión, ¿cuál de los siguientes países tendrá más  su influencia en AL?",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for5",
+    "nombre": "¿Cuál de los siguientes países debería ser un modelo para el desarrollo de la región?",
+    "categoría": "Desarrollo"
+  },
+  {
+    "código": "for6",
+    "nombre": "y pensando ahora sólo en nuestro paÍs, ¿qué tanta influencia cree usted que tiene China?",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for6b",
+    "nombre": "y pensando ahora sólo en nuestro paÍs, ¿qué tanta influencia cree usted que tiene Estados Unidos?",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for7",
+    "nombre": "en general, la influencia que tiene China sobre nuestro país es",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for7b",
+    "nombre": "en general, la influencia que tiene Estados Unidos sobre nuestro país es",
+    "categoría": "Influencia"
+  },
+  {
+    "código": "for8",
+    "nombre": "hasta qué punto está de acuerdo con la siguiente afirmación: \"los negocios chinos contribuyen al desarrollo económico de Colombia”?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "for9a",
+    "nombre": "relaciones laborales, tales como disputas con los empleados o con los sindicatos",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "for9b",
+    "nombre": "¿Según lo que usted sabe o ha oído, los negocios chinos que están instalados en Colombia sufren algunos de los siguientes problemas? Problemas que surgen de la falta de entendimiento de la cultura o de las costumb",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "for9c",
+    "nombre": "¿Según lo que usted sabe o ha oído, los negocios chinos que están instalados en Colombia sufren algunos de los siguientes problemas? Falta de conocimiento de las normas políticas, legales o reglas y valores sociales de Colombia. ¿Cree usted que es un problema o que no lo es, o no tiene opinión al respecto?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "for9d",
+    "nombre": "¿Según lo que usted sabe o ha oído, los negocios chinos que están instalados en Colombia sufren algunos de los siguientes problemas? Falta de comunicación con los medios de comunicación locales y con los residentes",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "formal",
+    "nombre": "Por este trabajo, ¿realiza usted o su empleador contribuciones para su pensión o jubilación?",
+    "categoría": "Pensión"
+  },
+  {
+    "código": "fs2",
+    "nombre": "En los últimos 3 meses, por falta de dinero u otros recursos, alguna vez ¿en su hogar se quedaron sin alimentos?",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "fs8",
+    "nombre": "En los últimos 3 meses, por falta de dinero u otros recursos, alguna vez, ¿usted o algún adulto en su hogar solo comió una vez al día o dejó de comer todo un día?",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "ft1",
+    "nombre": "Pensando en los políticos de otros países, usando esta escala, ¿qué tan cercano se siente del presidente de Venezuela Hugo Chávez?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "ft2",
+    "nombre": "¿Y del presidente de Estados Unidos George Bush?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "ft3",
+    "nombre": "¿Qué tan cercano se siente del presidente de Bolivia Evo Morales?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "ft4",
+    "nombre": "¿Y del presidente de Brasil Lula da Silva?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "ft5",
+    "nombre": "¿Y de Fidel Castro?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "gen1",
+    "nombre": "cambiando de tema de nuevo, se dice que cuando no hay suficientes trabajos, los hombres deben tener más derecho a los trabajos que las mujeres.",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "gen10",
+    "nombre": "Pensando solo en usted y su pareja y en los salarios que ganan, ¿cuál de las siguientes frases describe mejor sus salarios?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "gen6",
+    "nombre": "El Estado debe exigir que los partidos políticos reserven algunos espacios para mujeres en sus listas de candidatos, aunque tengan que dejar afuera a algunos hombres",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "gi0n",
+    "nombre": "¿Con qué frecuencia sigue las noticias, ya sea en la televisión, la radio, los periódicos o el Internet?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "gi1",
+    "nombre": "¿Recuerda usted cómo se llama el actual presidente de los Estados Unidos?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "gi2",
+    "nombre": "¿Cómo se llama el Presidente del Congreso de Colombia?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "gi3",
+    "nombre": "Recuerda usted cuantos departamentos tiene Colombia?",
+    "categoría": "Geografía"
+  },
+  {
+    "código": "gi4",
+    "nombre": "¿Cuánto tiempo dura el período presidencial en Colombia?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "gi5",
+    "nombre": "¿Recuerda usted cómo se llama el presidente de Brasil?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "gi7",
+    "nombre": "¿Cuántos representantes tiene [la Cámara Baja o Cámara Única del Congreso]?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "gix4",
+    "nombre": "¿En qué continente queda Nigeria?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "haicr1",
+    "nombre": "¿Cómo se informa usted principalmente sobre la situación del país?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "iarea1",
+    "nombre": "¿Hasta qué punto diría usted que el área alrededor del hogar del encuestado/a está afectada por Basura en la calle o acera?",
+    "categoría": "Socioeconomía"
+  },
+  {
+    "código": "iarea2",
+    "nombre": "¿Hasta qué punto diría usted que el área alrededor del hogar del encuestado/a está afectada por Baches/Hoyos/Pozos en la calle o en el camino?",
+    "categoría": "Socioeconomía"
+  },
+  {
+    "código": "iarea3",
+    "nombre": "¿Hasta qué punto diría usted que el área alrededor del hogar del encuestado/a está afectada por Viviendas que tienen defensas/barrotes o rejas de metal en las ventanas?",
+    "categoría": "Vivienda"
+  },
+  {
+    "código": "idio1",
+    "nombre": "¿Cómo calificaría en general su situación económica?  ¿Diría usted que es muy buena, buena, ni buena ni mala, mala o muy mala?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "idio2",
+    "nombre": "¿Considera usted que su situación económica actual es mejor, igual o peor que la de hace doce meses?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "idio3",
+    "nombre": "¿Considera usted que dentro de 12 meses su situación económica sería mejor, igual o peor?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "ind1",
+    "nombre": "¿Cree usted que los grupos indígenas están ayudando a que nuestro país sea más desarrollado?",
+    "categoría": "Desarrollo"
+  },
+  {
+    "código": "ind2",
+    "nombre": "¿Cuánta influencia cree usted que los grupos indígenas han tenido en la promulgación de leyes?",
+    "categoría": "Rama Legislativa"
+  },
+  {
+    "código": "ind3",
+    "nombre": "¿Por qué algunos grupos indígenas han sido efectivos en tener influencia en la promulgación de leyes?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "ind4",
+    "nombre": "¿Qué tan efectivos son los grupos indígenas para convencer a la gente de que los temas indígenas son importantes?",
+    "categoría": "Indígenas"
+  },
+  {
+    "código": "inf1",
+    "nombre": "¿Tiene usted cédula de ciudadanía?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "inf5a",
+    "nombre": "Aunque usted no tenga ninguna razón para ir allí, suponga que tine que ir a la escuela pública más próxima a su hogar. ¿Cuánto se demoraría en llegar a esa escuela caminando?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "infra3",
+    "nombre": "Suponga que tiene una lesión muy seria y necesita atención médica inmediata. ¿Cuánto tiempo cree que se demoraría en llegar (por el medio más rápido) al centro de salud/hospital más cercano  (público o privado)?",
+    "categoría": "Salud"
+  },
+  {
+    "código": "infrax",
+    "nombre": "Suponga que alguien se mete a robar a su casa y usted llama a la policía ¿Cuánto tiempo cree que la policía se demoraría en llegar a su casa un día cualquiera a mediodía?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "ing4",
+    "nombre": "Puede que la democracia tenga problemas pero es mejor que cualquier otra forma de Gobierno. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "it1",
+    "nombre": "¿Diría que la gente de su comunidad es muy confiable, algo confiable, poco confiable o nada confiable?",
+    "categoría": "Confianza"
+  },
+  {
+    "código": "it1b",
+    "nombre": "¿Diría usted que se puede confiar en la mayoría de las personas o que uno tiene que ser muy cuidadoso cuando trata con los demás?",
+    "categoría": "Confianza"
+  },
+  {
+    "código": "it2",
+    "nombre": "¿Cree que la mayoría de las veces la gente se preocupa sólo de sí misma, o cree que la mayoría de las veces la gente trata de ayudar al prójimo?",
+    "categoría": "Ética"
+  },
+  {
+    "código": "it3",
+    "nombre": "¿Cree que la mayoría de la gente, si se le presentara la oportunidad, trataría de aprovecharse de usted, o cree que no se aprovecharía de usted?",
+    "categoría": "Ética"
+  },
+  {
+    "código": "jc1",
+    "nombre": "Frente al Desempleo muy alto",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "jc10",
+    "nombre": "¿Se justificaría que hubiera un golpe de estado por los militares frente a mucha delincuencia?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "jc12",
+    "nombre": "Frente a la alta inflación, con aumento excesivo de precios",
+    "categoría": "Economía"
+  },
+  {
+    "código": "jc13",
+    "nombre": "Frente a mucha corrupción (1) Se justificaría que los militares tomen el poder por un golpe de Estado o (2) No se justificaría que los militares tomen el poder por un golpe de Estado",
+    "categoría": "Corrupción"
+  },
+  {
+    "código": "jc13a",
+    "nombre": "¿Cree Ud. que alguna vez puede haber razón suficiente para un golpe de estado o cree que nunca hay suficiente razón para eso?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "jc15a",
+    "nombre": "¿Cree usted que cuando el país enfrenta momentos muy difíciles, se justifica que el presidente del país cierre el Congreso y gobierne sin Congreso?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "jc16a",
+    "nombre": "¿Cree usted que cuando el país enfrenta momentos muy difíciles se justifica que el presidente del país disuelva la Corte Constitucional y gobierne sin ella?",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "jc4",
+    "nombre": "Frente a muchas protestas sociales",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "l1",
+    "nombre": "Según el sentido que tengan para usted los términos \"\"izquierda\"\" y \"\"derecha\"\" cuando piensa sobre su punto de vista político, ¿dónde se colocaría  en esta escala?",
+    "categoría": "Política"
+  },
+  {
+    "código": "leng1",
+    "nombre": "¿Cuál es su lengua materna, o el primer idioma que habló de pequeño en su casa?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "lgl2",
+    "nombre": "En su opinión, ¿se le debe dar más obligaciones y más dinero al municipio, o se debe dejar que el gobierno nacional asuma más obligaciones y servicios municipales?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "lgl3",
+    "nombre": "Y tomando en cuenta los recursos económicos existentes en el país ¿Quién debería",
+    "categoría": "Economía"
+  },
+  {
+    "código": "lib1",
+    "nombre": "¿Usted cree que ahora en el país tenemos libertad de prensa?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "lib2",
+    "nombre": "¿Usted cree que ahora en el país tenemos libertad de opinión?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "lib2b",
+    "nombre": "¿Usted cree que ahora en el país tenemos libertad de expresión?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "lib2c",
+    "nombre": "¿Usted cree que ahora en el país tenemos libertad para expresar las opiniones políticas sin miedo?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "lib3",
+    "nombre": "Usted cree que ahora en el país tenemos participación política",
+    "categoría": "Política"
+  },
+  {
+    "código": "lib4",
+    "nombre": "¿Usted cree que ahora en el país tenemos protección a derechos humanos?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "ls3",
+    "nombre": "En general ¿Hasta qué punto se encuentra satisfecho con su vida? ¿Diría que se encuentra…",
+    "categoría": "Salud mental"
+  },
+  {
+    "código": "ls6",
+    "nombre": "En esta tarjeta hay una escalera con escalones numerados del cero al diez. El cero es el escalón más bajo y representa la peor vida posible para usted. El diez es el escalón más alto y representa la mejor vida posible para usted. ¿En qué escalón de la escalera se siente usted en estos momentos?",
+    "categoría": "Salud mental"
+  },
+  {
+    "código": "ls6a",
+    "nombre": "¿En qué escalón diría usted que se encontraba dos años atrás?",
+    "categoría": "Socioeconomía"
+  },
+  {
+    "código": "m1",
+    "nombre": "Hablando en general del actual gobierno ¿Diría que el trabajo que esta haciendo el Presidente es:",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "m2",
+    "nombre": "¿Usted cree que los congresistas colombianos están haciendo su trabajo muy bien, bien, ni bien ni mal, mal, o muy mal?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "media3",
+    "nombre": "¿La información que dan los medios de comunicación de noticias representan bien las distintas opiniones que hay en país?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "media4",
+    "nombre": "¿Los medios de comunicación de noticias de [país] está controlada por una/os poca/os grupos económicos/corporaciones?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "mig1",
+    "nombre": "Durante su niñez ¿Donde vivió usted principalmente?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "mig2",
+    "nombre": "Hace 5 años, ¿donde residía usted?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "mig3",
+    "nombre": "El lugar donde vivia hace 5 años era:",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "mil10a",
+    "nombre": "el gobierno de china, en su opinión ¿es muy confiable, algo confiable, poco confiable,etc.?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "mil10b",
+    "nombre": "el gobierno de rusia, en su opinión ¿es muy confiable, algo confiable, poco confiable,etc.?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "mil10c",
+    "nombre": "el gobierno de irán, en su opinión ¿es muy confiable, algo confiable, poco confiable,etc.?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "mil10d",
+    "nombre": "el gobierno de israel, en su opinión ¿es muy confiable, algo confiable, poco confiable,etc.?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "mil10e",
+    "nombre": "el gobierno de estados unidos, en su opinión ¿es muy confiable, algo confiable, poco confiable,etc.?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "mil11a",
+    "nombre": "y la relación de nuestro país con China, ¿diría que en los últimos 5 años se ha vuelto más cercana, más lejana, ha permanecido más o menos igual, o no tiene una opinión?",
+    "categoría": "Relaciones Internacionales"
+  },
+  {
+    "código": "mil11b",
+    "nombre": "y la relación de nuestro país con rusia, ¿diría que en los últimos 5 años se ha vuelto más cercana, más lejana, ha permanecido más o menos igual, o no tiene una opinión?",
+    "categoría": "Relaciones Internacionales"
+  },
+  {
+    "código": "mil11c",
+    "nombre": "y la relación de nuestro país con irán, ¿diría que en los últimos 5 años se ha vuelto más cercana, más lejana, ha permanecido más o menos igual, o no tiene una opinión?",
+    "categoría": "Relaciones Internacionales"
+  },
+  {
+    "código": "mil11d",
+    "nombre": "y la relación de nuestro país con israel, ¿diría que en los últimos 5 años se ha vuelto más cercana, más lejana, ha permanecido más o menos igual, o no tiene una opinión?",
+    "categoría": "Relaciones Internacionales"
+  },
+  {
+    "código": "mil11e",
+    "nombre": "y la relación de nuestro país con estados unidos, ¿diría que en los últimos 5 años se ha vuelto más cercana, más lejana, ha permanecido más o menos igual, o no tiene una opinión?",
+    "categoría": "Relaciones Internacionales"
+  },
+  {
+    "código": "mil2",
+    "nombre": "¿hasta qué punto cree que las fuerzas armadas de colombia han hecho un buen trabajo cuando han ayudado a enfrentar desastres naturales?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "mil3",
+    "nombre": "cambiando un poco de tema, ¿hasta qué punto confía en las fuerzas armadas de los Estados Unidos de América?",
+    "categoría": "Relaciones internacionales"
+  },
+  {
+    "código": "mil4",
+    "nombre": "¿hasta qué punto cree que las fuerzas armadas de los estados unidos de américa d",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "mil5",
+    "nombre": "¿qué tan orgulloso se siente de ser colombiano cuando escucha el himno nacional?",
+    "categoría": "Patria"
+  },
+  {
+    "código": "mil6",
+    "nombre": "ahora, cambiando de tema, ¿qué tan orgullos[q1 = 2 ? \"a\" : \"o\"] está de las Fuerzas Armadas de Colombia",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "mil7",
+    "nombre": "las fuerzas militares deben participar en el combate del crimen y de la violenci",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "mil8",
+    "nombre": "¿usted o su pareja o algún hijo suyo actualmente está en servicio o hace parte d",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "mov1",
+    "nombre": "¿Usted se describiría a sí mismo como perteneciente a la clase…?",
+    "categoría": "Socioeconomía"
+  },
+  {
+    "código": "mov1n",
+    "nombre": "¿Usted se describiría a sí mismo como perteneciente a la clase social…?",
+    "categoría": "Socioeconomía"
+  },
+  {
+    "código": "muni10",
+    "nombre": "Ahora vamos a hablar de su municipio... ¿Le resolvieron su asunto o petición?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "municipio",
+    "nombre": "Municipio donde nació",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "munnac",
+    "nombre": "Municipio donde nació",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "n1",
+    "nombre": "¿Hasta qué punto diría que el gobierno actual combate la pobreza?",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "n10",
+    "nombre": "¿Hasta qué punto diría que el gobierno actual protege los derechos humanos?",
+    "categoría": "Derechos"
+  },
+  {
+    "código": "n11",
+    "nombre": "¿hasta qué punto diría que el gobierno actual mejora la seguridad ciudadana?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "n12",
+    "nombre": "¿hasta qué punto diría que el gobierno actual combate el desempleo?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "n15",
+    "nombre": "¿hasta qué punto diría que el gobierno actual está manejando bien la economía?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "n3",
+    "nombre": "¿hasta qué punto diría que el gobierno actual promueve y protege los principios democráticos?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "n9",
+    "nombre": "¿Hasta qué punto diría que el gobierno actual combate la corrupción en el gobierno?",
+    "categoría": "Corrupción"
+  },
+  {
+    "código": "np1",
+    "nombre": "¿Ha asistido a un cabildo abierto o una sesión municipal durante los últimos 12 meses?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "np1a",
+    "nombre": "¿Ha asistido a alguna reunión convocada por el alcalde durante los últimos 12 meses?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "np1b",
+    "nombre": "¿Hasta qué punto cree Ud. que los funcionarios del municipio hacen caso a lo que pide la gente en estas reuniones?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "np1c",
+    "nombre": "Si Ud. tuviera una queja sobre algún problema local, y lo llevara a algún miembro del concejo municipal,  ¿Qué tanto cree Ud. que le haría caso?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "np2",
+    "nombre": "¿Ha solicitado ayuda o ha presentado una petición a alguna oficina, funcionario o concejal del municipio durante los últimos 12 meses?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "np4",
+    "nombre": "¿Ha participado en alguna reunión para discutir o planificar el presupuesto de su municipio?",
+    "categoría": "Participación ciudadana"
+  },
+  {
+    "código": "ocup1",
+    "nombre": "¿Cuál es su ocupación principal?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ocup1a",
+    "nombre": "En esta ocupación por lo general usted es:",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ocup1anc",
+    "nombre": "¿Cuál era la ocupación o tipo de trabajo que realizaba su padre o madre (quien f",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ocup1b",
+    "nombre": "¿En total cuántos empleados hay en la empresa o en el lugar donde usted trabaja?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ocup1b1",
+    "nombre": "ocup1b1    ¿Ha perdido usted su trabajo en los últimos dos años? [Leer alternativas]",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ocup1b2",
+    "nombre": "ocup1b2    ¿Además de usted, alguien que vive en este hogar ha perdido su trabajo en los úl",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ocup4a",
+    "nombre": "¿A qué se dedica usted principalmente? ¿Está usted actualmente:",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ocupoit",
+    "nombre": "¿Cuál es la ocupación o tipo de trabajo que realiza?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "pen1",
+    "nombre": "¿Se encuentra usted afiliado a un sistema de pensiones?",
+    "categoría": "Pensión"
+  },
+  {
+    "código": "pen3",
+    "nombre": "¿A qué sistema de pensiones está usted afiliado?",
+    "categoría": "Pensión"
+  },
+  {
+    "código": "pen4",
+    "nombre": "En los últimos 12 meses, usted cotizó a su fondo de pensión",
+    "categoría": "Pensión"
+  },
+  {
+    "código": "per1",
+    "nombre": "Se considera usted una persona que es: Sociable y activa",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per10",
+    "nombre": "Se considera usted una persona que es: Poco creativa y con poca imaginación",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per2",
+    "nombre": "Se considera usted una persona que es: Criticona y peleadora",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per3",
+    "nombre": "Se considera usted una persona que es: Confiable y disciplinada",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per4",
+    "nombre": "Se considera usted una persona que es: Ansiosa y fácil de molestarse",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per5",
+    "nombre": "Se considera usted una persona que es: Abierta a nuevas experiencias e intelectu",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per6",
+    "nombre": "Se considera usted una persona que es: Callada y tímida",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per7",
+    "nombre": "Se considera usted una persona que es: Generosa y cariñosa",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per8",
+    "nombre": "Se considera usted una persona que es: Desorganizada y descuidada",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "per9",
+    "nombre": "Se considera usted una persona que es: Calmada y emocionalmente estable",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "pese1",
+    "nombre": "¿Considera usted que el nivel de violencia acutal en su barrio es mayor, igual o menor que el de otras colonias o barrios en este municipio?",
+    "categoría": "Violencia"
+  },
+  {
+    "código": "pese2",
+    "nombre": "¿Considera usted que el nivel de violencia acutal en su barrio es mayor, igual o menor que el de hace 12 meses?",
+    "categoría": "Violencia"
+  },
+  {
+    "código": "pn2",
+    "nombre": "A pesar de nuestras diferencias, los colombianos tenemos muchas cosas y valores que nos unen como país.  ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Patria"
+  },
+  {
+    "código": "pn4",
+    "nombre": "En general ¿Diría que está muy satisfecho, satisfecho, insatisfecho o muy insatisfecho como la democracia funciona en su país?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "pn5",
+    "nombre": "¿Colombia es un país muy democrático, algo democrático, poco democrático, o nada democrático?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "pn6",
+    "nombre": "¿Colombia se ha vuelto mas democrática, igual de democrática o menos democrática?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "pol1",
+    "nombre": "¿Qué tanto interés tiene usted en la política...",
+    "categoría": "Política"
+  },
+  {
+    "código": "pol2",
+    "nombre": "¿Con qué frecuencia habla usted de política con otras personas?",
+    "categoría": "Política"
+  },
+  {
+    "código": "pole2n",
+    "nombre": "En general, ¿usted está muy satisfecho, satisfecho, insatisfecho o muy insatisfecho con el desempeño de la policía en su barrio/colonia/vecindario?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "pop1",
+    "nombre": "Teniendo en cuenta la situación actual del país, quisiera que me dijera con cuál de las siguientes frases está más de acuerdo? Para el progreso del país, es necesario que nuestros presidentes limiten la voz y el voto de los partidos de la oposición, (o al contrario), Aunque atrase el progreso del país, nuestros presidentes no deben limitar la voz y el voto de los partidos de la oposición",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "pop101",
+    "nombre": "Para el progreso del país, es necesario que nuestros presidentes limiten la voz y  el voto de los partidos de la oposición",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "pop102",
+    "nombre": "¿Cuando el Congreso estorba el trabajo del gobierno, nuestros presidentes deben gobernar sin el Congreso?",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "pop103",
+    "nombre": "Cuando la Corte Constitucional estorba el trabajo del gobierno, debe ser ignorada por nuestros presidentes",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "pop107",
+    "nombre": "¿El pueblo debe gobernar directamente, y no a través de los representantes electos?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "pop113",
+    "nombre": "¿Aquellos que no concuerdan con la mayoría representan una amenaza para el país?",
+    "categoría": "Democracia"
+  },
+  {
+    "código": "pop2",
+    "nombre": "El Congreso impide mucho la labor de nuestros presidentes, y debería ser ignorado (o al contrario), Aun cuando estorbe la labor del presidente, nuestros presidentes no debieran pasar por encima del Congreso",
+    "categoría": "Congreso"
+  },
+  {
+    "código": "pop3",
+    "nombre": "Los jueces con frecuencia estorban la labor de nuestros presidentes, y deberían ser ignorados (o al contrario), Aun cuando a veces los jueces estorban la labor de nuestros presidentes, las decisiones de los jueces siempre tienen que ser obedecidas",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "pop4",
+    "nombre": "Nuestros presidentes deben tener el poder necesario para que puedan actuar a favor del interés nacional (o al contrario), Se debe limitar el poder de nuestros presidentes para que  nuestras libertades no corran peligro",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "pop5",
+    "nombre": "Nuestros presidentes deben hacer lo que el pueblo quiere aunque las leyes se lo impidan (o al contrario), Nuestros presidentes deben obedecer las leyes aunque al pueblo no le guste",
+    "categoría": "Rama Legislativa"
+  },
+  {
+    "código": "pp1",
+    "nombre": "¿Con qué frecuencia ha tratado usted de convencer a otros para que voten por un partido o candidato?",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "pp2",
+    "nombre": "¿Trabajó para algún candidato o partido en las pasadas elecciones presidenciales",
+    "categoría": "Partidos políticos"
+  },
+  {
+    "código": "pr1",
+    "nombre": "La vivienda que ocupa su hogar es…",
+    "categoría": "Vivienda"
+  },
+  {
+    "código": "pr3a",
+    "nombre": "Compra DVD, discos piratas ¿Qué tan probable que es que sea castigado por las autoridades?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "pr3c",
+    "nombre": "Y si alguien en su barrio ocupa/invade un terreno desocupado ¿Qué tan probable que es que sea castigado por las autoridades?",
+    "categoría": "Judicial"
+  },
+  {
+    "código": "prot1",
+    "nombre": "¿Ha participado Ud. en una manifestación o protesta pública? ¿Lo ha hecho algunas veces, casi nunca o nunca?",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "prot2",
+    "nombre": "¿En el último año, ha participado en una manifestación o protesta pública?  ¿Lo ha hecho algunas veces, casi nunca o nunca?",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "prot3",
+    "nombre": "¿En los ÚLTIMOS 12 MESES ha participado en una manifestación o protesta pública?",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "prot4",
+    "nombre": "¿Cuántas vecesha participado  en una manifestación o protesta pública?",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "prot6",
+    "nombre": "¿En los últimos 12 meses ha firmado alguna petición?",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "prot7",
+    "nombre": "¿En los últimos doce meses, ha participado en el bloqueo de alguna calle o espacio público como forma de protesta?",
+    "categoría": "Protesta"
+  },
+  {
+    "código": "prot8",
+    "nombre": "¿Usted leyó o compartió información política en los últimos 12 meses por alguna red social de la web como Twitter, Facebook u otra?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "q1",
+    "nombre": "Género",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q10",
+    "nombre": "¿En cuál de los siguientes rangos se encuentran los ingresos familiares mensuales de esta casa, incluyendo las remesas del exterior y el ingreso de todos los adultos e hijos que trabajan?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "q10a",
+    "nombre": "¿Recibe su familia remesas o giros del exterior?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "q10a1",
+    "nombre": "¿En qué utiliza generalmente el dinero de las remesas?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "q10b",
+    "nombre": "¿Hasta qué punto dependen los ingresos familiares de esta casa de las remesas del exterior?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "q10c",
+    "nombre": "¿Tiene usted familiares cercanos que antes vivieron en esta casa y que hoy estén viviendo en el exterior?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q10d",
+    "nombre": "Nivel de sutento que permite el salario y el total del ingreso familiar",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q10e",
+    "nombre": "En los últimos dos años, el ingreso de su hogar ha ha disminuido, aumentado o permanecido igual?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "q10f",
+    "nombre": "¿Cuál fue la principal razón por la que el ingreso de su hogar disminuyó en los últimos 12 meses?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "q10g",
+    "nombre": "Y cuánto dinero usted personalmente gana al mes por su trabajo o pensión?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "q10new",
+    "nombre": "¿En cuál de los siguientes rangos se encuentran los ingresos familiares mensuales de este hogar, incluyendo las remesas del exterior y el ingreso de todos los adultos e hijos que trabajan?",
+    "categoría": "Ingresos"
+  },
+  {
+    "código": "q11",
+    "nombre": "¿Cuál es su estado civil?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q11n",
+    "nombre": "¿Cuál es su estado civil? (Se incluye unión civil; se descarta si no existe en el país)",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q12",
+    "nombre": "Cuántos hijos(as) tiene?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q12a",
+    "nombre": "¿Cuántos hijos viven en su hogar en este momento?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q12b",
+    "nombre": "¿Cuántos hijos menores de 13 años viven en este hogar?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q12bn",
+    "nombre": "¿Cuántos niños  menores de 13 años viven en este hogar?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q12c",
+    "nombre": "¿Cuántas personas en total viven en su hogar en este momento?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q12f",
+    "nombre": "¿Cuántos hijos hombres/varones tiene?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q12m",
+    "nombre": "¿Cuántos hijas mujeres/niñas tiene?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q13",
+    "nombre": "¿Cuántos hijos debería tener una persona como usted en toda la vida?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q14",
+    "nombre": "¿Tiene usted intenciones de irse a vivir o a trabajar a otro país en los próximos 12 meses?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "q16",
+    "nombre": "¿Con que frecuencia se comunica con ellos?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "q2",
+    "nombre": "¿Cuál es su edad en años cumplidos?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q2d",
+    "nombre": "Día de nacimiento",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q2m",
+    "nombre": "Mes de nacimiento",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q2y",
+    "nombre": "En qué año nació usted?",
+    "categoría": "Datos personales"
+  },
+  {
+    "código": "q3",
+    "nombre": "Religión",
+    "categoría": "Religión"
+  },
+  {
+    "código": "q3cn",
+    "nombre": "Si usted es de alguna religión, ¿podría decirme cuál es su religión?",
+    "categoría": "Religión"
+  },
+  {
+    "código": "q4",
+    "nombre": "¿Cuántas veces ha asistido Ud. a la iglesia (culto, templo) durante el mes pasado?",
+    "categoría": "Religión"
+  },
+  {
+    "código": "q5a",
+    "nombre": "¿Con qué frecuencia asiste usted a servicios religiosos?",
+    "categoría": "Religión"
+  },
+  {
+    "código": "q5b",
+    "nombre": "Por favor, ¿podría decirme, qué tan importante es la religión en su vida?",
+    "categoría": "Religión"
+  },
+  {
+    "código": "r1",
+    "nombre": "¿Podría decirme si en su casa tienen Television?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "r12",
+    "nombre": "¿Podría decirme si en su casa tienen agua potable dentro de la casa?",
+    "categoría": "Servicios públicos"
+  },
+  {
+    "código": "r14",
+    "nombre": "¿Podría decirme si en su casa tienen cuarto de baño dentro de la casa?",
+    "categoría": "Servicios públicos"
+  },
+  {
+    "código": "r15",
+    "nombre": "¿Podría decirme si en su casa tienen computadora?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "r16",
+    "nombre": "¿Podría decirme si en su casa tienen televisor de pantalla plana?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "r18",
+    "nombre": "¿Podría decirme si en su casa tienen Internet de alta velocidad (banda ancha)?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "r26",
+    "nombre": "¿Está conectada a la red alcantarillado?",
+    "categoría": "Acueducto y alcantarillado"
+  },
+  {
+    "código": "r3",
+    "nombre": "¿Podría decirme si en su casa tienen refrigeradora (nevera)?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "r4",
+    "nombre": "¿Podría decirme si en su casa tienen teléfono convencional (no celular)?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "r4a",
+    "nombre": "¿Podría decirme si en su casa tienen teléfono celular?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "r5",
+    "nombre": "¿Podría decirme si en su casa tienen vehículo?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "r6",
+    "nombre": "¿Podría decirme si en su casa tienen lavadora de ropa?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "r7",
+    "nombre": "¿Podría decirme si en su casa tienen microondas?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "r8",
+    "nombre": "¿Podría decirme si en su casa tienen motocicletas?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "rac1a",
+    "nombre": "¿Alguna vez se ha sentido discriminado o tratado de manera injusta por su color de piel?",
+    "categoría": "Racismo"
+  },
+  {
+    "código": "rac1c",
+    "nombre": "Según los datos del Censo de Población del 2005, la gente negra es más pobre. ¿Usted cuál cree que es la principal razón de esto?",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "rac1ca",
+    "nombre": "las personas de piel oscura son más pobres que el resto de la población. ¿Cuál cree usted que es la principal razón de esto?",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "rac1d",
+    "nombre": "¿Ha usted vivido o presenciado situaciones en las que otra persona ha sido discriminada por su condición económica?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "rac1e",
+    "nombre": "¿Ha usted vivido o presenciado situaciones en las que otra persona ha sido discriminada por su género o sexo?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "rac2a",
+    "nombre": "En Colombia no hay racismo. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Racismo"
+  },
+  {
+    "código": "rac3a",
+    "nombre": "¿Usted piensa que en Colombia las personas negras son tratadas mejor, igual o peor que las demás personas en las escuelas, colegios y universidades?",
+    "categoría": "Discriminación"
+  },
+  {
+    "código": "rac3b",
+    "nombre": "¿Usted piensa que en Colombia las personas negras son tratadas mejor, igual o peor que las demás personas al buscar empleo?",
+    "categoría": "Racismo"
+  },
+  {
+    "código": "rac3c",
+    "nombre": "¿Usted piensa que en Colombia las personas negras son tratadas mejor, igual o que las demás personas por la policía?",
+    "categoría": "Racismo"
+  },
+  {
+    "código": "rac4",
+    "nombre": "¿Ud. cree que las personas negras son tratadas mucho mejor, mejor, igual, peor o mucho peor que las personas blancas?",
+    "categoría": "Racismo"
+  },
+  {
+    "código": "redist1",
+    "nombre": "El gobierno debe gastar más en ayudar a los pobres. ¿Hasta qué punto está de acuerdo o en desacuerdo con esta frase?",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "redist2",
+    "nombre": "Es injusto que los ricos paguen mucho dinero en impuestos, pero reciban muy poco a cambio en servicios sociales del Estado (como salud o vivienda). ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Impuestos"
+  },
+  {
+    "código": "redist3",
+    "nombre": "La mayoría de los desempleados podría encontrar un trabajo si quisiera. ¿Hasta qué punto está de acuerdo o en desacuerdo?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ros1",
+    "nombre": "El Estado colombiano, en lugar del sector privado, debería ser el dueño de las empresas e industrias más importantes del país",
+    "categoría": "Economía"
+  },
+  {
+    "código": "ros2",
+    "nombre": "El Estado colombiano, más que los individuos, debería ser el principal responsable de asegurar el bienestar de la gente",
+    "categoría": "Salud"
+  },
+  {
+    "código": "ros3",
+    "nombre": "El Estado colombiano, más que la empresa privada, debería ser el principal responsable de crear empleos.",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "ros4",
+    "nombre": "El Estado colombiano debe implementar políticas firmes para reducir la desigualdad de ingresos entre ricos y pobres.",
+    "categoría": "Economía"
+  },
+  {
+    "código": "ros5",
+    "nombre": "El estado colombiano, más que el sector privado, debería ser el responsable principal de las pensiones de jubilación",
+    "categoría": "Pensión"
+  },
+  {
+    "código": "ros6",
+    "nombre": "El estado colombiano, más que el sector privado, debería ser el responsable principal de los servicios de salud",
+    "categoría": "Salud"
+  },
+  {
+    "código": "sal1",
+    "nombre": "¿Está usted afiliado al POS (Plan Obligatorio de Salud)?",
+    "categoría": "Salud"
+  },
+  {
+    "código": "sal1a",
+    "nombre": "¿Tiene usted algún servicio de salud adicional al POS?",
+    "categoría": "Salud"
+  },
+  {
+    "código": "sal4",
+    "nombre": "¿En su POS, es usted cotizante o beneficiario?",
+    "categoría": "Salud"
+  },
+  {
+    "código": "sd2expec",
+    "nombre": "¿Usted diría que la calidad …. en su municipio supera sus expectativas, cumple sus expectativas, o no llena sus expectativas?",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "sd2new2",
+    "nombre": "Satisfacción con la calidad de las vías y carreteras",
+    "categoría": "Ordenamiento Territorial y regiones"
+  },
+  {
+    "código": "sd3new2",
+    "nombre": "Satisfacción con la calidad de las escuelas públicas",
+    "categoría": "Educación"
+  },
+  {
+    "código": "sd6new2",
+    "nombre": "Satisfacción con la calidad de los servicios médicos y de salud públicos?",
+    "categoría": "Salud"
+  },
+  {
+    "código": "sgl1",
+    "nombre": "¿Diría usted que los servicios de que el municipio está dando a la gente son…?",
+    "categoría": "Ordenamiento Territorial y regiones"
+  },
+  {
+    "código": "smedia1",
+    "nombre": "¿Tiene usted cuenta de Facebook?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "smedia2",
+    "nombre": "¿Con qué frecuencia ve contenido en Facebook?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "smedia3",
+    "nombre": "¿Con qué frecuencia ve información política en Facebook?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "smedia4",
+    "nombre": "¿Tiene usted cuenta de Twitter?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "smedia5",
+    "nombre": "¿Con qué frecuencia ve contenido en Twitter?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "smedia6",
+    "nombre": "¿Con qué frecuencia ve información política en Twitter?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "smedia7",
+    "nombre": "¿Tiene usted cuenta de WhatsApp?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "smedia8",
+    "nombre": "¿Con qué frecuencia usa WhatsApp?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "smedia9",
+    "nombre": "¿Con qué frecuencia ve información política en WhatsApp?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "snw1a",
+    "nombre": "¿usted conoce personalmente a algún funcionario electo?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "snw1b",
+    "nombre": "¿y ese cargo es a nivel local, a nivel departamental, o a nivel nacional?",
+    "categoría": "Elecciones"
+  },
+  {
+    "código": "soc1",
+    "nombre": "por cada 100 pesos que gana una persona rica y 100 que gana una persona pobre, cuánto debería pagar cada una en impuestos?",
+    "categoría": "Impuestos"
+  },
+  {
+    "código": "soc10",
+    "nombre": "en su opinión, ¿qué tienen que hacer los gobiernos para reducir la pobreza y desigualdad?",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "soc11",
+    "nombre": "¿Estaría dispuesto(a) a pagar más impuestos de los que actualmente paga para que el gobierno pueda invertir más en el Programa Familias en Acción?",
+    "categoría": "Impuestos"
+  },
+  {
+    "código": "soc12a",
+    "nombre": "En esta escala de 1 a10, donde 1 significa que defiende a los ricos y 10 que defiende a los pobres, dónde se ubican los políticos colombianos?",
+    "categoría": "Política"
+  },
+  {
+    "código": "soc12b",
+    "nombre": "Y usando la misma escala, donde 1 significa que defiende a los ricos y 10 que defiende a los pobres, dónde le gustaría a usted que se ubicaran los políticos colombianos?",
+    "categoría": "Política"
+  },
+  {
+    "código": "soc2a",
+    "nombre": "Dígame, por favor, ¿en cuál de las siguientes áreas debe invertir más dinero el gobierno?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "soc2b",
+    "nombre": "Y en segundo lugar , ¿en cuál de las siguientes áreas debe invertir más dinero el gobierno?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "soc3",
+    "nombre": "Ahora vamos a hablar sobre algunas de las formas en que el gobierno gasta el dinero de los impuestos. Vamos a comenzar con educación. ¿Qué piensa usted acerca de la calidad de la educación pública primaria y secundaria en Colombia?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "soc4",
+    "nombre": "En su opinión, para mejorar la calidad de la educación primaria y secundaria en Colombia, ¿qué debe hacer el gobierno?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "soc5",
+    "nombre": "¿Estaría dispuesto(a) a pagar más impuestos de los que actualmente paga para que el gobierno pueda gastar más en educación pública primaria y secundaria?",
+    "categoría": "Impuestos"
+  },
+  {
+    "código": "soc6",
+    "nombre": "En su opinión, para mejorar la calidad de las escuelas, ¿quién debe decidir cómo gastar el dinero que va para las escuelas?",
+    "categoría": "Educación"
+  },
+  {
+    "código": "soc7",
+    "nombre": "Ahora vamos a hablar de los servicios de salud. ¿Qué piensa usted de la calidad del servicio público de salud en Colombia? Es",
+    "categoría": "Salud"
+  },
+  {
+    "código": "soc8",
+    "nombre": "Para mejorar la calidad de los servicios de salud públicos en Colombia, ¿qué debería hacer el gobierno?",
+    "categoría": "Salud"
+  },
+  {
+    "código": "soc9",
+    "nombre": "Estaría dispuesto(a) a pagar más impuestos de los que actualmente paga para que el gobierno pueda gastar más en el servicio público de salud?",
+    "categoría": "Impuestos"
+  },
+  {
+    "código": "soct1",
+    "nombre": "¿Cómo calificaría la situación económica del país?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "soct2",
+    "nombre": "¿Considera usted que la situación económica actual del país es mejor, igual o peor que hace doce meses?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "soct3",
+    "nombre": "¿Cree Ud. que en los próximos doce meses la situación económica del país será mejor, igual o peor en los próximos 12 meses?",
+    "categoría": "Economía"
+  },
+  {
+    "código": "st1",
+    "nombre": "Satisfacción con: La policía nacional",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "st2",
+    "nombre": "Satisfacción con: Los juzgados o tribunales de justicia",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "st3",
+    "nombre": "Satisfacción con: La fiscalía",
+    "categoría": "Rama Judicial"
+  },
+  {
+    "código": "st4",
+    "nombre": "Satisfacción con: La alcaldía",
+    "categoría": "Rama Ejecutiva"
+  },
+  {
+    "código": "td1",
+    "nombre": "Siempre ha habido ricos y pobres y eso no se puede cambiar. ¿Hasta qué punto est",
+    "categoría": "Socioeconomía"
+  },
+  {
+    "código": "td2",
+    "nombre": "Es bueno que exista desigualdad para que las personas más pobres se esfuercen má",
+    "categoría": "Pobreza"
+  },
+  {
+    "código": "td3",
+    "nombre": "Estar muy cerca de alguien que tiene mucho más dinero que usted (por ejemplo en la calle o en un espectáculo) lo/a hace sentir incómodo/a.",
+    "categoría": "Economía"
+  },
+  {
+    "código": "td4",
+    "nombre": "Estar muy cerca de alguien que tiene mucho menos dinero que usted (por ejemplo en la calle o en un espectáculo) lo/a hace sentir incómodo/a.",
+    "categoría": "Economía"
+  },
+  {
+    "código": "td5",
+    "nombre": "Estaría dispuesto/a a pagar más impuestos si éstos se usaran para darle más a quien tiene menos.",
+    "categoría": "Economía"
+  },
+  {
+    "código": "vb1",
+    "nombre": "¿Tiene cédula de ciudadanía? ¿Está su cédula inscrita para votar?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "vb10",
+    "nombre": "¿Smpatiza con algún partido político?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "vb101n",
+    "nombre": "¿Por qué votaría usted nulo o blanco en esta elección presidencial?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "vb11",
+    "nombre": "¿Con cuál partido político simpatiza usted?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "vb12",
+    "nombre": "¿Y usted diría que su simpatía por ese partido [partido que mencionó en VB11] es…?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "vb2",
+    "nombre": "¿Votó en las pasadas elecciones presidenciales de 2002 (INDICAR AÑO)?",
+    "categoría": "Participación electoral"
+  },
+  {
+    "código": "vb20",
+    "nombre": "¿Si esta semana fueran las próximas elecciones presidenciales, qué haría usted?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "vb21",
+    "nombre": "¿Cuál es la forma en que usted cree que puede influir más para cambiar las cosas?",
+    "categoría": "Desarrollo"
+  },
+  {
+    "código": "vb2v",
+    "nombre": "¿Votó usted en la segunda vuelta de las elecciones presidenciales de 2018?",
+    "categoría": "Participación electoral"
+  },
+  {
+    "código": "vb3n",
+    "nombre": "¿Por quién votó para presidente en las últimas elecciones presidenciales de 2008?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "vb3n2",
+    "nombre": "¿Por quién votó para Presidente en segunda vuelta?",
+    "categoría": "Afinidad política"
+  },
+  {
+    "código": "vb4",
+    "nombre": "¿Por qué no votó usted en las pasadas elecciones presidenciales [No leer alterna",
+    "categoría": "Participación electoral"
+  },
+  {
+    "código": "vb4new",
+    "nombre": "¿Por qué no votó usted en las pasadas elecciones presidenciales? (alternativas nuevas)",
+    "categoría": "Participación electoral"
+  },
+  {
+    "código": "vb5",
+    "nombre": "Ahora dígame ¿Votó usted en las últimas elecciones para Alcalde en el 2003?",
+    "categoría": "Participación electoral"
+  },
+  {
+    "código": "vb50",
+    "nombre": "Los hombres son mejores líderes políticos que las mujeres",
+    "categoría": "Política"
+  },
+  {
+    "código": "vb51",
+    "nombre": "¿Quién cree usted que sería más corrupto como político: un hombre, una mujer, o ambos por igual?",
+    "categoría": "Género"
+  },
+  {
+    "código": "vb52",
+    "nombre": "Y si le toca a un político o a una política manejar la economía nacional, ¿quién va a hacer el mejor trabajo; un hombre, una mujer o no importa?",
+    "categoría": "Política"
+  },
+  {
+    "código": "vb53",
+    "nombre": "Las personas de piel oscura no son buenos líderes políticos.",
+    "categoría": "Política"
+  },
+  {
+    "código": "vb58",
+    "nombre": "¿Qué tan de acuerdo o en desacuerdo está usted con la siguiente frase? Cuando una madre trabaja para ganar dinero, los niños sufren.",
+    "categoría": "Familia"
+  },
+  {
+    "código": "vb6",
+    "nombre": "Y votó usted en las últimas elecciones para Congreso?",
+    "categoría": "Participación electoral"
+  },
+  {
+    "código": "vic1",
+    "nombre": "¿Ha sido víctima de algún acto de delincuencia en los últimos doce meses?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic101",
+    "nombre": "¿La mejor medida para enfrentar la delincuencia es crear programas de prevención.?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic102",
+    "nombre": "la mejor medida para enfrentar la delincuencia es hacer leyes más duras",
+    "categoría": "Rama Legislativa"
+  },
+  {
+    "código": "vic103",
+    "nombre": "¿La mejor medida para enfrentar la delincuencia es contratar seguridad privada?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic1ext",
+    "nombre": "¿Ha sido usted víctima de algún acto de delincuencia en los últimos 12 meses?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic1exta",
+    "nombre": "¿Cuántas veces ha sido usted víctima de un acto delincuencial en los últimos 12 meses?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic1hogar",
+    "nombre": "¿Alguna otra persona que vive en su hogar ha sido víctima de algún acto de delincuencia?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic2",
+    "nombre": "¿Qué tipo de acto delincuencial sufrió?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic2aa",
+    "nombre": "¿Podría decirme en qué lugar ocurrió el último acto delincuencial del cual usted fue víctima?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic40",
+    "nombre": "¿Ha limitado los lugares donde va de compras?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "vic41",
+    "nombre": "¿Ha limitado los lugares de recreación?",
+    "categoría": "Seguridad"
+  },
+  {
+    "código": "vic43",
+    "nombre": "¿Ha sentido la necesidad de cambiar de barrio por temor a la delincuencia?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vic45",
+    "nombre": "¿Ha cambiado su lugar de empleo?",
+    "categoría": "Laboral"
+  },
+  {
+    "código": "vicbar1",
+    "nombre": "¿Han ocurrido robos en los últimos 12 meses en su barrio, villa o colonia?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vicbar1f",
+    "nombre": "¿Cuántas veces ocurrió ese acto de delicuencia de hace 12 meses?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vicbar3",
+    "nombre": "¿Han ocurrrido ventas de drogas ilegales en los últimos 12 meses en su barrio, villa o colonia?",
+    "categoría": "Drogas"
+  },
+  {
+    "código": "vicbar4",
+    "nombre": "¿han ocurrido extorsiones o cobro de impuestos de guerra en los últimos 12 meses en su barrio, villa o colonia?",
+    "categoría": "Impuestos"
+  },
+  {
+    "código": "vicbar7",
+    "nombre": "¿Han ocurrido asesinatos en lo  en los últimos 12 meses en su barrio, villa o colonia?",
+    "categoría": "Delicuencia"
+  },
+  {
+    "código": "vol202",
+    "nombre": "Suponga que una persona mata a alguien que le ha violado a un/a hija/o. ¿Usted aprobaría que mate al violador, ó no aprobaría que lo mate pero lo entendería, ó no lo aprobaría ni lo entendería?",
+    "categoría": "Ética"
+  },
+  {
+    "código": "vol203",
+    "nombre": "si hay una persona que mantiene asustada a su comunidad y alguien lo mata.  ¿Usted lo aprobaría, o no lo aprobaría pero lo entendería, o no lo aprobaría ni lo entendería?",
+    "categoría": "Ética"
+  },
+  {
+    "código": "vol204",
+    "nombre": "Si un grupo de personas comienzan a hacer limpiezas sociales, es decir, matar gente que algunos consideran indeseable. ¿Usted aprobaría que maten a gente considerada indeseable, ó no aprobaría que la maten pero lo entendería, ó no lo aprobaría ni lo entendería?",
+    "categoría": "Ética"
+  },
+  {
+    "código": "vol205",
+    "nombre": "Si la policía tortura a un delincuente para conseguir información sobre un grupo de crimen organizado muy peligroso. ¿Usted aprobaría que la policía torture a un delincuente, ó no lo aprobaría pero lo entendería, ó no lo aprobaría ni lo entendería?",
+    "categoría": "Fuerza pública"
+  },
+  {
+    "código": "vol206",
+    "nombre": "suponga que un hombre le pega a su esposa porque ésta le ha sido infiel con otro  ¿Usted lo aprobaría, o no lo aprobaría pero lo entendería, o no lo aprobaría ni lo entendería?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "vol207",
+    "nombre": "suponga que para corregirlo y educarlo un padre le pega a su hijo  ¿Usted lo aprobaría, o no lo aprobaría pero lo entendería, o no lo aprobaría ni lo entendería?",
+    "categoría": "Familia"
+  },
+  {
+    "código": "w14a",
+    "nombre": "¿Está usted de acuerdo con un aborto cuando peligra la salud de la madre?",
+    "categoría": "Aborto"
+  },
+  {
+    "código": "w14b",
+    "nombre": "¿Está usted de acuerdo con un aborto en caso de incesto o violación?",
+    "categoría": "Aborto"
+  },
+  {
+    "código": "w14c",
+    "nombre": "¿Está usted de acuerdo con un aborto durante los primeros meses de embarazo?",
+    "categoría": "Aborto"
+  },
+  {
+    "código": "w14d",
+    "nombre": "¿Cree usted que se justificaría un aborto siempre cuando exista malformación del Feto?",
+    "categoría": "Aborto"
+  },
+  {
+    "código": "w8",
+    "nombre": ".¿A la hora de votar por alguien, quién le inspira más confianza: un hombre o una mujer?",
+    "categoría": "Votación"
+  },
+  {
+    "código": "wc1",
+    "nombre": "¿Ud. ha perdido algún miembro de su familia o pariente cercano a consecuencia del conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "wc1t",
+    "nombre": "¿Esto sucedió en los últimos 12 meses?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "wc2",
+    "nombre": "Y ¿Algún miembro de su familia tuvo que refugiarse o abandonar su lugar de vivienda  a consecuencia del conflicto armado?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "wc2t",
+    "nombre": "¿Esto sucedió en los últimos 12 meses?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "wc3",
+    "nombre": "¿Por razones de conflicto algún miembro de su familia tuvo que irse del país?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "wc3t",
+    "nombre": "¿Esto sucedió en los últimos 12 meses?",
+    "categoría": "Conflicto armado"
+  },
+  {
+    "código": "wf1",
+    "nombre": "¿Usted o alguien en su casa recibe ayuda regular/periódica en dinero, alimento o en productos de parte del gobierno, sin contar las pensiones?",
+    "categoría": "Subsidio"
+  },
+  {
+    "código": "wt1",
+    "nombre": "Qué tan preocupada está usted de que haya un ataque violento por terroristas en Colombia en los próximos 12 meses?",
+    "categoría": "Terrorismo"
+  },
+  {
+    "código": "wt2",
+    "nombre": "¿Qué tan preocupada está de que usted o alguien de su familia sea víctima de un atentado?",
+    "categoría": "Terrorismo"
+  },
+  {
+    "código": "www1n",
+    "nombre": "¿Qué tan frecuentemente usa usted Internet?",
+    "categoría": "Comunicaciones, medios y tecnologías de la información"
+  },
+  {
+    "código": "y1",
+    "nombre": "Dentro de cinco años, ¿se ve usted desempeñando algún papel en la política del pais?",
+    "categoría": "Política"
+  },
+  {
+    "código": "y2",
+    "nombre": "¿Qué temas o problemas le preocupan con frecuencia? (NO leer alternativas)",
+    "categoría": "Salud mental"
+  },
+  {
+    "código": "y3",
+    "nombre": "¿El país se está encaminando en la dirección correcta o equivocada?",
+    "categoría": "Desarrollo"
+  },
+  {
+    "código": "y4",
+    "nombre": "Motivo de la protesta en la cual participó",
+    "categoría": "Protesta"
+  }
+
+  ]
+}

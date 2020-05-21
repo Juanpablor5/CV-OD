@@ -1,9 +1,9 @@
 function bubbleChart() {
     const width = 240;
-    const height = 150;
+    const height = 160;
 
     // location to centre the bubbles
-    const centre = { x: width/2 - 50, y: height/2 - 60 };
+    const centre = { x: width/2 - 50, y: height/2 - 45 };
 
     // strength to apply to the position forces
     const forceStrength = 0.03;
@@ -33,7 +33,7 @@ function bubbleChart() {
     // set up colour scale
     const fillColour = d3.scaleOrdinal()
     .domain(["1", "2", "3", "4", "5"])
-    .range(["#1361C1", "#009900", "#4C0099", "#FFDF00", "#E13B2A"]);
+    .range(["#089baa", "#009900", "#4C0099", "#FFDF00", "#E13B2A"]);
 
     // data manipulation function takes raw data from csv and converts it into an array of node objects
     // each node will store data and visualisation values to draw a bubble

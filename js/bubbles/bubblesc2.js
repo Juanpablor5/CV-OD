@@ -1,6 +1,6 @@
 function bubbleChart() {
-    const width = 240;
-    const height = 150;
+    const width = 260;
+    const height = 170;
 
     // location to centre the bubbles
     const centre = { x: width/2 - 50, y: height/2 - 60 };
@@ -33,7 +33,7 @@ function bubbleChart() {
     // set up colour scale
     const fillColour = d3.scaleOrdinal()
     .domain(["1", "2", "3", "4", "5"])
-    .range(["#E13B2A", "#009900", "#4C0099", "#FFDF00", "#1361C1"]);
+    .range(["#3abae9", "#5DC1DB", "#7FC8CD", "#A2CFBF", "#C4D6B0"]);
 
     // data manipulation function takes raw data from csv and converts it into an array of node objects
     // each node will store data and visualisation values to draw a bubble
