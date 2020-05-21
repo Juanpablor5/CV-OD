@@ -80,143 +80,138 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
       fetch("data/json/CV/Anios.json")
         .then((resp) => resp.json())
         .then((anios) => {
-          if (congre_selec.length > 0) {
-            anio_selected.forEach((anio_selec) => {
-              cong_anio.push(
-                anios.find((anio) => anio.anio === parseInt(anio_selec))
-                  .congresista
-              );
-            });
-            fetch("data/json/CV/Proyectos.json")
-              .then((resp) => resp.json())
-              .then((proyectos) => {
-                let temp_id = [];
-                let proy_id = [];
-                for (let i = 0; i < cong_anio.length; i++) {
-                  const anio = cong_anio[i];
-                  congre_selec.forEach((cong_selec) => {
-                    anio.forEach((congre) => {
-                      if (cong_selec == congre.id) {
-                        congre.proyecto.forEach((proy) => {
-                          temp_id.push(proy.id);
-                        });
-                      }
-                    });
-                  });
-                }
-                $.each(temp_id, function (i, el) {
-                  if ($.inArray(el, proy_id) === -1) proy_id.push(el);
-                });
-                proy_id.forEach((pr_id) => {
-                  proy_fil.proyecto.push(
-                    proyectos.proyecto.find((pry) => pry.id === pr_id)
-                  );
-                });
-                proy_fil.proyecto.forEach((proyecto) => {
-                  proyecto.etiquetas.forEach((etiqueta) => {
-                    proy_etiq.forEach((seleccionada) => {
-                      if (seleccionada.nombre == etiqueta.nombre) {
-                        seleccionada.proyectos.push({
-                          id: proyecto.id,
-                          votos: [0, 0, 0, 0],
-                        });
-                      }
-                    });
-                  });
-                });
-              });
-          } else {
-            anio_selected.forEach((anio_selec) => {
-              cong_anio.push(
-                anios.find((anio) => anio.anio === parseInt(anio_selec))
-                  .congresista
-              );
-            });
-            fetch("data/json/CV/Proyectos.json")
-              .then((resp) => resp.json())
-              .then((proyectos) => {
-                let temp_id = [];
-                let proy_id = [];
-                for (let i = 0; i < cong_anio.length; i++) {
-                  const element = cong_anio[i];
-                  element.forEach((congre) => {
-                    congre.proyecto.forEach((proy) => {
-                      temp_id.push(proy.id);
-                    });
-                  });
-                }
-                $.each(temp_id, function (i, el) {
-                  if ($.inArray(el, proy_id) === -1) proy_id.push(el);
-                });
-
-                proy_id.forEach((pr_id) => {
-                  proy_fil.proyecto.push(
-                    proyectos.proyecto.find((pry) => pry.id === pr_id)
-                  );
-                });
-                proy_fil.proyecto.forEach((proyecto) => {
-                  proyecto.etiquetas.forEach((etiqueta) => {
-                    proy_etiq.forEach((seleccionada) => {
-                      if (seleccionada.nombre == etiqueta.nombre) {
-                        seleccionada.proyectos.push({
-                          id: proyecto.id,
-                          votos: [0, 0, 0, 0],
-                        });
-                      }
-                    });
-                  });
-                });
-              });
-          }
-        })
-        .then((_) => {
-          console.log(proy_etiq);
-          fetch(`data/json/CV/Votos_congresistas/Votos_Unido.json`)
+          anio_selected.forEach((anio_selec) => {
+            cong_anio.push(
+              anios.find((anio) => anio.anio === parseInt(anio_selec))
+                .congresista
+            );
+          });
+          fetch("data/json/CV/Proyectos.json")
             .then((resp) => resp.json())
-            .then((data_vot) => {
-              proy_etiq.forEach((eti_selec) => {
-                let cont_si_tot = 0;
-                let cont_no_tot = 0;
-                let cont_abs_tot = 0;
-                let cont_asis_tot = 0;
-                data_vot.congresista.forEach((congresista) => {
-                  congresista.proyecto.forEach((proyecto) => {
-                    let cont_si = 0;
-                    let cont_no = 0;
-                    let cont_abs = 0;
-                    let cont_asis = 0;
-                    eti_selec.proyectos.forEach((proy_selec) => {
-                      if (proyecto.id === proy_selec.id) {
-                        cont_si += proyecto.voto.si;
-                        cont_no += proyecto.voto.no;
-                        cont_abs += proyecto.voto.se_abstuvo;
-                        cont_asis += proyecto.voto.no_asistio;
-
-                        proy_selec.votos[0] += cont_si;
-                        proy_selec.votos[1] += cont_no;
-                        proy_selec.votos[2] += cont_abs;
-                        proy_selec.votos[3] += cont_asis;
-                      }
-                    });
-                    cont_si_tot += cont_si;
-                    cont_no_tot += cont_no;
-                    cont_abs_tot += cont_abs;
-                    cont_asis_tot += cont_asis;
+            .then((proyectos) => {
+              let temp_id = [];
+              let proy_id = [];
+              for (let i = 0; i < cong_anio.length; i++) {
+                const anio = cong_anio[i];
+                anio.forEach((congre) => {
+                  congre.proyecto.forEach((proy) => {
+                    if (congre_selec.length > 0) {
+                      congre_selec.forEach((cong_selec) => {
+                        if (cong_selec == congre.id) {
+                          congre.proyecto.forEach((proy) => {
+                            temp_id.push(proy.id);
+                          });
+                        }
+                      });
+                    } else {
+                      temp_id.push(proy.id);
+                    }
                   });
                 });
-                flor_si.push({ Tema: eti_selec.nombre, abs: cont_si_tot });
-                flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });
-                flor_abs.push({ Tema: eti_selec.nombre, abs: cont_abs_tot });
-                flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
+              }
+              $.each(temp_id, function (i, el) {
+                if ($.inArray(el, proy_id) === -1) proy_id.push(el);
+              });
+
+              proy_id.forEach((pr_id) => {
+                proy_fil.proyecto.push(
+                  proyectos.proyecto.find((pry) => pry.id === pr_id)
+                );
+              });
+              proy_fil.proyecto.forEach((proyecto) => {
+                proyecto.etiquetas.forEach((etiqueta) => {
+                  proy_etiq.forEach((seleccionada) => {
+                    if (seleccionada.nombre == etiqueta.nombre) {
+                      seleccionada.proyectos.push({
+                        id: proyecto.id,
+                        votos: [0, 0, 0, 0],
+                      });
+                    }
+                  });
+                });
               });
             })
             .then((_) => {
-              flower_si(flor_si);
-              flower_no(flor_no);
-              flower_abs(flor_abs);
-              flower_asis(flor_asis);
-              // let t1 = performance.now()
-              // console.log("El proceso de filtrado tardó " + (t1 - t0) + " milisegundos.")
+              fetch(`data/json/CV/Votos_congresistas/Votos_Unido.json`)
+                .then((resp) => resp.json())
+                .then((data_vot) => {
+                  // console.log(proy_etiq)
+                  // alert(JSON.stringify(proy_etiq))
+                  proy_etiq.forEach((eti_selec) => {
+                    let cont_si_tot = 0;
+                    let cont_no_tot = 0;
+                    let cont_abs_tot = 0;
+                    let cont_asis_tot = 0;
+
+                    data_vot.congresista.forEach((congresista) => {
+                      if (congre_selec.length > 0) {
+                        congre_selec.forEach(cong_selec => {
+                          if(cong_selec == congresista.id){
+                            congresista.proyecto.forEach((proyecto) => {
+                              let cont_si = 0;
+                              let cont_no = 0;
+                              let cont_abs = 0;
+                              let cont_asis = 0;
+                              eti_selec.proyectos.forEach((proy_selec) => {
+                                if (proyecto.id === proy_selec.id) {
+                                  cont_si += proyecto.voto.si;
+                                  cont_no += proyecto.voto.no;
+                                  cont_abs += proyecto.voto.se_abstuvo;
+                                  cont_asis += proyecto.voto.no_asistio;
+    
+                                  proy_selec.votos[0] += cont_si;
+                                  proy_selec.votos[1] += cont_no;
+                                  proy_selec.votos[2] += cont_abs;
+                                  proy_selec.votos[3] += cont_asis;
+                                }
+                              });
+                              cont_si_tot += cont_si;
+                              cont_no_tot += cont_no;
+                              cont_abs_tot += cont_abs;
+                              cont_asis_tot += cont_asis;
+                            });
+                          }
+                        });
+                      } else {
+                        congresista.proyecto.forEach((proyecto) => {
+                          let cont_si = 0;
+                          let cont_no = 0;
+                          let cont_abs = 0;
+                          let cont_asis = 0;
+                          eti_selec.proyectos.forEach((proy_selec) => {
+                            if (proyecto.id === proy_selec.id) {
+                              cont_si += proyecto.voto.si;
+                              cont_no += proyecto.voto.no;
+                              cont_abs += proyecto.voto.se_abstuvo;
+                              cont_asis += proyecto.voto.no_asistio;
+
+                              proy_selec.votos[0] += cont_si;
+                              proy_selec.votos[1] += cont_no;
+                              proy_selec.votos[2] += cont_abs;
+                              proy_selec.votos[3] += cont_asis;
+                            }
+                          });
+                          cont_si_tot += cont_si;
+                          cont_no_tot += cont_no;
+                          cont_abs_tot += cont_abs;
+                          cont_asis_tot += cont_asis;
+                        });
+                      }
+                    });
+                    flor_si.push({ Tema: eti_selec.nombre, abs: cont_si_tot });
+                    flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });                    
+                    flor_abs.push({ Tema: eti_selec.nombre, abs: cont_abs_tot });
+                    flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
+                  });
+                })
+                .then((_) => {
+                  flower_si(flor_si);
+                  flower_no(flor_no);
+                  flower_abs(flor_abs);
+                  flower_asis(flor_asis);
+                  // let t1 = performance.now()
+                  // console.log("El proceso de filtrado tardó " + (t1 - t0) + " milisegundos.")
+                });
             });
         });
     });
