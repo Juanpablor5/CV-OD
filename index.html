@@ -91,7 +91,7 @@
                 $(this).prop('Counter',0).animate({
                 Counter: $(this).text()
                 }, {
-                duration: 7000,
+                duration: 12000,
                 easing: 'swing',
                 step: function (now) {
                     $(this).text(commaSeparateNumber(Math.ceil(now)));
@@ -281,7 +281,7 @@ window.onclick = function(event) {
 <!--filtro por años -->
 
 <article id="slide-8" class="slide slide--text" >
-  <div class="slide__inner" style="text-align: center;" >
+  <div id="anos" class="slide__inner" style="text-align: center;" >
     <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
       <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>5</b></mark> Temporalidad
       </p>
@@ -508,7 +508,7 @@ window.onclick = function(event) {
       <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
         Los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>ciudadanos</b></mark>, teniendo en cuenta el comportmiento de los congresistas:
         </p>
-      
+      <button onclick="window.location.reload()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Refresh page</button>
   </div>
 </article>
 
