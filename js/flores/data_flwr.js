@@ -46,7 +46,8 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     );
   }
 
-  let proy_etiq = [];
+  // let proy_etiq = [];
+  proy_etiq = [];
   let cong_anio = [];
 
   let congre_selec = [];
