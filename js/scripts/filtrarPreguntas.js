@@ -1,9 +1,3 @@
-fetch("data/json/OD/preguntas.json")
-    .then((resp) => resp.json())
-    .then((data) => {
-      mostrarPreguntas(data)
-    });
-
 $("#btn_anios").click(function () {
 
   let botonAños = document.getElementById("btn_anios");
