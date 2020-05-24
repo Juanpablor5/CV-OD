@@ -2,12 +2,7 @@ $("#btn_anios").click(function () {
 
   document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
 
-  let botonAños = document.getElementById("btn_anios");
-  let botonEtiquetas = document.getElementById("btn_etiquetas");
-  let listaAños = document.getElementById("anios");
-  let listaEtiquetas = document.getElementById("etiquetas");
   let prePreguntas = []
-  let preguntasFinales = []
   let otherObj = undefined
 
   let etiquetasSeleccionadas = Array.from(etiquetas.selectedOptions).map(
@@ -17,7 +12,6 @@ $("#btn_anios").click(function () {
   let aniosEscogidos = Array.from(anios.selectedOptions).map(
     (option) => option.value
   );
-
 
   setTimeout(() => {
     let object = [];
