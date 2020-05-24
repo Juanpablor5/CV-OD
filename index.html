@@ -23,12 +23,63 @@
 <!-- partial:index.partial.html -->
 
 <!-- Imagen congreso inicio -->
+<div id="mySidenav" class="sidenav">
+  <a id="about">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" style="margin-top: 35px;"></i>  
+        </div>
+        <div>
+          <p style="font-size: 18px; font-family: 'Questrial', serif; font-weight: normal; margin-top: 10px;"> <i class="fas fa-search" style="font-size: 20px; right: 0;"></i> Sigue tu consulta</p>
+          <p style="font-size: 12px; font-family: 'Questrial', serif; font-weight: lighter;">Mira los filtros aplicados abajo </p>    
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="blog">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>  
+        </div>
+        <div>
+          <p id="aniosfilter" style="font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Años: sin filtro.</p>    
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="projects">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>  
+        </div>
+        <div>
+          <textarea class="scrollabletextbox"  id="temasfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Temas: sin filtro.</textarea>    
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="contact">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>  
+        </div>
+        <div>
+          <textarea class="scrollabletextbox" id="congresfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Congresistas: sin filtro.</textarea>    
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
 
 <article id="slide-0" class="slide slide--text slide--locked"  style=" background-image:url(assets/img/congreso.png); opacity: 1;" >
 
   <div class="slide__inner" style="border: 2px dashed white; "></div>
 
-
+  
 
 </article>
 
@@ -297,10 +348,10 @@ window.onclick = function(event) {
             <script src="js/scripts/selectYear.js"></script>
             <script src="js/scripts/slimselect.js"></script>
           </select>
-          <button id="btn_anios" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;" >Seleccionar</button>
+          <button id="btn_anios" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;">Seleccionar</button>
         </div>
       </div>
-
+      <i id="spinneranios" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 60px;"></i>
   </div>
 </article>
 

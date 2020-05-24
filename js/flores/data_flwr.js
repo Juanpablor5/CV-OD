@@ -14,13 +14,26 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     (option) => option.value
   );
 
+  var element1 = document.getElementById("temasfilter");
+  element1.innerHTML = "Temas: " + String(eti_selected);
+
+  if (eti_selected.length > 0) {
+    document.getElementById("spinneranios").style.display = "none";
+  }
+
   let anio_selected = Array.from(anios.selectedOptions).map(
     (option) => option.value
   );
 
+  var element2 = document.getElementById("aniosfilter");
+  element2.innerHTML = "Años: " + String(anio_selected);
+
   let cong_selected = Array.from(congresistas.selectedOptions).map(
     (option) => option.value
   );
+
+  var element3 = document.getElementById("congresfilter");
+  element3.innerHTML = "Congresistas: " + String(cong_selected);
 
   if (
     anio_selected.length == 0 ||
