@@ -43,10 +43,10 @@ $("#btn_etiquetas, #btn_anios").click(function () {
                   break;
               }
             }
-            llego = true
           });
+          llego = true
         }
-        if (preguntasFinales.length == 0 && llego==false) {
+        if (preguntasFinales.length == 0 && !llego) {
           preguntasAnio.forEach(pregunta => {
             object.push({ text: pregunta.nombre });
           });
@@ -57,7 +57,6 @@ $("#btn_etiquetas, #btn_anios").click(function () {
             object.push({ text: pregunta.nombre });
           });
         }
-        console.log(object)
         let select = new SlimSelect({
           select: "#preguntas2",
           placeholder: "Preguntas",
