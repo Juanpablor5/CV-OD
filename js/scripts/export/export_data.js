@@ -45,12 +45,13 @@ $("#btn_export").click(function () {
           const congresista = con_sel[j];
           for (let k = 0; k < anio_sel.length; k++) {
             const anio = anio_sel[k];
-            
+            let cadena = anio+','+proyecto+','+congresista;
+            export_id.push(cadena)
           }
         }
       }
 
-      console.log(first, second, third)
+      console.log(export_id)
 
       // var rawFile = new XMLHttpRequest();
       // let id_export = [];
