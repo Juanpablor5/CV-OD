@@ -1,6 +1,4 @@
-$("#btn_etiquetas").click(function () {
-
-  document.getElementById("sec_preg").innerHTML = '<select id="preguntas3" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
+$("#btn_etiquetas, #btn_anios").click(function () {
 
   let prePreguntas = []
   let preguntasFinales = []
@@ -34,10 +32,43 @@ $("#btn_etiquetas").click(function () {
             }
           }
         }
+        for (let j = 0; j < preguntasPorEtiquetas.length; j++) {
+          let pregunta = preguntasPorEtiquetas[j];
+          for (let i=0; i<aniosEscogidos.length; i++) {
+            let anioEscogido = aniosEscogidos[i];
+            if (anioEscogido == pregunta[anioEscogido]) {
+                otherObj = {año: anioEscogido, codigo: pregunta["codigo"], nombre: pregunta["nombre"], etiqueta: pregunta["categoria"]};
+                preguntasFinales.push(otherObj);
+                break;
+            }
+          }
+        }
         preguntasPorEtiquetas.forEach(pregunta => {
-          neObject.push({ text: pregunta.nombre });
+          let etiqueta = pregunta.etiqueta;
+          for (let i=0; i<aniosEscogidos.length; i++) {
+            let anioEscogido = aniosEscogidos[i];
+            if (anioEscogido == pregunta[anioEscogido]) {
+                otherObj = {año: anioEscogido, codigo: pregunta["codigo"], nombre: pregunta["nombre"], etiqueta: pregunta["categoria"]};
+                preguntasFinales.push(otherObj);
+                break;
+            }
+          }
         });
-        console.log(neObject)
+        //console.log(preguntasFinales)
+        if (preguntasFinales.length == 0) {
+          //console.log("Entra")
+          document.getElementById("sec_preg").innerHTML = '<select id="preguntas3" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
+          preguntasPorEtiquetas.forEach(pregunta => {
+            neObject.push({ text: pregunta.nombre });
+          });
+        }
+        else {
+          document.getElementById("sec_preg").innerHTML = '<select id="preguntas3" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
+          preguntasFinales.forEach(pregunta => {
+            neObject.push({ text: pregunta.nombre });
+          });
+        }
+        //console.log(neObject)
         let select = new SlimSelect({
           select: "#preguntas3",
           placeholder: "Preguntas",
@@ -51,10 +82,4 @@ $("#btn_etiquetas").click(function () {
       });
   }, 300);
 });
-
-
-
-
-
-
 

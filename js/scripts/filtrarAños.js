@@ -1,9 +1,12 @@
-$("#btn_anios").click(function () {
+$("#btn_etiquetas, #btn_anios").click(function () {
 
   document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
 
-  let prePreguntas = []
-  let otherObj = undefined
+  let preguntasAnio = [];
+  let preguntasFinales = [];
+  let otherObj = undefined;
+  let newObj = undefined;
+  let llego = false;
 
   let etiquetasSeleccionadas = Array.from(etiquetas.selectedOptions).map(
     (option) => option.value
@@ -21,18 +24,39 @@ $("#btn_anios").click(function () {
         for (let j = 0; j < data.preguntas.length; j++) {
           let pregunta = data.preguntas[j];
           for (let i=0; i<aniosEscogidos.length; i++) {
-
             let anioEscogido = aniosEscogidos[i];
             if (anioEscogido == pregunta[anioEscogido]) {
                 otherObj = {año: anioEscogido, codigo: pregunta["codigo"], nombre: pregunta["nombre"], etiqueta: pregunta["categoria"]};
-                prePreguntas.push(otherObj);
+                preguntasAnio.push(otherObj);
                 break;
             }
           }
         }
-        prePreguntas.forEach(pregunta => {
-          object.push({ text: pregunta.nombre });
-        });
+        if (etiquetasSeleccionadas.length > 0) {
+          preguntasAnio.forEach(pregunta => {
+            let etiqueta = pregunta.etiqueta;
+            for (let i=0; i<etiquetasSeleccionadas.length; i++) {
+              let etiquetasSeleccionada = etiquetasSeleccionadas[i];
+              if (etiquetasSeleccionada === etiqueta) {
+                  newObj = {año: pregunta.año, codigo: pregunta.codigo, nombre: pregunta.nombre, etiqueta: etiqueta};
+                  preguntasFinales.push(newObj);
+                  break;
+              }
+            }
+            llego = true
+          });
+        }
+        if (preguntasFinales.length == 0 && llego==false) {
+          preguntasAnio.forEach(pregunta => {
+            object.push({ text: pregunta.nombre });
+          });
+        }
+        else {
+          document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
+          preguntasFinales.forEach(pregunta => {
+            object.push({ text: pregunta.nombre });
+          });
+        }
         console.log(object)
         let select = new SlimSelect({
           select: "#preguntas2",
@@ -47,12 +71,4 @@ $("#btn_anios").click(function () {
       });
   }, 300);
 });
-
-    //console.log(prePreguntas)
-    //console.log(prePreguntas.length)
-
-    //console.log(preguntasFinales)
-
-
-
 
