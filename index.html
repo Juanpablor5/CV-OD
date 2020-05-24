@@ -23,12 +23,63 @@
 <!-- partial:index.partial.html -->
 
 <!-- Imagen congreso inicio -->
+<div id="mySidenav" class="sidenav">
+  <a id="about">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" style="margin-top: 35px;"></i>  
+        </div>
+        <div>
+          <p style="font-size: 18px; font-family: 'Questrial', serif; font-weight: normal; margin-top: 10px;"> <i class="fas fa-search" style="font-size: 20px; right: 0;"></i> Sigue tu consulta</p>
+          <p style="font-size: 12px; font-family: 'Questrial', serif; font-weight: lighter;">Mira los filtros aplicados abajo </p>    
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="blog">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>  
+        </div>
+        <div>
+          <p id="aniosfilter" style="font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Años: sin filtro.</p>    
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="projects">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>  
+        </div>
+        <div>
+          <textarea class="scrollabletextbox"  id="temasfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Temas: sin filtro.</textarea>    
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="contact">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>  
+        </div>
+        <div>
+          <textarea class="scrollabletextbox" id="congresfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Congresistas: sin filtro.</textarea>    
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
 
 <article id="slide-0" class="slide slide--text slide--locked"  style=" background-image:url(assets/img/congreso.png); opacity: 1;" >
 
   <div class="slide__inner" style="border: 2px dashed white; "></div>
 
-
+  
 
 </article>
 
@@ -42,7 +93,7 @@
   <div class="slide__inner">
     <h1 style= "font-family: 'Questrial', serif;">¡Bienvenidos a Civis Sum!</h1>
     <h4 style="margin-top: 25px; font-weight: normal; font-family: 'Questrial', serif; text-shadow: 0 0 8px #a1a3a5;">¿Representa el Congreso de la República a los ciudadanos?</h4>
-    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Con Civis sum podrás ver como representa el congreso de la república a los ciudadanos durante los ultimos 15 años, podrás encontrar puntos de interés al cambiar los años, los temas e incluso los congresistas o partido político. </p>
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Con Civis Sum podrás ver como representa el Conngreso de la República a los ciudadanos durante los ultimos 15 años. Podrás encontrar puntos de interés al cambiar los años, los temas e incluso los congresistas o partido político. </p>
     <p class="demo-arrow">&darr;</p>
     <p class="demo-instructions" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter; text-align: justify;" >Empecemos...</p>
 
@@ -68,6 +119,11 @@
 
     <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de datos procesados</p>
 
+    <p>
+      <button id="btn_datos_OD" class="btn" style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+    </p>
+  
+
     <div style="width: 100%; align-content: center; justify-content: center; text-align: center; margin-top: 120px;">
       <p style="font-family: 'Questrial', serif; width: 100%; text-align: center;">Visión del Ciudadano</p>
       <p class="demo-arrow" style="text-shadow: 0 0 8px #a1a3a5; margin-top: -25px;">&darr;</p>
@@ -91,7 +147,7 @@
                 $(this).prop('Counter',0).animate({
                 Counter: $(this).text()
                 }, {
-                duration: 7000,
+                duration: 12000,
                 easing: 'swing',
                 step: function (now) {
                     $(this).text(commaSeparateNumber(Math.ceil(now)));
@@ -107,6 +163,11 @@
         }
       </script>
     <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de datos procesados</p>
+
+    <p>
+      <button id="btn_datos_CV" class="btn" style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+    </p>
+
     <div style="width: 100%; align-content: center; justify-content: center; text-align: center; margin-top: 120px;">
       <p style="font-family: 'Questrial', serif; width: 100%; text-align: center;">Visión del Congreso</p>
       <p class="demo-arrow" style="text-shadow: 0 0 8px #a1a3a5; margin-top: -25px;">&darr;</p>
@@ -120,7 +181,7 @@
 
 
     <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>1</b></mark> Número de preguntas por temas de 2004 al 2018
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>1</b></mark> Número de preguntas, asociadas por temáticas, entre los años 2004 y 2018
       </p>
 
       <div id = 'MyVis1' style="width: fit-content;">
@@ -128,7 +189,7 @@
 
       </div>
       <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-        OD ha realizado más de <mark style="background-color: #089baa; color: white; font-size: 23px;" ></b>964</b></mark> preguntas de <mark style="background-color: #089baa; color: white; font-size: 23px;"></b>87</b></mark>  temáticas diferentes que se le han hecho a los ciudadanos de diferentes regiones de Colombia.
+        OD ha realizado más de <mark style="background-color: #089baa; color: white; font-size: 23px;" ></b>964</b></mark> preguntas asociadas a <mark style="background-color: #089baa; color: white; font-size: 23px;"></b>87</b></mark>  temáticas diferentes, con el objetivo de conocer la percepción de los ciudadanos de diferentes regiones de Colombia sobre dichos temas.
         </p>
 
   </div>
@@ -139,7 +200,7 @@
 <article id="slide-5" class="slide slide--text" >
   <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
     <p style="font-size: 25px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>2</b></mark> Número de proyectos de ley por temas e iniciativa entre 2006 al 2018
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>2</b></mark> Número de proyectos de ley, asociados por temáticas e iniciativas, entre los años 2006 y 2018
       </p>
     <div id = 'vis' style="width: fit-content;"></div>
     <script src="js/bubbles/bubbles.js"></script>
@@ -173,9 +234,9 @@
           <script src="js/bubbles/bubblesOD2.js"></script>
         </div>
         <div class="col-md-6" style="padding-right: 60px;">
-          <p style="padding-top: 10px; font-weight: normal; font-family: 'Questrial', serif; font-size: 20px;"> <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>3</b></mark> Preguntas hechas en las encuestas</p>
-          <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Por cada uno de los periodos legislativos desde el 2006, es posible ver el número de preguntas por temas.</p>
-          <button id="myBtn" class="btn" style="background-color: #089baa;  font-family: 'Questrial', serif;">Info de los Datos</button>
+          <p style="padding-top: 20px; font-weight: bold; font-family: 'Questrial', serif; font-size: 20px;"><mark style="background-color: #089baa; color: white; font-size: 40px;" ></b>3</b></mark> Preguntas realizadas en las encuestas</p>
+          <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Es posible ver el número de preguntas, organizadas por temática, para cada uno de los periodos legislativos desde el año 2006.</p>
+          <button id="myBtn" class="btn" style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de las preguntas</button>
 
           <!-- The Modal -->
           <div id="myModal" class="modal" >
@@ -187,7 +248,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 
               </div>
-              <p style="padding: 20px;">"El Observatorio de la Democracia pone a disposición de sus visitantes los resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumos para la realización de artículos o proyectos de investigación. Estos datos también son una herramienta para analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés nacional o coyunturas políticas específicas."</p>
+              <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la realización de artículos o proyectos de investigación. Estos datos también son una herramienta para analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés nacional o coyunturas políticas específicas."</p>
               <div class="modal-footer">
                 <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
               </div>
@@ -281,26 +342,30 @@
 <!--filtro por años -->
 
 <article id="slide-8" class="slide slide--text" >
-  <div class="slide__inner" style="text-align: center;" >
+  <div id="anos" class="slide__inner" style="text-align: center;" >
     <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
       <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>5</b></mark> Temporalidad
       </p>
     <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
-      Análisis de Representación
+      Análisis de Representación Ciudadana
       </p>
     <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-    De acuerdo a los datos anteriores, puedes elegir en que <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>años</b></mark> hacer el análisis del comportamiento de la representación ciudadana
+    De acuerdo a los datos anteriores, puedes elegir en qué <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>años</b></mark> hacer el análisis del comportamiento de la representación ciudadana
     </p>
       <div class="row" style="align-self: center; font-size: 12 px;">
         <div class="col-md-12">
           <select id="anios" multiple class="font">
-            <script src="js/scripts/selectYear.js"></script>
             <script src="js/scripts/slimselect.js"></script>
+            <script src="js/scripts/selectYear.js"></script>            
           </select>
-          <button id="btn_anios" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;" >Seleccionar</button>
+          <button id="btn_anios" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;">Seleccionar</button>
         </div>
       </div>
-
+      <i id="spinneranios" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 60px;"></i>
+      <i id="checkanios" class="fas fa-check-double" style="font-size: 40px; margin-top: 60px;"></i>
+      <script>
+        document.getElementById("checkanios").style.visibility = "hidden";
+      </script>
   </div>
 </article>
 
@@ -317,7 +382,7 @@
         </p>
 
         <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-          Se usaron 87 etiquetas para clasificar toda la información. Por ello podrás elegir los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>temas</b></mark> de interés para ciudadanos y congresistas.
+          Se usaron <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>87</b></mark> etiquetas para clasificar toda la información. Por ello podrás elegir los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>temas</b></mark> de interés para ciudadanos y congresistas.
           </p>
 
     <div class="row" style="align-self: center; font-size: 12 px;">
@@ -329,6 +394,11 @@
         <button id="btn_etiquetas" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Buscar</button>
       </div>
     </div>
+    <i id="spinnertemas" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 60px;"></i>
+    <i id="checktemas" class="fas fa-check-double" style="font-size: 40px; margin-top: 60px;"></i>
+    <script>
+      document.getElementById("checktemas").style.visibility = "hidden";
+    </script>
   </div>
 </article>
 
@@ -337,13 +407,13 @@
 <article id="slide-10" class="slide slide--text">
   <div class="slide__inner" style="text-align: center;">
     <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>7</b></mark> Preguntas de OD
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>7</b></mark> Preguntas de Observatorio de la Democracia
       </p>
     <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
-      Preguntas afines
+      Preguntas afines a los temas escogidos:
       </p>
       <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-        A continuación puedes ver las <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>preguntas</b></mark> que OD hizo a los ciudadanos relacionados a las temas seleccionados, para poder ver que opinan los ciudadanos.
+        A continuación podrás ver las <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>preguntas</b></mark> relacionadas a los temas seleccionados, que OD hizo a los ciudadanos para poder ver qué opinan los ciudadanos.
         </p>
     <div class="row" style="align-self: center; font-size: 12 px;">
       <div class="col-md-12" id="sec_preg">
@@ -378,7 +448,7 @@
         </p>
 
         <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-          Para hacerlo más específico, puedes elegir para que <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> ver su actividad legislativa y por ende su afinidad con el ciudadano.
+          Para hacerlo más específico, puedes elegir para qué <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> quieres ver su actividad legislativa, y por ende, su afinidad con el ciudadano.
           </p>
     <select id="congresistas" multiple class="font">
       <script src="js/scripts/select_congresistas.js"></script>
@@ -391,8 +461,13 @@
       676
     </p>
     <p style="font-size: 20px; font-family: 'Questrial', serif; font-weight: normal; margin-top: -20px;">
-      Congresistas
+      Total de Congresistas
     </p>
+    <i id="spinnercongr" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 10px;"></i>
+    <i id="checkcongr" class="fas fa-check-double" style="font-size: 40px; margin-top: 10px;"></i>
+    <script>
+      document.getElementById("checkcongr").style.visibility = "hidden";
+    </script>
   </div>
 </article>
 
@@ -405,7 +480,7 @@
 
 
     <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>9</b></mark> ¿esta de acuerdo con el Aborto?
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>9</b></mark> ¿Está usted a favor del Aborto?
       </p>
 
       <div id="chart"></div>
@@ -422,13 +497,13 @@
 <article id="slide-13" class="slide slide--text">
   <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
     <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>10</b></mark> Como votáron los congresistas
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>10</b></mark> ¿Cómo votaron los congresistas?
       </p>
     <div class="row" style="text-align: center; justify-content: center;">
       <div class="container col-lg-6">
 
         <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
-          Número de votos a favor
+          Número de votos a favor:
           </p>
         <div id="flr_si" style="margin-top: -10px;">
           <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
@@ -441,7 +516,7 @@
 
       <div class="container col-lg-6">
         <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
-          Número de votos en contra
+          Número de votos en contra:
           </p>
         <div id="flr_no" style="margin-top: -10px;">
           <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
@@ -454,7 +529,7 @@
     <div class="row" style="text-align: center; justify-content: center;">
       <div class="container col-lg-6">
         <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-          Número de Abstenciones
+          Número de Abstenciones:
           </p>
         <div id="flr_abs" style="margin-top: -10px;">
           <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
@@ -465,7 +540,7 @@
       </div>
       <div class="container col-lg-6">
         <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-          Número de Inasistencias
+          Número de Inasistencias:
           </p>
         <div id="flr_asis" style="margin-top: -10px;">
           <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
@@ -477,7 +552,7 @@
 
     </div>
     <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-      Este es el compotamiento legislativo de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> en proyectos de ley relacionados con los temas seleccionados.
+      Este es el compotamiento legislativo de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresistas</b></mark> en proyectos de ley relacionados con los temas seleccionados.
       </p>
     <script src="https://d3js.org/d3.v3.min.js"></script>
   </div>
@@ -489,7 +564,7 @@
 <article id="slide-14" class="slide slide--text" >
   <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
     <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>11</b></mark> Representacion Ciudadana
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>11</b></mark> Representación Ciudadana
       </p>
       <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
         Los <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>ciudadanos</b></mark>, teniendo en cuenta el comportmiento de los congresistas:
@@ -503,12 +578,15 @@
 <article id="slide-15" class="slide slide--text" >
   <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
     <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representacion en el Congreso
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representación en el Congreso
       </p>
       <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
         Los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>ciudadanos</b></mark>, teniendo en cuenta el comportmiento de los congresistas:
         </p>
-
+      <button onclick="window.location.reload()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Refresh page</button>
+      <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+        Los teniendo en cuenta el comportmiento de los congresistas:
+        </p>
   </div>
 </article>
 

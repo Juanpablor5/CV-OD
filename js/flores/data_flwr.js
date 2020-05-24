@@ -14,13 +14,46 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     (option) => option.value
   );
 
+  var element1 = document.getElementById("temasfilter");
+  element1.innerHTML = "Temas: " + String(eti_selected);
+
+  if (eti_selected.length > 0) {
+    document.getElementById("spinnertemas").style.visibility = "hidden";
+    document.getElementById("checktemas").style.visibility = "visible";
+  } else{
+    document.getElementById("checktemas").style.visibility = "hidden";
+    document.getElementById("spinnertemas").style.visibility = "visible";
+  }
+
   let anio_selected = Array.from(anios.selectedOptions).map(
     (option) => option.value
   );
 
+  var element2 = document.getElementById("aniosfilter");
+  element2.innerHTML = "Años: " + String(anio_selected);
+
+  if (anio_selected.length > 0) {
+    document.getElementById("spinneranios").style.visibility = "hidden";
+    document.getElementById("checkanios").style.visibility = "visible";
+  } else{
+    document.getElementById("checkanios").style.visibility = "hidden";
+    document.getElementById("spinneranios").style.visibility = "visible";
+  }
+
   let cong_selected = Array.from(congresistas.selectedOptions).map(
     (option) => option.value
   );
+
+  var element3 = document.getElementById("congresfilter");
+  element3.innerHTML = "Congresistas: " + String(cong_selected);
+
+  if (cong_selected.length > 0) {
+    document.getElementById("spinnercongr").style.visibility = "hidden";
+    document.getElementById("checkcongr").style.visibility = "visible";
+  } else{
+    document.getElementById("checkcongr").style.visibility = "hidden";
+    document.getElementById("spinnercongr").style.visibility = "visible";
+  }
 
   if (
     anio_selected.length == 0 ||
@@ -143,6 +176,8 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     let cont_abs_tot = 0;
                     let cont_asis_tot = 0;
 
+                    
+
                     data_vot.congresista.forEach((congresista) => {
                       if (congre_selec.length > 0) {
                         congre_selec.forEach(cong_selec => {
@@ -202,6 +237,31 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });                    
                     flor_abs.push({ Tema: eti_selec.nombre, abs: cont_abs_tot });
                     flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
+
+                    //resultados
+
+                    if (cont_si_tot > cont_no_tot && cont_si_tot > cont_abs_tot && cont_si_tot > cont_asis_tot) {
+                      if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_asis_tot) {
+                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de: " + String(cont_si_tot) + " votos, sin embargo, los congresistas votantes decidieron abstenerse en proyectos de ley relacionados en varias ocasiones.";
+                      }
+                      if (cont_no_tot  > cont_abs_tot && cont_no_tot  > cont_asis_tot) {
+                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de: " + String(cont_si_tot) + " votos, sin embargo, la segunda mayor votacion corresponde a en contra de proyectos de ley relacionados";
+                      }
+                      if (cont_asis_tot > cont_no_tot && cont_asis_tot > cont_abs_tot) {
+                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de:" + String(cont_si_tot) + " votos, sin embargo, el alto número de inasistencias a votaciones refleja desinterés político por proyectos de ley relacionados";
+                      }
+                    } else if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_abs_tot && cont_abs_tot > cont_si_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja baja participación contando con:" + String(cont_si_tot);   
+                    } 
+
+                    if (cont_si_tot == 0 && cont_abs_tot == 0 && cont_asis_tot == 0 && cont_no_tot == 0) {
+                      document.getElementById("sivotes").innerHTML = "Sin resultados, Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
+                    }
+                      
+
+                    console.log(cont_si_tot)
+                    
+
                   });
                 })
                 .then((_) => {
@@ -216,3 +276,5 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
         });
     });
 });
+
+
