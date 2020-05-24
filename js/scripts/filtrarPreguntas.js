@@ -1,5 +1,7 @@
 $("#btn_anios").click(function () {
 
+  document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
+
   let botonAños = document.getElementById("btn_anios");
   let botonEtiquetas = document.getElementById("btn_etiquetas");
   let listaAños = document.getElementById("anios");
@@ -39,7 +41,7 @@ $("#btn_anios").click(function () {
         });
         console.log(object)
         let select = new SlimSelect({
-          select: "#preguntas",
+          select: "#preguntas2",
           placeholder: "Preguntas",
           searchPlaceholder: "Buscar preguntas",
           showSearch: true, // shows search field,
