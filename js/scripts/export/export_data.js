@@ -1,12 +1,4 @@
 $("#btn_export").click(function () {
-  
-  let anio_selected = Array.from(anios.selectedOptions).map(
-    (option) => option.value
-  );
-
-  let cong_selected = Array.from(congresistas.selectedOptions).map(
-    (option) => option.value
-  );
 
   function readTextFile(file, proy_sel, anio_sel, con_sel) {
     // let t0 = performance.now();
@@ -29,16 +21,6 @@ $("#btn_export").click(function () {
       });
       proy_id.sort(function(a, b){return a-b})
 
-      // console.log(proy_id)
-      // let length = [proy_id.length, con_sel.length, anio_sel.length]
-      // length.sort(function(a, b){return b-a});
-
-      // console.log(length)
-
-      // let first = length.shift()
-      // let second = length.shift()
-      // let third = length.shift()
-
       for (let i = 0; i < proy_id.length; i++) {
         const proyecto = proy_id[i];
         for (let j = 0; j < con_sel.length; j++) {
@@ -51,35 +33,40 @@ $("#btn_export").click(function () {
         }
       }
 
-      console.log(export_id)
+      let data_export=[]
 
-      // var rawFile = new XMLHttpRequest();
-      // let id_export = [];
-      // rawFile.open("GET", file, true);
-      // rawFile.onreadystatechange = function () {
-      //   if (rawFile.readyState === 4) {
-      //     if (rawFile.status === 200 || rawFile.status == 0) {
-      //       var allText = rawFile.responseText;
-      //       let id_export_selec = [];
-      //       Papa.parse(allText, {
-      //         header: true,
-      //         preview: 50000,
-      //         complete: function (results) {
-      //           // console.log("Finished:", results.data);
-      //           results.data.forEach((obj) => {
-      //             id_export.push(obj.id_export);
-      //           });
-      //           console.log(proy_id);
-      //           // let t1 = performance.now();
-      //           // console.log("El proceso de exportación " + (t1 - t0) + " milisegundos.");
-      //         },
-      //       });
-      //     }
-      //   }
-      // };
-      // rawFile.send(null);
+      var rawFile = new XMLHttpRequest();
+      rawFile.open("GET", file, true);
+      rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4) {
+          if (rawFile.status === 200 || rawFile.status == 0) {
+            var allText = rawFile.responseText;
+            let id_export_selec = [];
+            Papa.parse(allText, {
+              header: true,
+              preview: 20000,
+              complete: function (results) {
+                // console.log("Finished:", results.data);
+                results.data.forEach(obj_csv => {
+                  export_id.forEach(export_id => {
+                    if(obj_csv.id_export === export_id){
+                      data_export.push(obj_csv)
+                    }
+                  });
+                });
+                // console.log(data_export)
+                
+                Papa.unparse(data_export)
 
 
+                // let t1 = performance.now();
+                // console.log("El proceso de exportación " + (t1 - t0) + " milisegundos.");
+              },
+            });
+          }
+        }
+      };
+      rawFile.send(null);
     }
   }
 
