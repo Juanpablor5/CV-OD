@@ -1,6 +1,6 @@
 $("#btn_etiquetas, #btn_anios").click(function () {
 
-  document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
+  document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select>';
 
   let preguntasAnio = [];
   let preguntasFinales = [];
@@ -52,7 +52,7 @@ $("#btn_etiquetas, #btn_anios").click(function () {
           });
         }
         else {
-          document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
+          document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select>>';
           preguntasFinales.forEach(pregunta => {
             object.push({ text: pregunta.nombre });
           });
@@ -64,7 +64,6 @@ $("#btn_etiquetas, #btn_anios").click(function () {
         newP.appendChild(newContent);
         let currentP = document.getElementById("conteo_preguntas");
         currentP.parentNode.replaceChild(newP,currentP);
-        console.log(object.length)
         let select = new SlimSelect({
           select: "#preguntas2",
           placeholder: "Preguntas",
