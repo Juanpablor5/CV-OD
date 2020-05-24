@@ -39,7 +39,7 @@ $("#btn_anios").click(function () {
         prePreguntas.forEach(pregunta => {
           object.push({ text: pregunta.nombre });
         });
-        console.log(object)
+        // console.log(object)
         let select = new SlimSelect({
           select: "#preguntas2",
           placeholder: "Preguntas",
