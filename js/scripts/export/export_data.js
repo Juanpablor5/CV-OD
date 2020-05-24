@@ -8,17 +8,17 @@ $("#btn_export").click(function () {
     (option) => option.value
   );
 
-  function readTextFile(file, proy_etiq) {
+  function readTextFile(file, proy_sel, anio_sel, con_sel) {
     // let t0 = performance.now();
-
     let proy_id=[]
-    if (proy_id.length == 0)
+    let export_id=[]
+    if (proy_sel.length == 0)
       alert(
         "Para exportar los datos debe haber hecho el filtrado de los mismos con almenos un tema"
       );
     else {
       let temp_id=[]
-      proy_etiq.forEach(etiqueta => {
+      proy_sel.forEach(etiqueta => {
         etiqueta.proyectos.forEach(proyecto => {
           temp_id.push(proyecto.id)
         });
@@ -27,6 +27,30 @@ $("#btn_export").click(function () {
       $.each(temp_id, function(i, el){
         if($.inArray(el, proy_id) === -1) proy_id.push(el);
       });
+      proy_id.sort(function(a, b){return a-b})
+
+      // console.log(proy_id)
+      // let length = [proy_id.length, con_sel.length, anio_sel.length]
+      // length.sort(function(a, b){return b-a});
+
+      // console.log(length)
+
+      // let first = length.shift()
+      // let second = length.shift()
+      // let third = length.shift()
+
+      for (let i = 0; i < proy_id.length; i++) {
+        const proyecto = proy_id[i];
+        for (let j = 0; j < con_sel.length; j++) {
+          const congresista = con_sel[j];
+          for (let k = 0; k < anio_sel.length; k++) {
+            const anio = anio_sel[k];
+            
+          }
+        }
+      }
+
+      console.log(first, second, third)
 
       // var rawFile = new XMLHttpRequest();
       // let id_export = [];
@@ -58,7 +82,6 @@ $("#btn_export").click(function () {
     }
   }
 
-  // readTextFile("data/csv/CV/Datos_export.csv", proy_etiq);
+  readTextFile("data/csv/CV/Datos_export.csv", proy_etiq, anio_selected_export, congre_selec_export);
 
-  console.log(proy_etiq)
 });
