@@ -23,6 +23,57 @@
 <!-- partial:index.partial.html -->
 
 <!-- Imagen congreso inicio -->
+<div id="mySidenav" class="sidenav">
+  <a id="about">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" style="margin-top: 35px;"></i>
+        </div>
+        <div>
+          <p style="font-size: 18px; font-family: 'Questrial', serif; font-weight: normal; margin-top: 10px;"> <i class="fas fa-search" style="font-size: 20px; right: 0;"></i> Sigue tu consulta</p>
+          <p style="font-size: 12px; font-family: 'Questrial', serif; font-weight: lighter;">Mira los filtros aplicados abajo </p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="blog">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>
+        </div>
+        <div>
+          <p id="aniosfilter" style="font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Años: sin filtro.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="projects">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>
+        </div>
+        <div>
+          <textarea class="scrollabletextbox"  id="temasfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Temas: sin filtro.</textarea>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="contact">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" ></i>
+        </div>
+        <div>
+          <textarea class="scrollabletextbox" id="congresfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Congresistas: sin filtro.</textarea>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
 
 <article id="slide-0" class="slide slide--text slide--locked"  style=" background-image:url(assets/img/congreso.png); opacity: 1;" >
 
@@ -96,7 +147,7 @@
                 $(this).prop('Counter',0).animate({
                 Counter: $(this).text()
                 }, {
-                duration: 7000,
+                duration: 12000,
                 easing: 'swing',
                 step: function (now) {
                     $(this).text(commaSeparateNumber(Math.ceil(now)));
@@ -291,7 +342,7 @@
 <!--filtro por años -->
 
 <article id="slide-8" class="slide slide--text" >
-  <div class="slide__inner" style="text-align: center;" >
+  <div id="anos" class="slide__inner" style="text-align: center;" >
     <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
       <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>5</b></mark> Temporalidad
       </p>
@@ -307,10 +358,14 @@
             <script src="js/scripts/slimselect.js"></script>
             <script src="js/scripts/selectYear.js"></script>
           </select>
-          <button id="btn_anios" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;" >Seleccionar</button>
+          <button id="btn_anios" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;">Seleccionar</button>
         </div>
       </div>
-
+      <i id="spinneranios" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 60px;"></i>
+      <i id="checkanios" class="fas fa-check-double" style="font-size: 40px; margin-top: 60px;"></i>
+      <script>
+        document.getElementById("checkanios").style.visibility = "hidden";
+      </script>
   </div>
 </article>
 
@@ -339,6 +394,11 @@
         <button id="btn_etiquetas" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Buscar</button>
       </div>
     </div>
+    <i id="spinnertemas" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 60px;"></i>
+    <i id="checktemas" class="fas fa-check-double" style="font-size: 40px; margin-top: 60px;"></i>
+    <script>
+      document.getElementById("checktemas").style.visibility = "hidden";
+    </script>
   </div>
 </article>
 
@@ -346,14 +406,14 @@
 
 <article id="slide-10" class="slide slide--text">
   <div class="slide__inner" style="text-align: center;">
-    <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>7</b></mark> Preguntas de Observatorio de la Democracia
+    <p style="font-size: 30px; padding-top: 0px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>7</b></mark> Preguntas del Observatorio de la Democracia
       </p>
-    <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+    <p style="font-size: 20px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
       Preguntas afines a los temas escogidos:
       </p>
-      <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-        A continuación podrás ver las <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>preguntas</b></mark> relacionadas a los temas seleccionados, que OD hizo a los ciudadanos para poder ver qué opinan los ciudadanos.
+      <p style="font-size: 18px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: lighter;">
+        A continuación podrás ver las <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>preguntas</b></mark> relacionadas a los temas seleccionados que se le hicieron a los ciudadanos.
         </p>
     <div class="row" style="align-self: center; font-size: 12 px;">
       <div class="col-md-12" id="sec_preg">
@@ -372,7 +432,6 @@
     <p style="font-size: 20px; font-family: 'Questrial', serif; font-weight: normal; margin-top: -20px;">
       Preguntas
     </p>
-
   </div>
 </article>
 
@@ -402,8 +461,13 @@
       676
     </p>
     <p style="font-size: 20px; font-family: 'Questrial', serif; font-weight: normal; margin-top: -20px;">
-      Congresistas
+      Total de Congresistas
     </p>
+    <i id="spinnercongr" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 10px;"></i>
+    <i id="checkcongr" class="fas fa-check-double" style="font-size: 40px; margin-top: 10px;"></i>
+    <script>
+      document.getElementById("checkcongr").style.visibility = "hidden";
+    </script>
   </div>
 </article>
 
@@ -520,7 +584,10 @@
       <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
         Los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>ciudadanos</b></mark>, teniendo en cuenta el comportmiento de los congresistas:
         </p>
-
+      <button onclick="window.location.reload()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Refresh page</button>
+      <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+        Los teniendo en cuenta el comportmiento de los congresistas:
+        </p>
   </div>
 </article>
 
