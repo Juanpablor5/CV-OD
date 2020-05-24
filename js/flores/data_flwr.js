@@ -156,6 +156,8 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     let cont_abs_tot = 0;
                     let cont_asis_tot = 0;
 
+                    
+
                     data_vot.congresista.forEach((congresista) => {
                       if (congre_selec.length > 0) {
                         congre_selec.forEach(cong_selec => {
@@ -215,6 +217,26 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });                    
                     flor_abs.push({ Tema: eti_selec.nombre, abs: cont_abs_tot });
                     flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
+
+                    //resultados
+
+                    if (cont_si_tot > cont_no_tot && cont_si_tot > cont_abs_tot && cont_si_tot > cont_asis_tot) {
+                      if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_asis_tot) {
+                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de: " + String(cont_si_tot) + " votos, sin embargo, los congresistas votantes decidieron abstenerse en proyectos de ley relacionados en varias ocasiones.";
+                      }
+                      if (cont_no_tot  > cont_abs_tot && cont_no_tot  > cont_asis_tot) {
+                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de: " + String(cont_si_tot) + " votos, sin embargo, la segunda mayor votacion corresponde a en contra de proyectos de ley relacionados";
+                      }
+                      if (cont_asis_tot > cont_no_tot && cont_asis_tot > cont_abs_tot) {
+                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de:" + String(cont_si_tot) + " votos, sin embargo, el alto número de inasistencias a votaciones refleja desinterés político por proyectos de ley relacionados";
+                      }
+                    } else if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_abs_tot && cont_abs_tot > cont_si_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja baja participación contando con:" + String(cont_si_tot);   
+                    } 
+
+                    console.log(cont_si_tot)
+                    
+
                   });
                 })
                 .then((_) => {
@@ -229,3 +251,5 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
         });
     });
 });
+
+
