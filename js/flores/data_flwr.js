@@ -18,7 +18,11 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   element1.innerHTML = "Temas: " + String(eti_selected);
 
   if (eti_selected.length > 0) {
-    document.getElementById("spinneranios").style.display = "none";
+    document.getElementById("spinnertemas").style.visibility = "hidden";
+    document.getElementById("checktemas").style.visibility = "visible";
+  } else{
+    document.getElementById("checktemas").style.visibility = "hidden";
+    document.getElementById("spinnertemas").style.visibility = "visible";
   }
 
   let anio_selected = Array.from(anios.selectedOptions).map(
@@ -28,12 +32,28 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   var element2 = document.getElementById("aniosfilter");
   element2.innerHTML = "Años: " + String(anio_selected);
 
+  if (anio_selected.length > 0) {
+    document.getElementById("spinneranios").style.visibility = "hidden";
+    document.getElementById("checkanios").style.visibility = "visible";
+  } else{
+    document.getElementById("checkanios").style.visibility = "hidden";
+    document.getElementById("spinneranios").style.visibility = "visible";
+  }
+
   let cong_selected = Array.from(congresistas.selectedOptions).map(
     (option) => option.value
   );
 
   var element3 = document.getElementById("congresfilter");
   element3.innerHTML = "Congresistas: " + String(cong_selected);
+
+  if (cong_selected.length > 0) {
+    document.getElementById("spinnercongr").style.visibility = "hidden";
+    document.getElementById("checkcongr").style.visibility = "visible";
+  } else{
+    document.getElementById("checkcongr").style.visibility = "hidden";
+    document.getElementById("spinnercongr").style.visibility = "visible";
+  }
 
   if (
     anio_selected.length == 0 ||
@@ -233,6 +253,11 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     } else if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_abs_tot && cont_abs_tot > cont_si_tot) {
                       document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja baja participación contando con:" + String(cont_si_tot);   
                     } 
+
+                    if (cont_si_tot == 0 && cont_abs_tot == 0 && cont_asis_tot == 0 && cont_no_tot == 0) {
+                      document.getElementById("sivotes").innerHTML = "Sin resultados, Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
+                    }
+                      
 
                     console.log(cont_si_tot)
                     
