@@ -57,6 +57,14 @@ $("#btn_etiquetas, #btn_anios").click(function () {
             object.push({ text: pregunta.nombre });
           });
         }
+
+        let newP = document.createElement("p");
+        newP.setAttribute("id", "conteo_preguntas");
+        let newContent = document.createTextNode(object.length);
+        newP.appendChild(newContent);
+        let currentP = document.getElementById("conteo_preguntas");
+        currentP.parentNode.replaceChild(newP,currentP);
+        console.log(object.length)
         let select = new SlimSelect({
           select: "#preguntas2",
           placeholder: "Preguntas",

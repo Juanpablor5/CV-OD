@@ -49,7 +49,6 @@ $("#btn_etiquetas, #btn_anios").click(function () {
         }
         console.log(preguntasFinales)
         if (preguntasFinales.length == 0 && !llego) {
-
           preguntasPorEtiquetas.forEach(pregunta => {
             object.push({ text: pregunta.nombre });
           });
