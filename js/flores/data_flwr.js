@@ -44,6 +44,8 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     (option) => option.value
   );
 
+  anio_selected_export = []
+  congre_selec_export = []
   var element3 = document.getElementById("congresfilter");
   element3.innerHTML = "Congresistas: " + String(cong_selected);
 
@@ -56,33 +58,59 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   }
 
   if (
-    anio_selected.length == 0 ||
-    anio_selected[0] == "2004" ||
-    anio_selected[0] == "2005" ||
-    anio_selected[1] == "2005"
-  ) {
+    anio_selected.length == 0) {
     anio_selected = [];
-    anio_selected.push(
-      "2006",
-      "2007",
-      "2008",
-      "2009",
-      "2010",
-      "2011",
-      "2012",
-      "2013",
-      "2014",
-      "2015",
-      "2016",
-      "2017",
-      "2018"
-    );
+    anio_selected.push("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018");
+    anio_selected_export.push("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018");
+  } else if ((anio_selected[0] == "2004" && anio_selected.length == 1) ||
+    (anio_selected[0] == "2005" && anio_selected.length == 1) ||
+    (anio_selected[1] == "2005" && anio_selected.length == 2)) {
+    no_data = [{ Tema: "No hay datos para los años seleccionados", abs: 0 }]
+    flower_si(no_data);
+    flower_no(no_data);
+    flower_abs(no_data);
+    flower_asis(no_data);
+    return;
+  } else if (anio_selected[0] == "2004" && anio_selected[1] == "2005") {
+    let temp_anio = anio_selected;
+    anio_selected = []
+    for (let i = 2; i < temp_anio.length; i++) {
+      const anio = temp_anio[i];
+      anio_selected.push(anio)
+      anio_selected_export.push(anio)
+    }
+  } else if ((anio_selected[0] == "2004" && anio_selected.length > 1) || (anio_selected[0] == "2005" && anio_selected.length > 1)) {
+    let temp_anio = anio_selected;
+    anio_selected = []
+    for (let i = 1; i < temp_anio.length; i++) {
+      const anio = temp_anio[i];
+      anio_selected.push(anio)
+      anio_selected_export.push(anio)
+    }
+  } else if ((anio_selected[1] == "2005" && anio_selected.length > 2)) {
+    let temp_anio = anio_selected;
+    anio_selected = []
+    for (let i = 2; i < temp_anio.length; i++) {
+      const anio = temp_anio[i];
+      anio_selected.push(anio)
+      anio_selected_export.push(anio)
+    }
+  }else{
+    let temp_anio = anio_selected;
+    anio_selected = []
+    for (let i = 0; i < temp_anio.length; i++) {
+      const anio = temp_anio[i];
+      anio_selected.push(anio)
+      anio_selected_export.push(anio)
+    }
   }
 
-  let proy_etiq = [];
+  // let proy_etiq = [];
+  proy_etiq = [];
   let cong_anio = [];
 
   let congre_selec = [];
+  congre_selec_export = [];
 
   let proy_fil = { proyecto: [] };
 
@@ -105,6 +133,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
           );
           if (typeof t !== "undefined") {
             congre_selec.push(t.id);
+            congre_selec_export.push(t.id);
           }
         });
       });
@@ -181,7 +210,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     data_vot.congresista.forEach((congresista) => {
                       if (congre_selec.length > 0) {
                         congre_selec.forEach(cong_selec => {
-                          if(cong_selec == congresista.id){
+                          if (cong_selec == congresista.id) {
                             congresista.proyecto.forEach((proyecto) => {
                               let cont_si = 0;
                               let cont_no = 0;
@@ -193,7 +222,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                                   cont_no += proyecto.voto.no;
                                   cont_abs += proyecto.voto.se_abstuvo;
                                   cont_asis += proyecto.voto.no_asistio;
-    
+
                                   proy_selec.votos[0] += cont_si;
                                   proy_selec.votos[1] += cont_no;
                                   proy_selec.votos[2] += cont_abs;
@@ -234,7 +263,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                       }
                     });
                     flor_si.push({ Tema: eti_selec.nombre, abs: cont_si_tot });
-                    flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });                    
+                    flor_no.push({ Tema: eti_selec.nombre, abs: cont_no_tot });
                     flor_abs.push({ Tema: eti_selec.nombre, abs: cont_abs_tot });
                     flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
 
@@ -259,7 +288,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     }
                       
 
-                    console.log(cont_si_tot)
+                    // console.log(cont_si_tot)
                     
 
                   });

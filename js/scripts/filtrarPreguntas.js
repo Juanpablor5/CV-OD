@@ -21,7 +21,7 @@ $("#btn_anios").click(function () {
 
   setTimeout(() => {
     let object = [];
-    fetch("data/json/OD/preguntas.json")
+    fetch("data/json/OD/Preguntas.json")
       .then((resp) => resp.json())
       .then((data) => {
         for (let j = 0; j < data.preguntas.length; j++) {
@@ -39,7 +39,7 @@ $("#btn_anios").click(function () {
         prePreguntas.forEach(pregunta => {
           object.push({ text: pregunta.nombre });
         });
-        console.log(object)
+        // console.log(object)
         let select = new SlimSelect({
           select: "#preguntas2",
           placeholder: "Preguntas",
