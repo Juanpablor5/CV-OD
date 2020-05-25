@@ -4,6 +4,7 @@
   "description": "Congresistas ",
   "main": "index.js",
   "dependencies": {
+    "csv-reader": "^1.0.6",
     "slim-select": "^1.25.0"
   },
   "devDependencies": {},
