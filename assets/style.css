@@ -51,6 +51,9 @@
 html, body {
   margin: 0;
   font-family: 'Questrial';
+
+    scroll-behavior: smooth;
+
 }
 
 .img2 {
@@ -671,7 +674,7 @@ font-family: 'Questrial'; }
 }
 
 #about {
-  top: 180px;
+  top: 160px;
   background-color: #3abae9;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
 }
