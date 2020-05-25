@@ -288,7 +288,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     }
                       
 
-                    console.log(cont_si_tot)
+                    // console.log(cont_si_tot)
                     
 
                   });
