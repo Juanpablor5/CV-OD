@@ -395,6 +395,11 @@
     </select>
     <script src="js/flores/flower.js"></script>
     <button id="btn_congresistas" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;" >Buscar</button>
+    <script>
+      let proy_etiq = [];
+      let anio_selected_export = [];
+      let congre_selec_export = [];
+    </script>
     <script src="js/flores/data_flwr.js"></script>
     <script src="js/scripts/slimselect.js"></script>
     <p style="font-size: 40px; padding-top: 40px; font-family: 'Questrial', serif; font-weight: bold;">
@@ -489,7 +494,11 @@
     <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
       Este es el compotamiento legislativo de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresistas</b></mark> en proyectos de ley relacionados con los temas seleccionados.
       </p>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+      <script src="js/scripts/export/csv_reader.js"></script>
+      <script src="js/scripts/export/file_saver.js"></script>
+      <button id="btn_export" class="btn" style="background-color: #3abae9;  font-family: 'Questrial', serif;">Exportar a CSV</button>
+      <script src="js/scripts/export/export_data.js"></script>
+      <script src="https://d3js.org/d3.v3.min.js"></script>
   </div>
 </article>
 
