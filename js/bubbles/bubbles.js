@@ -33,7 +33,7 @@ function bubbleChart() {
     // set up colour scale
     const fillColour = d3.scaleOrdinal()
     .domain(["1", "2", "3", "4", "5"])
-    .range(["#3abae9", "#5DC1DB", "#7FC8CD", "#A2CFBF", "#C4D6B0"]);
+    .range(["#ed553b", "#3caea3", "#20639b", "#173f5f", "#f6d55c"]);
 
     // data manipulation function takes raw data from csv and converts it into an array of node objects
     // each node will store data and visualisation values to draw a bubble
@@ -113,12 +113,12 @@ function bubbleChart() {
         .style('font-size', 10)
         //.text(d => d.id)
 
-        svg.append("circle").attr("cx",120).attr("cy",360).attr("r", 8).style("fill", "#3abae9")
-        svg.append("circle").attr("cx",250).attr("cy",360).attr("r", 8).style("fill", "#5DC1DB")
-        svg.append("circle").attr("cx",420).attr("cy",360).attr("r", 8).style("fill", "#7FC8CD")
+        svg.append("circle").attr("cx",120).attr("cy",360).attr("r", 8).style("fill", "#ed553b")
+        svg.append("circle").attr("cx",250).attr("cy",360).attr("r", 8).style("fill", "#3caea3")
+        svg.append("circle").attr("cx",420).attr("cy",360).attr("r", 8).style("fill", "#20639b")
 
-        svg.append("circle").attr("cx",190).attr("cy",385).attr("r", 8).style("fill", "#A2CFBF")
-        svg.append("circle").attr("cx",340).attr("cy",385).attr("r", 8).style("fill", "#C4D6B0")
+        svg.append("circle").attr("cx",190).attr("cy",385).attr("r", 8).style("fill", "#173f5f")
+        svg.append("circle").attr("cx",340).attr("cy",385).attr("r", 8).style("fill", "#f6d55c")
 
         svg.append("text").attr("x", 140).attr("y", 360).text("Gobierno").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
         svg.append("text").attr("x", 270).attr("y", 360).text("Iniciativa Popular").style("font-size", "15px").style("font-family", "Questrial").attr("alignment-baseline","middle")
