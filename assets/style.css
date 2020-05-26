@@ -15,6 +15,27 @@
   left: 0;
 }
 
+.slide-full {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  background-color:white;
+}
+.slide-ful:nth-of-type(even) {
+  right: 0;
+}
+.slide-ful:nth-of-type(odd) {
+  left: 0;
+}
+
+.slide-full__inner {
+  height: 100%;
+  border: 2px dashed black;
+  padding: 20% 5% 5% 5%;
+  font-size: 2em;
+}
 
 .slide--text {
   background-color: white;
@@ -51,8 +72,7 @@
 html, body {
   margin: 0;
   font-family: 'Questrial';
-
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
 }
 
