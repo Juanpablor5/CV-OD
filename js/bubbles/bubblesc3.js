@@ -72,6 +72,7 @@ function bubbleChart() {
         .append('svg')
         .attr('width', width)
         .attr('height', height)
+        .attr('overflow', 'auto')
 
       // Three function that change the tooltip when user hover / move / leave a cell
       var tooltip = d3.select("body")

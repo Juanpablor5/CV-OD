@@ -20,7 +20,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   if (eti_selected.length > 0) {
     document.getElementById("spinnertemas").style.visibility = "hidden";
     document.getElementById("checktemas").style.visibility = "visible";
-  } else{
+  } else {
     document.getElementById("checktemas").style.visibility = "hidden";
     document.getElementById("spinnertemas").style.visibility = "visible";
   }
@@ -35,7 +35,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   if (anio_selected.length > 0) {
     document.getElementById("spinneranios").style.visibility = "hidden";
     document.getElementById("checkanios").style.visibility = "visible";
-  } else{
+  } else {
     document.getElementById("checkanios").style.visibility = "hidden";
     document.getElementById("spinneranios").style.visibility = "visible";
   }
@@ -52,7 +52,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   if (cong_selected.length > 0) {
     document.getElementById("spinnercongr").style.visibility = "hidden";
     document.getElementById("checkcongr").style.visibility = "visible";
-  } else{
+  } else {
     document.getElementById("checkcongr").style.visibility = "hidden";
     document.getElementById("spinnercongr").style.visibility = "visible";
   }
@@ -95,7 +95,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
       anio_selected.push(anio)
       anio_selected_export.push(anio)
     }
-  }else{
+  } else {
     let temp_anio = anio_selected;
     anio_selected = []
     for (let i = 0; i < temp_anio.length; i++) {
@@ -199,13 +199,11 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                 .then((data_vot) => {
                   // console.log(proy_etiq)
                   // alert(JSON.stringify(proy_etiq))
+                  let cont_si_tot = 0;
+                  let cont_no_tot = 0;
+                  let cont_abs_tot = 0;
+                  let cont_asis_tot = 0;
                   proy_etiq.forEach((eti_selec) => {
-                    let cont_si_tot = 0;
-                    let cont_no_tot = 0;
-                    let cont_abs_tot = 0;
-                    let cont_asis_tot = 0;
-
-                    
 
                     data_vot.congresista.forEach((congresista) => {
                       if (congre_selec.length > 0) {
@@ -269,29 +267,110 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
 
                     //resultados
 
-                    if (cont_si_tot > cont_no_tot && cont_si_tot > cont_abs_tot && cont_si_tot > cont_asis_tot) {
-                      if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_asis_tot) {
-                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de: " + String(cont_si_tot) + " votos, sin embargo, los congresistas votantes decidieron abstenerse en proyectos de ley relacionados en varias ocasiones.";
-                      }
-                      if (cont_no_tot  > cont_abs_tot && cont_no_tot  > cont_asis_tot) {
-                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de: " + String(cont_si_tot) + " votos, sin embargo, la segunda mayor votacion corresponde a en contra de proyectos de ley relacionados";
-                      }
-                      if (cont_asis_tot > cont_no_tot && cont_asis_tot > cont_abs_tot) {
-                        document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja apoyo a los temas con un conteo de:" + String(cont_si_tot) + " votos, sin embargo, el alto número de inasistencias a votaciones refleja desinterés político por proyectos de ley relacionados";
-                      }
-                    } else if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_abs_tot && cont_abs_tot > cont_si_tot) {
-                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas refleja baja participación contando con:" + String(cont_si_tot);   
-                    } 
-
-                    if (cont_si_tot == 0 && cont_abs_tot == 0 && cont_asis_tot == 0 && cont_no_tot == 0) {
-                      document.getElementById("sivotes").innerHTML = "Sin resultados, Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
-                    }
-                      
-
-                    // console.log(cont_si_tot)
-                    
 
                   });
+                  var stringpro = ""
+                  eti_selected.forEach(x => {
+                    if (eti_selected.length == 1) {
+                      stringpro += String(x);
+                    } else {
+                      stringpro += String(x) + ", ";
+                    }
+                  });
+
+                  console.log(eti_selected);
+
+                  var stringcongr = ""
+                  cong_selected.forEach(x => {
+                    if (cong_selected.length == 1) {
+                      stringcongr += String(x);
+                    } else if (cong_selected.length == 0) {
+                      stringcongr += "Todos";
+                    } else {
+                      stringcongr += String(x) + ", ";
+                    }
+                  });
+
+                  console.log(cong_selected)
+
+                  var csi = 0
+                  flor_si.forEach(x => {
+                    csi += x.abs
+                  });
+                  console.log(flor_si)
+                  console.log(csi)
+                  console.log(flor_no)
+
+
+
+                  //Si mayoria
+                  if (cont_si_tot > cont_no_tot && cont_si_tot > cont_abs_tot && cont_si_tot > cont_asis_tot) {
+                    if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_asis_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja apoyo a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo a favor de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> votos, sin embargo, los congresistas votantes decidieron abstenerse en proyectos de ley relacionados en varias ocasiones con <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark>  Abstenciones.";
+                    }
+                    if (cont_no_tot > cont_abs_tot && cont_no_tot > cont_asis_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja apoyo a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo a favor de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> votos, sin embargo, la segunda mayor votacion corresponde a en contra de proyectos de ley relacionados, con: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_no_tot) + "</b></mark> votos en contra.";
+                    }
+                    if (cont_asis_tot > cont_no_tot && cont_asis_tot > cont_abs_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja apoyo a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo a favor de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> votos, sin embargo, el alto número de inasistencias a votaciones podría refleja desinterés político por proyectos de ley relacionados, siendo: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark> inasistencias.";
+                    }
+                    if (cont_no_tot == cont_abs_tot && cont_no_tot == cont_asis_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja apoyo en general a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo a favor de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> votos, las demás tipos de voto son similares en cantidad.";
+                    }                   
+                  }
+                  //No mayoria   
+                  else if (cont_no_tot > cont_asis_tot && cont_no_tot > cont_abs_tot && cont_no_tot > cont_si_tot) {
+                    if (cont_abs_tot > cont_asis_tot && cont_abs_tot > cont_si_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja el no apoyo a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo en contra de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_no_tot) + "</b></mark> votos, adicionalmente, los congresistas votantes decidieron abstenerse en proyectos de ley relacionados en varias ocasiones con <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark>  Abstenciones.";
+                    }
+                    if (cont_si_tot > cont_abs_tot && cont_si_tot > cont_asis_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja el no apoyo a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo en contra de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_no_tot) + "</b></mark> votos, sin embargo, la segunda mayor votacion corresponde a favor de proyectos de ley relacionados, con: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> votos.";
+                    }
+                    if (cont_asis_tot > cont_no_tot && cont_asis_tot > cont_abs_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja el no apoyo a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo en contra de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_no_tot) + "</b></mark> votos, por otra parte, el alto número de inasistencias a votaciones podría refleja desinterés político por proyectos de ley relacionados, siendo: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark> inasistencias.";
+                    }
+                    if (cont_si_tot == cont_abs_tot && cont_si_tot == cont_asis_tot){
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja el no apoyo en general a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo en contra de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> votos, las demás tipos de voto son similares en cantidad.";
+                    }
+                  }
+                  //Inasistencia mayoria   
+                  else if (cont_asis_tot > cont_no_tot && cont_asis_tot > cont_abs_tot && cont_asis_tot > cont_si_tot) {
+                    if (cont_si_tot > cont_abs_tot && cont_si_tot > cont_no_tot) {
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, sin embargo, participo a favor en: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> ocasiones.";
+                    }
+                    if(cont_no_tot > cont_abs_tot && cont_no_tot > cont_si_tot){
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, sin embargo, participo en contra en: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_no_tot) + "</b></mark> ocasiones.";
+                    }
+                    if(cont_abs_tot > cont_no_tot && cont_abs_tot > cont_si_tot){
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, adicionalmente, se abstuvo en: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark> ocasiones, indicando una baja actividad legislativa.";
+                    }
+                    if(cont_si_tot == cont_abs_tot && cont_si_tot == cont_asis_tot){
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, por otra parte, el resto de votaciones es similar.";
+                    }
+                  }
+                  else if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_si_tot && cont_abs_tot > cont_asis_tot) {
+                    if (cont_si_tot > cont_abs_tot && cont_si_tot > cont_no_tot){
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja un número de abstenciones considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un total de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark>, emitiendo un voto neutro que refleja posibles factores (evitar costos políticos, afectar el quórum, entre otros.), sin embargo, participo a favor en: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> ocasiones.";
+                    }
+                    if (cont_no_tot > cont_abs_tot && cont_no_tot > cont_si_tot){
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja un número de abstenciones considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un total de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark>, emitiendo un voto neutro que refleja posibles factores (evitar costos políticos, afectar el quórum, entre otros.), sin embargo, participo en contra en: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_no_tot) + "</b></mark> ocasiones.";
+                    }
+                    if (cont_asis_tot > cont_si_tot && cont_asis_tot > cont_no_tot){
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja un número de abstenciones considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un total de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark>, emitiendo un voto neutro que refleja posibles factores (evitar costos políticos, afectar el quórum, entre otros.), por otra parte, presenta: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark> inasistencias.";
+                    }
+                    if(cont_si_tot == cont_abs_tot && cont_si_tot == cont_asis_tot){
+                      document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja un número de abstenciones considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un total de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark>, emitiendo un voto neutro que refleja posibles factores (evitar costos políticos, afectar el quórum, entre otros.), por otra parte, el resto de votaciones es similar. ";
+                    }
+                  }
+
+                  if (cont_si_tot == 0 && cont_abs_tot == 0 && cont_asis_tot == 0 && cont_no_tot == 0) {
+                    document.getElementById("sivotes").innerHTML = "Sin resultados, Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
+                  }
+
+
+                  // console.log(cont_si_tot)
+
+
                 })
                 .then((_) => {
                   flower_si(flor_si);
