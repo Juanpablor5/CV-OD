@@ -94,7 +94,7 @@
   <div class="slide__inner">
     <h1 style= "font-family: 'Questrial', serif;">¡Bienvenidos a Civis Sum!</h1>
     <h4 style="margin-top: 25px; font-weight: normal; font-family: 'Questrial', serif; text-shadow: 0 0 8px #a1a3a5;">¿Representa el Congreso de la República a los ciudadanos?</h4>
-    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Con Civis Sum podrás ver como representa el Conngreso de la República a los ciudadanos durante los ultimos 15 años. Podrás encontrar puntos de interés al cambiar los años, los temas e incluso los congresistas o partido político. </p>
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Con Civis Sum podrás ver como representa el Congreso de la República a los ciudadanos durante los ultimos 15 años. Podrás encontrar puntos de interés al cambiar los años, los temas e incluso los congresistas o partido político. </p>
     <p class="demo-arrow">&darr;</p>
     <p class="demo-instructions" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter; text-align: justify;" >Empecemos...</p>
 
@@ -591,11 +591,7 @@
     <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
       <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representación en el Congreso
       </p>
-
-      <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-        Sin resultados
-        </p>
-        <button onclick="scrollWin()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Reiniciar Consulta</button>
+      <button onclick="scrollWin()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Reiniciar Consulta</button>
         <script>
           function scrollWin() {
             window.scrollTo(0, 6930);
@@ -603,6 +599,44 @@
           </script>
         <button onclick="window.location.reload()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Refresh page</button>
 
+        <div id="slidecontainer" class="slideshow-container" >
+
+          <div class="mySlides">
+            <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">las conclusiones son:</p>
+          </div>
+          
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            
+            slides[slideIndex-1].style.display = "block";  
+            
+          }
+          </script>
   </div>
   
 </article>
