@@ -1,132 +1,719 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" >
-    <link rel="stylesheet" href="assets/landing.css">
-    <title>Civis Sum</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Civis Sum</title>
+  <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Questrial">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+</head>
 
 <body>
+<!-- partial:index.partial.html -->
 
-  <main role="main">
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active" >
-          <div class="overlay-itro"></div>
-          <img src="assets/img/banner1.jpg" class="d-block w-100" alt="...">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 style="font-size: 4.5rem;">Civis Sum</h1>
-              <br>
-              <br>
-              <br>
-              <br>
-              <p>Con esta herramienta podrás ver gráficamente cómo es el comportamiento del Congreso de la República en diferentes temas de interés. Además, te será posible concluir sobre la representación ciudadana por parte de los congresistas, acorde a los proyectos de ley en los últimos 15 años.</p>
-            </div>
-          </div>
+<!-- Imagen congreso inicio -->
+<div id="mySidenav" class="sidenav">
+  <a id="about">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" style="margin-top: 58px;"></i>  
         </div>
-        <div class="carousel-item">
-          <div class="overlay-itro"></div>
-          <img src="assets/img/banner2.jpg" class="d-block w-100" alt="...">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 style="font-size: 4.5rem;">¿Qué queremos demostrar?</h1>
-              <br>
-              <br>
-              <p>El objetivo principal de Civis Sum es informar cuál es la representación ciudadana en el Congreso de la República, con base a las votaciones de los congresistas a los proyectos de ley y los intereses de los ciudadanos en los últimos 15 años.</p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="overlay-itro"></div>
-          <img src="assets/img/banner3.jpg" class="d-block w-100" alt="...">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 style="font-size: 4.5rem;">¿Cómo funciona?</h1>
-              <br>
-              <br>
-              <p>Para lograr nuestro objetivo, optamos por juntar dos bases de datos, el Observatorio de la Democracia y Congreso Visible. Aquí podemos encontrar la percepción de los ciudadanos relacionadas a diversos temas y los votos de los proyectos de ley por parte de congresistas, respectivamente.</p>
-            </div>
-          </div>
+        <div style="text-align: center;">
+          <p style="font-size: 20px; font-family: 'Questrial', serif; font-weight: normal;">Civis Sum</p>
+          <p style="font-size: 16px; font-family: 'Questrial', serif; font-weight: normal; margin-top: 10px;">Sigue tu consulta <i class="fas fa-search" style="font-size: 20px; right: 0;"></i></p>
+          <p style="font-size: 12px; font-family: 'Questrial', serif; font-weight: lighter; margin-top: -10px;">Mira los filtros aplicados en las pestañas. </p>   
         </div>
       </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>
+    </div>
+  </a>
+  <a id="blog">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" style="margin-top: 7px;"></i>  
+        </div>
+        <div>
+          <p id="aniosfilter" style="font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Años: sin filtro.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="projects">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" style="margin-top: 16px;"></i>  
+        </div>
+        <div>
+          <textarea class="scrollabletextbox"  id="temasfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Temas: sin filtro.</textarea>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a id="contact">
+    <div  style="border: 2px dashed white; ">
+      <div style="display: flex; margin: 10px; vertical-align: middle;">
+        <div style="width: 30px;">
+          <i class="fas fa-chevron-left" style="margin-top: 15px;"></i>  
+        </div>
+        <div>
+          <textarea class="scrollabletextbox" id="congresfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Congresistas: sin filtro.</textarea>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<article id="slide-0" class="slide slide--text slide--locked"  style=" background-image:url(assets/img/congreso.png); opacity: 1;" >
+
+  <div class="slide__inner" style="border: 2px dashed white; "></div>
+
+
+
+</article>
+
+<script src="js/bubbles/count.js"></script>
+<script src="js/bubbles/count2.js"></script>
+<script src="js/bubbles/countCiuda.js"></script>
+
+<!-- Introduccion -->
+
+<article id="slide-1" class="slide slide--text slide--locked">
+  <div class="slide__inner">
+    <h1 style= "font-family: 'Questrial', serif;">¡Bienvenidos a Civis Sum!</h1>
+    <h4 style="margin-top: 25px; font-weight: normal; font-family: 'Questrial', serif; text-shadow: 0 0 8px #a1a3a5;">¿Representa el Congreso de la República a los ciudadanos?</h4>
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Con Civis Sum podrás ver como representa el Congreso de la República a los ciudadanos durante los ultimos 15 años. Podrás encontrar puntos de interés al cambiar los años, los temas e incluso los congresistas o partido político. </p>
+    <p class="demo-arrow">&darr;</p>
+    <p class="demo-instructions" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter; text-align: justify;" >Empecemos...</p>
+
+  </div>
+  <div style="margin-top: -75px; float: left; margin-right: 10px; margin-left: 30px;">
+    <img src="assets/img/Logo_Uniandesfacing.png" height="50px" width="130px">
+    <img src="assets/img/logo_-observatorio_-_derecha1.png" height="45px" width="160px" style="margin-left: 13px;">
+    <img src="assets/img/logo-cv.png" height="35px" width="170px" style="margin-left: 10px;">
+
+  </div>
+</article>
+
+<!-- Datos OD -->
+
+<article id="slide-2" class="slide slide--scrolling slide--text" >
+  <div class="slide__inner" style="text-align: center;" >
+    <img src="assets/img/logo_-observatorio_-_derecha1.png" height="70px" width="250px" style="margin-left: 13px;">
+
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+      Desde el Observatorio de la Democracia se ha realizado un estudio de opinión pública llamado el "Barómetro de las Américas". Desde este, se ha recolectado información sobre las percepciones de los colombianos frente a diversos temas estructurales y coyunturales.
+      </p>
+      <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">2318609</p>
+
+    <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de datos procesados</p>
+
+    <p>
+      <button id="btn_datos_OD" class="btn" style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+    </p>
+
+
+    <div style="width: 100%; align-content: center; justify-content: center; text-align: center; margin-top: 50px;">
+      <p style="font-family: 'Questrial', serif; width: 100%; text-align: center;">Visión del Ciudadano</p>
+      <p class="demo-arrow" style="text-shadow: 0 0 8px #a1a3a5; margin-top: -25px;">&darr;</p>
     </div>
 
-    <div class="container marketing">
-      
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-4">
-            <a href="https://obsdemocracia.org/" target="_blank">
-              <img src="assets/img/OD_Landing.jpg" class="d-block w-100" alt="...">
-            </a>
-            <p>Desde el Observatorio de la Democracia se ha realizado un estudio de opinión pública llamado "El Barómetro de las Américas". Gracias a esta iniciativa, se ha recolectado información sobre las percepciones de los colombianos frente a diversos temas estructurales y coyunturales, de las cuales podremos hallar diversas conclusiones.</p>
-          </div>
-          <div class="col col-lg-2">
-          </div>
-          <div class="col col-lg-4">
-            <a href="https://congresovisible.uniandes.edu.co/" target="_blank">
-              <img src="assets/img/CV_Landing.jpg" class="d-block w-100" alt="...">
-            </a>
-            <p>Por parte de Congreso Visible, y desde una perspectiva independiente del Gobierno, se ha venido realizando un seguimiento y análisis del Congreso de la República a través de su actividad legislativa. Gracias a esto, podemos recolectar los datos de los proyectos de ley que han sido efectuados en los últimos 3 cuatrienios y analizar sus diferentes atributos.</p>
-          </div>
+
+    </div>
+</article>
+
+<!-- Datos CV -->
+
+<article id="slide-3" class="slide slide--text" >
+  <div class="slide__inner" style="text-align: center;" >
+    <img src="assets/img/logo-cv.png" height="60px" width="270px" style="margin-top: 10px;">
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+      Congreso Visible realiza un seguimiento y análisis permanentes del Congreso de la República a través de la publicación de su actividad legislativa, fortaleciendo y promoviendo la participación de la ciudadanía en procesos de exigencia de rendición de cuentas a sus elegidos.
+      </p>
+      <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">404000</p>
+      <script>
+        $('.count').each(function () {
+                $(this).prop('Counter',0).animate({
+                Counter: $(this).text()
+                }, {
+                duration: 12000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(commaSeparateNumber(Math.ceil(now)));
+                }
+            });
+        });
+
+        function commaSeparateNumber(val) {
+          while (/(\d+)(\d{3})/.test(val.toString())) {
+            val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+          }
+          return val;
+        }
+      </script>
+    <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de datos procesados</p>
+
+    <p>
+      <button id="btn_datos_CV" class="btn" style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+    </p>
+
+    <div style="width: 100%; align-content: center; justify-content: center; text-align: center; margin-top: 50px;">
+      <p style="font-family: 'Questrial', serif; width: 100%; text-align: center;">Visión del Congreso</p>
+      <p class="demo-arrow" style="text-shadow: 0 0 8px #a1a3a5; margin-top: -25px;">&darr;</p>
+    </div>
+    </div>
+</article>
+
+<!--bubbles OD -->
+<article id="slide-4" class="slide slide--text" >
+  <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+
+
+    <p style="font-size: 25px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>1</b></mark> Número de preguntas, asociadas por temáticas, entre los años 2004 y 2018
+      </p>
+
+      <div id = 'MyVis1' style="width: fit-content;">
+        <script src="js/bubbles/bubblesODCtgs.js"></script>
+
+      </div>
+      <p style="font-size: 18px; font-family: 'Questrial', serif; font-weight: lighter;">
+        OD ha realizado más de <mark style="background-color: #089baa; color: white; font-size: 23px;" ></b>964</b></mark> preguntas asociadas a <mark style="background-color: #089baa; color: white; font-size: 23px;"></b>87</b></mark>  temáticas diferentes, con el objetivo de conocer la percepción de los ciudadanos de diferentes regiones de Colombia sobre dichos temas.
+        </p>
+
+  </div>
+</article>
+
+<!-- bubbles CV-->
+
+<article id="slide-5" class="slide slide--text" >
+  <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+    <p style="font-size: 25px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>2</b></mark> Número de proyectos de ley, asociados por temáticas e iniciativas, entre los años 2006 y 2018
+      </p>
+    <div id = 'vis' style="width: fit-content;"></div>
+    <script src="js/bubbles/bubbles.js"></script>
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+      CV registro más de <mark style="background-color: #3abae9; color: white; font-size: 23px;" ></b>271</b></mark> proyectos de ley de <mark style="background-color: #3abae9; color: white; font-size: 23px;" ></b>87</b></mark> temas, resultado de la actividad legislativa del Congreso.
+      </p>
+  </div>
+
+
+</article>
+
+<!--bubbles preguntas OD -->
+
+<article id="slide-6" class="slide slide--text">
+  <div style=" border: 2px dashed black; height: 100%;">
+
+      <div class="row justify-content-center" style="padding-top: 20px;">
+
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">2006-2010</p>
+          <div id = 'myVis1' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesOD1.js"></script>
+
       </div>
 
 
-      <!-- START THE FEATURETTES -->
+      <div class="row justify-content-center" >
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">          
-          <h2 class="featurette-heading">Vista general de los datos</h2>
-          <br>
-          <p class="lead">A continuación, encontrarás una visión a gran escala de los datos, para los últimos 3 cuatrienios, que se trabajan en Civis Sum.<p class="lead">Entra dando click en la imagen.</p></p>
+        <div class="col-md-6">
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">2010-2014</p>
+          <div id = 'myVis2' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesOD2.js"></script>
         </div>
-        <div class="col-md-5">
-          <a href="vista-datos.html" target="_blank">
-            <img src="assets/img/burbujas.jpg" class="d-block w-100" alt="...">
-          </a>
+        <div class="col-md-6" style="padding-right: 60px;">
+          <p style="padding-top: 20px; font-weight: bold; font-family: 'Questrial', serif; font-size: 20px;"><mark style="background-color: #089baa; color: white; font-size: 40px;" ></b>3</b></mark> Preguntas realizadas en las encuestas</p>
+          <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Es posible ver el número de preguntas, organizadas por temática, para cada uno de los periodos legislativos desde el año 2006.</p>
+          <button id="myBtn" class="btn" style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de las preguntas</button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal" >
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header" style="text-align: left;">
+                <h4 class="modal-title">Informes de OD</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+              </div>
+              <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la realización de artículos o proyectos de investigación. Estos datos también son una herramienta para analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés nacional o coyunturas políticas específicas."</p>
+              <div class="modal-footer">
+                <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+              </div>
+            </div>
+
+          </div>
+          <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
         </div>
       </div>
 
-      <hr class="featurette-divider">
+      <div class="row justify-content-center" style="padding-top: 10px; font-family: 'Questrial', serif;">
 
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Bien, ¡ahora vamos a trabajar sobre los datos!</h2>
-          <br>
-          <p class="lead">Ya sabiendo los datos vamos a trabajar sobre ellos. Entrando a la herramienta de Civis Sum podrás realizar todos los filtrados sobre los temas de interés, años, preguntas y congresistas específicos. ¡Todo en un mismo lugar!</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <a href="filtrado.html" target="_blank">
-            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-          </a>
-        </div>
+          <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
+          <div id = 'myVis3' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesOD3.js"></script>
+
+      </div>
+  </div>
+</article>
+
+<!--bubbles preguntas cv -->
+
+<article id="slide-7" class="slide slide--text">
+  <div style=" border: 2px dashed black; height: 100%;">
+
+      <div class="row justify-content-center" style="padding-top: 10px;">
+
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">2006-2010</p>
+          <div id = 'vis2' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesc1.js"></script>
+
       </div>
 
-      <hr class="featurette-divider">
+
+      <div class="row justify-content-center" style="padding-top: 10px;">
+
+        <div class="col-md-6">
+          <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">2010-2014</p>
+          <div id = 'vis3' style="width: fit-content;"></div>
+          <script src="js/bubbles/bubblesc2.js"></script>
+        </div>
+        <div class="col-md-6" style="padding-right: 60px;">
+          <p style="padding-top: 20px; font-weight: bold; font-family: 'Questrial', serif; font-size: 20px;"><mark style="background-color: #3abae9; color: white; font-size: 40px;" ></b>4</b></mark> Proyectos
+            de ley por periodos.</p>
+          <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Podrás ver cómo es la representación ciudadana según las temáticas que te interesen.</p>
+          <p>
+            <button id="btn_proy_CV" class="btn" style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center" style="padding-top: -30px; font-family: 'Questrial', serif;">
+
+          <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
+          <div id = 'vis4' style="width: fit-content; overflow: visible;"></div>
+          <script src="js/bubbles/bubblesc3.js"></script>
+
+      </div>
+  </div>
+</article>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<!--filtro por años -->
+
+<article id="slide-8" class="slide slide--text" >
+  <div id="anos" class="slide__inner" style="text-align: center;" >
+    <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>5</b></mark> Temporalidad
+      </p>
+    <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+      Análisis de Representación Ciudadana
+      </p>
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+    De acuerdo a los datos anteriores, puedes elegir en qué <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>años</b></mark> hacer el análisis del comportamiento de la representación ciudadana
+    </p>
+      <div class="row" style="align-self: center; font-size: 12 px;">
+        <div class="col-md-12">
+          <select id="anios" multiple class="font">
+            <script src="js/scripts/slimselect.js"></script>
+            <script src="js/scripts/selectYear.js"></script>
+          </select>
+          <button id="btn_anios" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;">Seleccionar</button>
+        </div>
+      </div>
+      <i id="spinneranios" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 60px;"></i>
+      <i id="checkanios" class="fas fa-check-double" style="font-size: 40px; margin-top: 60px;"></i>
+      <script>
+        document.getElementById("checkanios").style.visibility = "hidden";
+      </script>
+  </div>
+</article>
+
+<!--filtro por temas cv -->
+
+<article id="slide-9" class="slide slide--text">
+  <div class="slide__inner" style="text-align: center;">
+    <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>6</b></mark> Temas o Categorias
+      </p>
+
+      <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+        Clasificacion de Intereses
+        </p>
+
+        <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+          Se usaron <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>87</b></mark> etiquetas para clasificar toda la información. Por ello podrás elegir los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>temas</b></mark> de interés para ciudadanos y congresistas.
+          </p>
+
+    <div class="row" style="align-self: center; font-size: 12 px;">
+      <div class="col-md-12">
+        <select id="etiquetas" multiple class="font">
+          <script src="js/scripts/select.js"></script>
+        </select>
+        <script src="js/flores/flower.js"></script>
+        <button id="btn_etiquetas" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Buscar</button>
+      </div>
+    </div>
+    <i id="spinnertemas" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 60px;"></i>
+    <i id="checktemas" class="fas fa-check-double" style="font-size: 40px; margin-top: 60px;"></i>
+    <script>
+      document.getElementById("checktemas").style.visibility = "hidden";
+    </script>
+  </div>
+</article>
+
+<!--filtro por preguntas OD -->
+
+<article id="slide-10" class="slide slide--text">
+  <div class="slide__inner" style="text-align: center;">
+    <p style="font-size: 30px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>7</b></mark> Preguntas de Observatorio de la Democracia
+      </p>
+    <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+      Preguntas afines a los temas escogidos:
+      </p>
+      <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+        A continuación podrás ver las <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>preguntas</b></mark> relacionadas a los temas seleccionados, que OD hizo a los ciudadanos para poder ver qué opinan los ciudadanos.
+        </p>
+    <div class="row" style="align-self: center; font-size: 12 px;">
+      <div class="col-md-12" id="sec_preg">
+        <select id="preguntas" multiple class="font"></select>
+      </div>
+      <div class="col-md-12">
+        <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;">Buscar</button>
+      </div>
+      <script src="js/scripts/selectPreguntas.js"></script>
+      <script src="js/scripts/filtrarAños.js"></script>
+      <script src="js/scripts/slimselect.js"></script>
     </div>
 
-  </main>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="bootstrap/js/bootstrap.js"></script>
+    <p id="conteo_preguntas" style="font-size: 40px; padding-top: 40px; font-family: 'Questrial', serif; font-weight: bold;">
+    </p>
+    <p style="font-size: 20px; font-family: 'Questrial', serif; font-weight: normal; margin-top: -20px;">
+      Preguntas
+    </p>
+  </div>
+</article>
+
+<!--filtro congresistas -->
+
+<article id="slide-11" class="slide slide--text">
+  <div class="slide__inner" style="text-align: center;">
+    <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>8</b></mark> Congresistas
+      </p>
+
+      <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+        Congresista o Partido Político
+        </p>
+
+        <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+          Para hacerlo más específico, puedes elegir para qué <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> quieres ver su actividad legislativa, y por ende, su afinidad con el ciudadano.
+          </p>
+    <select id="congresistas" multiple class="font">
+      <script src="js/scripts/select_congresistas.js"></script>
+    </select>
+    <script src="js/flores/flower.js"></script>
+    <button id="btn_congresistas" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;" >Buscar</button>
+    <script>
+      let proy_etiq = [];
+      let anio_selected_export = [];
+      let congre_selec_export = [];
+    </script>
+    <script src="js/flores/data_flwr.js"></script>
+    <script src="js/scripts/slimselect.js"></script>
+    <p style="font-size: 40px; padding-top: 40px; font-family: 'Questrial', serif; font-weight: bold;">
+      676
+    </p>
+    <p style="font-size: 20px; font-family: 'Questrial', serif; font-weight: normal; margin-top: -20px;">
+      Total de Congresistas
+    </p>
+    <i id="spinnercongr" class="fas fa-spinner fa-pulse" style="font-size: 40px; margin-top: 10px;"></i>
+    <i id="checkcongr" class="fas fa-check-double" style="font-size: 40px; margin-top: 10px;"></i>
+    <script>
+      document.getElementById("checkcongr").style.visibility = "hidden";
+    </script>
+  </div>
+</article>
+
+<!--preguntas OD -->
+
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<article id="slide-12" class="slide slide--text" >
+  <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+
+
+    <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>9</b></mark>
+      </p>
+    <!--
+    <div id="chart"></div>
+    <script src="js/piechart/pie.js"></script>-->
+    <script src="js/scripts/preguntas.js"></script>
+
+
+      </div>
+
+  </div>
+</article>
+
+<!--flores cv -->
+
+<article id="slide-13" class="slide slide--text">
+  <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+    <p style="font-size: 25px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>10</b></mark> ¿Cómo votaron los congresistas?
+      </p>
+    <div class="row" style="text-align: center; justify-content: center;">
+      <div class="container col-lg-6">
+
+        <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
+          Número de votos a favor:
+          </p>
+        <div id="flr_si" style="margin-top: -10px;">
+          <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+          <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            Escoge al menos un tema.
+            </p>
+        </div>
+
+      </div>
+
+      <div class="container col-lg-6">
+        <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
+          Número de votos en contra:
+          </p>
+        <div id="flr_no" style="margin-top: -10px;">
+          <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+          <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            Escoge al menos un tema.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align: center; justify-content: center;">
+      <div class="container col-lg-6">
+        <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+          Número de Abstenciones:
+          </p>
+        <div id="flr_abs" style="margin-top: -10px;">
+          <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+          <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            Escoge al menos un tema.
+            </p>
+        </div>
+      </div>
+      <div class="container col-lg-6">
+        <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+          Número de Inasistencias:
+          </p>
+        <div id="flr_asis" style="margin-top: -10px;">
+          <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+          <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            Escoge al menos un tema.
+            </p>
+        </div>
+      </div>
+
+    </div>
+    <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+      Este es el compotamiento legislativo de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresistas</b></mark> en proyectos de ley relacionados con los temas seleccionados.
+      </p>
+      <script src="js/scripts/export/csv_reader.js"></script>
+      <script src="js/scripts/export/file_saver.js"></script>
+      <button id="btn_export" class="btn" style="background-color: #3abae9;  font-family: 'Questrial', serif;">Exportar a CSV</button>
+      <script src="js/scripts/export/export_data.js"></script>
+      <script src="https://d3js.org/d3.v3.min.js"></script>
+  </div>
+</article>
+
+
+<!--Resultados OD -->
+
+<article id="slide-14" class="slide slide--text" >
+  <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+    <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>11</b></mark> Representación Ciudadana
+      </p>
+      <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+        Los <mark style="background-color: #089baa; color: white; font-size: 20px;"></b>ciudadanos</b></mark>, teniendo en cuenta el comportmiento de los congresistas:
+        </p>
+
+  </div>
+</article>
+
+<!--Resucltados CV -->
+
+<article id="slide-15" class="slide slide--text" >
+  <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+    <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+      <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representación en el Congreso
+      </p>
+      <button onclick="scrollWin()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Reiniciar Consulta</button>
+        <script>
+          function scrollWin() {
+            window.scrollTo(0, 6930);
+          }
+          </script>
+        <button onclick="window.location.reload()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Refresh page</button>
+
+        <div id="slidecontainer" class="slideshow-container" >
+
+          <div class="mySlides">
+            <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">las conclusiones son:</p>
+          </div>
+          
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            
+            slides[slideIndex-1].style.display = "block";  
+            
+          }
+          </script>
+  </div>
+  
+</article>
+
+<!--close 1 -->
+
+<article id="slide-16" class="slide slide--text">
+  <div class="slide__inner" style="text-align: right;">
+    <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
+    <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
+  </div>
+</article>
+
+<!--close 2 -->
+
+<article id="slide-17" class="slide slide--text">
+  <div class="slide__inner">
+    <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
+  </div>
+
+</article>
+
+
+<article id="slide-18" class="slide slide--text">
+  <div class="slide__inner" style="text-align: right;">
+  <h3 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de las bancadas de Partidos Políticos</h3>
+  <p class="demo-instructions">Las bancadas tiene un comportamiento generalmente en común, y por ello es posible ver patrones en la partipación de los congresistas.</p>
+ </div>
+</article>
+
+  <article id="slide-19" class="slide ">
+    <div class="col-sm-12" style="padding-left: 60px; padding-top: 80px;">
+      <div id='dashboard'></div>
+      <script src="js/piechart/piechart.js"></script>
+      <script>
+      var freqData=[
+      {State:'CD',freq:{Si:100, No:12, Abstencion:29}}
+      ,{State:'CR',freq:{Si:101, No:12, Abstencion:74}}
+      ,{State:'C',freq:{Si:132, No:49, Abstencion:41}}
+      ,{State:'L',freq:{Si:132, No:52, Abstencion:62}}
+      ,{State:'U',freq:{Si:181, No:4, Abstencion:48}}
+      ,{State:'AV',freq:{Si:119, No:67, Abstencion:63}}
+      ,{State:'POLO',freq:{Si:119, No:47, Abstencion:12}}
+      ,{State:'FARC',freq:{Si:70, No:52, Abstencion:30}}
+      ,{State:'DE',freq:{Si:34, No:20, Abstencion:15}}
+      ,{State:'MIRA',freq:{Si:23, No:30, Abstencion:41}}
+      ,{State:'CJL',freq:{Si:45, No:12, Abstencion:14}}
+      ,{State:'MAIS',freq:{Si:23, No:10, Abstencion:12}}
+      ,{State:'AICO',freq:{Si:10, No:5, Abstencion:17}}
+      ];
+
+      dashboard('#dashboard',freqData);
+      </script>
+  </article>
+
+  <article id="slide-20" class="slide slide--text">
+    <div class="slide__inner" style="text-align: right;">
+    <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
+    <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes</p>
+    <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?</h3>
+    </div>
+  </article>
+
+  <article id="slide-21" class="slide slide--text">
+
+  </article>
+
+<!-- <article id="slide-11" class="slide slide--text">
+  <div id="chart"></div>
+  <script src="dotchart.js"></script>
+</article> -->
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="js/scripts/script.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
 </body>
+
 </html>
