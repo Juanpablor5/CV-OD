@@ -81,7 +81,7 @@ $("#btn_export").click(function () {
                 saveAs(blob, "data_export.csv");
 
                 let t1 = performance.now();
-                console.log("El proceso de exportación tardó " + (t1 - t0) + " milisegundos.");
+                console.log("El proceso de exportación tardó " + (t1 - t0)/1000 + " segundos.");
               },
             });
           }
