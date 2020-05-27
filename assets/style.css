@@ -810,12 +810,12 @@ font-family: 'Questrial'; }
   
 }
 
-.scrolldown-vista-text{
+/* .scrolldown-vista-text{
   margin: 0;
   padding: 0;
 }
 
-.scrolldown-vista-text section{
+.scrolldown-vista-text-section{
   position: relative;
   display: flex;
   justify-content: center;
@@ -827,20 +827,29 @@ font-family: 'Questrial'; }
   left: 25%;
 }
 
-.scrolldown-vista-text section div{
+.scrolldown-vista-text-div{
   max-width: 800px;
 }
 
-.scrolldown-vista-text section div h1{
+.scrolldown-vista-text-div-h1{
   margin: 0;
   padding: 0;
   color: #fff;
-  font-size: 18px;
+  font-size: 30px;
+  font-family: 'Questrial', serif;
+}
+.scrolldown-vista-text-div-h4{
+  font-weight: normal; 
+  font-family: 'Questrial', serif; 
+  text-shadow: 0 0 8px #a1a3a5;
 }
 
-.scrolldown-vista-text section div p{
+.scrolldown-vista-text-div-p{
   margin: 0;
   padding: 0;
   color: #fff;
-  font-size: 15px;
-}
+  align-self: center;
+  font-size: 18px;
+  font-family: 'Questrial', serif; 
+  font-weight: lighter;
+} */
