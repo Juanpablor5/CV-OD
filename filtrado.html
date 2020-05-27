@@ -227,7 +227,8 @@
 
           <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
             Para hacerlo más específico, puedes elegir para qué <mark
-              style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> quieres ver su actividad legislativa, y por ende, su afinidad con el ciudadano.
+              style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> quieres ver
+            su actividad legislativa, y por ende, su afinidad con el ciudadano.
           </p>
           <select id="congresistas" multiple class="font">
             <script src="js/scripts/select_congresistas.js"></script>
@@ -274,81 +275,135 @@
 
 
         </div>
-    </article>
+      </article>
 
-    <!--flores cv -->
+      <!--flores cv -->
 
-    <article id="slide-6" class="slide slide--text">
-      <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
-        <p style="font-size: 25px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-          <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>10</b></mark> ¿Cómo votaron los
-          congresistas?
-        </p>
-        <div class="row" style="text-align: center; justify-content: center;">
-          <div class="container col-lg-6">
+      <article id="slide-6" class="slide slide--text">
+        <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+          <p style="font-size: 25px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>10</b></mark> ¿Cómo votaron los
+            congresistas?
+          </p>
+          <div class="row" style="text-align: center; justify-content: center;">
+            <div class="container col-lg-6">
 
-            <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
-              Número de votos a favor:
-            </p>
-            <div id="flr_si" style="margin-top: -10px;">
-              <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-              <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                Escoge al menos un tema.
+              <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
+                Número de votos a favor:
               </p>
+              <div id="flr_si" style="margin-top: -10px;">
+                <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+                <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                  Escoge al menos un tema.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="container col-lg-6">
+              <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
+                Número de votos en contra:
+              </p>
+              <div id="flr_no" style="margin-top: -10px;">
+                <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+                <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                  Escoge al menos un tema.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="text-align: center; justify-content: center;">
+            <div class="container col-lg-6">
+              <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                Número de Abstenciones:
+              </p>
+              <div id="flr_abs" style="margin-top: -10px;">
+                <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+                <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                  Escoge al menos un tema.
+                </p>
+              </div>
+            </div>
+            <div class="container col-lg-6">
+              <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                Número de Inasistencias:
+              </p>
+              <div id="flr_asis" style="margin-top: -10px;">
+                <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+                <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                  Escoge al menos un tema.
+                </p>
+              </div>
             </div>
 
           </div>
+          <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+            Este es el compotamiento legislativo de los <mark
+              style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresistas</b></mark> en proyectos
+            de ley relacionados con los temas seleccionados.
+          </p>
+          <script src="js/scripts/export/csv_reader.js"></script>
+          <script src="js/scripts/export/file_saver.js"></script>
+          <div class="loading-export"></div>
 
-          <div class="container col-lg-6">
-            <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
-              Número de votos en contra:
-            </p>
-            <div id="flr_no" style="margin-top: -10px;">
-              <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-              <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                Escoge al menos un tema.
-              </p>
+          <p>
+            <button id="btn_proy_CV" class="btn btn-2"
+              style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+          </p>
+          <!-- The Modal -->
+          <div id="myModal" class="modal2">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header" style="text-align: left;">
+                <h4 class="modal-title">Flores</h4>
+                <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+
+              </div>
+              <p style="padding: 20px;">"Descargar información"</p>
+              <div class="modal-footer">
+                <button id="btn_export" class="btn"
+                  style="background-color: #3abae9;  font-family: 'Questrial', serif;">Exportar a CSV</button>
+              </div>
             </div>
+
           </div>
         </div>
-        <div class="row" style="text-align: center; justify-content: center;">
-          <div class="container col-lg-6">
-            <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-              Número de Abstenciones:
-            </p>
-            <div id="flr_abs" style="margin-top: -10px;">
-              <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-              <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                Escoge al menos un tema.
-              </p>
-            </div>
-          </div>
-          <div class="container col-lg-6">
-            <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-              Número de Inasistencias:
-            </p>
-            <div id="flr_asis" style="margin-top: -10px;">
-              <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-              <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                Escoge al menos un tema.
-              </p>
-            </div>
-          </div>
 
-        </div>
-        <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-          Este es el compotamiento legislativo de los <mark
-            style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresistas</b></mark> en proyectos
-          de ley relacionados con los temas seleccionados.
-        </p>
-        <script src="js/scripts/export/csv_reader.js"></script>
-        <script src="js/scripts/export/file_saver.js"></script>
-        <div class="loading-export"></div>
-        <button id="btn_export" class="btn"
-          style="background-color: #3abae9;  font-family: 'Questrial', serif;">Exportar a CSV</button>
+        <script>
+          // Get the modal
+          var modal2 = document.getElementsByClassName('modal2');
+
+          // Get the button that opens the modal
+          var btn = document.getElementsByClassName("btn-2");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close");
+
+          // When the user clicks on the button, open the modal
+
+          console.log(btn)
+
+          btn[0].onclick = function () {
+            modal2[0].style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span[0].onclick = function () {
+            modal2[0].style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function (event) {
+            if (event.target == modal2) {
+              modal2.style.display = "none";
+            }
+          }
+        </script>
+
+
         <script src="js/scripts/export/export_data.js"></script>
         <script src="https://d3js.org/d3.v3.min.js"></script>
-      </div>
     </article>
 
 
@@ -360,7 +415,8 @@
           <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>11</b></mark> Representación
           Ciudadana
         </p>
-        <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+        <p id="sivotes"
+          style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
           Sin resultados
         </p>
 
@@ -372,57 +428,61 @@
     <article id="slide-8" class="slide slide--text">
       <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
         <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-          <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representación en el Congreso
-          </p>
-          <button onclick="scrollWin()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Reiniciar Consulta</button>
-            <script>
-              function scrollWin() {
-                window.scrollTo(0, 0);
-              }
-              </script>
-    <p id="textini" style="font-size: 18px; margin-top: 100px; font-family: 'Questrial', serif; font-weight: normal;">
-      Mira las conclusiones de tu consulta usando las flechas.
-      </p>
-            <div id="slidecontainer" class="slideshow-container" style="margin-top: -120px;">
-    
-              <div class="mySlides">
-                <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">las conclusiones son:</p>
-              </div>
-              
-              </div>
-              
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
-              
-              </div>
-              <script>
-              var slideIndex = 1;
-              showSlides(slideIndex);
-              
-              function plusSlides(n) {
-                showSlides(slideIndex += n);
-                document.getElementById('textini').style.visibility = "hidden";
-              }
-              
-              function currentSlide(n) {
-                showSlides(slideIndex = n);
-              }
-              
-              function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                
-                if (n > slides.length) {slideIndex = 1}    
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";  
-                }
-                
-                slides[slideIndex-1].style.display = "block";  
-                
-              }
-              </script>
+          <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representación en el
+          Congreso
+        </p>
+        <button onclick="scrollWin()" class="btn"
+          style="background-color: #3abae9; font-family: 'Questrial', serif;">Reiniciar Consulta</button>
+        <script>
+          function scrollWin() {
+            window.scrollTo(0, 0);
+          }
+        </script>
+        <p id="textini"
+          style="font-size: 18px; margin-top: 100px; font-family: 'Questrial', serif; font-weight: normal;">
+          Mira las conclusiones de tu consulta usando las flechas.
+        </p>
+        <div id="slidecontainer" class="slideshow-container" style="margin-top: -120px;">
+
+          <div class="mySlides">
+            <p id="sivotes"
+              style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Sin
+              consultas aún...</p>
+          </div>
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
       </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+          document.getElementById('textini').style.visibility = "hidden";
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+
+          slides[slideIndex - 1].style.display = "block";
+
+        }
+      </script>
 
     </article>
 

@@ -53,7 +53,7 @@
     <script src="js/bubbles/count2.js"></script>
     <script src="js/bubbles/countCiuda.js"></script>
 
-    <!-- Datos OD -->
+    <!-- Datos CV -->
     <article id="slide-1" class="slide slide--text slide--scrolling">
       <div class="slide__inner" style="text-align: center;">
         <img src="assets/img/logo-cv.png" height="60px" width="270px" style="margin-top: 10px;">
@@ -71,6 +71,25 @@
           <button id="btn_datos_CV" class="btn"
             style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
         </p>
+
+         <!-- The Modal -->
+         <div id="myModal" class="modal2">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header" style="text-align: left;">
+              <h4 class="modal-title">CV</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <p style="padding: 20px;">"Información"</p>
+            <div class="modal-footer">
+              <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+            </div>
+          </div>
+
+        </div>
+       
 
         <div style="width: 100%; align-content: center; justify-content: center; text-align: center; margin-top: 50px;">
           <p style="font-family: 'Questrial', serif; width: 100%; text-align: center;">Visión del Congreso</p>
@@ -116,6 +135,29 @@
           <button id="btn_datos_OD" class="btn"
             style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los Datos</button>
         </p>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header" style="text-align: left;">
+              <h4 class="modal-title">Informes de OD</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
+              resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la
+              realización de artículos o proyectos de investigación. Estos datos también son una herramienta para
+              analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés nacional
+              o coyunturas políticas específicas."</p>
+            <div class="modal-footer">
+              <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+            </div>
+          </div>
+
+        </div>
+
         <div style="width: 100%; align-content: center; justify-content: center; text-align: center; margin-top: 50px;">
           <p style="font-family: 'Questrial', serif; width: 100%; text-align: center;">Visión del Ciudadano</p>
           <p class="demo-arrow" style="text-shadow: 0 0 8px #a1a3a5; margin-top: -25px;">&darr;</p>
@@ -192,6 +234,27 @@
               <button id="btn_proy_CV" class="btn"
                 style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
             </p>
+          <!-- The Modal -->
+          <div id="myModal" class="modal2">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header" style="text-align: left;">
+                <h4 class="modal-title">Informes de OD</h4>
+                <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+
+              </div>
+              <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
+                resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la
+                realización de artículos o proyectos de investigación. Estos datos también son una herramienta para
+                analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés nacional
+                o coyunturas políticas específicas."</p>
+              <div class="modal-footer">
+                <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+              </div>
+            </div>
+
+          </div>
           </div>
 
           <div class="col-md-6">
@@ -241,8 +304,10 @@
               en las encuestas</p>
             <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Es posible ver el número
               de preguntas, organizadas por temática, para cada uno de los periodos legislativos desde el año 2006.</p>
-            <button id="myBtn" class="btn" style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de
-              las preguntas</button>
+              <p>
+                <button id="btn_OD" class="btn"
+                  style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+              </p>
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -251,7 +316,7 @@
               <div class="modal-content">
                 <div class="modal-header" style="text-align: left;">
                   <h4 class="modal-title">Informes de OD</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
 
                 </div>
                 <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
@@ -267,29 +332,56 @@
             </div>
             <script>
               // Get the modal
-              var modal = document.getElementById("myModal");
+              var modal = document.getElementsByClassName('modal');
+              var modal2 = document.getElementsByClassName('modal2');
 
               // Get the button that opens the modal
-              var btn = document.getElementById("myBtn");
+              var btn = document.getElementsByClassName("btn");
 
               // Get the <span> element that closes the modal
-              var span = document.getElementsByClassName("close")[0];
+              var span = document.getElementsByClassName("close");
 
               // When the user clicks on the button, open the modal
-              btn.onclick = function () {
-                modal.style.display = "block";
+
+              console.log(btn)
+              console.log(modal)
+              console.log(modal2)
+
+              btn[0].onclick = function() {
+                  modal2[0].style.display = "block";
+              }
+
+              btn[1].onclick = function() {
+                  modal[0].style.display = "block";
+              }
+
+              btn[2].onclick = function() {
+                  modal2[1].style.display = "block";
+              }
+              btn[3].onclick = function() {
+                  modal[1].style.display = "block";
               }
 
               // When the user clicks on <span> (x), close the modal
-              span.onclick = function () {
-                modal.style.display = "none";
-              }
-
-              // When the user clicks anywhere outside of the modal, close it
-              window.onclick = function (event) {
-                if (event.target == modal) {
-                  modal.style.display = "none";
+                span[0].onclick = function() {
+                    modal2[0].style.display = "none";
                 }
+
+                span[1].onclick = function() {
+                    modal[0].style.display = "none";
+                }
+                span[2].onclick = function() {
+                    modal2[1].style.display = "none";
+                }
+                
+                span[3].onclick = function() {
+                    modal[1].style.display = "none";
+                }
+              // When the user clicks anywhere outside of the modal, close it
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
               }
             </script>
           </div>
