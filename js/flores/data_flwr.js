@@ -128,6 +128,17 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   fetch("data/json/CV/Congresistas.json")
     .then((resp) => resp.json())
     .then((partidos) => {
+
+      var count2 = document.getElementById("slidecontainer").childElementCount;
+      console.log(count2)
+
+      for (let index = 0; index < count2; index++) {
+            let slide = document.getElementById('slidecontainer');
+            slide.removeChild(slide.firstElementChild);           
+      } 
+
+      document.getElementById('textini').style.visibility = "visible";
+
       partidos.partidos.forEach((partido) => {
         cong_selected.forEach((cong_selected) => {
           let t = partido.congresistas.find(
@@ -303,7 +314,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
 
     });
 
-  childs += 1;
+  
 
 });
 
