@@ -33,7 +33,7 @@ function bubbleChart() {
     // set up colour scale
     const fillColour = d3.scaleOrdinal()
     .domain(["1", "2", "3", "4", "5"])
-    .range(["#3abae9", "#5DC1DB", "#7FC8CD", "#A2CFBF", "#C4D6B0"]);
+    .range(["#ed553b", "#3caea3", "#20639b", "#173f5f", "#f6d55c"]);
 
     // data manipulation function takes raw data from csv and converts it into an array of node objects
     // each node will store data and visualisation values to draw a bubble
@@ -72,6 +72,7 @@ function bubbleChart() {
         .append('svg')
         .attr('width', width)
         .attr('height', height)
+        .attr('overflow', 'auto')
 
       // Three function that change the tooltip when user hover / move / leave a cell
       var tooltip = d3.select("body")
