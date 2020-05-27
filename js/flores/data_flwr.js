@@ -278,7 +278,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     //   }
                     // }
                     var count2 = document.getElementById("slidecontainer").childElementCount;
-                    console.log(count2)
+                    // console.log(count2)
 
                     printConclusion(eti_selec.nombre, cong_selected, flor_si, cont_abs_tot, cont_si_tot, cont_no_tot, cont_asis_tot)
 
