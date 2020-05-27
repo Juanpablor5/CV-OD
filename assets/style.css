@@ -966,3 +966,38 @@ body.loading-gif{
 body.loading-gif .loading-export{
   display: block;
 }
+
+.btn_redirigir_col {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+  text-align: center;
+  margin-top: 20rem;
+  color: #fff;
+}
+
+/* Clear floats after the columns */
+.btn_redirigir_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slide__inner_redirigir {
+  height: 100%;
+  border: 2px dashed black;
+  padding: 5% 5% 5% 5%;
+  font-size: 2em;
+}
+
+.button_redirigir {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+}
