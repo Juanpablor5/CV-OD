@@ -405,7 +405,7 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
   }
 
   if (cont_si_tot == 0 && cont_abs_tot == 0 && cont_asis_tot == 0 && cont_no_tot == 0) {
-    p = "Sin resultados, Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
+    p = "Sin resultados o no se registra actividad legislativa para el tema: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> , Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
   }
 
   var iDiv = document.createElement('div');

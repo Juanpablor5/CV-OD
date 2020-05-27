@@ -63,26 +63,7 @@
           procesos de exigencia de rendición de cuentas a sus elegidos.
         </p>
         <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">404000</p>
-        <script>
-          $('.count').each(function () {
-            $(this).prop('Counter', 0).animate({
-              Counter: $(this).text()
-            }, {
-              duration: 12000,
-              easing: 'swing',
-              step: function (now) {
-                $(this).text(commaSeparateNumber(Math.ceil(now)));
-              }
-            });
-          });
-
-          function commaSeparateNumber(val) {
-            while (/(\d+)(\d{3})/.test(val.toString())) {
-              val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
-            }
-            return val;
-          }
-        </script>
+        
         <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de datos
           procesados</p>
 
