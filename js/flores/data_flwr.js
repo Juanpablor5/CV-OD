@@ -128,6 +128,17 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   fetch("data/json/CV/Congresistas.json")
     .then((resp) => resp.json())
     .then((partidos) => {
+
+      var count2 = document.getElementById("slidecontainer").childElementCount;
+      console.log(count2)
+
+      for (let index = 0; index < count2; index++) {
+            let slide = document.getElementById('slidecontainer');
+            slide.removeChild(slide.firstElementChild);           
+      } 
+
+      document.getElementById('textini').style.visibility = "visible";
+
       partidos.partidos.forEach((partido) => {
         cong_selected.forEach((cong_selected) => {
           let t = partido.congresistas.find(
@@ -271,12 +282,12 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
 
                     //resultados
-                    // if (childs == 1){
-                    //   for (let index = 0; index < count; index++) {
-                    //     let slide = document.getElementById('slidecontainer');
-                    //     slide.removeChild(slide.lastElementChild);
-                    //   }
-                    // }
+                    /* if (childs == 1){
+                      for (let index = 0; index < count; index++) {
+                        let slide = document.getElementById('slidecontainer');
+                        slide.removeChild(slide.lastElementChild);
+                      }
+                    } */
                     var count2 = document.getElementById("slidecontainer").childElementCount;
                     // console.log(count2)
 
@@ -303,7 +314,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
 
     });
 
-  childs += 1;
+  
 
 });
 
@@ -394,7 +405,7 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
   }
 
   if (cont_si_tot == 0 && cont_abs_tot == 0 && cont_asis_tot == 0 && cont_no_tot == 0) {
-    p = "Sin resultados, Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
+    p = "Sin resultados o no se registra actividad legislativa para el tema: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> , Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
   }
 
   var iDiv = document.createElement('div');
