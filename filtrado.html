@@ -322,8 +322,63 @@
         <script src="js/scripts/export/csv_reader.js"></script>
         <script src="js/scripts/export/file_saver.js"></script>
         <div class="loading-export"></div>
-        <button id="btn_export" class="btn"
+
+        <p>
+          <button id="btn_proy_CV" class="btn btn-2"
+            style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+        </p>
+      <!-- The Modal -->
+      <div id="myModal" class="modal2">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header" style="text-align: left;">
+            <h4 class="modal-title">Flores</h4>
+            <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+
+          </div>
+          <p style="padding: 20px;">"Descargar información"</p>
+          <div class="modal-footer">
+            <button id="btn_export" class="btn"
           style="background-color: #3abae9;  font-family: 'Questrial', serif;">Exportar a CSV</button>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+
+      <script>
+        // Get the modal
+        var modal2 = document.getElementsByClassName('modal2');
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("btn-2");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close");
+
+        // When the user clicks on the button, open the modal
+
+        console.log(btn)
+
+        btn[0].onclick = function() {
+            modal2[0].style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+          span[0].onclick = function() {
+              modal2[0].style.display = "none";
+          }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+      </script>
+
+
         <script src="js/scripts/export/export_data.js"></script>
         <script src="https://d3js.org/d3.v3.min.js"></script>
       </div>
@@ -364,7 +419,7 @@
             <div id="slidecontainer" class="slideshow-container" style="margin-top: -120px;">
     
               <div class="mySlides">
-                <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">las conclusiones son:</p>
+                <p id="sivotes" style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Sin consultas aún...</p>
               </div>
               
               </div>

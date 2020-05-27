@@ -324,6 +324,7 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
   var stringpro = nombre
 
   var stringcongr = ""
+  console.log(cong_selected)
   cong_selected.forEach(x => {
     if (cong_selected.length == 1) {
       stringcongr += String(x);
@@ -387,6 +388,9 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
     if (cont_si_tot == cont_abs_tot && cont_si_tot == cont_asis_tot) {
       p = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, por otra parte, el resto de votaciones es similar.";
     }
+    if (cont_no_tot == cont_abs_tot){
+      p = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, adicionalmente, se abstuvo y voto en contra el mismo numero de veces, en este caso en: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark> ocasiones, indicando una baja actividad legislativa.";
+    }
   }
   //abs mayoria 
   else if (cont_abs_tot > cont_no_tot && cont_abs_tot > cont_si_tot && cont_abs_tot > cont_asis_tot) {
@@ -406,6 +410,10 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
 
   if (cont_si_tot == 0 && cont_abs_tot == 0 && cont_asis_tot == 0 && cont_no_tot == 0) {
     p = "Sin resultados o no se registra actividad legislativa para el tema: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> , Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
+  }
+
+  if (cont_si_tot > cont_no_tot && cont_abs_tot >  cont_no_tot && cont_si_tot == cont_abs_tot && cont_si_tot > cont_asis_tot && cont_abs_tot >  cont_asis_tot){
+    p = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja un comportamiento similar en dos tipos de voto para proyectos de ley relacionados a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo de <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark> abtenciones, emitiendo un voto neutro que refleja posibles factores (evitar costos políticos, afectar el quórum, entre otros.), a pesar de lo anterior,  apoyo estos proyectos el mismo numero de veces que se abstuvo."
   }
 
   var iDiv = document.createElement('div');
