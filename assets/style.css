@@ -765,7 +765,7 @@ font-family: 'Questrial'; }
 
 .scrolldown-vista{
   position: absolute;
-  bottom: 20px;
+  bottom: 1px;
   left: 52.5%;
   width: 40px;
   height: 40px;
@@ -843,7 +843,7 @@ font-family: 'Questrial'; }
     text-align: center;
     color: #fff;
     font-family: 'Questrial', serif;
-    margin-top: 15%;
+    margin-top: 13%;
     font-size: 55px;
   }
   
@@ -944,3 +944,25 @@ q {font-style: italic;}
 
 /* Add a blue color to the author */
 .author {color: cornflowerblue;}
+
+.loading-export{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/loading_export.gif");
+  background-position: 50% 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+}
+
+body.loading-gif{
+  overflow: hidden;
+}
+
+body.loading-gif .loading-export{
+  display: block;
+}

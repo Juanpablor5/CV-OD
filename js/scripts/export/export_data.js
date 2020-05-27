@@ -1,7 +1,7 @@
 $("#btn_export").click(function () {
 
   function readTextFile(file, proy_sel, anio_sel, con_sel) {
-    // let t0 = performance.now();
+    let t0 = performance.now();
     let proy_id = []
     let export_id = []
 
@@ -76,11 +76,12 @@ $("#btn_export").click(function () {
                   header: true
                 });
                 // console.log(csv_export)
+                document.body.className=""
                 let blob = new Blob([csv_export], {type: "text/plain;charset=utf-8"});
                 saveAs(blob, "data_export.csv");
 
-                // let t1 = performance.now();
-                // console.log("El proceso de exportación " + (t1 - t0) + " milisegundos.");
+                let t1 = performance.now();
+                console.log("El proceso de exportación tardó " + (t1 - t0)/1000 + " segundos.");
               },
             });
           }
@@ -90,6 +91,7 @@ $("#btn_export").click(function () {
     }
   }
 
+  document.body.className = "loading-gif";
   readTextFile("data/csv/CV/Datos_export.csv", proy_etiq, anio_selected_export, congre_selec_export);
 
 });
