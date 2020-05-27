@@ -271,12 +271,12 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
 
                     //resultados
-                    if (childs == 1){
+                    /* if (childs == 1){
                       for (let index = 0; index < count; index++) {
                         let slide = document.getElementById('slidecontainer');
                         slide.removeChild(slide.lastElementChild);
                       }
-                    }
+                    } */
                     var count2 = document.getElementById("slidecontainer").childElementCount;
                     console.log(count2)
 
