@@ -262,7 +262,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                         });
                       }
 
-                      
+
 
                     });
                     flor_si.push({ Tema: eti_selec.nombre, abs: cont_si_tot });
@@ -271,17 +271,17 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     flor_asis.push({ Tema: eti_selec.nombre, abs: cont_asis_tot });
 
                     //resultados
-                    if (childs == 1){
-                      for (let index = 0; index < count; index++) {
-                        let slide = document.getElementById('slidecontainer');
-                        slide.removeChild(slide.lastElementChild);
-                      }
-                    }
+                    // if (childs == 1){
+                    //   for (let index = 0; index < count; index++) {
+                    //     let slide = document.getElementById('slidecontainer');
+                    //     slide.removeChild(slide.lastElementChild);
+                    //   }
+                    // }
                     var count2 = document.getElementById("slidecontainer").childElementCount;
                     console.log(count2)
 
                     printConclusion(eti_selec.nombre, cong_selected, flor_si, cont_abs_tot, cont_si_tot, cont_no_tot, cont_asis_tot)
-                    
+
 
                   });
 
@@ -294,16 +294,16 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                   flower_asis(flor_asis);
                   // let t1 = performance.now()
                   // console.log("El proceso de filtrado tardó " + (t1 - t0) + " milisegundos.")
-                  
+
                 });
             });
         });
 
-        
+
 
     });
-    
-    childs += 1;
+
+  childs += 1;
 
 });
 
@@ -398,7 +398,7 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
   }
 
   var iDiv = document.createElement('div');
-  var parrafo = document.createElement("p");  
+  var parrafo = document.createElement("p");
   parrafo.style.fontSize = '18px';
   parrafo.style.paddingTop = '10px';
   parrafo.style.fontFamily = 'Questrial, serif';
