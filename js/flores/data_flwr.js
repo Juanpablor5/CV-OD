@@ -77,12 +77,17 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
         }
       });
 
-      let temp_cong = cong_selected
+      let temp_cong1 = cong_selected
+      let temp_cong2 = []
       cong_selected = []
-      temp_cong.forEach(con_sel => {
+      temp_cong1.forEach(con_sel => {
         if (!con_sel.includes("Todo")) {
-          cong_selected.push(con_sel)
+          temp_cong2.push(con_sel)
         }
+      });    
+
+      $.each(temp_cong2, function (i, el) {
+        if ($.inArray(el, cong_selected) === -1) cong_selected.push(el);
       });
 
       anio_selected_export = []
