@@ -40,6 +40,15 @@ $("#btn_preguntas").click(function () {
     }
     else {
 
+      var count3 = document.getElementById("slidecontainer2").childElementCount;
+
+      for (let index = 0; index < count3; index++) {
+        let slide = document.getElementById('slidecontainer2');
+        slide.removeChild(slide.firstElementChild);           
+      } 
+
+      document.getElementById('textini2').style.visibility = "visible";
+
       fetch("data/json/OD/2004-2018.json")
           .then((resp) => resp.json())
           .then((data) => {
@@ -84,12 +93,23 @@ $("#btn_preguntas").click(function () {
               visDivTag.setAttribute("id", "visOD");
               document.getElementsByClassName('mySlides')[j].appendChild(visDivTag);
 
+              var arreglores = [];
+
               datos.forEach(pregunta => {
                 if (pregunta.pregunta == preguntaEscogida) {
+                  arreglores.push([pregunta.respuesta, pregunta.total])
                   jsonDatos.push({Respuestas: pregunta.respuesta, porcentaje: pregunta.total})
                 }
               });
               visualizarBarras(jsonDatos)
+              console.log(arreglores);
+              
+              printConclusionod(preguntaEscogida, arreglores)
+              console.log(preguntaEscogida);
+              
+              
+              
+
             }
 
             $(".prev").on('click', function() {
@@ -103,4 +123,50 @@ $("#btn_preguntas").click(function () {
     };
   };
 });
+function printConclusionod(pregunta, resarray) {
+  
+ var p = "";
+
+  if (resarray.length == 0){
+ 
+    p = "Sin resultados o no hay datos para la pregunta <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + pregunta + "</b></mark> , Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
+    
+  }else{
+    var numres = resarray.length;
+    var indice = 0;
+    var i = 0;
+    for (let index = 0; index < resarray.length; index++) {
+      var porcentaje = resarray[index][1]
+      if (porcentaje > i) {
+        i = porcentaje
+        indice = index
+      } 
+    }
+  
+    numres = resarray[indice][1]
+    var res = resarray[indice][0]
+
+    if (numres < 50) {
+      p = "el comportamiento de lo ciudadanos demuestra que el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>, sin embargo, el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(resarray[indice+1][1]) + "</b></mark>% escogio la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(resarray[indice+1][0]) + "</b></mark>" ;
+    }else{
+      p = "el comportamiento de lo ciudadanos demuestra que el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>" ;
+      console.log(resarray);
+    }
+  
+    
+  }
+
+  var iDiv = document.createElement('div');
+  var parrafo = document.createElement("p");
+  parrafo.style.fontSize = '18px';
+  parrafo.style.paddingTop = '10px';
+  parrafo.style.fontFamily = 'Questrial, serif';
+  parrafo.style.fontWeight = 'lighter';
+  parrafo.innerHTML = p
+  iDiv.appendChild(parrafo)
+  iDiv.id = 'slide';
+  iDiv.className = 'mySlides-nm2';
+  document.getElementById('slidecontainer2').appendChild(iDiv);
+
+}
 
