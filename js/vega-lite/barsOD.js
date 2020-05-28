@@ -3,7 +3,7 @@ function visualizarBarras (datos) {
   var vlSpec = {
     $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
     "data": {
-      "values": [datos]
+      "values": datos
     },
     mark: 'bar',
     encoding: {

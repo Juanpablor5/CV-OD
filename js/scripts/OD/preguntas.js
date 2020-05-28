@@ -86,21 +86,9 @@ $("#btn_preguntas").click(function () {
 
               datos.forEach(pregunta => {
                 if (pregunta.pregunta == preguntaEscogida) {
-                  jsonDatos.push({Respuestas: pregunta.respuesta, porcentaje: pregunta.porcentaje})
-                  /*if (contador != 0){
-                    jsonString += ",";
-                  }
-                  obj.Respuestas = pregunta.respuesta;
-                  obj.porcentaje = pregunta.total;
-                  jsonString += JSON.stringify(obj);
-                  contador += 1;*/
+                  jsonDatos.push({Respuestas: pregunta.respuesta, porcentaje: pregunta.total})
                 }
               });
-              /*
-              contador = 0;
-              let otrString = jsonString.trim().toString();
-              console.log(otrString)
-              jsonDatos = JSON.parse(otrString)*/
               visualizarBarras(jsonDatos)
             }
 
