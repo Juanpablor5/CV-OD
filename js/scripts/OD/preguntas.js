@@ -93,6 +93,14 @@ $("#btn_preguntas").click(function () {
             contIdVid = + parseInt(numRandom, 10);
             idVid = "visOD" + contIdVid;
 
+            if (aniosEscogidos.length == 1) {
+              pTagYear = document.createElement("p");
+              pTagYear.className = "anioPreguntaOD";
+              let newContent = document.createTextNode(aniosEscogidos[0]);
+              pTagYear.appendChild(newContent);
+              document.getElementsByClassName('mySlides')[j].appendChild(pTagYear);
+            }
+
             let visDivTag = document.createElement("div");
             visDivTag.setAttribute("id", idVid.toString());
             document.getElementsByClassName('mySlides')[j].appendChild(visDivTag);
@@ -110,15 +118,11 @@ $("#btn_preguntas").click(function () {
                 visualizarPorAños (totalAnios, idVid, arregloRespuesta, arregloAnios);
               }
               else {
-                pTagYear = document.createElement("p");
-                pTagYear.className = "anioPreguntaOD";
-                let newContent = document.createTextNode(anioEscogido);
-                pTagYear.appendChild(newContent);
-                document.getElementsByClassName('mySlides')[j].appendChild(pTagYear);
 
                 datos.forEach(pregunta => {
                   if (pregunta.pregunta == preguntaEscogida && pregunta.anio == anioEscogido) {
-                    totalDatos.push({ respuesta: pregunta.respuesta, porcentaje: pregunta.total })
+                    let respuestaString = (pregunta.respuesta).toString();
+                    totalDatos.push({ respuesta: respuestaString, porcentaje: pregunta.total })
                   }
                 });
                 visualizarBarras(totalDatos, idVid)
