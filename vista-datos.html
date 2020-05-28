@@ -23,31 +23,33 @@
 
   <body>
     <!-- partial:index.partial.html -->
-    <article id="slide-0" class="slide slide--text slide--locked "
-      style=" background-image:url(assets/img/congreso2.jpg); opacity: 1; width: 100%; background-position: center center;">
-      <div class="slide__inner" style="border: 2px dashed white; ">
-        <div class="overlay-itro">
-          <div>
-            <section>
-              <div>
-                <h1 class="scrolldown-vista-text-h1">¡Bienvenidos a Civis Sum!</h1>
-                <h4 class="scrolldown-vista-text-h4">
-                  ¿Representa el Congreso de la República a los ciudadanos?</h4>
-                <p class="scrolldown-vista-text-p">
-                  Con Civis Sum podrás ver como representa el Congreso de la República a los ciudadanos durante los
-                  ultimos 15 años. Encontrarás puntos de interés al cambiar los años, los temas e incluso los
-                  congresistas o partido político. </p>
-              </div>
-            </section>
-          </div>
-          <div class="scrolldown-vista">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div>
+      <article id="slide-0" class="slide slide--text slide--locked "
+        style=" background-image:url(assets/img/congreso2.jpg); opacity: 1; width: 100%; background-position: center center;">
+        <div class="slide__inner" style="border: 2px dashed white; ">
+          <div class="overlay-itro">
+            <div>
+              <section>
+                <div>
+                  <h1 class="scrolldown-vista-text-h1">¡Bienvenidos a Civis Sum!</h1>
+                  <h4 class="scrolldown-vista-text-h4">
+                    ¿Representa el Congreso de la República a los ciudadanos?</h4>
+                  <p class="scrolldown-vista-text-p">
+                    Con Civis Sum podrás ver como representa el Congreso de la República a los ciudadanos durante los
+                    ultimos 15 años. Encontrarás puntos de interés al cambiar los años, los temas e incluso los
+                    congresistas o partido político. </p>
+                </div>
+              </section>
+            </div>
+            <div class="scrolldown-vista">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
-      </div>
-    </article>
+      </article>
+    </div>
 
     <script src="js/bubbles/count.js"></script>
     <script src="js/bubbles/count2.js"></script>
@@ -67,26 +69,6 @@
             diversos temas estructurales y coyunturales.
           </p>
           <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">2318609</p>
-          <script>
-            $('.count').each(function () {
-              $(this).prop('Counter', 0).animate({
-                Counter: $(this).text()
-              }, {
-                duration: 12000,
-                easing: 'swing',
-                step: function (now) {
-                  $(this).text(commaSeparateNumber(Math.ceil(now)));
-                }
-              });
-            });
-
-            function commaSeparateNumber(val) {
-              while (/(\d+)(\d{3})/.test(val.toString())) {
-                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
-              }
-              return val;
-            }
-          </script>
           <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de
             datos
             procesados</p>
@@ -96,13 +78,13 @@
           </p>
 
           <!-- The Modal -->
-          <div id="myModal" class="modal">
+          <div id="myModal" class="modal2">
 
             <!-- Modal content -->
             <div class="modal-content">
               <div class="modal-header" style="text-align: left;">
                 <h4 class="modal-title">Informes de OD</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close">&times;</button>
 
               </div>
               <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
@@ -135,7 +117,26 @@
             procesos de exigencia de rendición de cuentas a sus elegidos.
           </p>
           <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">404000</p>
+          <script>
+            $('.count').each(function () {
+              $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+              }, {
+                duration: 12000,
+                easing: 'swing',
+                step: function (now) {
+                  $(this).text(commaSeparateNumber(Math.ceil(now)));
+                }
+              });
+            });
 
+            function commaSeparateNumber(val) {
+              while (/(\d+)(\d{3})/.test(val.toString())) {
+                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+              }
+              return val;
+            }
+          </script>
           <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de
             datos
             procesados</p>
@@ -146,7 +147,7 @@
           </p>
 
           <!-- The Modal -->
-          <div id="myModal" class="modal2">
+          <div id="myModal" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content">
@@ -257,7 +258,7 @@
               </p>
 
               <!-- The Modal -->
-              <div id="myModal" class="modal">
+              <div id="myModal" class="modal2">
 
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -318,7 +319,7 @@
                   style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
               </p>
               <!-- The Modal -->
-              <div id="myModal" class="modal2">
+              <div id="myModal" class="modal">
 
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -358,8 +359,8 @@
         </div>
         <script>
           // Get the modal
-          var modal = document.getElementsByClassName('modal');
-          var modal2 = document.getElementsByClassName('modal2');
+          var modal = document.getElementsByClassName('modal2');
+          var modal2 = document.getElementsByClassName('modal');
 
           // Get the button that opens the modal
           var btn = document.getElementsByClassName("btn");
@@ -374,39 +375,39 @@
           console.log(modal2)
 
           btn[0].onclick = function () {
-            modal2[0].style.display = "block";
-          }
-
-          btn[1].onclick = function () {
             modal[0].style.display = "block";
           }
 
+          btn[1].onclick = function () {
+            modal2[0].style.display = "block";
+          }
+
           btn[2].onclick = function () {
-            modal2[1].style.display = "block";
+            modal[1].style.display = "block";
           }
           btn[3].onclick = function () {
-            modal[1].style.display = "block";
+            modal2[1].style.display = "block";
           }
 
           // When the user clicks on <span> (x), close the modal
           span[0].onclick = function () {
-            modal2[0].style.display = "none";
+            modal[0].style.display = "none";
           }
 
           span[1].onclick = function () {
-            modal[0].style.display = "none";
+            modal2[0].style.display = "none";
           }
           span[2].onclick = function () {
-            modal2[1].style.display = "none";
+            modal[1].style.display = "none";
           }
 
           span[3].onclick = function () {
-            modal[1].style.display = "none";
+            modal2[1].style.display = "none";
           }
           // When the user clicks anywhere outside of the modal, close it
           window.onclick = function (event) {
-            if (event.target == modal) {
-              modal.style.display = "none";
+            if (event.target == modal2) {
+              modal2.style.display = "none";
             }
           }
         </script>
