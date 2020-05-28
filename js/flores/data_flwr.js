@@ -324,7 +324,7 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
   var stringpro = nombre
 
   var stringcongr = ""
-  console.log(cong_selected)
+  // console.log(cong_selected)
   cong_selected.forEach(x => {
     if (cong_selected.length == 1) {
       stringcongr += String(x);

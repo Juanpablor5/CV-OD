@@ -6,12 +6,15 @@ $("#btn_export").click(function () {
     let export_id = []
 
     if(proy_sel.length==0){
+      document.body.className=""
       alert("Para exportar los datos debe haber realizado el filtrado de los mismos antes")
-    } else if (con_sel.length==0 && anio_sel.length==13)
+    } else if (con_sel.length==0 && anio_sel.length==13){
+      document.body.className=""
       alert(
         "Para un mejor rendimiento al exportar los datos, debe realizar el filtrado de los proyectos con almenos un año o congresista, y la categoría.\r\n\r\nPor ejemplo: 2015 y Economía o Cualquier congresista y Economía"
-      );
+      );}
     else if(anio_sel.length>3 && con_sel.length==0){
+      document.body.className=""
       alert("Para un mejor rendimiento al exportar los datos, por favor seleccione máximo 3 años o agregue un congresista al filtrado")
     } else{
       if(con_sel.length==0 && anio_sel.length>0 && anio_sel.length<13){
