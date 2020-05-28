@@ -19,17 +19,13 @@ $("#btn_preguntas").click(function () {
   let datos = [];
   let porcentaje = 0;
   let prePorcentaje = 0;
-  let conteoAños = 0;
-  let todosDatos = [];
   let divTagSlide = undefined;
   let pTagTitle = undefined;
   let cont = 0;
   let numText = 0;
-  let jsonDatos = []
-  let contador = 0;
+  let todosDatos = []
   let idVid = 0;
   let contIdVid = 0;
-  const valor = 1;
 
   if (preguntas.length == 0) {
     //Indicar que hay que seleccionar una pregunta, año o etiqueta
@@ -51,7 +47,6 @@ $("#btn_preguntas").click(function () {
                     let anioEscogido = aniosEscogidos[i];
                     let anio = pregunta.anio;
                     if (anio.toString() == anioEscogido.toString()) {
-                      console.log("entraaaa")
                       prePorcentaje = pregunta.conteo*100/pregunta.total
                       porcentaje = parseInt(prePorcentaje.toString(),10)
                       datos.push({anio: pregunta.anio,pregunta:pregunta.pregunta, respuesta: pregunta.respuesta, total: porcentaje})
@@ -85,13 +80,10 @@ $("#btn_preguntas").click(function () {
 
               numRandom = Math.random() * (9999 - 1) + 1;
               contIdVid =+ parseInt(numRandom,10);
-              console.log("valor j", j)
-              console.log("primero",contIdVid);
               for (let i = 0; i < aniosEscogidos.length && datos != []; i++) {
                 let anioEscogido = aniosEscogidos[i];
                 numRandom1 = Math.random() * (99999 - 10000) + 10000;
                 contIdVid =+ parseInt(numRandom1,10);
-                console.log("segundo",contIdVid);
                 idVid = "visOD" + contIdVid;
 
                 pTagYear = document.createElement("p");
@@ -106,13 +98,12 @@ $("#btn_preguntas").click(function () {
 
                 datos.forEach(pregunta => {
                   if (pregunta.pregunta == preguntaEscogida && pregunta.anio == anioEscogido) {
-                    jsonDatos.push({Respuestas: pregunta.respuesta, porcentaje: pregunta.total})
+                    todosDatos.push({Respuestas: pregunta.respuesta, porcentaje: pregunta.total})
                   }
                 });
-                //console.log(jsonDatos,i)
-                if (jsonDatos.length != 0) {
-                  visualizarBarras(jsonDatos,idVid)
-                  jsonDatos = []
+                if (todosDatos.length != 0) {
+                  visualizarBarras(todosDatos,idVid)
+                  todosDatos = []
                 }else {
                   pTagMensaje = document.createElement("p");
                   pTagMensaje.className = "anioPreguntaOD";
