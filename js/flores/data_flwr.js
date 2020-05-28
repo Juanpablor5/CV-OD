@@ -46,67 +46,6 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     (option) => option.value
   );
 
-  anio_selected_export = []
-  congre_selec_export = []
-  var element3 = document.getElementById("congresfilter");
-  element3.innerHTML = "Congresistas: " + String(cong_selected);
-
-  if (cong_selected.length > 0) {
-    document.getElementById("spinnercongr").style.visibility = "hidden";
-    document.getElementById("checkcongr").style.visibility = "visible";
-  } else {
-    document.getElementById("checkcongr").style.visibility = "hidden";
-    document.getElementById("spinnercongr").style.visibility = "visible";
-  }
-
-  if (
-    anio_selected.length == 0) {
-    anio_selected = [];
-    anio_selected.push("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018");
-    anio_selected_export.push("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018");
-  } else if ((anio_selected[0] == "2004" && anio_selected.length == 1) ||
-    (anio_selected[0] == "2005" && anio_selected.length == 1) ||
-    (anio_selected[1] == "2005" && anio_selected.length == 2)) {
-    no_data = [{ Tema: "No hay datos para los años seleccionados", abs: 0 }]
-    flower_si(no_data);
-    flower_no(no_data);
-    flower_abs(no_data);
-    flower_asis(no_data);
-    return;
-  } else if (anio_selected[0] == "2004" && anio_selected[1] == "2005") {
-    let temp_anio = anio_selected;
-    anio_selected = []
-    for (let i = 2; i < temp_anio.length; i++) {
-      const anio = temp_anio[i];
-      anio_selected.push(anio)
-      anio_selected_export.push(anio)
-    }
-  } else if ((anio_selected[0] == "2004" && anio_selected.length > 1) || (anio_selected[0] == "2005" && anio_selected.length > 1)) {
-    let temp_anio = anio_selected;
-    anio_selected = []
-    for (let i = 1; i < temp_anio.length; i++) {
-      const anio = temp_anio[i];
-      anio_selected.push(anio)
-      anio_selected_export.push(anio)
-    }
-  } else if ((anio_selected[1] == "2005" && anio_selected.length > 2)) {
-    let temp_anio = anio_selected;
-    anio_selected = []
-    for (let i = 2; i < temp_anio.length; i++) {
-      const anio = temp_anio[i];
-      anio_selected.push(anio)
-      anio_selected_export.push(anio)
-    }
-  } else {
-    let temp_anio = anio_selected;
-    anio_selected = []
-    for (let i = 0; i < temp_anio.length; i++) {
-      const anio = temp_anio[i];
-      anio_selected.push(anio)
-      anio_selected_export.push(anio)
-    }
-  }
-
   // let proy_etiq = [];
   proy_etiq = [];
   let cong_anio = [];
@@ -121,21 +60,110 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
   let flor_abs = [];
   let flor_asis = [];
 
-  eti_selected.forEach((seleccionada) => {
-    proy_etiq.push({ nombre: seleccionada, proyectos: [] });
-  });
-
   fetch("data/json/CV/Congresistas.json")
     .then((resp) => resp.json())
     .then((partidos) => {
+      cong_selected.forEach(con_selected => {
+        if (con_selected.includes("Todo")) {
+          let separado = con_selected.split(";");
+          let partido_sep = separado[1];
+          partidos.partidos.forEach(partidos => {
+            if (partidos.nombre == partido_sep) {
+              partidos.congresistas.forEach(congresista => {
+                cong_selected.push(congresista.nombre)
+              });
+            }
+          });
+        }
+      });
+
+      let temp_cong1 = cong_selected
+      let temp_cong2 = []
+      cong_selected = []
+      temp_cong1.forEach(con_sel => {
+        if (!con_sel.includes("Todo")) {
+          temp_cong2.push(con_sel)
+        }
+      });    
+
+      $.each(temp_cong2, function (i, el) {
+        if ($.inArray(el, cong_selected) === -1) cong_selected.push(el);
+      });
+
+      anio_selected_export = []
+      congre_selec_export = []
+      var element3 = document.getElementById("congresfilter");
+      element3.innerHTML = "Congresistas: " + String(cong_selected);
+
+      if (cong_selected.length > 0) {
+        document.getElementById("spinnercongr").style.visibility = "hidden";
+        document.getElementById("checkcongr").style.visibility = "visible";
+      } else {
+        document.getElementById("checkcongr").style.visibility = "hidden";
+        document.getElementById("spinnercongr").style.visibility = "visible";
+      }
+
+      if (
+        anio_selected.length == 0) {
+        anio_selected = [];
+        anio_selected.push("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018");
+        anio_selected_export.push("2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018");
+      } else if ((anio_selected[0] == "2004" && anio_selected.length == 1) ||
+        (anio_selected[0] == "2005" && anio_selected.length == 1) ||
+        (anio_selected[1] == "2005" && anio_selected.length == 2)) {
+        no_data = [{ Tema: "No hay datos para los años seleccionados", abs: 0 }]
+        flower_si(no_data);
+        flower_no(no_data);
+        flower_abs(no_data);
+        flower_asis(no_data);
+        return;
+      } else if (anio_selected[0] == "2004" && anio_selected[1] == "2005") {
+        let temp_anio = anio_selected;
+        anio_selected = []
+        for (let i = 2; i < temp_anio.length; i++) {
+          const anio = temp_anio[i];
+          anio_selected.push(anio)
+          anio_selected_export.push(anio)
+        }
+      } else if ((anio_selected[0] == "2004" && anio_selected.length > 1) || (anio_selected[0] == "2005" && anio_selected.length > 1)) {
+        let temp_anio = anio_selected;
+        anio_selected = []
+        for (let i = 1; i < temp_anio.length; i++) {
+          const anio = temp_anio[i];
+          anio_selected.push(anio)
+          anio_selected_export.push(anio)
+        }
+      } else if ((anio_selected[1] == "2005" && anio_selected.length > 2)) {
+        let temp_anio = anio_selected;
+        anio_selected = []
+        for (let i = 2; i < temp_anio.length; i++) {
+          const anio = temp_anio[i];
+          anio_selected.push(anio)
+          anio_selected_export.push(anio)
+        }
+      } else {
+        let temp_anio = anio_selected;
+        anio_selected = []
+        for (let i = 0; i < temp_anio.length; i++) {
+          const anio = temp_anio[i];
+          anio_selected.push(anio)
+          anio_selected_export.push(anio)
+        }
+      }
+
+      eti_selected.forEach((seleccionada) => {
+        proy_etiq.push({ nombre: seleccionada, proyectos: [] });
+      });
+
+
 
       var count2 = document.getElementById("slidecontainer").childElementCount;
       // console.log(count2)
 
       for (let index = 0; index < count2; index++) {
-            let slide = document.getElementById('slidecontainer');
-            slide.removeChild(slide.firstElementChild);           
-      } 
+        let slide = document.getElementById('slidecontainer');
+        slide.removeChild(slide.firstElementChild);
+      }
 
       document.getElementById('textini').style.visibility = "visible";
 
@@ -314,7 +342,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
 
     });
 
-  
+
 
 });
 
@@ -388,7 +416,7 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
     if (cont_si_tot == cont_abs_tot && cont_si_tot == cont_asis_tot) {
       p = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, por otra parte, el resto de votaciones es similar.";
     }
-    if (cont_no_tot == cont_abs_tot){
+    if (cont_no_tot == cont_abs_tot) {
       p = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, adicionalmente, se abstuvo y voto en contra el mismo numero de veces, en este caso en: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark> ocasiones, indicando una baja actividad legislativa.";
     }
   }
@@ -412,7 +440,7 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
     p = "Sin resultados o no se registra actividad legislativa para el tema: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> , Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
   }
 
-  if (cont_si_tot > cont_no_tot && cont_abs_tot >  cont_no_tot && cont_si_tot == cont_abs_tot && cont_si_tot > cont_asis_tot && cont_abs_tot >  cont_asis_tot){
+  if (cont_si_tot > cont_no_tot && cont_abs_tot > cont_no_tot && cont_si_tot == cont_abs_tot && cont_si_tot > cont_asis_tot && cont_abs_tot > cont_asis_tot) {
     p = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja un comportamiento similar en dos tipos de voto para proyectos de ley relacionados a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo de <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark> abtenciones, emitiendo un voto neutro que refleja posibles factores (evitar costos políticos, afectar el quórum, entre otros.), a pesar de lo anterior,  apoyo estos proyectos el mismo numero de veces que se abstuvo."
   }
 
