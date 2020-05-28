@@ -35,6 +35,11 @@
   -webkit-user-select: none;
 }
 
+.prev {
+  left: 0;
+  padding-left: 100px;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
