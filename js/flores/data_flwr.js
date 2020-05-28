@@ -431,4 +431,3 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
   // console.log(cont_si_tot)
 
 }
-
