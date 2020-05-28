@@ -31,7 +31,7 @@
               <div>
                 <h1 class="scrolldown-vista-text-h1">¡Vamos a visualizar los datos!</h1>
                 <h4 class="scrolldown-vista-text-h4">
-                  A continuación verás una comparación de los datos del Observatorio de la Democracia, a la izquierda, y Congreso Visible, a la derecha.</h4>
+                  A continuación verás una comparación de los datos de Observatorio de la Democracia y Congreso</h4>
                 <p class="scrolldown-vista-text-p">
                   Con Civis Sum podrás ver como representa el Congreso de la República a los ciudadanos durante los
                   ultimos 15 años. Podrás encontrar puntos de interés al cambiar los años, los temas e incluso los
@@ -351,7 +351,7 @@
               style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
           </p>
           <!-- The Modal -->
-          <div id="myModal" class="modal2">
+          <div id="myModal" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content">
@@ -372,7 +372,7 @@
 
         <script>
           // Get the modal
-          var modal2 = document.getElementsByClassName('modal2');
+          var modal2 = document.getElementsByClassName('modal');
 
           // Get the button that opens the modal
           var btn = document.getElementsByClassName("btn-2");
@@ -404,160 +404,115 @@
 
         <script src="js/scripts/export/export_data.js"></script>
         <script src="https://d3js.org/d3.v3.min.js"></script>
-    </article>
+      </article>
 
 
-    <!--Resultados OD -->
+      <!--Resultados OD -->
 
-    <article id="slide-7" class="slide slide--text">
-      <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
-        <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-          <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>11</b></mark> Representación
-          Ciudadana
-        </p>
-        <p id="sivotes"
-          style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-          Sin resultados
-        </p>
-
-      </div>
-    </article>
-
-    <!--Resucltados CV -->
-
-    <article id="slide-8" class="slide slide--text">
-      <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
-        <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-          <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representación en el
-          Congreso
-        </p>
-        <button onclick="scrollWin()" class="btn"
-          style="background-color: #3abae9; font-family: 'Questrial', serif;">Reiniciar Consulta</button>
-        <script>
-          function scrollWin() {
-            window.scrollTo(0, 0);
-          }
-        </script>
-        <p id="textini"
-          style="font-size: 18px; margin-top: 100px; font-family: 'Questrial', serif; font-weight: normal;">
-          Mira las conclusiones de tu consulta usando las flechas.
-        </p>
-        <div id="slidecontainer" class="slideshow-container" style="margin-top: -120px;">
-
-          <div class="mySlides">
-            <p id="sivotes"
-              style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Sin
-              consultas aún...</p>
-          </div>
+      <article id="slide-7" class="slide slide--text">
+        <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+          <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>11</b></mark> Representación
+            Ciudadana
+          </p>
+          <p id="sivotes"
+            style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+            Sin resultados
+          </p>
 
         </div>
+      </article>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+      <!--Resucltados CV -->
 
-      </div>
-      <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+      <article id="slide-8" class="slide slide--text">
+        <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+          <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representación en
+            el
+            Congreso
+          </p>
+          <button onclick="scrollWin()" class="btn"
+            style="background-color: #3abae9; font-family: 'Questrial', serif;">Reiniciar Consulta</button>
+          <script>
+            function scrollWin() {
+              window.scrollTo(0, 0);
+            }
+          </script>
+          <p id="textini"
+            style="font-size: 18px; margin-top: 100px; font-family: 'Questrial', serif; font-weight: normal;">
+            Mira las conclusiones de tu consulta usando las flechas.
+          </p>
+          <div id="slidecontainer" class="slideshow-container" style="margin-top: -120px;">
 
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-          document.getElementById('textini').style.visibility = "hidden";
-        }
+            <div class="mySlides">
+              <p id="sivotes"
+                style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Sin
+                consultas aún...</p>
+            </div>
 
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
+          </div>
 
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
 
-          if (n > slides.length) { slideIndex = 1 }
-          if (n < 1) { slideIndex = slides.length }
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        </div>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+            document.getElementById('textini').style.visibility = "hidden";
           }
 
-          slides[slideIndex - 1].style.display = "block";
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
 
-        }
-      </script>
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
 
-    </article>
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
 
-    <!--close 1 -->
+            slides[slideIndex - 1].style.display = "block";
 
-    <article id="slide-9" class="slide slide--text">
-      <div class="slide__inner" style="text-align: right;">
-        <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
-        <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
-      </div>
-    </article>
-
-    <!--close 2 -->
-
-    <article id="slide-10" class="slide slide--text">
-      <div class="slide__inner">
-        <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
-      </div>
-
-    </article>
-
-
-    <article id="slide-11" class="slide slide--text">
-      <div class="slide__inner" style="text-align: right;">
-        <h3 style="font-weight: 100; font-family: 'Questrial', serif;">Comportamiento de las bancadas de Partidos
-          Políticos</h3>
-        <p class="demo-instructions">Las bancadas tiene un comportamiento generalmente en común, y por ello es posible
-          ver patrones en la partipación de los congresistas.</p>
-      </div>
-    </article>
-
-    <article id="slide-12" class="slide ">
-      <div class="col-sm-12" style="padding-left: 60px; padding-top: 80px;">
-        <div id='dashboard'></div>
-        <script src="js/piechart/piechart.js"></script>
-        <script>
-          var freqData = [
-            { State: 'CD', freq: { Si: 100, No: 12, Abstencion: 29 } }
-            , { State: 'CR', freq: { Si: 101, No: 12, Abstencion: 74 } }
-            , { State: 'C', freq: { Si: 132, No: 49, Abstencion: 41 } }
-            , { State: 'L', freq: { Si: 132, No: 52, Abstencion: 62 } }
-            , { State: 'U', freq: { Si: 181, No: 4, Abstencion: 48 } }
-            , { State: 'AV', freq: { Si: 119, No: 67, Abstencion: 63 } }
-            , { State: 'POLO', freq: { Si: 119, No: 47, Abstencion: 12 } }
-            , { State: 'FARC', freq: { Si: 70, No: 52, Abstencion: 30 } }
-            , { State: 'DE', freq: { Si: 34, No: 20, Abstencion: 15 } }
-            , { State: 'MIRA', freq: { Si: 23, No: 30, Abstencion: 41 } }
-            , { State: 'CJL', freq: { Si: 45, No: 12, Abstencion: 14 } }
-            , { State: 'MAIS', freq: { Si: 23, No: 10, Abstencion: 12 } }
-            , { State: 'AICO', freq: { Si: 10, No: 5, Abstencion: 17 } }
-          ];
-
-          dashboard('#dashboard', freqData);
+          }
         </script>
-    </article>
 
-    <article id="slide-13" class="slide slide--text">
-      <div class="slide__inner" style="text-align: right;">
-        <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que piensan los ciudadanos?</h3>
-        <p class="demo-instructions"> Por medio de encuestas realizadas por el observatorio de la Democracia por todo el
-          país es posible saber que temas son los de interés para el Pueblo y que esperan por ende de sus representantes
-        </p>
-        <h3 style="font-weight: 100; font-family: 'Questrial', serif;">¿Que tanto confian los ciudadanos en el Congreso?
-        </h3>
-      </div>
-    </article>
+      </article>
 
-    <article id="slide-14" class="slide slide--text">
-
-    </article>
-
-    <!-- <article id="slide-15" class="slide slide--text">
-      <div id="chart"></div>
-      <script src="dotchart.js"></script>
-    </article> -->
+      <article id="slide-9" class="slide slide--text"
+        style=" background-image:url(assets/img/congreso2.jpg); opacity: 1; width: 100%; background-position: center center;">
+        <div class="slide__inner_redirigir" style="border: 2px dashed white; ">
+          <div class="overlay-itro">
+            <div class="btn_redirigir_row">
+              <div class="btn_redirigir_col">
+                <h3 style="font-family: 'Questrial'">Proyecto de Grado</h3>
+                <p style="font-family: 'Questrial'">Ingeniería de Sistemas y Computación</p>
+              </div>
+              <div class="btn_redirigir_col">
+                <div class="slide__inner">
+                  <img src="assets/img/Logo_Uniandesfacing.png" height="142px" width="340px">
+                </div>
+              </div>
+              <script>
+                document.getElementById("go_land").onclick = function () {
+                  location.href = 'index.html'
+                }
+                document.getElementById("go_fil").onclick = function () {
+                  location.href = 'filtrado.html'
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
 
 
