@@ -544,7 +544,7 @@ font-family: 'Questrial'; }
 }
 .ss-content .ss-list .ss-option.ss-disabled {
   cursor: not-allowed;
-  color: #dedede;
+  color: #dedede;  
   background-color: #fff;
 }
 .ss-content .ss-list .ss-option:not(.ss-disabled).ss-option-selected {
