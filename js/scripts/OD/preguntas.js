@@ -96,7 +96,7 @@ $("#btn_preguntas").click(function () {
             if (aniosEscogidos.length == 1) {
               pTagYear = document.createElement("p");
               pTagYear.className = "anioPreguntaOD";
-              let newContent = document.createTextNode(anioEscogido);
+              let newContent = document.createTextNode(aniosEscogidos[0]);
               pTagYear.appendChild(newContent);
               document.getElementsByClassName('mySlides')[j].appendChild(pTagYear);
             }
@@ -121,7 +121,8 @@ $("#btn_preguntas").click(function () {
 
                 datos.forEach(pregunta => {
                   if (pregunta.pregunta == preguntaEscogida && pregunta.anio == anioEscogido) {
-                    totalDatos.push({ respuesta: pregunta.respuesta, porcentaje: pregunta.total })
+                    let respuestaString = (pregunta.respuesta).toString();
+                    totalDatos.push({ respuesta: respuestaString, porcentaje: pregunta.total })
                   }
                 });
                 visualizarBarras(totalDatos, idVid)
