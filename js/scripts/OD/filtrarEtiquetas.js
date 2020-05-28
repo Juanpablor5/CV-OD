@@ -19,7 +19,7 @@ $("#btn_etiquetas, #btn_anios").click(function () {
 
   setTimeout(() => {
     let object = [];
-    fetch("data/json/OD/preguntas.json")
+    fetch("data/json/OD/Preguntas.json")
       .then((resp) => resp.json())
       .then((data) => {
         for (let j = 0; j < data.preguntas.length; j++) {
