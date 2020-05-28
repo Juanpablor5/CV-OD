@@ -885,21 +885,21 @@ font-family: 'Questrial'; }
     font-weight: lighter;
   }
 }
-.slideshow-container {
+.slideshow-container-nm {
   position: relative;
   background: #f1f1f1f1;
   margin-top: 20px;
 }
 
 /* Slides */
-.mySlides {
+.mySlides-nm {
   display: none;
   padding: 80px;
   text-align: center;
 }
 
-/* Next & previous buttons */
-.prev, .next {
+/* Next & prev-nmious buttons */
+.prev-nm, .next-nm {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -914,12 +914,12 @@ font-family: 'Questrial'; }
   
 }
 
-.prev {
+.prev-nm {
   left: 0;
   padding-left: 100px;
 }
-/* Position the "next button" to the right */
-.next {
+/* Position the "next-nm button" to the right */
+.next-nm {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -927,7 +927,7 @@ font-family: 'Questrial'; }
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev-nm:hover, .next-nm:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: white;
 }

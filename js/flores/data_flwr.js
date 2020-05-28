@@ -425,7 +425,7 @@ function printConclusion(nombre, cong_selected, flor_si, cont_abs_tot, cont_si_t
   parrafo.innerHTML = p
   iDiv.appendChild(parrafo)
   iDiv.id = 'slide';
-  iDiv.className = 'mySlides';
+  iDiv.className = 'mySlides-nm';
   document.getElementById('slidecontainer').appendChild(iDiv);
 
   // console.log(cont_si_tot)
