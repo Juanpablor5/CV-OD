@@ -1,6 +1,6 @@
 setTimeout(() => {
   let object = [];
-  fetch("data/json/OD/preguntas.json")
+  fetch("data/json/OD/Preguntas.json")
     .then((resp) => resp.json())
     .then((data) => {
       data.preguntas.forEach(pregunta => {
