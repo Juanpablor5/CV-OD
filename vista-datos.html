@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Civis Sum</title>
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css2?family=Questrial">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+    <div>
+      <article id="slide-0" class="slide slide--text slide--locked "
+        style=" background-image:url(assets/img/congreso2.jpg); opacity: 1; width: 100%; background-position: center center;">
+        <div class="slide__inner" style="border: 2px dashed white; ">
+          <div class="overlay-itro">
+            <div>
+              <section>
+                <div>
+                  <h1 class="scrolldown-vista-text-h1">¡Bienvenidos a Civis Sum!</h1>
+                  <h4 class="scrolldown-vista-text-h4">
+                    ¿Representa el Congreso de la República a los ciudadanos?</h4>
+                  <p class="scrolldown-vista-text-p">
+                    Con Civis Sum podrás ver como representa el Congreso de la República a los ciudadanos durante los
+                    ultimos 15 años. Encontrarás puntos de interés al cambiar los años, los temas e incluso los
+                    congresistas o partido político. </p>
+                </div>
+              </section>
+            </div>
+            <div class="scrolldown-vista">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <script src="js/bubbles/count.js"></script>
+    <script src="js/bubbles/count2.js"></script>
+    <script src="js/bubbles/countCiuda.js"></script>
+
+    <!-- Datos OD -->
+    <div>
+      <article id="slide-1" class="slide slide--text">
+        <div class="slide__inner" style="text-align: center;">
+          <img src="assets/img/logo_-observatorio_-_derecha1.png" height="70px" width="250px"
+            style="margin-left: 13px;">
+
+          <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+            Desde el Observatorio de la Democracia se ha realizado un estudio de opinión pública llamado el "Barómetro
+            de
+            las Américas". Desde este, se ha recolectado información sobre las percepciones de los colombianos frente a
+            diversos temas estructurales y coyunturales.
+          </p>
+          <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">2318609</p>
+          <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de
+            datos
+            procesados</p>
+          <p>
+            <button id="btn_datos_OD" class="btn"
+              style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+          </p>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal2">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header" style="text-align: left;">
+                <h4 class="modal-title">Informes de OD</h4>
+                <button type="button" class="close" data-dismiss="modal2">&times;</button>
+
+              </div>
+              <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
+                resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la
+                realización de artículos o proyectos de investigación. Estos datos también son una herramienta para
+                analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés nacional
+                o coyunturas políticas específicas."</p>
+              <div class="modal-footer">
+                <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div
+            style="width: 100%; align-content: center; justify-content: center; text-align: center; margin-top: 50px;">
+            <p style="font-family: 'Questrial', serif; width: 100%; text-align: center;">Visión del Ciudadano</p>
+            <p class="demo-arrow" style="text-shadow: 0 0 8px #a1a3a5; margin-top: -25px;">&darr;</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Datos CV -->
+      <article id="slide-2" class="slide slide--text slide--scrolling">
+        <div class="slide__inner" style="text-align: center;">
+          <img src="assets/img/logo-cv.png" height="60px" width="270px" style="margin-top: 10px;">
+          <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+            Congreso Visible realiza un seguimiento y análisis permanentes del Congreso de la República a través de la
+            publicación de su actividad legislativa, fortaleciendo y promoviendo la participación de la ciudadanía en
+            procesos de exigencia de rendición de cuentas a sus elegidos.
+          </p>
+          <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">404000</p>
+          <script>
+            $('.count').each(function () {
+              $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+              }, {
+                duration: 12000,
+                easing: 'swing',
+                step: function (now) {
+                  $(this).text(commaSeparateNumber(Math.ceil(now)));
+                }
+              });
+            });
+
+            function commaSeparateNumber(val) {
+              while (/(\d+)(\d{3})/.test(val.toString())) {
+                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+              }
+              return val;
+            }
+          </script>
+          <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de
+            datos
+            procesados</p>
+
+          <p>
+            <button id="btn_datos_CV" class="btn"
+              style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+          </p>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header" style="text-align: left;">
+                <h4 class="modal-title">CV</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+              </div>
+              <p style="padding: 20px;">"Información"</p>
+              <div class="modal-footer">
+                <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div
+            style="width: 100%; align-content: center; justify-content: center; text-align: center; margin-top: 50px;">
+            <p style="font-family: 'Questrial', serif; width: 100%; text-align: center;">Visión del Congreso</p>
+            <p class="demo-arrow" style="text-shadow: 0 0 8px #a1a3a5; margin-top: -25px;">&darr;</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- bubbles OD-->
+      <article id="slide-3" class="slide slide--text">
+        <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+
+
+          <p style="font-size: 25px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>1</b></mark> Número de
+            preguntas,
+            asociadas por temáticas, entre los años 2004 y 2018
+          </p>
+
+          <div id='MyVis1' style="width: fit-content;">
+            <script src="js/bubbles/bubblesODCtgs.js"></script>
+
+          </div>
+          <p style="font-size: 18px; font-family: 'Questrial', serif; font-weight: lighter;">
+            OD ha realizado más de <mark
+              style="background-color: #089baa; color: white; font-size: 23px;"></b>964</b></mark> preguntas asociadas a
+            <mark style="background-color: #089baa; color: white; font-size: 23px;"></b>87</b></mark> temáticas
+            diferentes, con el objetivo de conocer la percepción de los ciudadanos de diferentes regiones de Colombia
+            sobre dichos temas.
+          </p>
+
+        </div>
+      </article>
+
+      <!--bubbles CV -->
+      <article id="slide-4" class="slide slide--text">
+        <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
+          <p style="font-size: 25px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>2</b></mark> Número de proyectos
+            de ley, asociados por temáticas e iniciativas, entre los años 2006 y 2018
+          </p>
+          <div id='vis' style="padding-right: 30px;"></div>
+          <script src="js/bubbles/bubbles.js"></script>
+          <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+            CV registro más de <mark
+              style="background-color: #3abae9; color: white; font-size: 23px;"></b>271</b></mark>
+            proyectos de ley de <mark
+              style="background-color: #3abae9; color: white; font-size: 23px;"></b>87</b></mark>
+            temas, resultado de la actividad legislativa del Congreso.
+          </p>
+        </div>
+
+
+      </article>
+
+      <!--bubbles preguntas OD -->
+      <article id="slide-5" class="slide slide--text">
+        <div style=" border: 2px dashed black; height: 100%;">
+
+          <div class="row justify-content-center" style="padding-top: 20px;">
+
+            <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">
+              2006-2010
+            </p>
+            <div id='myVis1' style="width: fit-content;"></div>
+            <script src="js/bubbles/bubblesOD1.js"></script>
+
+          </div>
+
+
+          <div class="row justify-content-center">
+
+            <div class="col-md-6">
+              <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">
+                2010-2014</p>
+              <div id='myVis2' style="width: fit-content;"></div>
+              <script src="js/bubbles/bubblesOD2.js"></script>
+            </div>
+            <div class="col-md-6" style="padding-right: 60px;">
+              <p style="padding-top: 20px; font-weight: bold; font-family: 'Questrial', serif; font-size: 20px;"><mark
+                  style="background-color: #089baa; color: white; font-size: 40px;"></b>3</b></mark> Preguntas
+                realizadas
+                en las encuestas</p>
+              <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Es posible ver el
+                número
+                de preguntas, organizadas por temática, para cada uno de los periodos legislativos desde el año 2006.
+              </p>
+              <p>
+                <button id="btn_OD" class="btn"
+                  style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+              </p>
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal2">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header" style="text-align: left;">
+                    <h4 class="modal-title">Informes de OD</h4>
+                    <button type="button" class="close" id="close" data-dismiss="modal2">&times;</button>
+
+                  </div>
+                  <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
+                    resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la
+                    realización de artículos o proyectos de investigación. Estos datos también son una herramienta para
+                    analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés
+                    nacional
+                    o coyunturas políticas específicas."</p>
+                  <div class="modal-footer">
+                    <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center" style="padding-top: 10px; font-family: 'Questrial', serif;">
+
+            <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
+            <div id='myVis3' style="width: fit-content;"></div>
+            <script src="js/bubbles/bubblesOD3.js"></script>
+
+          </div>
+        </div>
+      </article>
+
+      <!--bubbles preguntas cv -->
+      <article id="slide-6" class="slide slide--text">
+        <div style=" border: 2px dashed black; height: 100%;">
+
+          <div class="row justify-content-center" style="padding-top: 10px;">
+
+            <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">
+              2006-2010
+            </p>
+            <div id='vis2' style="width: fit-content;"></div>
+            <script src="js/bubbles/bubblesc1.js"></script>
+
+          </div>
+
+
+          <div class="row justify-content-center" style="padding-top: 10px;">
+            <div class="col-md-6" style="padding-right: 30px; padding-left: 50px;">
+              <p style="padding-top: 20px; font-weight: bold; font-family: 'Questrial', serif; font-size: 20px;"><mark
+                  style="background-color: #3abae9; color: white; font-size: 40px;"></b>4</b></mark> Proyectos
+                de ley organizados por periodos.</p>
+              <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: lighter;">Podrás ver cómo es la
+                representación ciudadana según las temáticas que te interesen.</p>
+              <p>
+                <button id="btn_proy_CV" class="btn"
+                  style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+              </p>
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <div class="modal-header" style="text-align: left;">
+                    <h4 class="modal-title">Informes de OD</h4>
+                    <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+
+                  </div>
+                  <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
+                    resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la
+                    realización de artículos o proyectos de investigación. Estos datos también son una herramienta para
+                    analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés
+                    nacional
+                    o coyunturas políticas específicas."</p>
+                  <div class="modal-footer">
+                    <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <p style="vertical-align: middle; width: 100%; text-align: center; font-family: 'Questrial', serif;">
+                2010-2014</p>
+              <div id='vis3' style="width: fit-content;"></div>
+              <script src="js/bubbles/bubblesc2.js"></script>
+            </div>
+
+          </div>
+
+          <div class="row justify-content-center" style="padding-top: -30px; font-family: 'Questrial', serif;">
+
+            <p style="vertical-align: middle; width: 100%; text-align: center;">2014-2018</p>
+            <div id='vis4' style="width: fit-content; overflow: visible;"></div>
+            <script src="js/bubbles/bubblesc3.js"></script>
+          </div>
+        </div>
+        <script>
+          // Get the modal
+          var modal = document.getElementsByClassName('modal2');
+          var modal2 = document.getElementsByClassName('modal');
+
+          // Get the button that opens the modal
+          var btn = document.getElementsByClassName("btn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close");
+
+          // When the user clicks on the button, open the modal
+
+          btn[0].onclick = function () {
+            modal[0].style.display = "block";
+          }
+
+          btn[1].onclick = function () {
+            modal2[0].style.display = "block";
+          }
+
+          btn[2].onclick = function () {
+            modal[1].style.display = "block";
+          }
+          btn[3].onclick = function () {
+            modal2[1].style.display = "block";
+          }
+
+          // When the user clicks on <span> (x), close the modal
+          span[0].onclick = function () {
+            modal[0].style.display = "none";
+          }
+
+          span[1].onclick = function () {
+            modal2[0].style.display = "none";
+          }
+          span[2].onclick = function () {
+            modal[1].style.display = "none";
+          }
+
+          span[3].onclick = function () {
+            modal2[1].style.display = "none";
+          }
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function (event) {
+            if (event.target == modal2) {
+              modal2.style.display = "none";
+            }
+          }
+        </script>
+      </article>
+
+      <article id="slide-7" class="slide slide--text"
+        style=" background-image:url(assets/img/congreso2.jpg); opacity: 1; width: 100%; background-position: center center;">
+        <div class="slide__inner_redirigir" style="border: 2px dashed white; ">
+          <div class="overlay-itro">
+            <div class="btn_redirigir_row">
+              <div class="btn_redirigir_col">
+                <button id="go_land" class="button_redirigir" href="index.html">Regresar al inicio</button>
+              </div>
+              <div class="btn_redirigir_col">
+                <button id="go_fil" class="button_redirigir" href="filtrado.html">Hacer consulta a los datos</button>
+              </div>
+              <script>
+                document.getElementById("go_land").onclick = function () {
+                  location.href = 'index.html'
+                }
+                document.getElementById("go_fil").onclick = function () {
+                  location.href = 'filtrado.html'
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/scripts/script.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </body>
+
+</html>

@@ -1,5 +1,5 @@
 function visualizarBarras (datos) {
-  console.log(datos)
+  // console.log(datos)
   var vlSpec = {
     $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
     "data": {

@@ -47,20 +47,20 @@ $("#btn_etiquetas, #btn_anios").click(function () {
           });
           llego = true;
         }
-        console.log(preguntasFinales)
+        // console.log(preguntasFinales)
         if (preguntasFinales.length == 0 && !llego) {
           preguntasPorEtiquetas.forEach(pregunta => {
             object.push({ text: pregunta.nombre });
           });
         }
         else {
-          console.log("Entra")
+          // console.log("Entra")
           document.getElementById("sec_preg").innerHTML = '<select id="preguntas3" multiple class="font"></select> <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: "Questrial", serif;">Buscar</button>';
           preguntasFinales.forEach(pregunta => {
             object.push({ text: pregunta.nombre });
           });
         }
-        console.log(object)
+        // console.log(object)
         let select = new SlimSelect({
           select: "#preguntas3",
           placeholder: "Preguntas",
