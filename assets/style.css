@@ -586,7 +586,23 @@ font-family: 'Questrial'; }
 
 /* Termina - Slim select Style */
 
+
 .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1040; /* Sit on top */
+  right: 0;
+  top: 0;
+  
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding: 30px;
+  padding-right: 30px !important;
+}
+
+.modal2 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1040; /* Sit on top */
@@ -600,20 +616,7 @@ font-family: 'Questrial'; }
   padding: 30px;
   padding-right: 30px !important;
 }
-.modal2 {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1040; /* Sit on top */
-  right: 0;
-  top: 0;
-  width: 50%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding: 30px;
-  padding-right: 30px !important;
-}
+
 
 /* Modal Content/Box */
 .modal-content {
