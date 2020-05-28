@@ -62,9 +62,6 @@ $("#btn_preguntas").click(function () {
             });
             //console.log(datos)
             for (let j = 0; j < preguntas.length; j++) {
-              contIdVid =+ preguntas.length;
-              idVid = "visOD" + contIdVid;
-              console.log(contIdVid);
               cont = j + 1
               let preguntaEscogida = preguntas[j];
               divTagSlide = document.createElement('div');
@@ -86,10 +83,15 @@ $("#btn_preguntas").click(function () {
               divTag1.appendChild(content);
               document.getElementsByClassName('mySlides')[j].appendChild(divTag1);
 
-
+              numRandom = Math.random() * (9999 - 1) + 1;
+              contIdVid =+ parseInt(numRandom,10);
+              console.log("valor j", j)
+              console.log("primero",contIdVid);
               for (let i = 0; i < aniosEscogidos.length && datos != []; i++) {
                 let anioEscogido = aniosEscogidos[i];
-                contIdVid =+ i;
+                numRandom1 = Math.random() * (99999 - 10000) + 10000;
+                contIdVid =+ parseInt(numRandom1,10);
+                console.log("segundo",contIdVid);
                 idVid = "visOD" + contIdVid;
 
                 pTagYear = document.createElement("p");
