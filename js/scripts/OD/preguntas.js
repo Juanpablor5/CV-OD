@@ -5,7 +5,7 @@ $("#btn_preguntas").click(function () {
   );
   //console.log(preguntas)
 
-  let todosAnios = ["2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2016", "2018"]
+  let todosLosAnios = ["2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2016", "2018"]
 
   let aniosEscogidos = Array.from(anios.selectedOptions).map(
     (option) => option.value
@@ -19,11 +19,14 @@ $("#btn_preguntas").click(function () {
   let datos = [];
   let porcentaje = 0;
   let prePorcentaje = 0;
-  let todosDatos = [];
+  let totalDatos = [];
+  let totalAnios = [];
   let divTagSlide = undefined;
   let pTagTitle = undefined;
   let cont = 0;
   let numText = 0;
+  let arregloRespuesta = [];
+  let arregloAnios = [];
 
   if (preguntas.length == 0) {
     //Indicar que hay que seleccionar una pregunta, año o etiqueta
@@ -48,11 +51,13 @@ $("#btn_preguntas").click(function () {
           data.forEach(pregunta => {
             for (let j = 0; j < preguntas.length; j++) {
               let preguntaEscogida = preguntas[j];
-              if (pregunta.pregunta == preguntaEscogida) {
+              if (pregunta.pregunta.toString().trim() == preguntaEscogida.toString().trim()) {
+                console.log("Entraaa1")
                 for (let i = 0; i < aniosEscogidos.length; i++) {
+                  console.log("Entraaa2")
                   let anioEscogido = aniosEscogidos[i];
                   let anio = pregunta.anio;
-                  if (anio.toString() == anioEscogido.toString()) {
+                  if (anio.toString().trim() == anioEscogido.toString().trim()) {
                     prePorcentaje = pregunta.conteo * 100 / pregunta.total
                     porcentaje = parseInt(prePorcentaje.toString(), 10)
                     datos.push({ anio: pregunta.anio, pregunta: pregunta.pregunta, respuesta: pregunta.respuesta, total: porcentaje })
@@ -61,9 +66,9 @@ $("#btn_preguntas").click(function () {
               }
             }
           });
-          //console.log(datos)
           for (let j = 0; j < preguntas.length; j++) {
             cont = j + 1
+            totalAnios = [];
             let preguntaEscogida = preguntas[j];
             divTagSlide = document.createElement('div');
             divTagSlide.className = "mySlides";
@@ -84,39 +89,42 @@ $("#btn_preguntas").click(function () {
             divTag1.appendChild(content);
             document.getElementsByClassName('mySlides')[j].appendChild(divTag1);
 
-            numRandom = Math.random() * (9999 - 1) + 1;
+            numRandom = Math.random() * (99999 - 1) + 1;
             contIdVid = + parseInt(numRandom, 10);
+            idVid = "visOD" + contIdVid;
+
+            let visDivTag = document.createElement("div");
+            visDivTag.setAttribute("id", idVid.toString());
+            document.getElementsByClassName('mySlides')[j].appendChild(visDivTag);
             for (let i = 0; i < aniosEscogidos.length && datos != []; i++) {
               let anioEscogido = aniosEscogidos[i];
-              numRandom1 = Math.random() * (99999 - 10000) + 10000;
-              contIdVid = + parseInt(numRandom1, 10);
-              idVid = "visOD" + contIdVid;
 
-              pTagYear = document.createElement("p");
-              pTagYear.className = "anioPreguntaOD";
-              let newContent = document.createTextNode(anioEscogido);
-              pTagYear.appendChild(newContent);
-              document.getElementsByClassName('mySlides')[j].appendChild(pTagYear);
-
-              let visDivTag = document.createElement("div");
-              visDivTag.setAttribute("id", idVid.toString());
-              document.getElementsByClassName('mySlides')[j].appendChild(visDivTag);
-
-              datos.forEach(pregunta => {
-                if (pregunta.pregunta == preguntaEscogida && pregunta.anio == anioEscogido) {
-                  todosDatos.push({ Respuestas: pregunta.respuesta, porcentaje: pregunta.total })
-                }
-              });
-              if (todosDatos.length != 0) {
-                visualizarBarras(todosDatos, idVid)
-                todosDatos = []
-              } else {
-                pTagMensaje = document.createElement("p");
-                pTagMensaje.className = "anioPreguntaOD";
-                let newPContent = document.createTextNode("No se encuentran datos para este año");
-                pTagMensaje.appendChild(newPContent);
-                document.getElementsByClassName('mySlides')[j].appendChild(pTagMensaje);
+              if (aniosEscogidos.length > 1) {
+                arregloAnios.push(anioEscogido)
+                datos.forEach(pregunta => {
+                  if (pregunta.pregunta == preguntaEscogida && pregunta.anio == anioEscogido) {
+                    totalAnios.push({anio: pregunta.anio, respuesta: pregunta.respuesta, porcentaje: pregunta.total });
+                    arregloRespuesta.push(pregunta.respuesta);
+                  }
+                });
+                visualizarPorAños (totalAnios, idVid, arregloRespuesta, arregloAnios);
               }
+              else {
+                pTagYear = document.createElement("p");
+                pTagYear.className = "anioPreguntaOD";
+                let newContent = document.createTextNode(anioEscogido);
+                pTagYear.appendChild(newContent);
+                document.getElementsByClassName('mySlides')[j].appendChild(pTagYear);
+
+                datos.forEach(pregunta => {
+                  if (pregunta.pregunta == preguntaEscogida && pregunta.anio == anioEscogido) {
+                    totalDatos.push({ respuesta: pregunta.respuesta, porcentaje: pregunta.total })
+                  }
+                });
+                visualizarBarras(totalDatos, idVid)
+                totalDatos = [];
+              }
+
             }
             var arreglores = [];
 
