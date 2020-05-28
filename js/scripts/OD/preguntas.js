@@ -23,13 +23,13 @@ $("#btn_preguntas").click(function () {
   let todosDatos = [];
   let divTagSlide = undefined;
   let pTagTitle = undefined;
-  let slides = undefined;
   let cont = 0;
   let numText = 0;
   let jsonDatos = []
-  let obj = new Object();
-  let jsonString = "";
   let contador = 0;
+  let idVid = 0;
+  let contIdVid = 0;
+  const valor = 1;
 
   if (preguntas.length == 0) {
     //Indicar que hay que seleccionar una pregunta, año o etiqueta
@@ -48,10 +48,13 @@ $("#btn_preguntas").click(function () {
               let preguntaEscogida = preguntas[j];
                 if (pregunta.pregunta == preguntaEscogida) {
                   for (let i = 0; i < aniosEscogidos.length; i++) {
-                    if (pregunta.anio == aniosEscogidos[i]) {
+                    let anioEscogido = aniosEscogidos[i];
+                    let anio = pregunta.anio;
+                    if (anio.toString() == anioEscogido.toString()) {
+                      console.log("entraaaa")
                       prePorcentaje = pregunta.conteo*100/pregunta.total
                       porcentaje = parseInt(prePorcentaje.toString(),10)
-                      datos.push({pregunta:pregunta.pregunta, respuesta: pregunta.respuesta, total: porcentaje})
+                      datos.push({anio: pregunta.anio,pregunta:pregunta.pregunta, respuesta: pregunta.respuesta, total: porcentaje})
                     }
                   }
                 }
@@ -59,6 +62,9 @@ $("#btn_preguntas").click(function () {
             });
             //console.log(datos)
             for (let j = 0; j < preguntas.length; j++) {
+              contIdVid =+ preguntas.length;
+              idVid = "visOD" + contIdVid;
+              console.log(contIdVid);
               cont = j + 1
               let preguntaEscogida = preguntas[j];
               divTagSlide = document.createElement('div');
@@ -80,17 +86,53 @@ $("#btn_preguntas").click(function () {
               divTag1.appendChild(content);
               document.getElementsByClassName('mySlides')[j].appendChild(divTag1);
 
-              let visDivTag = document.createElement("div");
-              visDivTag.setAttribute("id", "visOD");
-              document.getElementsByClassName('mySlides')[j].appendChild(visDivTag);
 
-              datos.forEach(pregunta => {
-                if (pregunta.pregunta == preguntaEscogida) {
-                  jsonDatos.push({Respuestas: pregunta.respuesta, porcentaje: pregunta.total})
+              for (let i = 0; i < aniosEscogidos.length && datos != []; i++) {
+                let anioEscogido = aniosEscogidos[i];
+                contIdVid =+ i;
+                idVid = "visOD" + contIdVid;
+
+                pTagYear = document.createElement("p");
+                pTagYear.className = "anioPreguntaOD";
+                let newContent = document.createTextNode(anioEscogido);
+                pTagYear.appendChild(newContent);
+                document.getElementsByClassName('mySlides')[j].appendChild(pTagYear);
+
+                let visDivTag = document.createElement("div");
+                visDivTag.setAttribute("id", idVid.toString());
+                document.getElementsByClassName('mySlides')[j].appendChild(visDivTag);
+
+                datos.forEach(pregunta => {
+                  if (pregunta.pregunta == preguntaEscogida && pregunta.anio == anioEscogido) {
+                    jsonDatos.push({Respuestas: pregunta.respuesta, porcentaje: pregunta.total})
+                  }
+                });
+                //console.log(jsonDatos,i)
+                if (jsonDatos.length != 0) {
+                  visualizarBarras(jsonDatos,idVid)
+                  jsonDatos = []
+                }else {
+                  pTagMensaje = document.createElement("p");
+                  pTagMensaje.className = "anioPreguntaOD";
+                  let newPContent = document.createTextNode("No se encuentran datos para este año");
+                  pTagMensaje.appendChild(newPContent);
+                  document.getElementsByClassName('mySlides')[j].appendChild(pTagMensaje);
                 }
-              });
-              visualizarBarras(jsonDatos)
+              }
+
             }
+
+            aTagPrev = document.createElement("a");
+            aTagPrev.className = "prev";
+            let newPrevContent = document.createTextNode("❮");
+            aTagPrev.appendChild(newPrevContent);
+            document.getElementById('container').appendChild(aTagPrev);
+
+            aTagNext = document.createElement("a");
+            aTagNext.className = "next";
+            let newNextContent = document.createTextNode("❯");
+            aTagNext.appendChild(newNextContent);
+            document.getElementById('container').appendChild(aTagNext);
 
             $(".prev").on('click', function() {
               plusSlides(-1)
@@ -99,7 +141,16 @@ $("#btn_preguntas").click(function () {
               plusSlides(1)
             });
           });
-        //visualizarDatosPreguntas(datos)
+        let elementPrev = document.getElementsByClassName("prev");
+        let elementNext = document.getElementsByClassName("next");
+        if (elementPrev.document != undefined && elementNext.document != undefined) {
+          elementPrev.document.getElementById('container').removeChild(elementPrev);
+          elementNext.document.getElementById('container').removeChild(elementNext);
+        }
+        let slides = document.getElementsByClassName("mySlides");
+        document.querySelectorAll('.mySlides').forEach(function(a) {
+          a.remove()
+        })
     };
   };
 });

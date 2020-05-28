@@ -37,7 +37,7 @@
 
 .prev {
   left: 0;
-  padding-left: 100px;
+  padding-left: 15px;
 }
 
 /* Position the "next button" to the right */
@@ -90,4 +90,11 @@
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+#conteo_preguntas {
+  font-size: 35px;
+  padding-top: 0px;
+  font-family: 'Questrial', serif;
+  font-weight: bold;
 }

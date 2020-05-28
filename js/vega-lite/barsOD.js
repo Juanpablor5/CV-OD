@@ -1,5 +1,5 @@
-function visualizarBarras (datos) {
-  // console.log(datos)
+function visualizarBarras (datos, id) {
+  let idVid = "#"+id;
   var vlSpec = {
     $schema: 'https://vega.github.io/schema/vega-lite/v4.json',
     "data": {
@@ -19,5 +19,5 @@ function visualizarBarras (datos) {
   };
 
   // Embed the visualization in the container with id `vis`
-  vegaEmbed('#visOD', vlSpec);
+  vegaEmbed(idVid, vlSpec);
 }

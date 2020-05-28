@@ -6,7 +6,14 @@
 
 .tituloPreguntaOD {
   font-size: 20px;
-  padding-top: 45px;
+  padding-top: 35px;
+  font-family: 'Questrial', serif;
+  font-weight: normal;
+}
+
+.anioPreguntaOD {
+  font-size: 15px;
+  padding-top: 0px;
   font-family: 'Questrial', serif;
   font-weight: normal;
 }
