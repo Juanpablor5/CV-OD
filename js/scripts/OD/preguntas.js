@@ -104,7 +104,7 @@ $("#btn_preguntas").click(function () {
                 datos.forEach(pregunta => {
                   if (pregunta.pregunta == preguntaEscogida && pregunta.anio == anioEscogido) {
                     totalAnios.push({anio: pregunta.anio, respuesta: pregunta.respuesta, porcentaje: pregunta.total });
-                    arregloRespuesta.push(pregunta.respuesta);
+                    arregloRespuesta.push((pregunta.respuesta).toString());
                   }
                 });
                 visualizarPorAños (totalAnios, idVid, arregloRespuesta, arregloAnios);
