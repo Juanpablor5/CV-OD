@@ -1,0 +1,12 @@
+.markNumeralOD {
+  background-color: #089baa;
+  color: white;
+  font-size: 40px;
+}
+
+.tituloPreguntaOD {
+  font-size: 20px;
+  padding-top: 45px;
+  font-family: 'Questrial', serif;
+  font-weight: normal;
+}

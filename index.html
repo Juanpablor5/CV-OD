@@ -13,6 +13,11 @@
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/slide.css">
+  <link rel="stylesheet" type="text/css" href="./css/ODStyle.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.12.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.12.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.8.0"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -28,12 +33,12 @@
     <div  style="border: 2px dashed white; ">
       <div style="display: flex; margin: 10px; vertical-align: middle;">
         <div style="width: 30px;">
-          <i class="fas fa-chevron-left" style="margin-top: 58px;"></i>  
+          <i class="fas fa-chevron-left" style="margin-top: 58px;"></i>
         </div>
         <div style="text-align: center;">
           <p style="font-size: 20px; font-family: 'Questrial', serif; font-weight: normal;">Civis Sum</p>
           <p style="font-size: 16px; font-family: 'Questrial', serif; font-weight: normal; margin-top: 10px;">Sigue tu consulta <i class="fas fa-search" style="font-size: 20px; right: 0;"></i></p>
-          <p style="font-size: 12px; font-family: 'Questrial', serif; font-weight: lighter; margin-top: -10px;">Mira los filtros aplicados en las pestañas. </p>   
+          <p style="font-size: 12px; font-family: 'Questrial', serif; font-weight: lighter; margin-top: -10px;">Mira los filtros aplicados en las pestañas. </p>
         </div>
       </div>
     </div>
@@ -42,7 +47,7 @@
     <div  style="border: 2px dashed white; ">
       <div style="display: flex; margin: 10px; vertical-align: middle;">
         <div style="width: 30px;">
-          <i class="fas fa-chevron-left" style="margin-top: 7px;"></i>  
+          <i class="fas fa-chevron-left" style="margin-top: 7px;"></i>
         </div>
         <div>
           <p id="aniosfilter" style="font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Años: sin filtro.</p>
@@ -54,7 +59,7 @@
     <div  style="border: 2px dashed white; ">
       <div style="display: flex; margin: 10px; vertical-align: middle;">
         <div style="width: 30px;">
-          <i class="fas fa-chevron-left" style="margin-top: 16px;"></i>  
+          <i class="fas fa-chevron-left" style="margin-top: 16px;"></i>
         </div>
         <div>
           <textarea class="scrollabletextbox"  id="temasfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Temas: sin filtro.</textarea>
@@ -66,7 +71,7 @@
     <div  style="border: 2px dashed white; ">
       <div style="display: flex; margin: 10px; vertical-align: middle;">
         <div style="width: 30px;">
-          <i class="fas fa-chevron-left" style="margin-top: 15px;"></i>  
+          <i class="fas fa-chevron-left" style="margin-top: 15px;"></i>
         </div>
         <div>
           <textarea class="scrollabletextbox" id="congresfilter"  style="border-color: #3abae9 ;color: white ;background-color: #3abae9;font-size: 13px; font-family: 'Questrial', serif; font-weight: lighter;">Congresistas: sin filtro.</textarea>
@@ -423,8 +428,8 @@
       <div class="col-md-12">
         <button id="btn_preguntas" class="btn" style="background-color: #089baa; font-family: 'Questrial', serif;">Buscar</button>
       </div>
-      <script src="js/scripts/selectPreguntas.js"></script>
-      <script src="js/scripts/filtrarAños.js"></script>
+      <script src="js/scripts/OD/selectPreguntas.js"></script>
+      <script src="js/scripts/OD/filtrarAños.js"></script>
       <script src="js/scripts/slimselect.js"></script>
     </div>
 
@@ -484,17 +489,16 @@
 <article id="slide-12" class="slide slide--text" >
   <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
 
+    <mark class="markNumeralOD"></b>9</b></mark>
+    <script src="js/scripts/OD/preguntas.js"></script>
+    <script src="js/scripts/OD/slides.js"></script>
+    <div id="container">
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </div>
+    <script src="js/vega-lite/barsOD.js"></script>
 
-    <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-      <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>9</b></mark>
-      </p>
-    <!--
-    <div id="chart"></div>
-    <script src="js/piechart/pie.js"></script>-->
-    <script src="js/scripts/preguntas.js"></script>
 
-
-      </div>
 
   </div>
 </article>
@@ -505,7 +509,7 @@
   <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
     <p style="font-size: 25px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
       <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>10</b></mark> ¿Cómo votaron los congresistas?
-      </p>
+    </p>
     <div class="row" style="text-align: center; justify-content: center;">
       <div class="container col-lg-6">
 
@@ -604,7 +608,7 @@
         <button onclick="window.location.reload()" class="btn" style="background-color: #3abae9; font-family: 'Questrial', serif;">Refresh page</button>
 
   </div>
-  
+
 </article>
 
 <!--close 1 -->
@@ -667,7 +671,6 @@
   </article>
 
   <article id="slide-21" class="slide slide--text">
-
   </article>
 
 <!-- <article id="slide-11" class="slide slide--text">

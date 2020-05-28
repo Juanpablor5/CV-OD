@@ -278,7 +278,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     }
                   });
 
-                  console.log(eti_selected);
+                  //console.log(eti_selected);
 
                   var stringcongr = ""
                   cong_selected.forEach(x => {
@@ -291,15 +291,15 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     }
                   });
 
-                  console.log(cong_selected)
+                  //console.log(cong_selected)
 
                   var csi = 0
                   flor_si.forEach(x => {
                     csi += x.abs
                   });
-                  console.log(flor_si)
-                  console.log(csi)
-                  console.log(flor_no)
+                  //console.log(flor_si)
+                  //console.log(csi)
+                  //console.log(flor_no)
 
 
 
@@ -316,9 +316,9 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     }
                     if (cont_no_tot == cont_abs_tot && cont_no_tot == cont_asis_tot) {
                       document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja apoyo en general a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo a favor de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> votos, las demás tipos de voto son similares en cantidad.";
-                    }                   
+                    }
                   }
-                  //No mayoria   
+                  //No mayoria
                   else if (cont_no_tot > cont_asis_tot && cont_no_tot > cont_abs_tot && cont_no_tot > cont_si_tot) {
                     if (cont_abs_tot > cont_asis_tot && cont_abs_tot > cont_si_tot) {
                       document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja el no apoyo a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo en contra de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_no_tot) + "</b></mark> votos, adicionalmente, los congresistas votantes decidieron abstenerse en proyectos de ley relacionados en varias ocasiones con <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_abs_tot) + "</b></mark>  Abstenciones.";
@@ -333,7 +333,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                       document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja el no apoyo en general a proyectos de ley sobre los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un conteo en contra de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> votos, las demás tipos de voto son similares en cantidad.";
                     }
                   }
-                  //Inasistencia mayoria   
+                  //Inasistencia mayoria
                   else if (cont_asis_tot > cont_no_tot && cont_asis_tot > cont_abs_tot && cont_asis_tot > cont_si_tot) {
                     if (cont_si_tot > cont_abs_tot && cont_si_tot > cont_no_tot) {
                       document.getElementById("sivotes").innerHTML = "El comportamiento de los congresistas: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringcongr + "</b></mark> refleja una ausencia considerable en las votaciones de proyectos de ley relacionadas a los temas de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + stringpro + "</b></mark> con un número de inasistencias de: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_asis_tot) + "</b></mark>, reflejando posible desintéres politico, sin embargo, participo a favor en: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(cont_si_tot) + "</b></mark> ocasiones.";
