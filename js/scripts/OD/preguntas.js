@@ -26,6 +26,7 @@ $("#btn_preguntas").click(function () {
   let todosDatos = []
   let idVid = 0;
   let contIdVid = 0;
+  let jsonDatos = []
 
   if (preguntas.length == 0) {
     //Indicar que hay que seleccionar una pregunta, año o etiqueta
