@@ -23,33 +23,31 @@
 
   <body>
     <!-- partial:index.partial.html -->
-    <div>
-      <article id="slide-0" class="slide slide--text slide--locked "
-        style=" background-image:url(assets/img/congreso2.jpg); opacity: 1; width: 100%; background-position: center center;">
-        <div class="slide__inner" style="border: 2px dashed white; ">
-          <div class="overlay-itro">
-            <div>
-              <section>
-                <div>
-                  <h1 class="scrolldown-vista-text-h1">¡Bienvenidos a Civis Sum!</h1>
-                  <h4 class="scrolldown-vista-text-h4">
-                    ¿Representa el Congreso de la República a los ciudadanos?</h4>
-                  <p class="scrolldown-vista-text-p">
-                    Con Civis Sum podrás ver como representa el Congreso de la República a los ciudadanos durante los
-                    ultimos 15 años. Encontrarás puntos de interés al cambiar los años, los temas e incluso los
-                    congresistas o partido político. </p>
-                </div>
-              </section>
-            </div>
-            <div class="scrolldown-vista">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+    <article id="slide-0" class="slide slide--text slide--locked "
+      style=" background-image:url(assets/img/congreso2.jpg); opacity: 1; width: 100%; background-position: center center;">
+      <div class="slide__inner" style="border: 2px dashed white; ">
+        <div class="overlay-itro">
+          <div>
+            <section>
+              <div>
+                <h1 class="scrolldown-vista-text-h1">¡Bienvenidos a Civis Sum!</h1>
+                <h4 class="scrolldown-vista-text-h4">
+                  ¿Representa el Congreso de la República a los ciudadanos?</h4>
+                <p class="scrolldown-vista-text-p">
+                  Con Civis Sum podrás visualizar cómo representa el Congreso de la República a los ciudadanos durante
+                  los últimos 15 años. Encontrarás puntos de interés al cambiar los años, los temas e incluso los
+                  congresistas o partido político.</p>
+              </div>
+            </section>
+          </div>
+          <div class="scrolldown-vista">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-      </article>
-    </div>
+      </div>
+    </article>
 
     <script src="js/bubbles/count.js"></script>
     <script src="js/bubbles/count2.js"></script>
@@ -57,7 +55,7 @@
 
     <!-- Datos OD -->
     <div>
-      <article id="slide-1" class="slide slide--text">
+      <article id="slide-1" class="slide slide--text slide--scrolling">
         <div class="slide__inner" style="text-align: center;">
           <img src="assets/img/logo_-observatorio_-_derecha1.png" height="70px" width="250px"
             style="margin-left: 13px;">
@@ -69,12 +67,11 @@
             diversos temas estructurales y coyunturales.
           </p>
           <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">2318609</p>
-          <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de
-            datos
-            procesados</p>
+          <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">
+            Datos procesados</p>
           <p>
             <button id="btn_datos_OD" class="btn"
-              style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+              style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los datos</button>
           </p>
 
           <!-- The Modal -->
@@ -93,7 +90,8 @@
                 analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés nacional
                 o coyunturas políticas específicas."</p>
               <div class="modal-footer">
-                <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+                <a href="https://obsdemocracia.org/barometro-de-las-americas/" target="_blank">Observatorio de la
+                  Democracia</a>
               </div>
             </div>
 
@@ -108,13 +106,13 @@
       </article>
 
       <!-- Datos CV -->
-      <article id="slide-2" class="slide slide--text slide--scrolling">
+      <article id="slide-2" class="slide slide--text">
         <div class="slide__inner" style="text-align: center;">
           <img src="assets/img/logo-cv.png" height="60px" width="270px" style="margin-top: 10px;">
           <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
             Congreso Visible realiza un seguimiento y análisis permanentes del Congreso de la República a través de la
             publicación de su actividad legislativa, fortaleciendo y promoviendo la participación de la ciudadanía en
-            procesos de exigencia de rendición de cuentas a sus elegidos.
+            procesos de exigencia de rendición en cuentas a sus elegidos.
           </p>
           <p class="count" style="font-family: 'Questrial', serif; font-size: 55px;">404000</p>
           <script>
@@ -122,7 +120,7 @@
               $(this).prop('Counter', 0).animate({
                 Counter: $(this).text()
               }, {
-                duration: 12000,
+                duration: 9000,
                 easing: 'swing',
                 step: function (now) {
                   $(this).text(commaSeparateNumber(Math.ceil(now)));
@@ -137,13 +135,12 @@
               return val;
             }
           </script>
-          <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Total de
-            datos
+          <p style="font-size: 18px; margin-top: -20px;font-family: 'Questrial', serif; font-weight: bold;">Datos
             procesados</p>
 
           <p>
             <button id="btn_datos_CV" class="btn"
-              style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+              style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los datos</button>
           </p>
 
           <!-- The Modal -->
@@ -152,13 +149,16 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="modal-header" style="text-align: left;">
-                <h4 class="modal-title">CV</h4>
+                <h4 class="modal-title">Votos de los congresistas</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
 
               </div>
-              <p style="padding: 20px;">"Información"</p>
+              <p style="padding: 20px;">Gracias a los datos recopilados por Congreso Visible, se reunieron las
+                votaciones de todos los congresistas a todos los proyectos de ley para los últimos tres cuatrienios. Con
+                estos datos se pudieron hacer los diferentes análisis y conclusiones que verán a lo largo de la
+                herramienta. En total se procesaron 404 mil votaciones diferentes.</p>
               <div class="modal-footer">
-                <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
+                <a href="https://congresovisible.uniandes.edu.co/proyectos-de-ley/" target="_blank">Proyectos de ley</a>
               </div>
             </div>
 
@@ -176,17 +176,13 @@
       <!-- bubbles OD-->
       <article id="slide-3" class="slide slide--text">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
-
-
           <p style="font-size: 25px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
             <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>1</b></mark> Número de
-            preguntas,
-            asociadas por temáticas, entre los años 2004 y 2018
+            preguntas, asociadas por temáticas, entre los años 2004 y 2018
           </p>
 
           <div id='MyVis1' style="width: fit-content;">
             <script src="js/bubbles/bubblesODCtgs.js"></script>
-
           </div>
           <p style="font-size: 18px; font-family: 'Questrial', serif; font-weight: lighter;">
             OD ha realizado más de <mark
@@ -195,7 +191,6 @@
             diferentes, con el objetivo de conocer la percepción de los ciudadanos de diferentes regiones de Colombia
             sobre dichos temas.
           </p>
-
         </div>
       </article>
 
@@ -203,7 +198,7 @@
       <article id="slide-4" class="slide slide--text">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
           <p style="font-size: 25px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>2</b></mark> Número de proyectos
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"><b>2</b></mark> Número de proyectos
             de ley, asociados por temáticas e iniciativas, entre los años 2006 y 2018
           </p>
           <div id='vis' style="padding-right: 30px;"></div>
@@ -254,7 +249,7 @@
               </p>
               <p>
                 <button id="btn_OD" class="btn"
-                  style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+                  style="background-color: #089baa;  font-family: 'Questrial', serif;">Info. de los cuatrienios</button>
               </p>
 
               <!-- The Modal -->
@@ -263,18 +258,12 @@
                 <!-- Modal content -->
                 <div class="modal-content">
                   <div class="modal-header" style="text-align: left;">
-                    <h4 class="modal-title">Informes de OD</h4>
+                    <h4 class="modal-title">Burbujas de temas y preguntas</h4>
                     <button type="button" class="close" id="close" data-dismiss="modal2">&times;</button>
 
                   </div>
-                  <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
-                    resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la
-                    realización de artículos o proyectos de investigación. Estos datos también son una herramienta para
-                    analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés
-                    nacional
-                    o coyunturas políticas específicas."</p>
+                  <p style="padding: 20px;">Aquí puedes observar a grandes rasgos la frecuencia de temas, es decir, el número de preguntas que se han realizado por cada uno de los temas.<br><br>Cada burbuja representa un tema, y el tamaño de esta representa el número de preguntas que están asociadas a dicho tema en cada cuatrienio; a mayor frecuencia, mayor tamaño de la burbuja.</p>
                   <div class="modal-footer">
-                    <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
                   </div>
                 </div>
 
@@ -316,7 +305,7 @@
                 representación ciudadana según las temáticas que te interesen.</p>
               <p>
                 <button id="btn_proy_CV" class="btn"
-                  style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+                  style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los cuatrienios</button>
               </p>
               <!-- The Modal -->
               <div id="myModal" class="modal">
@@ -324,18 +313,12 @@
                 <!-- Modal content -->
                 <div class="modal-content">
                   <div class="modal-header" style="text-align: left;">
-                    <h4 class="modal-title">Informes de OD</h4>
+                    <h4 class="modal-title">Burbujas de temas y proyectos de ley</h4>
                     <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
 
                   </div>
-                  <p style="padding: 20px;">"El Observatorio de la Democracia, pone a disposición de sus visitantes los
-                    resultados de encuestas independientes al Barómetro de las Américas y utilizadas como insumo para la
-                    realización de artículos o proyectos de investigación. Estos datos también son una herramienta para
-                    analizar y explorar las opiniones públicas de los colombianos frente a otros temas de interés
-                    nacional
-                    o coyunturas políticas específicas."</p>
+                  <p style="padding: 20px;">En este espacio encuentras una visión general de la frecuencia de temas asociados a todos los proyectos de ley de los últimos tres cuatrienios.<br><br>Cada burbuja representa un tema, y el tamaño de esta representa el número de proyectos de ley radicados que están asociados a dicho tema; a mayor frecuencia, mayor tamaño de la burbuja. También puedes encontrar las diferentes iniciativas de cada proyecto de ley, distinguidas por colores, como se muestra en la convención debajo de la gráfica. </p>
                   <div class="modal-footer">
-                    <a href="https://obsdemocracia.org/barometro-de-las-americas/">Observatorio de la Democracia</a>
                   </div>
                 </div>
               </div>
