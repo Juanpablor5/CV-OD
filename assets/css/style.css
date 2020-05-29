@@ -1067,3 +1067,21 @@ body.loading-gif .loading-export{
   border: 1px dashed rgba(255, 255, 255, 0.5);
   font-family: 'Questrial', serif;
 }
+
+/* @media only screen and (min-height: 600px) {
+  .body-responsive{
+    zoom: 80%;
+  }
+}
+
+@media only screen and (min-height: 700px) {
+  .body-responsive{
+    zoom: 90%;
+  }
+}
+
+@media only screen and (min-height: 800px) {
+  .body-responsive{
+    zoom: 100%;
+  }
+} */
