@@ -25,40 +25,53 @@
 
   </head>
 
-  <body>
-
+  <body class="body-responsive">
     <article id="slide-0" class="slide slide--text slide--locked "
       style=" background-image:url(assets/img/congreso2.jpg); opacity: 1; width: 100%; background-position: center center;">
       <div class="slide__inner" style="border: 2px dashed white; ">
         <div class="overlay-itro">
-          <div>
-            <section>
-              <div>
-                <h1 class="scrolldown-vista-text-h1">¡Vamos a visualizar los datos!</h1>
-                <h4 class="scrolldown-vista-text-h4">
-                  A continuación verás una comparación de ambas bases de datos.<br><br>Revisa en cualquier momento los
-                  filtros que has escogido en las pestañas de la derecha
-                </h4>
-                <div class="btn_redirigir_row">
-                  <div class="btn_redirigir_col" style="margin-top: 1em;">
-                    <img src="assets/img/OD_Landing.jpg" class="d-block"
-                      style="border-radius: 35px;  margin-left: auto; margin-right: auto;" width="50%" height="50%">
+          <section>
+            <div>
+              <h1 class="scrolldown-vista-text-h1">¡Vamos a visualizar los datos!</h1>
+              <h4 class="scrolldown-vista-text-h4">
+                A continuación verás una comparación de ambas bases de datos.<br><br>Revisa en cualquier momento los
+                filtros que has escogido en las pestañas de la derecha
+              </h4>
+              <div class="container">
+                <div class="row justify-content-md-center" style="margin-top: 2em;">
+                  <div class="col-3">
+                    <img src="assets/img/OD_Landing.jpg" class="d-block w-100" style="border-radius: 35px;">
                   </div>
-                  <div class="btn_redirigir_col" style="margin-top: 1em;  align-items: center;">
-                    <img src="assets/img/CV_Landing.jpg" class="d-block"
-                      style="border-radius: 35px;  margin-left: auto; margin-right: auto;" width="50%" height="50%">
+                  <div class="col-5 text-center">
+                    <button id="btn_demo" class="btn-2 button_redirigir" style="font-family: 'Questrial', serif;">Ver
+                      demo</button>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal3">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Demo de la herramienta</h4>
+                          <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <p style="padding: 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/aWwum2XCgFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                        <div class="modal-footer"></div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <img src="assets/img/CV_Landing.jpg" class="d-block w-100" style="border-radius: 35px;">
                   </div>
                 </div>
               </div>
-          </div>
           </section>
         </div>
-        <div class="scrolldown-vista">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
+      <div class="scrolldown-vista">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </article>
 
@@ -124,7 +137,7 @@
       <article id="slide-1" class="slide slide--text slide--scrolling">
         <div id="anos" class="slide__inner" style="text-align: center;">
           <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>5</b></mark> Temporalidad
+            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>1</b></mark> Temporalidad
           </p>
           <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
             Análisis de Representación Ciudadana
@@ -157,7 +170,7 @@
       <article id="slide-2" class="slide slide--text">
         <div class="slide__inner" style="text-align: center;">
           <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>6</b></mark> Temas o Categorias
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>2</b></mark> Temas o Categorias
           </p>
 
           <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
@@ -194,7 +207,7 @@
       <article id="slide-3" class="slide slide--text">
         <div class="slide__inner" style="text-align: center;">
           <p style="font-size: 30px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>7</b></mark> Preguntas de
+            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>3</b></mark> Preguntas de
             Observatorio de la Democracia
           </p>
           <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
@@ -231,7 +244,7 @@
       <article id="slide-4" class="slide slide--text">
         <div class="slide__inner" style="text-align: center;">
           <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>8</b></mark> Congresistas
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>4</b></mark> Congresistas
           </p>
 
           <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
@@ -277,15 +290,15 @@
       <article id="slide-5" class="slide slide--text">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
           <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark class="markNumeralOD"></b>9</b></mark> Preguntas
+            <mark class="markNumeralOD"></b>5</b></mark> Preguntas
           </p>
-        <script src="js/scripts/OD/preguntas.js"></script>
-        <script src="js/scripts/OD/slides.js"></script>
-        <div id="container">
-          <!--<a class="prev">&#10094;</a>
+          <script src="js/scripts/OD/preguntas.js"></script>
+          <script src="js/scripts/OD/slides.js"></script>
+          <div id="container">
+            <!--<a class="prev">&#10094;</a>
           <a class="next">&#10095;</a>-->
-        </div>
-        <script src="js/vega-lite/barsOD.js"></script>
+          </div>
+          <script src="js/vega-lite/barsOD.js"></script>
       </article>
 
       <!--flores cv -->
@@ -293,7 +306,7 @@
       <article id="slide-6" class="slide slide--text">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
           <p style="font-size: 25px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>10</b></mark> ¿Cómo votaron los
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>6</b></mark> ¿Cómo votaron los
             congresistas?
           </p>
           <div class="row" style="text-align: center; justify-content: center;">
@@ -355,11 +368,10 @@
           </p>
           <script src="js/scripts/export/csv_reader.js"></script>
           <script src="js/scripts/export/file_saver.js"></script>
-          <div class="loading-export" style="background-image: url(assets/img/loading_export.gif);"></div>
 
           <p>
             <button id="btn_proy_CV" class="btn btn-2"
-              style="background-color: #3abae9;  font-family: 'Questrial', serif;">Info. de los Datos</button>
+              style="background-color: #3abae9;  font-family: 'Questrial', serif;">Más información</button>
           </p>
           <!-- The Modal -->
           <div id="myModal" class="modal">
@@ -367,11 +379,20 @@
             <!-- Modal content -->
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title">Flores</h4>
+                <h4 class="modal-title">Visualización de las votaciones de los congresistas</h4>
                 <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
 
               </div>
-              <p style="padding: 20px;">"Descargar información"</p>
+              <div class="loading-export" style="background-image: url(assets/img/loading_export.gif);"></div>
+              <p style="padding: 20px;">En esta sección se muestran cuatro flores una vez se haya hecho el filtrado de
+                los datos. Cada flor representa un tipo de votación: votos a favor, votos en contra, abstenciones e
+                inasistencias. Los pétalos de cada flor serán los temas que se han escogido para el filtrado, y el
+                tamaño de estos pétalos será el número de votaciones que se tiene para cada tema.<br><br>Esta
+                visualización es útil para comparar el comportamiento de los congresistas con respecto a los temas
+                seleccionados en el filtrado.<br></br>Cuando hayas hecho el filtrado de los datos, si deseas, puedes
+                exportar la información de los proyectos de ley filtrados y que se usaron para la presentación de las
+                flores. Debido a que es un gran numero de datos a filtrar, el proceso de exportación puede tardar un
+                rato, así que te recomendamos esperar hasta que inicie la descarga del archivo.</p>
               <div class="modal-footer">
                 <button id="btn_export" class="btn"
                   style="background-color: #3abae9;  font-family: 'Questrial', serif;">Exportar a CSV</button>
@@ -383,6 +404,7 @@
 
         <script>
           // Get the modal
+          var modal3 = document.getElementsByClassName('modal3');
           var modal2 = document.getElementsByClassName('modal');
 
           // Get the button that opens the modal
@@ -392,13 +414,20 @@
           var span = document.getElementsByClassName("close");
 
           // When the user clicks on the button, open the modal
-
           btn[0].onclick = function () {
+            modal3[0].style.display = "block";
+          }
+
+          btn[1].onclick = function () {
             modal2[0].style.display = "block";
           }
 
           // When the user clicks on <span> (x), close the modal
           span[0].onclick = function () {
+            modal3[0].style.display = "none";
+          }
+
+          span[1].onclick = function () {
             modal2[0].style.display = "none";
           }
 
@@ -409,8 +438,6 @@
             }
           }
         </script>
-
-
         <script src="js/scripts/export/export_data.js"></script>
         <script src="https://d3js.org/d3.v3.min.js"></script>
       </article>
@@ -421,10 +448,10 @@
       <article id="slide-7" class="slide slide--text">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
           <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>11</b></mark> Resultados
+            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>7</b></mark> Resultados
             Ciudadanania
           </p>
-          
+
           <p id="textini2"
             style="font-size: 18px; margin-top: 100px; font-family: 'Questrial', serif; font-weight: normal;">
             Mira las conclusiones de tu consulta usando las flechas.
@@ -450,7 +477,7 @@
         <script>
           var slideIndex_nm2 = 1;
           showSlides_nm2(slideIndex_nm2);
-          
+
 
           function plusSlides_nm2(n) {
             showSlides_nm2(slideIndex_nm2 += n);
@@ -459,7 +486,7 @@
 
           function currentSlide_nm2(n) {
             showSlides_nm2(slideIndex_nm2 = n);
-            
+
           }
 
           function showSlides_nm2(n) {
@@ -473,7 +500,7 @@
             }
 
             slides[slideIndex_nm2 - 1].style.display = "block";
-            
+
           }
         </script>
       </article>
@@ -483,7 +510,7 @@
       <article id="slide-8" class="slide slide--text">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
           <p style="font-size: 25px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>12</b></mark> Representación en
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>8</b></mark> Representación en
             el
             Congreso
           </p>

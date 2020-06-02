@@ -618,6 +618,22 @@ font-family: 'Questrial'; }
   padding-right: 30px !important;
 }
 
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1040; /* Sit on top */
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 35%;
+}
+
 
 /* Modal Content/Box */
 .modal-content {
@@ -783,7 +799,7 @@ font-family: 'Questrial'; }
 
 .scrolldown-vista{
   position: absolute;
-  bottom: 1px;
+  bottom: 0.1px;
   left: 52.5%;
   width: 40px;
   height: 40px;
@@ -797,8 +813,8 @@ font-family: 'Questrial'; }
   display: block;
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
   animation: animate 1.5s linear infinite;
 }
 
@@ -1067,3 +1083,21 @@ body.loading-gif .loading-export{
   border: 1px dashed rgba(255, 255, 255, 0.5);
   font-family: 'Questrial', serif;
 }
+
+/* @media only screen and (min-height: 600px) {
+  .body-responsive{
+    zoom: 80%;
+  }
+}
+
+@media only screen and (min-height: 700px) {
+  .body-responsive{
+    zoom: 90%;
+  }
+}
+
+@media only screen and (min-height: 800px) {
+  .body-responsive{
+    zoom: 100%;
+  }
+} */
