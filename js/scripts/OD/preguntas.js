@@ -1,9 +1,10 @@
 $("#btn_preguntas").click(function () {
 
-  let preguntas = Array.from(preguntas2.selectedOptions).map(
-    (option) => option.value
-  );
   //console.log(preguntas)
+
+  let preguntas = Array.from(preguntas2.selectedOptions).map(
+        (option) => option.value
+      );
 
   let todosLosAnios = ["2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2016", "2018"]
 
@@ -14,6 +15,11 @@ $("#btn_preguntas").click(function () {
   let etiquetasEscogidas = Array.from(etiquetas.selectedOptions).map(
     (option) => option.value
   );
+
+  let prePreg = document.getElementsByClassName("pre-preguntas");
+    document.querySelectorAll('.pre-preguntas').forEach(function (a) {
+    a.remove()
+  })
 
   //console.log(aniosEscogidos)
   let datos = [];
@@ -34,6 +40,7 @@ $("#btn_preguntas").click(function () {
   else {
     if (aniosEscogidos.length == 0) {
       //Mostrar visualización de las preguntas escogidas y que no incluyen año o etiqueta
+      document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select>>';
     }
     else {
       var count3 = document.getElementById("slidecontainer2").childElementCount;
@@ -140,25 +147,27 @@ $("#btn_preguntas").click(function () {
 
             printConclusionod(preguntaEscogida, arreglores)
           }
+          if (preguntas.length > 1) {
+            aTagPrev = document.createElement("a");
+            aTagPrev.className = "prev";
+            let newPrevContent = document.createTextNode("❮");
+            aTagPrev.appendChild(newPrevContent);
+            document.getElementById('container').appendChild(aTagPrev);
 
-          aTagPrev = document.createElement("a");
-          aTagPrev.className = "prev";
-          let newPrevContent = document.createTextNode("❮");
-          aTagPrev.appendChild(newPrevContent);
-          document.getElementById('container').appendChild(aTagPrev);
+            aTagNext = document.createElement("a");
+            aTagNext.className = "next";
+            let newNextContent = document.createTextNode("❯");
+            aTagNext.appendChild(newNextContent);
+            document.getElementById('container').appendChild(aTagNext);
 
-          aTagNext = document.createElement("a");
-          aTagNext.className = "next";
-          let newNextContent = document.createTextNode("❯");
-          aTagNext.appendChild(newNextContent);
-          document.getElementById('container').appendChild(aTagNext);
+            $(".prev").on('click', function () {
+              plusSlides(-1)
+            });
+            $(".next").on('click', function () {
+              plusSlides(1)
+            });
+          }
 
-          $(".prev").on('click', function () {
-            plusSlides(-1)
-          });
-          $(".next").on('click', function () {
-            plusSlides(1)
-          });
         });
       let elementPrev = document.getElementsByClassName("prev");
       let elementNext = document.getElementsByClassName("next");

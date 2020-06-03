@@ -17,3 +17,16 @@
   font-family: 'Questrial', serif;
   font-weight: normal;
 }
+
+.pTextoOD {
+  font-size: 18px !important;
+  padding-top: 10px;
+  font-family: 'Questrial', serif !important;
+  font-weight: normal !important;
+}
+
+.pTextoODL {
+  font-size: 50px !important;
+  font-family: 'Questrial', serif !important;
+  font-weight: lighter !important;
+}
