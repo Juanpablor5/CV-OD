@@ -5,7 +5,7 @@
 //   { Tema: "Transporte", abs: 14 },
 // ];
 //<!----------------------------------------------------------------->
-function flower_si(data) {
+function flower_si(data, number) {
   var margin = { top: 10, left: 10, right: 10, bottom: 10 };
   width = 200;
   height = 250;
@@ -24,7 +24,7 @@ function flower_si(data) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_si")
+    .select("#svgContent_si"+number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -90,7 +90,7 @@ function flower_si(data) {
     });
 }
 
-function flower_no(data) {
+function flower_no(data, number) {
   var margin = { top: 10, left: 10, right: 10, bottom: 10 };
   width = 200;
   height = 250;
@@ -109,7 +109,7 @@ function flower_no(data) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_no")
+    .select("#svgContent_no"+number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -175,7 +175,7 @@ function flower_no(data) {
     });
 }
 
-function flower_abs(data) {
+function flower_abs(data, number) {
   var margin = { top: 10, left: 10, right: 10, bottom: 10 };
   width = 200;
   height = 250;
@@ -194,7 +194,7 @@ function flower_abs(data) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_abs")
+    .select("#svgContent_abs"+number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -260,7 +260,7 @@ function flower_abs(data) {
     });
 }
 
-function flower_asis(data) {
+function flower_asis(data, number) {
   var margin = { top: 10, left: 10, right: 10, bottom: 10 };
   width = 200;
   height = 250;
@@ -279,7 +279,7 @@ function flower_asis(data) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_asis")
+    .select("#svgContent_asis"+number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
