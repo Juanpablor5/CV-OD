@@ -162,7 +162,8 @@
                     </script>
                     <script src="js/flores/flower.js"></script>
                     <script src="js/flores/conclusiones.js"></script>
-                    <script src="js/flores/data_flwr.js"></script>                    
+                    <script src="js/flores/data_flwr_con.js"></script>
+                    <script src="js/flores/data_flwr_par.js"></script>
                     <script src="js/scripts/slimselect.js"></script>
                     <p style="font-size: 40px; padding-top: 40px; font-family: 'Questrial', serif; font-weight: bold;">
                         669
@@ -246,15 +247,21 @@
                         </div>
                     </div>
 
-                    <div id="div_flores3" style="padding-top: 27%; padding-bottom: 27%; padding-right: 10%; padding-left: 10%; display: none; background: #f1f1f1f1;">
+                    <div id="div_flores3"
+                        style="padding-top: 27%; padding-bottom: 27%; padding-right: 10%; padding-left: 10%; display: none; background: #f1f1f1f1;">
                         <p
-                            style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Revisa el comportamiento de las votaciones de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>congresistas</b></mark> o <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>partidos</b></mark> que escogiste con las flechas.
+                            style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+                            Revisa el comportamiento de las votaciones de los <mark
+                                style="background-color: #3abae9; color: white; font-size: 20px;"><b>congresistas</b></mark>
+                            o <mark
+                                style="background-color: #3abae9; color: white; font-size: 20px;"><b>partidos</b></mark>
+                            que escogiste con las flechas.
                         </p>
                     </div>
 
                     <a id="ant_flwr" class="prev-flwr_fuera" style="display: none;" onclick="plusSlides_flwr(-1)">❮</a>
                     <a id="sig_flwr" class="next-flwr_fuera" style="display: none;" onclick="plusSlides_flwr(1)">❯</a>
-                    
+
                     <script>
                         var slideIndex_flwr = 1;
                         showSlides_flwr(slideIndex_flwr);
@@ -341,42 +348,42 @@
                     </div>
                 </div>
 
-                <!-- <script>
-          // Get the modal
-          var modal3 = document.getElementsByClassName('modal3');
-          var modal2 = document.getElementsByClassName('modal');
+                <script>
+                    // Get the modal
+                    var modal3 = document.getElementsByClassName('modal3');
+                    var modal2 = document.getElementsByClassName('modal');
 
-          // Get the button that opens the modal
-          var btn = document.getElementsByClassName("btn-2");
+                    // Get the button that opens the modal
+                    var btn = document.getElementsByClassName("btn-2");
 
-          // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close");
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close");
 
-          // When the user clicks on the button, open the modal
-          btn[0].onclick = function () {
-            modal3[0].style.display = "block";
-          }
+                    // When the user clicks on the button, open the modal
+                    btn[0].onclick = function () {
+                        modal3[0].style.display = "block";
+                    }
 
-          btn[1].onclick = function () {
-            modal2[0].style.display = "block";
-          }
+                    btn[1].onclick = function () {
+                        modal2[0].style.display = "block";
+                    }
 
-          // When the user clicks on <span> (x), close the modal
-          span[0].onclick = function () {
-            modal3[0].style.display = "none";
-          }
+                    // When the user clicks on <span> (x), close the modal
+                    span[0].onclick = function () {
+                        modal3[0].style.display = "none";
+                    }
 
-          span[1].onclick = function () {
-            modal2[0].style.display = "none";
-          }
+                    span[1].onclick = function () {
+                        modal2[0].style.display = "none";
+                    }
 
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function (event) {
-            if (event.target == modal2) {
-              modal2.style.display = "none";
-            }
-          }
-        </script> -->
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal2) {
+                            modal2.style.display = "none";
+                        }
+                    }
+                </script>
 
 
                 <script src="js/scripts/export/export_data.js"></script>
