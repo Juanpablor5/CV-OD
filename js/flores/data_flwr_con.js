@@ -125,12 +125,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
         }
       }
 
-      var count2 = document.getElementById("slidecontainer").childElementCount;
-
-      for (let index = 0; index < count2; index++) {
-        let slide = document.getElementById('slidecontainer');
-        slide.removeChild(slide.firstElementChild);
-      }
+    
 
       document.getElementById('textini').style.visibility = "visible";
 

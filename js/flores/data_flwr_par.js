@@ -125,13 +125,7 @@ $("#btn_partidos").click(function () {
                 }
             }
 
-            var count2 = document.getElementById("slidecontainer").childElementCount;
-
-            for (let index = 0; index < count2; index++) {
-              let slide = document.getElementById('slidecontainer');
-              slide.removeChild(slide.firstElementChild);
-            }
-
+            
             document.getElementById('textini').style.visibility = "visible";
 
             partidos.partidos.forEach((partido) => {
@@ -309,6 +303,15 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
     document.getElementById("div_flores").style.display = "none";
 
     document.getElementById("slidecontiner_flwr").innerHTML = '<div class="slides_flores"> <div id="div_flores2" style="padding-top: 30%; padding-bottom: 30%; padding-right: 10%; padding-left: 10%;"> <p style="font-size: 18px; padding-top: 20px; font-family: \'Questrial\', serif; font-weight: lighter;">Revisa el comportamiento de las votaciones de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>congresistas</b></mark> o <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>partidos</b></mark> que escogiste con las flechas. </p> </div> </div> ';
+
+
+    var count2 = document.getElementById("slidecontainer").childElementCount;
+
+            for (let index = 0; index < count2; index++) {
+              let slide = document.getElementById('slidecontainer');
+              slide.removeChild(slide.firstElementChild);
+            }
+
 
     // Si es igual al número total de congresistas
     if (data_flor.length == 669) {
