@@ -369,12 +369,17 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
                 flor_no_slide.push(tema.votos[1]);
                 flor_abs_slide.push(tema.votos[2]);
                 flor_asis_slide.push(tema.votos[3]);
+                console.log(tema);
+            console.log(congresista.nombre);
+            printConclusion(tema.nombre, congresista.nombre, tema.votos[2].abs, tema.votos[0].abs, tema.votos[1].abs, tema.votos[3].abs) 
             });
 
             flower_si(flor_si_slide, i);
             flower_no(flor_no_slide, i);
             flower_abs(flor_abs_slide, i);
             flower_asis(flor_asis_slide, i);
+
+                  
         }
     }
 }
