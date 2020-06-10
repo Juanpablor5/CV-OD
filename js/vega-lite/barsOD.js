@@ -40,6 +40,7 @@ function visualizarBarras (datos, id) {
 
 function visualizarPorAños (datos, id, arregloRespuesta, arregloAnios) {
   let idVid = "#"+id;
+  console.log(datos)
   let arregloColores = ["#003666", "#b84592", "#3369e7", "#00aeff", "#050f2c", "#1cc7d0", "#ff4f81", "#ce181e", "#8e43e7", "#009f4d", "#2dde98", "#ff6c5f", "#ffc168"];
   let vlSpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",

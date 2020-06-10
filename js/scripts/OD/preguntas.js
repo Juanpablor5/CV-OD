@@ -56,8 +56,7 @@ $("#btn_preguntas").click(function () {
         a.remove()
       })
     }
-
-    fetch("data/json/OD/respuestas.json")
+    fetch("data/json/OD/2004-2018.json")
       .then((resp) => resp.json())
       .then((data) => {
         data.forEach(pregunta => {
@@ -76,6 +75,7 @@ $("#btn_preguntas").click(function () {
             }
           }
         });
+        console.log(datos)
         for (let j = 0; j < preguntas.length; j++) {
           cont = j + 1
           totalAnios = [];
@@ -205,7 +205,7 @@ $("#btn_preguntas").click(function () {
       })
     }
 
-    fetch("data/json/OD/respuestas.json")
+    fetch("data/json/OD/2004-2018.json")
       .then((resp) => resp.json())
       .then((data) => {
         data.forEach(pregunta => {
