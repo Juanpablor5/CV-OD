@@ -319,18 +319,36 @@
 
 
       <script src="https://d3js.org/d3.v3.min.js"></script>
-      <article id="slide-5" class="slide slide--text">
+      <article id="slide-5" class="slide slide--text_preguntas">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
-          <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark class="markNumeralOD"></b>5</b></mark> Preguntas
-          </p>
-          <script src="js/scripts/OD/preguntas.js"></script>
-          <script src="js/scripts/OD/slides.js"></script>
-          <div id="container">
-            <!--<a class="prev">&#10094;</a>
-          <a class="next">&#10095;</a>-->
+          <div>
+            <p style="font-size: 25px; padding-top: 2%; font-family: 'Questrial', serif; font-weight: normal;">
+              <mark class="markNumeralOD"></b>5</b></mark> Preguntas
+            </p>
+            <div class="pre-preguntas col-lg-12">
+              <p id="pTextoOD" style="padding-top: 15%;">
+                Escoge al menos una pregunta
+              </p>
+              <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+              <p id="pTextoODL" style="font-size: 18px; padding-top: 16.5%;">
+                Aquí se mostrará el comportamiento de los <mark
+                  style="background-color: #089baa; color: white; font-size: 20px;"></b>ciudadanos</b></mark> en torno a las preguntas escogidas.
+              </p>
+            </div>
+            <script src="js/scripts/OD/preguntas.js"></script>
+            <script src="js/scripts/OD/slides.js"></script>
+            <div id="container">
+              <!--<a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>-->
+            </div>
+            <script src="js/vega-lite/barsOD.js"></script>
           </div>
-          <script src="js/vega-lite/barsOD.js"></script>
+          <div>
+             <button id="" class="btn"
+            style="background-color: #089baa;  font-family: 'Questrial', serif; margin-top: : 10px;">Más información</button>
+          </div>
+
+        </div>
       </article>
 
       <!--flores cv -->
