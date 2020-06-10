@@ -343,6 +343,7 @@ function printConclusionod(pregunta, resarray) {
     var numres = resarray.length;
     var indice = 0;
     var i = 0;
+    console.log(resarray)
     for (let index = 0; index < resarray.length; index++) {
       var porcentaje = resarray[index][1]
       if (porcentaje > i) {
@@ -355,7 +356,7 @@ function printConclusionod(pregunta, resarray) {
     var res = resarray[indice][0]
 
     if (numres < 50) {
-      p = "el comportamiento de lo ciudadanos demuestra que el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>, sin embargo, el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(resarray[indice + 1][1]) + "</b></mark>% escogio la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(resarray[indice + 1][0]) + "</b></mark>";
+      p = "el comportamiento de lo ciudadanos demuestra que el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>, sin embargo, el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(resarray[0][1]) + "</b></mark>% escogio la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(resarray[0][0]) + "</b></mark>";
     } else {
       p = "el comportamiento de lo ciudadanos demuestra que el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>";
       // console.log(resarray);

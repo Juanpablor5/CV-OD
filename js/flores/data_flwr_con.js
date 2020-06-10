@@ -125,12 +125,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
         }
       }
 
-      var count2 = document.getElementById("slidecontainer").childElementCount;
-
-      for (let index = 0; index < count2; index++) {
-        let slide = document.getElementById('slidecontainer');
-        slide.removeChild(slide.firstElementChild);
-      }
+    
 
       document.getElementById('textini').style.visibility = "visible";
 
@@ -255,6 +250,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                           }
                         });
                       });
+                      
                     });
                     let temp = cong_flwr.proyectos
                     cong_flwr.proyectos = []
@@ -267,6 +263,8 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                   });
 
                   // console.log(JSON.stringify(data_flor))
+
+                  
 
                   eti_selected.forEach(eti => {
                     let cont_si_tot = 0;
@@ -290,7 +288,8 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     flor_abs.push({ Tema: eti, abs: cont_abs_tot });
                     flor_asis.push({ Tema: eti, abs: cont_asis_tot });
 
-                    printConclusion(eti, cong_selected, flor_si, cont_abs_tot, cont_si_tot, cont_no_tot, cont_asis_tot)
+                    
+                    
                   });                  
                 })
                 .then((_) => {
@@ -299,6 +298,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
 
                   // let t1 = performance.now()
                   // console.log("El proceso de filtrado tardó " + (t1 - t0) + " milisegundos.")
+
 
                 });
             });
@@ -337,6 +337,10 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
     flower_no(flor_no, i);
     flower_abs(flor_abs, i);
     flower_asis(flor_asis, i);
+
+    console.log(tema);
+
+
   } else {
 
     for (let i = 0; i < data_flor.length; i++) {
@@ -370,12 +374,19 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
         flor_no_slide.push(tema.votos[1]);
         flor_abs_slide.push(tema.votos[2]);
         flor_asis_slide.push(tema.votos[3]);
+        console.log(tema);
+      console.log(congresista.nombre);
+      printConclusionP(tema.nombre, congresista.nombre, tema.votos[2].abs, tema.votos[0].abs, tema.votos[1].abs, tema.votos[3].abs)  
       });
 
       flower_si(flor_si_slide, i);
       flower_no(flor_no_slide, i);
       flower_abs(flor_abs_slide, i);
       flower_asis(flor_asis_slide, i);
+
+                   
+      
+
     }
   }
 }

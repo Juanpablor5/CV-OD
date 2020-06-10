@@ -125,13 +125,7 @@ $("#btn_partidos").click(function () {
                 }
             }
 
-            var count2 = document.getElementById("slidecontainer").childElementCount;
-
-            for (let index = 0; index < count2; index++) {
-              let slide = document.getElementById('slidecontainer');
-              slide.removeChild(slide.firstElementChild);
-            }
-
+            
             document.getElementById('textini').style.visibility = "visible";
 
             partidos.partidos.forEach((partido) => {
@@ -310,6 +304,15 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
 
     document.getElementById("slidecontiner_flwr").innerHTML = '<div class="slides_flores"> <div id="div_flores2" style="padding-top: 30%; padding-bottom: 30%; padding-right: 10%; padding-left: 10%;"> <p style="font-size: 18px; padding-top: 20px; font-family: \'Questrial\', serif; font-weight: lighter;">Revisa el comportamiento de las votaciones de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>congresistas</b></mark> o <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>partidos</b></mark> que escogiste con las flechas. </p> </div> </div> ';
 
+
+    var count2 = document.getElementById("slidecontainer").childElementCount;
+
+            for (let index = 0; index < count2; index++) {
+              let slide = document.getElementById('slidecontainer');
+              slide.removeChild(slide.firstElementChild);
+            }
+
+
     // Si es igual al número total de congresistas
     if (data_flor.length == 669) {
         var iDiv = document.createElement('div');
@@ -369,12 +372,17 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
                 flor_no_slide.push(tema.votos[1]);
                 flor_abs_slide.push(tema.votos[2]);
                 flor_asis_slide.push(tema.votos[3]);
+                console.log(tema);
+            console.log(congresista.nombre);
+            printConclusion(tema.nombre, congresista.nombre, tema.votos[2].abs, tema.votos[0].abs, tema.votos[1].abs, tema.votos[3].abs) 
             });
 
             flower_si(flor_si_slide, i);
             flower_no(flor_no_slide, i);
             flower_abs(flor_abs_slide, i);
             flower_asis(flor_asis_slide, i);
+
+                  
         }
     }
 }
