@@ -1003,6 +1003,103 @@ font-family: 'Questrial'; }
   color: white;
 }
 
+.slideshow-container-flwr {
+  position: relative;
+  background: #f1f1f1f1;
+  margin-top: 20px;
+}
+
+.slides_flores {
+  display: none;
+  text-align: center;
+}
+
+/* Next & prev-nmious buttons */
+.prev-flwr, .next-flwr {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+.prev-flwr {
+  left: -25px;
+  background-color: rgba(182, 180, 180, 0.8);
+}
+/* Position the "next-nm button" to the right */
+.next-flwr {
+  position: absolute;
+  right: -25px;
+  border-radius: 3px 0 0 3px;
+  background-color: rgba(182, 180, 180, 0.8);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-flwr:hover, .next-flwr:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: white;
+}
+
+.prev-flwr_fuera, .next-flwr_fuera {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+.prev-flwr_fuera {
+  left: 7%;
+  top: 40%;
+  background-color: rgba(182, 180, 180, 0.8);
+}
+/* Position the "next-nm button" to the right */
+.next-flwr_fuera {
+  position: absolute;
+  right: 7%;
+  top: 40%;
+  border-radius: 3px 0 0 3px;
+  background-color: rgba(182, 180, 180, 0.8);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev-flwr_fuera:hover, .next-flwr_fuera:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: white;
+}
+
+.numbertext_flwr {
+  color: black;
+  font-size: 15px;
+  padding: 4% 4%;
+  position: absolute;
+  font-family: 'Questrial', serif;
+  bottom: 0;
+  left: 0;
+}
+
+.text_flwr {
+  color: black;
+  font-size: 15px;
+  align-content: center;
+  position: absolute;
+  font-family: 'Questrial', serif;
+  width: 100%;
+  text-align: center;
+}
 
 /* The dot/bullet/indicator container */
 .dot-container {

@@ -47,17 +47,20 @@
                       demo</button>
                     <!-- The Modal -->
                     <div id="myModal" class="modal3">
-
-                      <!-- Modal content -->
                       <div class="modal-content">
                         <div class="modal-header">
                           <h4 class="modal-title">Demo de la herramienta</h4>
                           <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
                         </div>
-                        <p style="padding: 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/aWwum2XCgFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                        <p style="padding: 20px;">
+                          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/aWwum2XCgFU"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                          </iframe> -->
+                        </p>
                         <div class="modal-footer"></div>
                       </div>
-
                     </div>
                   </div>
                   <div class="col-3">
@@ -137,14 +140,16 @@
       <article id="slide-1" class="slide slide--text slide--scrolling">
         <div id="anos" class="slide__inner" style="text-align: center;">
           <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>1</b></mark> Temporalidad
+            <mark style="background-color: #089baa; color: white; font-size: 40px;"></b>1</b></mark>
+            Temporalidad
           </p>
           <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
             Análisis de Representación Ciudadana
           </p>
           <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
             De acuerdo a los datos anteriores, puedes elegir en qué <mark
-              style="background-color: #089baa; color: white; font-size: 20px;"></b>años</b></mark> hacer el análisis
+              style="background-color: #089baa; color: white; font-size: 20px;"></b>años</b></mark> hacer
+            el análisis
             del comportamiento de la representación ciudadana
           </p>
           <div class="row" style="align-self: center; font-size: 12 px;">
@@ -170,7 +175,8 @@
       <article id="slide-2" class="slide slide--text">
         <div class="slide__inner" style="text-align: center;">
           <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>2</b></mark> Temas o Categorias
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>2</b></mark> Temas o
+            Categorias
           </p>
 
           <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
@@ -180,7 +186,8 @@
           <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
             Se usaron <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>87</b></mark>
             etiquetas para clasificar toda la información. Por ello podrás elegir los <mark
-              style="background-color: #3abae9; color: white; font-size: 20px;"></b>temas</b></mark> de interés para
+              style="background-color: #3abae9; color: white; font-size: 20px;"></b>temas</b></mark> de
+            interés para
             ciudadanos y congresistas.
           </p>
 
@@ -243,31 +250,56 @@
 
       <article id="slide-4" class="slide slide--text">
         <div class="slide__inner" style="text-align: center;">
-          <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>4</b></mark> Congresistas
-          </p>
+          <div>
+            <p style="font-size: 30px; padding-top: 1px; font-family: 'Questrial', serif; font-weight: normal;">
+              <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>4</b></mark>
+              Congresistas
+            </p>
 
-          <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
-            Congresista o Partido Político
-          </p>
+            <p style="font-size: 20px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: normal;">
+              Congresista o Partido Político
+            </p>
 
-          <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-            Para hacerlo más específico, puedes elegir para qué <mark
-              style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresista/s</b></mark> quieres ver
-            su actividad legislativa, y por ende, su afinidad con el ciudadano.
-          </p>
-          <select id="congresistas" multiple class="font">
-            <script src="js/scripts/select_congresistas.js"></script>
-          </select>
-          <script src="js/flores/flower.js"></script>
-          <button id="btn_congresistas" class="btn"
-            style="background-color: #3abae9; font-family: 'Questrial', serif;">Buscar</button>
+            <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+              Para hacerlo más específico, por favor elige si quieres hacer la búsqueda por <mark
+                style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresistas</b></mark>
+              o
+              por <mark style="background-color: #3abae9; color: white; font-size: 20px;"></b>partidos</b></mark>
+            </p>
+          </div>
+
+          <div id="inner_congresistas">
+            <div>
+              <button id="btn_con" class="btn"
+                style="background-color: #3abae9; font-family: 'Questrial', serif;">Congresistas</button>
+              <button id="btn_par" class="btn"
+                style="background-color: #3abae9; font-family: 'Questrial', serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Partidos
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </div>
+          </div>
+
+          <div id="sel_con" style="margin-top: 15px; display:none;">
+            <select id="congresistas" multiple class="font"></select>
+            <button id="btn_congresistas" class="btn"
+              style="background-color: #3abae9; font-family:  'Questrial', serif;">Buscar</button>
+          </div>
+
+          <div id="sel_par" style="margin-top: 15px; display:none;">
+            <select id="partidos" multiple class="font"></select>
+            <button id="btn_partidos" class="btn"
+              style="background-color: #3abae9; font-family:  'Questrial', serif;">Buscar</button>
+          </div>
+          <script src="js/scripts/select_congresistas.js"></script>
+
           <script>
             let proy_etiq = [];
             let anio_selected_export = [];
             let congre_selec_export = [];
           </script>
-          <script src="js/flores/data_flwr.js"></script>
+          <script src="js/flores/flower.js"></script>
+          <script src="js/flores/conclusiones.js"></script>
+          <script src="js/flores/data_flwr_con.js"></script>
+          <script src="js/flores/data_flwr_par.js"></script>
           <script src="js/scripts/slimselect.js"></script>
           <p style="font-size: 40px; padding-top: 40px; font-family: 'Questrial', serif; font-weight: bold;">
             669
@@ -287,36 +319,18 @@
 
 
       <script src="https://d3js.org/d3.v3.min.js"></script>
-      <article id="slide-5" class="slide slide--text_preguntas">
+      <article id="slide-5" class="slide slide--text">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
-          <div>
-            <p style="font-size: 25px; padding-top: 2%; font-family: 'Questrial', serif; font-weight: normal;">
-              <mark class="markNumeralOD"></b>5</b></mark> Preguntas
-            </p>
-            <div class="pre-preguntas col-lg-12">
-              <p id="pTextoOD" style="padding-top: 15%;">
-                Escoge al menos una pregunta
-              </p>
-              <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-              <p id="pTextoODL" style="font-size: 18px; padding-top: 16.5%;">
-                Aquí se mostrará el comportamiento de los <mark
-                  style="background-color: #089baa; color: white; font-size: 20px;"></b>ciudadanos</b></mark> en torno a las preguntas escogidas.
-              </p>
-            </div>
-            <script src="js/scripts/OD/preguntas.js"></script>
-            <script src="js/scripts/OD/slides.js"></script>
-            <div id="container">
-              <!--<a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>-->
-            </div>
-            <script src="js/vega-lite/barsOD.js"></script>
+          <p style="font-size: 30px; padding-top: 50px; font-family: 'Questrial', serif; font-weight: normal;">
+            <mark class="markNumeralOD"></b>5</b></mark> Preguntas
+          </p>
+          <script src="js/scripts/OD/preguntas.js"></script>
+          <script src="js/scripts/OD/slides.js"></script>
+          <div id="container">
+            <!--<a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>-->
           </div>
-          <div>
-             <button id="" class="btn"
-            style="background-color: #089baa;  font-family: 'Questrial', serif; margin-top: : 10px;">Más información</button>
-          </div>
-
-        </div>
+          <script src="js/vega-lite/barsOD.js"></script>
       </article>
 
       <!--flores cv -->
@@ -324,99 +338,160 @@
       <article id="slide-6" class="slide slide--text">
         <div style=" border: 2px dashed black; height: 100%; padding: 30px; text-align: center;">
           <p style="font-size: 25px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>6</b></mark> ¿Cómo votaron los
+            <mark style="background-color: #3abae9; color: white; font-size: 40px;"></b>6</b></mark> ¿Cómo
+            votaron los
             congresistas?
           </p>
-          <div class="row" style="text-align: center; justify-content: center;">
-            <div class="container col-lg-6">
 
-              <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
-                Número de votos a favor:
-              </p>
-              <div id="flr_si" style="margin-top: -10px;">
-                <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-                <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                  Escoge al menos un tema.
-                </p>
-              </div>
+          <div id="slidecontiner_flwr" class="slideshow-container-flwr">
+            <div class="slides_flores">
+              <div id="div_flores" style="display: block;  padding-top: 15%; padding-bottom: 15%;">
+                <div class="row" style="text-align: center; justify-content: center;">
+                  <div class="container col-lg-6">
 
-            </div>
+                    <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
+                      Número de votos a favor:
+                    </p>
+                    <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+                    <p
+                      style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                      Escoge al menos un tema.
+                    </p>
+                  </div>
 
-            <div class="container col-lg-6">
-              <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
-                Número de votos en contra:
-              </p>
-              <div id="flr_no" style="margin-top: -10px;">
-                <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-                <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                  Escoge al menos un tema.
-                </p>
+                  <div class="container col-lg-6">
+                    <p style="font-size: 15px; font-family: 'Questrial', serif; font-weight: normal;">
+                      Número de votos en contra:
+                    </p>
+                    <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+                    <p
+                      style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                      Escoge al menos un tema.
+                    </p>
+                  </div>
+                </div>
+                <div class="row" style="text-align: center; justify-content: center;">
+                  <div class="container col-lg-6">
+                    <p
+                      style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                      Número de Abstenciones:
+                    </p>
+                    <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+                    <p
+                      style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                      Escoge al menos un tema.
+                    </p>
+                  </div>
+                  <div class="container col-lg-6">
+                    <p
+                      style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                      Número de Inasistencias:
+                    </p>
+                    <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
+                    <p
+                      style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
+                      Escoge al menos un tema.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row" style="text-align: center; justify-content: center;">
-            <div class="container col-lg-6">
-              <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                Número de Abstenciones:
-              </p>
-              <div id="flr_abs" style="margin-top: -10px;">
-                <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-                <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                  Escoge al menos un tema.
-                </p>
-              </div>
-            </div>
-            <div class="container col-lg-6">
-              <p style="font-size: 15px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                Número de Inasistencias:
-              </p>
-              <div id="flr_asis" style="margin-top: -10px;">
-                <i class="fas fa-spinner fa-pulse" style="font-size: 40px;"></i>
-                <p style="font-size: 10px; padding-top: 10px; font-family: 'Questrial', serif; font-weight: normal;">
-                  Escoge al menos un tema.
-                </p>
-              </div>
-            </div>
 
+          <div id="div_flores3"
+            style="padding-top: 27%; padding-bottom: 27%; padding-right: 10%; padding-left: 10%; display: none; background: #f1f1f1f1;">
+            <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+              Revisa el comportamiento de las votaciones de los <mark
+                style="background-color: #3abae9; color: white; font-size: 20px;"><b>congresistas</b></mark>
+              o <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>partidos</b></mark>
+              que escogiste con las flechas.
+            </p>
           </div>
-          <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
-            Este es el compotamiento legislativo de los <mark
-              style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresistas</b></mark> en proyectos
-            de ley relacionados con los temas seleccionados.
-          </p>
-          <script src="js/scripts/export/csv_reader.js"></script>
-          <script src="js/scripts/export/file_saver.js"></script>
 
-          <p>
-            <button id="btn_proy_CV" class="btn btn-2"
-              style="background-color: #3abae9;  font-family: 'Questrial', serif; margin-top: 10px;">Más información</button>
-          </p>
-          <!-- The Modal -->
-          <div id="myModal" class="modal">
+          <a id="ant_flwr" class="prev-flwr_fuera" style="display: none;" onclick="plusSlides_flwr(-1)">❮</a>
+          <a id="sig_flwr" class="next-flwr_fuera" style="display: none;" onclick="plusSlides_flwr(1)">❯</a>
 
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Visualización de las votaciones de los congresistas</h4>
-                <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+          <script>
+            var slideIndex_flwr = 1;
+            showSlides_flwr(slideIndex_flwr);
 
+            function plusSlides_flwr(n) {
+              showSlides_flwr(slideIndex_flwr += n);
+              document.getElementById("div_flores3").style.display = "none";
+            }
+
+            function currentSlide_flwr(n) {
+              showSlides_flwr(slideIndex_flwr = n);
+            }
+
+            function showSlides_flwr(n) {
+              var i;
+              var slides = document.getElementsByClassName("slides_flores");
+
+              if (n > slides.length) { slideIndex_flwr = 1 }
+              if (n < 1) { slideIndex_flwr = slides.length }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+
+              slides[slideIndex_flwr - 1].style.display = "block";
+            }
+          </script>
+
+          <!-- ============No cambiar nada desde aquí============ -->
+
+          <div id="mas_info_flwr">
+            <p style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">
+              Este es el comportamiento legislativo de los <mark
+                style="background-color: #3abae9; color: white; font-size: 20px;"></b>congresistas</b></mark>
+              en
+              proyectos
+              de ley relacionados con los temas seleccionados.
+            </p>
+            <script src="js/scripts/export/csv_reader.js"></script>
+            <script src="js/scripts/export/file_saver.js"></script>
+
+            <p>
+              <button id="btn_proy_CV" class="btn btn-2"
+                style="background-color: #3abae9;  font-family: 'Questrial', serif;">Más
+                información</button>
+            </p>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Visualización de las votaciones de los congresistas</h4>
+                  <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="loading-export" style="background-image: url(assets/img/loading_export.gif);"></div>
+                <p style="padding: 20px;">En esta sección se muestran cuatro flores una vez se haya
+                  hecho el filtrado de
+                  los datos. Cada flor representa un tipo de votación: votos a favor, votos en contra,
+                  abstenciones e
+                  inasistencias. Los pétalos de cada flor serán los temas que se han escogido para el
+                  filtrado, y el
+                  tamaño de estos pétalos será el número de votaciones que se tiene para cada
+                  tema.<br><br>Esta
+                  visualización es útil para comparar el comportamiento de los congresistas con
+                  respecto a los temas
+                  seleccionados en el filtrado.<br></br>Cuando hayas hecho el filtrado de los datos,
+                  si deseas, puedes
+                  exportar la información de los proyectos de ley filtrados y que se usaron para la
+                  presentación de las
+                  flores. Debido a que es un gran numero de datos a filtrar, el proceso de exportación
+                  puede tardar un
+                  rato, así que te recomendamos esperar hasta que inicie la descarga del archivo.</p>
+                <div class="modal-footer">
+                  <button id="btn_export" class="btn"
+                    style="background-color: #3abae9;  font-family: 'Questrial', serif;">Exportar a
+                    CSV</button>
+                </div>
               </div>
-              <div class="loading-export" style="background-image: url(assets/img/loading_export.gif);"></div>
-              <p style="padding: 20px;">En esta sección se muestran cuatro flores una vez se haya hecho el filtrado de
-                los datos. Cada flor representa un tipo de votación: votos a favor, votos en contra, abstenciones e
-                inasistencias. Los pétalos de cada flor serán los temas que se han escogido para el filtrado, y el
-                tamaño de estos pétalos será el número de votaciones que se tiene para cada tema.<br><br>Esta
-                visualización es útil para comparar el comportamiento de los congresistas con respecto a los temas
-                seleccionados en el filtrado.<br></br>Cuando hayas hecho el filtrado de los datos, si deseas, puedes
-                exportar la información de los proyectos de ley filtrados y que se usaron para la presentación de las
-                flores. Debido a que es un gran numero de datos a filtrar, el proceso de exportación puede tardar un
-                rato, así que te recomendamos esperar hasta que inicie la descarga del archivo.</p>
-              <div class="modal-footer">
-                <button id="btn_export" class="btn"
-                  style="background-color: #3abae9;  font-family: 'Questrial', serif;">Exportar a CSV</button>
-              </div>
+
             </div>
-
           </div>
         </div>
 
@@ -456,6 +531,8 @@
             }
           }
         </script>
+
+
         <script src="js/scripts/export/export_data.js"></script>
         <script src="https://d3js.org/d3.v3.min.js"></script>
       </article>
@@ -475,13 +552,11 @@
             Mira las conclusiones de tu consulta usando las flechas.
           </p>
           <div id="slidecontainer2" class="slideshow-container-nm2" style="margin-top: -120px;">
-
             <div class="mySlides-nm2">
               <p id="sivotes2"
                 style="font-size: 18px; padding-top: 20px; font-family: 'Questrial', serif; font-weight: lighter;">Sin
                 consultas aún...</p>
             </div>
-
           </div>
 
           <a class="prev-nm2" onclick="plusSlides_nm2(-1)">❮</a>
