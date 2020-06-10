@@ -18,6 +18,7 @@ function visualizarBarras (datos, id) {
       y: {
         field: 'respuesta',
         type: 'nominal',
+        "sort": "null",
         axis: {
           title: 'Respuesta'
         }
@@ -38,13 +39,55 @@ function visualizarBarras (datos, id) {
 }
 
 
+
 function visualizarPorAños (datos, id, arregloRespuesta, arregloAnios) {
   let idVid = "#"+id;
   console.log(datos)
+  let vlSpec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "description": "Visualización de respuestas por pregunta para cada año",
+    "width": 300,
+    "height": 280,
+    "config": {
+      "axis": {
+        "labelFontSize": 14,
+        "titleFontSize": 14,
+      }
+    },
+    "data": {
+      "values": datos
+    },
+    "mark": {
+      "type": "line",
+      "point": {
+        "filled": false,
+        "fill": "white"
+      }
+    },
+    "encoding": {
+      "x": {"field": "anio", "type": "nominal", "oneOf": arregloAnios,"axis": {
+          "title": "Años"
+        }},
+      "y": {"field": "porcentaje", "type": "quantitative", "axis": {
+          "title": "Porcentaje (%) por año"
+        }},
+      "color": {"field": "respuesta", "type": "nominal", "oneOf": arregloRespuesta,"axis": {
+          "title": "Respuestas",
+          "labelFontSize": 14,
+          "titleFontSize": 14,
+        }}
+    }
+  };
+  vegaEmbed(idVid, vlSpec);
+}
+
+function visualizarPorAños1 (datos, id, arregloRespuesta, arregloAnios) {
+  let idVid = "#"+id;
   let arregloColores = ["#003666", "#b84592", "#3369e7", "#00aeff", "#050f2c", "#1cc7d0", "#ff4f81", "#ce181e", "#8e43e7", "#009f4d", "#2dde98", "#ff6c5f", "#ffc168"];
   let vlSpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "description": "Visualización de respuestas por pregunta para cada año",
+    "width": 800,
     "height": 280,
     "config": {
       "axis": {
@@ -80,6 +123,7 @@ function visualizarPorAños (datos, id, arregloRespuesta, arregloAnios) {
       "y": {
         "field": "respuesta",
         "type": "nominal",
+        "sort": "null",
         "axis": {
           "title": "Respuesta",
           "offset": 5,

@@ -75,7 +75,6 @@ $("#btn_preguntas").click(function () {
             }
           }
         });
-        console.log(datos)
         for (let j = 0; j < preguntas.length; j++) {
           cont = j + 1
           totalAnios = [];
