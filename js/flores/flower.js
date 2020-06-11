@@ -55,7 +55,8 @@ function flower_si(data, number) {
         .style("left", d3.event.pageX + 12 + "px")
         .style("top", d3.event.pageY - 10 + "px")
         .style("opacity", 1)
-        .style("display", "block");
+        .style("display", "block")
+        .style("background-color","rgba(182, 180, 180, 0.4)");
     })
     .on("mouseout", function () {
       div.html(" ").style("display", "none");

@@ -125,7 +125,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
         }
       }
 
-    
+
 
       document.getElementById('textini').style.visibility = "visible";
 
@@ -250,7 +250,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                           }
                         });
                       });
-                      
+
                     });
                     let temp = cong_flwr.proyectos
                     cong_flwr.proyectos = []
@@ -264,7 +264,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
 
                   // console.log(JSON.stringify(data_flor))
 
-                  
+
 
                   eti_selected.forEach(eti => {
                     let cont_si_tot = 0;
@@ -276,9 +276,9 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                       congresista.temas.forEach(tema => {
                         if (tema.nombre == eti) {
                           cont_si_tot += tema.votos[0].abs;
-                          cont_no_tot += tema.votos[0].abs;
-                          cont_abs_tot += tema.votos[0].abs;
-                          cont_asis_tot += tema.votos[0].abs;
+                          cont_no_tot += tema.votos[1].abs;
+                          cont_abs_tot += tema.votos[2].abs;
+                          cont_asis_tot += tema.votos[3].abs;
                         }
                       });
                     });
@@ -287,14 +287,11 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
                     flor_no.push({ Tema: eti, abs: cont_no_tot });
                     flor_abs.push({ Tema: eti, abs: cont_abs_tot });
                     flor_asis.push({ Tema: eti, abs: cont_asis_tot });
-
-                    
-                    
-                  });                  
+                  });
                 })
                 .then((_) => {
 
-                  slide_flores("Vista general de los votos", flor_si, flor_no, flor_abs, flor_asis, data_flor);
+                  slide_flores_par("Vista general de los votos", flor_si, flor_no, flor_abs, flor_asis, data_flor);
 
                   // let t1 = performance.now()
                   // console.log("El proceso de filtrado tardó " + (t1 - t0) + " milisegundos.")
@@ -306,7 +303,7 @@ $("#btn_etiquetas, #btn_anios, #btn_congresistas").click(function () {
     });
 });
 
-function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) {
+function slide_flores_par(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) {
   document.getElementById("div_flores").style.display = "none";
 
   document.getElementById("slidecontiner_flwr").innerHTML = '<div class="slides_flores"> <div id="div_flores2" style="padding-top: 30%; padding-bottom: 30%; padding-right: 10%; padding-left: 10%;"> <p style="font-size: 18px; padding-top: 20px; font-family: \'Questrial\', serif; font-weight: lighter;">Revisa el comportamiento de las votaciones de los <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>congresistas</b></mark> o <mark style="background-color: #3abae9; color: white; font-size: 20px;"><b>partidos</b></mark> que escogiste con las flechas. </p> </div> </div> ';
@@ -338,7 +335,7 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
     flower_abs(flor_abs, i);
     flower_asis(flor_asis, i);
 
-    console.log(tema);
+    // console.log(tema);
 
 
   } else {
@@ -374,9 +371,9 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
         flor_no_slide.push(tema.votos[1]);
         flor_abs_slide.push(tema.votos[2]);
         flor_asis_slide.push(tema.votos[3]);
-        console.log(tema);
-      console.log(congresista.nombre);
-      printConclusionP(tema.nombre, congresista.nombre, tema.votos[2].abs, tema.votos[0].abs, tema.votos[1].abs, tema.votos[3].abs)  
+        // console.log(tema);
+        // console.log(congresista.nombre);
+        printConclusion(tema.nombre, congresista.nombre, tema.votos[2].abs, tema.votos[0].abs, tema.votos[1].abs, tema.votos[3].abs)
       });
 
       flower_si(flor_si_slide, i);
@@ -384,8 +381,8 @@ function slide_flores(titulo, flor_si, flor_no, flor_abs, flor_asis, data_flor) 
       flower_abs(flor_abs_slide, i);
       flower_asis(flor_asis_slide, i);
 
-                   
-      
+
+
 
     }
   }

@@ -1091,6 +1091,26 @@ font-family: 'Questrial'; }
   left: 0;
 }
 
+.numbercon_flwr {
+  color: black;
+  font-size: 15px;
+  padding: 1% 1%;
+  position: absolute;
+  font-family: 'Questrial', serif;
+  bottom: -20px;
+  right: 0;  
+}
+
+.numbercon_flwr_num{
+  background-color: #3abae9; 
+  color: white; 
+  font-size: 20px;
+  padding: 0%;
+  padding: 5px;
+}
+
+
+
 .text_flwr {
   color: black;
   font-size: 15px;
