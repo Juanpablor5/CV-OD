@@ -169,10 +169,10 @@ $("#btn_partidos").click(function () {
                             cong_flwr.temas.push({
                                 nombre: seleccionada,
                                 votos: [
-                                    { Tema: seleccionada, abs: 0 },
-                                    { Tema: seleccionada, abs: 0 },
-                                    { Tema: seleccionada, abs: 0 },
-                                    { Tema: seleccionada, abs: 0 }
+                                    { Tema: seleccionada, abs: 0, num_con: cong_flwr.num_con },
+                                    { Tema: seleccionada, abs: 0, num_con: cong_flwr.num_con },
+                                    { Tema: seleccionada, abs: 0, num_con: cong_flwr.num_con },
+                                    { Tema: seleccionada, abs: 0, num_con: cong_flwr.num_con }
                                 ]
                             })
                         });
@@ -339,7 +339,7 @@ function slide_flores_par(titulo, data_flor_total, data_flor, etiquetas) {
         let data = []
         for (let i = 0; i < etiquetas.length; i++) {
             const etiqueta = etiquetas[i];
-            data.push({ nombre: etiqueta, num_con: 0, congresistas: [] })
+            data.push({ nombre: etiqueta, congresistas: [] })
 
             data_flor.forEach(congresista => {
                 data[i].num_con=congresista.num_con
@@ -349,8 +349,10 @@ function slide_flores_par(titulo, data_flor_total, data_flor, etiquetas) {
                     t[1].Tema = congresista.nombre;
                     t[2].Tema = congresista.nombre;
                     t[3].Tema = congresista.nombre;
+
                     data[i].congresistas.push({
                         nombre: congresista.nombre,
+                        num_con: congresista.num_con,
                         votos: t
                     })
                 }
@@ -362,7 +364,7 @@ function slide_flores_par(titulo, data_flor_total, data_flor, etiquetas) {
 
             var iDiv = document.createElement('div');
             let div_flwr = document.createElement("div");
-            div_flwr.innerHTML = '<div class="numbertext_flwr">' + (i + 1) + '/' + data.length + '</div> <p class="numbercon_flwr">Número de congresistas: <mark class="numbercon_flwr_num"><b>' + etiqueta.num_con + '</b></mark></p> <div id="div_flores" class="container"> <div> <p style="font-size: 25px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;">' + etiqueta.nombre + '</p> </div> <div class="row"> <div class="col" > <p style="font-size: 15px; font-family: \'Questrial\', serif; font-weight: normal;"> Número de votos a favor: </p> <div id="flr_si' + i + '" > <p style="font-size: 10px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Escoge al menos un tema. </p> </div> </div> <div class="col" > <p style="font-size: 15px; font-family: \'Questrial\', serif; font-weight: normal;"> Número de votos en contra: </p> <div id="flr_no' + i + '" > <p style="font-size: 10px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Escoge al menos un tema. </p> </div> </div> </div> <div class="row"> <div class="col" > <p style="font-size: 15px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Número de Abstenciones: </p> <div id="flr_abs' + i + '" > <p style="font-size: 10px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Escoge al menos un tema. </p> </div> </div> <div class="col" > <p style="font-size: 15px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Número de Inasistencias: </p> <div id="flr_asis' + i + '" > <p style="font-size: 10px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Escoge al menos un tema. </p> </div> </div> </div> </div>';
+            div_flwr.innerHTML = '<div class="numbertext_flwr">' + (i + 1) + '/' + data.length + '</div> <div id="div_flores" class="container"> <div> <p style="font-size: 25px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;">' + etiqueta.nombre + '</p> </div> <div class="row"> <div class="col" > <p style="font-size: 15px; font-family: \'Questrial\', serif; font-weight: normal;"> Número de votos a favor: </p> <div id="flr_si' + i + '" > <p style="font-size: 10px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Escoge al menos un tema. </p> </div> </div> <div class="col" > <p style="font-size: 15px; font-family: \'Questrial\', serif; font-weight: normal;"> Número de votos en contra: </p> <div id="flr_no' + i + '" > <p style="font-size: 10px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Escoge al menos un tema. </p> </div> </div> </div> <div class="row"> <div class="col" > <p style="font-size: 15px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Número de Abstenciones: </p> <div id="flr_abs' + i + '" > <p style="font-size: 10px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Escoge al menos un tema. </p> </div> </div> <div class="col" > <p style="font-size: 15px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Número de Inasistencias: </p> <div id="flr_asis' + i + '" > <p style="font-size: 10px; padding-top: 10px; font-family: \'Questrial\', serif; font-weight: normal;"> Escoge al menos un tema. </p> </div> </div> </div> </div>';
 
             iDiv.appendChild(div_flwr)
             iDiv.id = 'slide_flwr';
@@ -391,10 +393,10 @@ function slide_flores_par(titulo, data_flor_total, data_flor, etiquetas) {
                 printConclusionP(etiqueta.nombre, tema.nombre, tema.votos[2].abs, tema.votos[0].abs, tema.votos[1].abs, tema.votos[3].abs)
             });
 
-            flower(flor_si_slide, i, "si", "Partido");
-            flower(flor_no_slide, i, "no", "Partido");
-            flower(flor_abs_slide, i, "abs", "Partido");
-            flower(flor_asis_slide, i, "asis", "Partido");
+            flower(flor_si_slide, i, "si", "Partido", etiqueta.num_con);
+            flower(flor_no_slide, i, "no", "Partido", etiqueta.num_con);
+            flower(flor_abs_slide, i, "abs", "Partido", etiqueta.num_con);
+            flower(flor_asis_slide, i, "asis", "Partido", etiqueta.num_con);
         }
     }
 }

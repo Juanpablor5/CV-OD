@@ -18,7 +18,7 @@ function flower(data, number, voto, tipo) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_"+ voto + number)
+    .select("#svgContent_" + voto + number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -42,19 +42,35 @@ function flower(data, number, voto, tipo) {
     .on("mousemove", function (d) {
       var mouseVal = d3.mouse(this);
       div.style("display", "none");
-      div
-        .html(
-          "<b>"+ tipo +": </b>" + d.data.Tema + "<br><br>" + "<b>No. votos a favor: </b>" + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-        )
-        .style("left", d3.event.pageX + 12 + "px")
-        .style("top", d3.event.pageY + "px")
-        .style("opacity", .9)
-        .style("display", "block")
-        .style("color", "white")
-        .style("font-family", "Questrial, serif")
-        .style("padding", 15 + "px")
-        .style("padding-top", 10 + "px")
-        .style("background-color", "#3abae9");
+      if (tipo == "Partido") {
+        div
+          .html(
+            "<b>" + tipo + ": </b>" + d.data.Tema + "<br><br> <b>No. de congresistas: </b>" + d.data.num_con + "<br><br> <b>No. votos a favor: </b>" + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          )
+          .style("left", d3.event.pageX + 12 + "px")
+          .style("top", d3.event.pageY + "px")
+          .style("opacity", .9)
+          .style("display", "block")
+          .style("color", "white")
+          .style("font-family", "Questrial, serif")
+          .style("padding", 15 + "px")
+          .style("padding-top", 10 + "px")
+          .style("background-color", "#3abae9");
+      } else {
+        div
+          .html(
+            "<b>" + tipo + ": </b>" + d.data.Tema + "<br><br>" + "<b>No. votos a favor: </b>" + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          )
+          .style("left", d3.event.pageX + 12 + "px")
+          .style("top", d3.event.pageY + "px")
+          .style("opacity", .9)
+          .style("display", "block")
+          .style("color", "white")
+          .style("font-family", "Questrial, serif")
+          .style("padding", 15 + "px")
+          .style("padding-top", 10 + "px")
+          .style("background-color", "#3abae9");
+      }
     })
     .on("mouseout", function () {
       div.html(" ").style("display", "none");
