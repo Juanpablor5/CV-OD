@@ -125,17 +125,14 @@ a {
 .tooltip{
   position: absolute;
   text-align: center;
-  width: 200px;
-  height: 100px;
+  width: 205px;
+  height: auto;
   padding: 2vw;
   font: 14px;
   font-family: 'Questrial';
-  font-weight: 100;
   border: 0px;
   border-radius: 8px;
-  color:rgb(0, 0, 0);
   box-shadow: -3px 3px 15px #888888;
-  opacity:0;
 }
 
 .svg{
@@ -150,7 +147,7 @@ a {
 .label1{
   font-size: 8px;
   font-family: 'Questrial';
-  font-weight: 100;
+  padding: 10%;
 }
 
 path {  stroke: #fff; }
