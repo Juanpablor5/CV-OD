@@ -24,7 +24,7 @@ function flower_si(data, number) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_si"+number)
+    .select("#svgContent_si" + number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -50,14 +50,17 @@ function flower_si(data, number) {
       div.style("display", "none");
       div
         .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. votos a favor: " + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          "<b>Tema: </b>" + d.data.Tema + "<br><br>" + "<b>No. votos a favor: </b>" + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         )
         .style("left", d3.event.pageX + 12 + "px")
-        .style("top", d3.event.pageY - 10 + "px")
-        .style("opacity", .8)
+        .style("top", d3.event.pageY + "px")
+        .style("opacity", .9)
         .style("display", "block")
         .style("color", "white")
-        .style("background-color","#3abae9");
+        .style("font-family", "Questrial, serif")
+        .style("padding", 15 + "px")
+        .style("padding-top", 10 + "px")
+        .style("background-color", "#3abae9");
     })
     .on("mouseout", function () {
       div.html(" ").style("display", "none");
@@ -88,7 +91,7 @@ function flower_si(data, number) {
     .attr("text-anchor", "middle")
 
     .text(function (d) {
-      return d.value;
+      return d.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     });
 }
 
@@ -111,7 +114,7 @@ function flower_no(data, number) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_no"+number)
+    .select("#svgContent_no" + number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -137,14 +140,17 @@ function flower_no(data, number) {
       div.style("display", "none");
       div
         .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. votos en contra: " + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          "<b>Tema: </b>" + d.data.Tema + "<br><br>" + "<b>No. votos en contra: </b>" + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         )
         .style("left", d3.event.pageX + 12 + "px")
         .style("top", d3.event.pageY + "px")
-        .style("opacity", .8)
+        .style("opacity", .9)
         .style("display", "block")
         .style("color", "white")
-        .style("background-color","#3abae9");
+        .style("font-family", "Questrial, serif")
+        .style("padding", 15 + "px")
+        .style("padding-top", 10 + "px")
+        .style("background-color", "#3abae9");
     })
     .on("mouseout", function () {
       div.html(" ").style("display", "none");
@@ -175,7 +181,7 @@ function flower_no(data, number) {
     .attr("text-anchor", "middle")
 
     .text(function (d) {
-      return d.value;
+      return d.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     });
 }
 
@@ -198,7 +204,7 @@ function flower_abs(data, number) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_abs"+number)
+    .select("#svgContent_abs" + number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -224,14 +230,17 @@ function flower_abs(data, number) {
       div.style("display", "none");
       div
         .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. de abstenciones: " + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          "<b>Tema: </b>" + d.data.Tema + "<br><br>" + "<b>No. de abstenciones: </b>" + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         )
         .style("left", d3.event.pageX + 12 + "px")
-        .style("top", d3.event.pageY - 10 + "px")
-        .style("opacity", .8)
+        .style("top", d3.event.pageY + "px")
+        .style("opacity", .9)
         .style("display", "block")
         .style("color", "white")
-        .style("background-color","#3abae9");
+        .style("font-family", "Questrial, serif")
+        .style("padding", 15 + "px")
+        .style("padding-top", 10 + "px")
+        .style("background-color", "#3abae9");
     })
     .on("mouseout", function () {
       div.html(" ").style("display", "none");
@@ -262,7 +271,7 @@ function flower_abs(data, number) {
     .attr("text-anchor", "middle")
 
     .text(function (d) {
-      return d.value;
+      return d.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     });
 }
 
@@ -285,7 +294,7 @@ function flower_asis(data, number) {
   var a = width / 2 - 10;
   var b = height / 2 - 70;
   var svg = d3
-    .select("#svgContent_asis"+number)
+    .select("#svgContent_asis" + number)
     .append("svg")
     .attr("viewBox", "0 0 " + width + " " + height / 2)
     .attr("preserveAspectRatio", "xMidYMid meet")
@@ -311,14 +320,17 @@ function flower_asis(data, number) {
       div.style("display", "none");
       div
         .html(
-          "Tema: " + d.data.Tema + "</br>" + "No. de inasistencias: " + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          "<b>Tema: </b>" + d.data.Tema + "<br><br>" + "<b>No. de inasistencias: </b>" + d.data.abs.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         )
         .style("left", d3.event.pageX + 12 + "px")
-        .style("top", d3.event.pageY - 10 + "px")
-        .style("opacity", .8)
+        .style("top", d3.event.pageY + "px")
+        .style("opacity", .9)
         .style("display", "block")
         .style("color", "white")
-        .style("background-color","#3abae9");
+        .style("font-family", "Questrial, serif")
+        .style("padding", 15 + "px")
+        .style("padding-top", 10 + "px")
+        .style("background-color", "#3abae9");
     })
     .on("mouseout", function () {
       div.html(" ").style("display", "none");
@@ -349,6 +361,6 @@ function flower_asis(data, number) {
     .attr("text-anchor", "middle")
 
     .text(function (d) {
-      return d.value;
+      return d.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     });
 }
