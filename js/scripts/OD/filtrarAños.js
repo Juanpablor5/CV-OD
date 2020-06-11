@@ -55,7 +55,7 @@ $("#btn_etiquetas, #btn_anios").click(function () {
             });
           }
           else {
-            document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select>>';
+            document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select>';
             preguntasFinales.forEach(pregunta => {
               object.push({text: pregunta.nombre });
             });
@@ -89,7 +89,7 @@ $("#btn_etiquetas, #btn_anios").click(function () {
               }
             }
           }
-          document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select>>';
+          document.getElementById("sec_preg").innerHTML = '<select id="preguntas2" multiple class="font"></select>';
           preguntasPorEtiquetas.forEach(pregunta => {
             object.push({ text: pregunta.nombre });
           });

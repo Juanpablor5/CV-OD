@@ -42,7 +42,7 @@ function visualizarBarras (datos, id) {
 
 function visualizarPorAños (datos, id, arregloRespuesta, arregloAnios) {
   let idVid = "#"+id;
-  console.log(datos)
+  // console.log(datos)
   let vlSpec = {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "description": "Visualización de respuestas por pregunta para cada año",
