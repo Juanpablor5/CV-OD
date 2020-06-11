@@ -343,7 +343,7 @@ function printConclusionod(pregunta, resarray) {
     var numres = resarray.length;
     var indice = 0;
     var i = 0;
-    console.log(resarray)
+    // console.log(resarray)
     for (let index = 0; index < resarray.length; index++) {
       var porcentaje = resarray[index][1]
       if (porcentaje > i) {

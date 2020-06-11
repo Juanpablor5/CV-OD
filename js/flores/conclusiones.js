@@ -109,7 +109,7 @@ function printConclusion(nombre, cong_selected, cont_abs_tot, cont_si_tot, cont_
     iDiv.className = 'mySlides-nm';
     document.getElementById('slidecontainer').appendChild(iDiv);
   
-    console.log(reprelevel)
+    // console.log(reprelevel)
   
   }
 
