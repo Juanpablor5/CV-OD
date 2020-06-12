@@ -337,7 +337,7 @@ function printConclusionod(pregunta, resarray) {
 
   if (resarray.length == 0) {
 
-    p = "Sin resultados o no hay datos para la pregunta <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + pregunta + "</b></mark> , Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
+    p = "Sin resultados o no hay datos para la pregunta <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + pregunta + "</b></mark> , Intenta de nuevo la busqueda <i class='far fa-smile-wink'></i>"
 
   } else {
     var numres = resarray.length;
@@ -356,9 +356,9 @@ function printConclusionod(pregunta, resarray) {
     var res = resarray[indice][0]
 
     if (numres < 50) {
-      p = "el comportamiento de lo ciudadanos demuestra que el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>, sin embargo, el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(resarray[0][1]) + "</b></mark>% escogio la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(resarray[0][0]) + "</b></mark>";
+      p = "el comportamiento de lo ciudadanos muestra que el <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>, sin embargo, el <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + String(resarray[0][indice]) + "</b></mark>% escogio la opción: <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + String(resarray[0][indice]) + "</b></mark>";
     } else {
-      p = "el comportamiento de lo ciudadanos demuestra que el <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #3abae9; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>";
+      p = "el comportamiento de lo ciudadanos muestra que el <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + String(numres) + "</b></mark>% Elije la opción: <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + String(res) + "</b></mark> para responder la pregunta: <mark style='background-color: #089baa; color: white; font-size: 20px;'></b>" + String(pregunta) + "</b></mark>";
       // console.log(resarray);
     }
 
