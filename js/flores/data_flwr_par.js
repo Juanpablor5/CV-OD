@@ -331,10 +331,10 @@ function slide_flores_par(titulo, data_flor_total, data_flor, etiquetas) {
             '<div id = "svgContent_asis' + i + '" ></div>';
 
 
-        flower_si(data_flor_total[0], i);
-        flower_no(data_flor_total[1], i);
-        flower_abs(data_flor_total[2], i);
-        flower_asis(data_flor_total[3], i);
+        flower(data_flor_total[0], i, "si", "Tema");
+        flower(data_flor_total[1], i, "no", "Tema");
+        flower(data_flor_total[2], i, "abs", "Tema");
+        flower(data_flor_total[3], i, "asis", "Tema");
     } else {
         let data = []
         for (let i = 0; i < etiquetas.length; i++) {
