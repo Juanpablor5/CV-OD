@@ -53,10 +53,7 @@
                           <button type="button" class="close" id="close" data-dismiss="modal">&times;</button>
                         </div>
                         <p style="padding: 20px;">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/8UyNI3KTPs0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                        <div id="demo_video"></div>
                         </p>
                         <div class="modal-footer"></div>
                       </div>
@@ -528,6 +525,8 @@
           // When the user clicks on the button, open the modal
           btn[0].onclick = function () {
             modal3[0].style.display = "block";
+            document.getElementById("demo_video").innerHTML = `
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8UyNI3KTPs0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
           }
 
           btn[1].onclick = function () {
@@ -537,6 +536,7 @@
           // When the user clicks on <span> (x), close the modal
           span[0].onclick = function () {
             modal3[0].style.display = "none";
+            document.getElementById("demo_video").innerHTML = ``;
           }
 
           span[1].onclick = function () {
