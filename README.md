@@ -32,9 +32,9 @@
 ## Ejemplo
 <p align="center">
   <section>
-    <img src="https://user-images.githubusercontent.com/42388004/180874817-222e28da-f679-4900-ab21-57683f4784c3.png" alt="Aborto en el Congreso" width=25%/>
-    <img src="https://user-images.githubusercontent.com/42388004/180880844-715178af-51bb-4170-84cd-2b77064b50e6.png" alt="Perspectiva del ciudadano" width=25%/>
-    <img src="https://user-images.githubusercontent.com/42388004/180881077-3eb5178b-6d9f-4942-99dc-ddef3e3476cb.png" alt="Perspectiva del Congreso" width=25%/>   
+    <img src="https://user-images.githubusercontent.com/42388004/180874817-222e28da-f679-4900-ab21-57683f4784c3.png" alt="Aborto en el Congreso" width=33%/>
+    <img src="https://user-images.githubusercontent.com/42388004/180880844-715178af-51bb-4170-84cd-2b77064b50e6.png" alt="Perspectiva del ciudadano" width=33%/>
+    <img src="https://user-images.githubusercontent.com/42388004/180881077-3eb5178b-6d9f-4942-99dc-ddef3e3476cb.png" alt="Perspectiva del Congreso" width=33%/>   
   </section>
 </p>
 
